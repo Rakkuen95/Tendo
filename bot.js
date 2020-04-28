@@ -7,10 +7,7 @@ client.on("ready", () => {
 
 client.on('message', message => {
     if (message.content === '?ditto') {
-    	message.channel.send('https://toquoc.mediacdn.vn/2020/3/26/photo-1-15851570172391583915287-1585189253221-1585189253221232625971.gif');
-  	}
-    if (message.content === '?waifu') {
-    	message.channel.send('https://i.pinimg.com/originals/fb/4a/82/fb4a827f677726e5cd64727fbfa33382.gif');
+    	message.channel.send('Dự án **MMOBot** đang được thực hiện bởi Startear\nMong mọi người ủng hộ :hear_no_evil:');
   	}
 // Pokedex : 001
     if (message.content === '?bulbasaur') {
