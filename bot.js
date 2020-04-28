@@ -12,6 +12,9 @@ client.on('message', message => {
     if (message.content === '?startear') {
     	message.channel.send('https://i.imgur.com/YxJTidU.png');
   	}
+    if (message.content === '?emprovip') {
+    	message.channel.send('https://i.imgur.com/y9oCTLn.png');
+  	}
 // Pokedex : 001
     if (message.content === '?bulbasaur') {
     	message.channel.send('```md\nBulbasaur\n> PokeDex Number : 001\n> Egg Group : Monster , Plant\n> Evolution : Bulbasaur → Ivysaur (Lv.16) → Venusaur (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 5             Kanto   Grass   M/D/N   Rare        10      -\n```');
