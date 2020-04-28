@@ -6,7 +6,7 @@ client.on("ready", () => {
 });
 
 client.on('message', message => {
-    if (message.content === '?ditto') {
+    if (message.content === '?about') {
     	message.channel.send('Dự án **MMOBot** đang được thực hiện bởi Startear\nMong mọi người ủng hộ :hear_no_evil:');
   	}
 // Pokedex : 001
