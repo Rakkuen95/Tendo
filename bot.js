@@ -12,7 +12,7 @@ client.on('message', message => {
     if (message.content === '?startear') {
     	message.channel.send('https://i.imgur.com/YxJTidU.png');
   	}
-    if (message.content === '?emprovip') {
+    if (message.content === '?emprovjp') {
     	message.channel.send('https://i.imgur.com/y9oCTLn.png');
   	}
 // Pokedex : 001
