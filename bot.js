@@ -25,16 +25,16 @@ client.on('message', message => {
     	message.channel.send('```md\nVenusaur\n> PokeDex Number : 003\n> Egg Group : Monster , Plant\n> Evolution : Bulbasaur → Ivysaur (Lv.16) → Venusaur (Lv.32)\nNo wild locations found.\n```');
   	}
 // Pokedex : 004
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?charmander') {
+    	message.channel.send('```md\nCharmander\n> PokeDex Number : 004\n> Egg Group : Monster , Dragon\n> Evolution : Charmander → Charmeleon (Lv.16) → Charizard (Lv.36)\n#Map            Region  Type    Time    Rarity      Level   Item\nRock Tunnel     Kanto   Cave    M/D/N   Rare        15      -\n```');
   	}
 // Pokedex : 005
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?charmeleon') {
+    	message.channel.send('```md\nCharmeleon\n> PokeDex Number : 005\n> Egg Group : Monster , Dragon\n> Evolution : Charmander → Charmeleon (Lv.16) → Charizard (Lv.36)\nNo wild locations found.\n```');
   	}
 // Pokedex : 006
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?charizard') {
+    	message.channel.send('```md\nCharizard\n> PokeDex Number : 006\n> Egg Group : Monster , Dragon\n> Evolution : Charmander → Charmeleon (Lv.16) → Charizard (Lv.36)\nNo wild locations found.\n```');
   	}
 // Pokedex : 007
     if (message.content === '?x') {
