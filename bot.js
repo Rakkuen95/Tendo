@@ -10,7 +10,7 @@ client.on('message', message => {
     	message.channel.send('pong');
   	}
     if (message.content === 'aaa') {
-    	message.channel.send('```bbb  "\n"sa   "\n"asasa```');
+    	message.channel.send('a\nb\nc\nd\n');
   	}
 });
 
