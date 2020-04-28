@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-async def on_ready():
-    await client.change.presence(status=discord.Status.idle, activity=discord.Game('Hello there!'))
-    print('bot is ready.')
+client.on("ready", () => {
+  console.log("I am ready!");
+});
 
 client.on('message', message => {
     if (message.content === '?ditto') {
