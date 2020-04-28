@@ -1,8 +1,18 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+const activities_list = [
+    "with the &help command.", 
+    "with the developers console",
+    "with some code", 
+    "with JavaScript"
+    ]; // creates an arraylist containing phrases you want your bot to switch through.
+
 client.on('ready', () => {
-    console.log('I am ready!');
+    setInterval(() => {
+        const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
+        client.user.setActivity(activities_list[index]); // sets bot's activities to one of the phrases in the arraylist.
+    }, 10000); // Runs this every 10 seconds.
 });
 
 client.on('message', message => {
@@ -21,11 +31,6 @@ client.on('message', message => {
     if (message.content === '?venusaur') {
     	message.channel.send('```md\nVenusaur\n> PokeDex Number : 003\n> Egg Group : Monster , Plant\n> Evolution : Bulbasaur → Ivysaur (Lv.16) → Venusaur (Lv.32)\nNo wild locations found.\n```');
   	}
-});
-
-client.user.setPresence({ game: { name: 'with discord.js' , type: 'WATCHING' }, status: 'idle' })
-    .then(console.log)
-    .catch(console.error);
 });
 
 // THIS  MUST  BE  THIS  WAY
