@@ -70,7 +70,7 @@ client.on('message', message => {
   	}
 // Pokedex : 015
     if (message.content === '?beedrill') {
-    	message.channel.send('```md \nBeedrill\n> PokeDex Number : 015\n> Egg Group : Bug , Poison\n> Evolution : Weedle → Kakuna (Lv.7) → Beedrill (Lv.10)\n#Map                Region  Type    Time    Rarity      Level   Item\nPattern Bush        Kanto   Grass   M/D/N   Uncommon    50-52   -\nPinwheel Forest     Unova   Grass   M/D/N   Special     17-19   -\nRoute 12            Unova   D.Grass M/D/N   Uncommon    53-54   -\nRoute 12            Unova   Grass   M/D/N   Special     60-65   -\n```');
+    	message.channel.send('```md\nBeedrill\n> PokeDex Number : 015\n> Egg Group : Bug , Poison\n> Evolution : Weedle → Kakuna (Lv.7) → Beedrill (Lv.10)\n#Map                Region  Type    Time    Rarity      Level   Item\nPattern Bush        Kanto   Grass   M/D/N   Uncommon    50-52   -\nPinwheel Forest     Unova   Grass   M/D/N   Special     17-19   -\nRoute 12            Unova   D.Grass M/D/N   Uncommon    53-54   -\nRoute 12            Unova   Grass   M/D/N   Special     60-65   -\n```');
   	}
 // Pokedex : 016
     if (message.content === '?x') {
