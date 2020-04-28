@@ -113,12 +113,508 @@ client.on('message', message => {
     	message.channel.send('```md\nPikachu\n> PokeDex Number : 025\n> Egg Group : Field , Fairy\n> Evolution : Pichu → Pikachu (Happiness) → Raichu (Use Thunderstone)\n#Map                Region  Type    Time    Rarity      Level   Item\nPower Plant         Kanto   Inside  M/D/N   Common      28-30   -\nPower Plant         Kanto   Inside  M/D/N   Horde       26-28   -\nRoute 1             Kanto   Grass   M/D/N   V.Rare      2       -\nViridian Forest     Kanto   Grass   M/D/N   Uncommon    5-7     -\nSafari Zone         Hoenn   Grass   M/D/N   Rare        28-30   -\nTrophy Garden       Sinnoh  Grass   M/D/N   Horde       21-22   -\nTrophy Garden       Sinnoh  Grass   M/D/N   V.Common    22-24   -\n```');
   	}
 // Pokedex : 026
+    if (message.content === '?raichu') {
+    	message.channel.send('```md\nRaichu\n> PokeDex Number : 026\n> PokeDex Number : 025\n> Egg Group : Field , Fairy\n> Evolution : Pichu → Pikachu (Happiness) → Raichu (Use Thunderstone)\nNo wild locations found.```');
+  	}
+// Pokedex : 027
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 027
-    if (message.content === '?raichu') {
-    	message.channel.send('```md\nRaichu\n> PokeDex Number : 026\n> PokeDex Number : 025\n> Egg Group : Field , Fairy\n> Evolution : Pichu → Pikachu (Happiness) → Raichu (Use Thunderstone)\nNo wild locations found.```');
+// Pokedex : 028
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 029
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 030
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 031
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 032
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 033
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 034
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 035
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 036
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 037
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 038
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 039
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 040
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 041
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 042
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 043
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 044
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 045
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 046
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 047
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 048
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 049
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 050
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 051
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 052
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 053
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 054
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 055
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 056
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 057
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 058
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 059
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 060
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 061
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 062
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 063
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 064
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 065
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 066
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 067
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 068
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 069
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 070
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 071
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 072
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 073
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 074
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 075
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 076
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 077
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 078
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 079
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 080
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 081
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 082
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 083
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 084
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 085
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 086
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 087
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 088
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 089
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 090
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 091
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 092
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 093
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 094
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 095
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 096
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 097
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 098
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 099
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 100
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 101
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 102
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 103
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 104
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 105
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 106
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 107
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 108
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 109
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 110
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 111
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 112
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 113
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 114
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 115
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 116
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 117
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 118
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 119
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 120
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 121
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 122
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 123
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 124
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 125
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 126
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 127
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 128
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 129
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 130
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 131
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 132
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 133
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 134
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 135
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 136
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 137
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 138
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 139
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 140
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 141
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 142
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 143
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 144
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 145
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 146
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 147
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 148
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 149
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 150
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 151
+    if (message.content === '?x') {
+    	message.channel.send('x');
   	}
 });
 
