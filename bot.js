@@ -16,7 +16,7 @@ client.on('message', function (user, userID, channelID, message, evt) {
         switch(cmd) {
             // !ping
             case 'ping':
-                bot.sendMessage({
+                client.sendMessage({
                     to: channelID,
                     message: 'Pong!'
                 });
