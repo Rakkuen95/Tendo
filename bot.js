@@ -9,6 +9,9 @@ client.on('message', message => {
     if (message.content === '?about') {
     	message.channel.send('Dự án **MMOBot** đang được thực hiện bởi Startear\nMong mọi người ủng hộ :hear_no_evil:');
   	}
+    if (message.content === '?startear') {
+    	message.channel.send('https://i.imgur.com/YxJTidU.png');
+  	}
 // Pokedex : 001
     if (message.content === '?bulbasaur') {
     	message.channel.send('```md\nBulbasaur\n> PokeDex Number : 001\n> Egg Group : Monster , Plant\n> Evolution : Bulbasaur → Ivysaur (Lv.16) → Venusaur (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 5             Kanto   Grass   M/D/N   Rare        10      -\n```');
