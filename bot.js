@@ -1,29 +1,26 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
 const client = new Discord.Client();
 
-client.on('ready', () => {
-    console.log('I am ready!');
+client.on("ready", () => {
+  console.log("I am ready!");
 });
 
-client.on('message', function (user, userID, channelID, message, evt) {
-    // Our bot needs to know if it will execute a command
-    // It will listen for messages that will start with `!`
-    if (message.substring(0, 1) == '!') {
-        var args = message.substring(1).split(' ');
-        var cmd = args[0];
-       
-        args = args.splice(1);
-        switch(cmd) {
-            // !ping
-            case 'ping':
-                client.sendMessage({
-                    to: channelID,
-                    message: 'Pong!'
-                });
-            break;
-            // Just add any case commands if you want to..
-         }
-     }
+client.on("message", message => {
+  if (message.author.bot) return;
+  // The process.env.PREFIX is your bot's prefix in this case.
+  if (message.content.indexOf(process.env.PREFIX) !== 0) return;
+
+  // This is the usual argument parsing we love to use.
+  const args = message.content.slice(process.env.PREFIX.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+
+  // And our 2 real basic commands!
+  if(command === 'ping') {
+    message.channel.send('Pong!');
+  } else
+  if (command === 'blah') {
+    message.channel.send('Meh.');
+  }
 });
 
 // THIS  MUST  BE  THIS  WAY
