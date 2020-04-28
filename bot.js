@@ -14,7 +14,7 @@ client.on('message', message => {
   	}
 // Pokedex : 001
     if (message.content === '?bulbasaur') {
-    	message.channel.send('```md\nBulbasaur\n> PokeDex Number : 001\n> Egg Group : Monster , Plant\n> Evolution : Bulbasaur → Ivysaur (Lv.16) → Venusaur (Lv.32)\n#Map            Region  Type    Time    Rarity      Level   Item\nRoute 5         Kanto   Grass   M/D/N   Rare        10      -```');
+    	message.channel.send('```md\nBulbasaur\n> PokeDex Number : 001\n> Egg Group : Monster , Plant\n> Evolution : Bulbasaur → Ivysaur (Lv.16) → Venusaur (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 5             Kanto   Grass   M/D/N   Rare        10      -\n```');
   	}
 // Pokedex : 002
     if (message.content === '?ivysaur') {
@@ -26,7 +26,7 @@ client.on('message', message => {
   	}
 // Pokedex : 004
     if (message.content === '?charmander') {
-    	message.channel.send('```md\nCharmander\n> PokeDex Number : 004\n> Egg Group : Monster , Dragon\n> Evolution : Charmander → Charmeleon (Lv.16) → Charizard (Lv.36)\n#Map            Region  Type    Time    Rarity      Level   Item\nRock Tunnel     Kanto   Cave    M/D/N   Rare        15      -\n```');
+    	message.channel.send('```md\nCharmander\n> PokeDex Number : 004\n> Egg Group : Monster , Dragon\n> Evolution : Charmander → Charmeleon (Lv.16) → Charizard (Lv.36)\n#Map                Region  Type    Time    Rarity      Level   Item\nRock Tunnel         Kanto   Cave    M/D/N   Rare        15      -\n```');
   	}
 // Pokedex : 005
     if (message.content === '?charmeleon') {
@@ -38,7 +38,7 @@ client.on('message', message => {
   	}
 // Pokedex : 007
     if (message.content === '?squirtle') {
-    	message.channel.send('```md\nSquirtle\n> PokeDex Number : 007\n> Egg Group : Monster , Water A\n> Evolution : Squirtle → Wartortle (Lv.16) → Blastoise (Lv.36)\n#Map            Region  Type    Time    Rarity      Level   Item\nSeafoam Islands Kanto   Cave    M/D/N   Rare        25      -\n```');
+    	message.channel.send('```md\nSquirtle\n> PokeDex Number : 007\n> Egg Group : Monster , Water A\n> Evolution : Squirtle → Wartortle (Lv.16) → Blastoise (Lv.36)\n#Map                Region  Type    Time    Rarity      Level   Item\nSeafoam Islands     Kanto   Cave    M/D/N   Rare        25      -\n```');
   	}
 // Pokedex : 008
     if (message.content === '?wartortle') {
@@ -50,15 +50,15 @@ client.on('message', message => {
   	}
 // Pokedex : 010
     if (message.content === '?caterpie') {
-    	message.channel.send('```md\nCaterpie\n> PokeDex Number : 010\n> Egg Group : Bug\n> Evolution : Caterpie → Metapod (Lv.7) → Butterfree (Lv.10)\n#Map            Region  Type    Time    Rarity      Level   Item\nPattern Bush    Kanto   Grass   M/D/N   Uncommon    50-52   -\nRoute 2         Kanto   Grass   M/D/N   Rare        3-5     -\nRoute 24        Kanto   Grass   M/D/N   Uncommon    11-12   -\nRoute 25        Kanto   Grass   M/D/N   Uncommon    11-12   -\nVirdian Forest  Kanto   Grass   M/D/N   Common      5-7     -\n```');
+    	message.channel.send('```md\nCaterpie\n> PokeDex Number : 010\n> Egg Group : Bug\n> Evolution : Caterpie → Metapod (Lv.7) → Butterfree (Lv.10)\n#Map                Region  Type    Time    Rarity      Level   Item\nPattern Bush        Kanto   Grass   M/D/N   Uncommon    50-52   -\nRoute 2             Kanto   Grass   M/D/N   Rare        3-5     -\nRoute 24            Kanto   Grass   M/D/N   Uncommon    11-12   -\nRoute 25            Kanto   Grass   M/D/N   Uncommon    11-12   -\nVirdian Forest      Kanto   Grass   M/D/N   Common      5-7     -\n```');
   	}
 // Pokedex : 011
     if (message.content === '?metapod') {
-    	message.channel.send('```md\nMetapod\n> PokeDex Number : 011\n> Egg Group : Bug\n> Evolution : Caterpie → Metapod (Lv.7) → Butterfree (Lv.10)\n#Map            Region  Type    Time    Rarity      Level   Item\nPattern Bush    Kanto   Grass   M/D/N   Uncommon    50-52   -\nPattern Bush    Kanto   Grass   M/D/N   Horde       48-50   -\nRoute 24        Kanto   Grass   M/D/N   Uncommon    12      -\nRoute 25        Kanto   Grass   M/D/N   Uncommon    12      -\nVirdian Forest  Kanto   Grass   M/D/N   Uncommon    7       -\nRoute 12        Unova   Grass   M/D/N   Uncommon    48-49   -\n```');
+    	message.channel.send('```md\nMetapod\n> PokeDex Number : 011\n> Egg Group : Bug\n> Evolution : Caterpie → Metapod (Lv.7) → Butterfree (Lv.10)\n#Map                Region  Type    Time    Rarity      Level   Item\nPattern Bush        Kanto   Grass   M/D/N   Uncommon    50-52   -\nPattern Bush        Kanto   Grass   M/D/N   Horde       48-50   -\nRoute 24            Kanto   Grass   M/D/N   Uncommon    12      -\nRoute 25            Kanto   Grass   M/D/N   Uncommon    12      -\nVirdian Forest      Kanto   Grass   M/D/N   Uncommon    7       -\nRoute 12            Unova   Grass   M/D/N   Uncommon    48-49   -\n```');
   	}
 // Pokedex : 012
     if (message.content === '?butterfree') {
-    	message.channel.send('```md\nButterfree\n> PokeDex Number : 012\n> Egg Group : Bug , Flying\n> Evolution : Caterpie → Metapod (Lv.7) → Butterfree (Lv.10)\n#Map            Region  Type    Time    Rarity      Level   Item\nPattern Bush    Kanto   Grass   M/D/N   Rare        50-52   -\nRoute 24        Kanto   Grass   M       Uncommon    12      -\nRoute 25        Kanto   Grass   M/D     Uncommon    12      -\nPinwheel Forest Unova   Grass   M/D/N   Special     17-19   -\nRoute 12        Unova   D.Grass M/D/N   Uncommon    53-54   -\nRoute 12        Unova   Grass   M/D/N   Special     60-65   -\n```');
+    	message.channel.send('```md\nButterfree\n> PokeDex Number : 012\n> Egg Group : Bug , Flying\n> Evolution : Caterpie → Metapod (Lv.7) → Butterfree (Lv.10)\n#Map                Region  Type    Time    Rarity      Level   Item\nPattern Bush        Kanto   Grass   M/D/N   Rare        50-52   -\nRoute 24            Kanto   Grass   M       Uncommon    12      -\nRoute 25            Kanto   Grass   M/D     Uncommon    12      -\nPinwheel Forest     Unova   Grass   M/D/N   Special     17-19   -\nRoute 12            Unova   D.Grass M/D/N   Uncommon    53-54   -\nRoute 12            Unova   Grass   M/D/N   Special     60-65   -\n```');
   	}
 // Pokedex : 013
     if (message.content === '?weedle') {
