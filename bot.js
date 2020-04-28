@@ -1,7 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', () => { client.user.setGame('yourGame'); });
+Client.on('ready', async () => {
+   await client.user.setPresence({ game: { name: 'name' }, status: 'idle' });
+});
 
 client.on('message', message => {
     if (message.content === '?ditto') {
