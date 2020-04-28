@@ -114,7 +114,7 @@ client.on('message', message => {
   	}
 // Pokedex : 026
     if (message.content === '?raichu') {
-    	message.channel.send('```md\nRaichu\n> PokeDex Number : 026\n> PokeDex Number : 025\n> Egg Group : Field , Fairy\n> Evolution : Pichu → Pikachu (Happiness) → Raichu (Use Thunderstone)\nNo wild locations found.```');
+    	message.channel.send('```md\nRaichu\n> PokeDex Number : 026\n> Egg Group : Field , Fairy\n> Evolution : Pichu → Pikachu (Happiness) → Raichu (Use Thunderstone)\nNo wild locations found.```');
   	}
 // Pokedex : 027
     if (message.content === '?x') {
