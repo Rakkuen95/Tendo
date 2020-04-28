@@ -10,7 +10,7 @@ client.on('message', message => {
     	message.channel.send('pong');
   	}
     if (message.content === 'aaa') {
-    	message.channel.send('a\nb\nc\nd\n');
+    	message.channel.send('\n```md\nBulbasaur\n> PokeDex Number : 001\n> Egg Group : Monster , Plant\n> Evolution : Bulbasaur → Ivysaur (Lv.16) → Venusaur (Lv.32)\n#Map            Region  Type    Time    Rarity      Level   Item\nRoute 5         Kanto   Grass   M/D/N   Rare        10      -\n```');
   	}
 });
 
