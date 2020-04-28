@@ -37,7 +37,7 @@ Charmander\n
 #Map            Region  Type    Time    Rarity      Level   Item\n
 Rock Tunnel     Kanto   Cave    M/D/N   Rare        15      -\n
 ```
-
+              
 ```md\n
 Charmeleon\n
 > PokeDex Number : 005\n
@@ -133,14 +133,30 @@ Route 25        Kanto   Grass   M/D/N   Uncommon    11-12   -\n
 Virdian Forest  Kanto   Grass   M/D/N   Common      5-7     -\n
 ```
 
-```md 
-Kakuna
-> PokeDex Number : 014
+```md \n
+Kakuna\n
+> PokeDex Number : 014\n
+> Egg Group : Bug , Poison\n
+> Evolution : Weedle → Kakuna (Lv.7) → Beedrill (Lv.10)\n
+#Map            Region  Type    Time    Rarity      Level   Item\n
+Pattern Bush    Kanto   Grass   M/D/N   Uncommon    50-52   -\n
+Pattern Bush    Kanto   Grass   M/D/N   Horde       48-50   -\n
+Route 24        Kanto   Grass   M/D/N   Uncommon    12      -\n
+Route 25        Kanto   Grass   M/D/N   Uncommon    12      -\n
+Virdian Forest  Kanto   Grass   M/D/N   Uncommon    7       -\n
+Route 12        Unova   Grass   M/D/N   Uncommon    48-49   -\n
 ```
 
 ```md 
 Beedrill
-> PokeDex Number : 015
+> PokeDex Number : 015\n
+> Egg Group : Bug , Poison\n
+> Evolution : Weedle → Kakuna (Lv.7) → Beedrill (Lv.10)\n
+#Map            Region  Type    Time    Rarity      Level   Item\n
+Pattern Bush    Kanto   Grass   M/D/N   Uncommon    50-52   -\n
+Pinwheel Forest Unova   Grass   M/D/N   Special     17-19   -\n
+Route 12        Unova   D.Grass M/D/N   Uncommon    53-54   -\n
+Route 12        Unova   Grass   M/D/N   Special     60-65   -\n
 ```
 
 ```md 
