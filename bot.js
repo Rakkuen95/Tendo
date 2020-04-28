@@ -23,5 +23,10 @@ client.on('message', message => {
   	}
 });
 
+client.user.setPresence({ game: { name: 'with discord.js' , type: 'WATCHING' }, status: 'idle' })
+    .then(console.log)
+    .catch(console.error);
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
