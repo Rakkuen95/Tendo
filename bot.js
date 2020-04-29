@@ -991,7 +991,6 @@ client.on('message', message => {
   	}
 // Pokedex : 479
     if (message.content === '?rotom') {
-    	message.channel.send('https://i.imgur.com/o97sJNy.png');
       message.channel.send('```md\nRotom\n> PokeDex Number : 479\n> Egg Group : Genderless\n#Map                Region  Type    Time    Rarity      Level   Item\nOld Chateau         Sinnoh  Inside  M/D/N   Rare        15      -\n```');
   	}
 
