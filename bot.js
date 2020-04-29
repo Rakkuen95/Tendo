@@ -1,17 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('message', async message => {
-	if (message.content === '!fruit') {
-		try {
-			await message.react('🍎');
-			await message.react('🍊');
-			await message.react('🍇');
-		} catch (error) {
-			console.error('One of the emojis failed to react.');
-		}
-	}
-
 client.on("ready", () => {
   console.log("I am ready!");
 });
