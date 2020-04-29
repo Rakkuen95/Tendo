@@ -18,12 +18,7 @@ client.on('message', message => {
     if (message.content === '?random') {
     	message.channel.send(Math.floor(Math.random() * 100) + 1);
   	}
-  if (message.content === '!rip') {
-    // Create the attachment using MessageAttachment
-    const attachment = new MessageAttachment('https://i.imgur.com/w3duR07.png');
-    // Send the attachment in the message channel
-    message.channel.send(attachment);
-  }
+
 
 
 
