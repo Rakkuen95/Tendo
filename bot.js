@@ -5,6 +5,24 @@ client.on("ready", () => {
   console.log("I am ready!");
 });
 
+const exampleEmbed = new Discord.MessageEmbed()
+	.setColor('#0099ff')
+	.setTitle('Some title')
+	.setURL('https://discord.js.org/')
+	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
+	.setDescription('Some description here')
+	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
+	.addFields(
+		{ name: 'Regular field title', value: 'Some value here' },
+		{ name: '\u200B', value: '\u200B' },
+		{ name: 'Inline field title', value: 'Some value here', inline: true },
+		{ name: 'Inline field title', value: 'Some value here', inline: true },
+	)
+	.addField('Inline field title', 'Some value here', true)
+	.setImage('https://i.imgur.com/wSTFkRM.png')
+	.setTimestamp()
+	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
+
 client.on('message', message => {
     if (message.content === '?about') {
     	message.channel.send('```md\nTeam phát triển MMO Bot bao gồm\nGen 1st : Startear\nGen 2nd : liiih\nGen 3rd : dragoncv\nGen 4th : DXgamer\nGen 5th : SniderLane\n```');
@@ -18,8 +36,12 @@ client.on('message', message => {
     if (message.content === '?random') {
     	message.channel.send(Math.floor(Math.random() * 100) + 1);
   	}
-
-
+    if (message.content === '?date') {
+    	message.channel.send(Date.now());
+  	}
+    if (message.content === '?embed') {
+    	message.channel.send(exampleEmbed);
+  	}
 
 
 
