@@ -15,6 +15,19 @@ client.on('message', message => {
     if (message.content === '?emprovjp') {
     	message.channel.send('https://i.imgur.com/y9oCTLn.png');
   	}
+    if (message.content === '?random') {
+    	message.channel.send(Math.floor(Math.random() * 100) + 1);
+  	}
+
+
+
+
+
+
+
+
+// POKEMMO DEX NATIONAL 
+// GEN-1
 // Pokedex : 001
     if (message.content === '?bulbasaur') {
     	message.channel.send('```md\nBulbasaur\n> PokeDex Number : 001\n> Egg Group : Monster , Plant\n> Evolution : Bulbasaur → Ivysaur (Lv.16) → Venusaur (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 5             Kanto   Grass   M/D/N   Rare        10      -\n```');
