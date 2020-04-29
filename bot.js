@@ -18,7 +18,9 @@ client.on('message', message => {
     if (message.content === '?random') {
     	message.channel.send(Math.floor(Math.random() * 100) + 1);
   	}
-
+    if (message.content === '?haha') {
+	    message.react('😄');
+    }
 
 
 
