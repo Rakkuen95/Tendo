@@ -7,7 +7,7 @@ client.on("ready", () => {
 
 client.on('message', message => {
     if (message.content === '?about') {
-    	message.channel.send('```md\nTeam phát triển MMO Bot bao gồm\nGen 1st : Startear\nGen 2nd : liiih\nGen 3rd : dragoncv\nGen 4th : DXgamer\nGen 5th : ThanhPhong\n```');
+    	message.channel.send('```md\nTeam phát triển MMO Bot bao gồm\nGen 1st : Startear\nGen 2nd : liiih\nGen 3rd : dragoncv\nGen 4th : DXgamer\nGen 5th : SniderLane\n```');
   	}
     if (message.content === '?startear') {
     	message.channel.send('https://i.imgur.com/YxJTidU.png');
