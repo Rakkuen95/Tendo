@@ -699,8 +699,530 @@ client.on('message', message => {
   	}
 // Pokedex : 406
     if (message.content === '?budew') {
-    	message.channel.send('```md\nBudew\n> PokeDex Number : 406\n> Egg Group : Cannot Breed\n> Evolution : Budew → Roselia (Happiness - Daytime) → Roserade (Use Shinystone)\n#Map                Region  Type    Time    Rarity      Level   Item\nEterna Forest       Sinnoh  Grass   M/D/N   Common      10-12   -\nEterna Forest       Sinnoh  Grass   M/D     Horde       10      -\nGreat Marsh         Sinnoh  Inside  M/D     V.Rare      27-29   -\nRoute 204           Sinnoh  Grass   M/D/N   Common      3-10    -\nRoute 205           Sinnoh  Grass   M/D/N   Uncommon    12-14   -\nRoute 208           Sinnoh  Grass   M/D/N   Uncommon    18-19   -\nRoute 208           Sinnoh  Grass   M/D/N   Horde       16-17   -\nRoute 212           Sinnoh  Grass   M/D/N   Uncommon    21-22   -\n```');
+    	message.channel.send('```md\nBudew\n> PokeDex Number : 406\n> Egg Group : Cannot Breed\n> Evolution : Budew → Roselia (Happiness + Day Time) → Roserade (Use Shinystone)\n#Map                Region  Type    Time    Rarity      Level   Item\nEterna Forest       Sinnoh  Grass   M/D/N   Common      10-12   -\nEterna Forest       Sinnoh  Grass   M/D     Horde       10      -\nGreat Marsh         Sinnoh  Inside  M/D     V.Rare      27-29   -\nRoute 204           Sinnoh  Grass   M/D/N   Common      3-10    -\nRoute 205           Sinnoh  Grass   M/D/N   Uncommon    12-14   -\nRoute 208           Sinnoh  Grass   M/D/N   Uncommon    18-19   -\nRoute 208           Sinnoh  Grass   M/D/N   Horde       16-17   -\nRoute 212           Sinnoh  Grass   M/D/N   Uncommon    21-22   -\n```');
+  	}
+// Pokedex : 407
+    if (message.content === '?roserade') {
+    	message.channel.send('```md\nRoserade\n> PokeDex Number : 407\n> Egg Group : Fairy , Plant\n> Evolution : Budew → Roselia (Happiness + Day Time) → Roserade (Use Shinystone)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 12            Unova   Grass   M/D/N   Special     60-65   -\n```');
+  	}
+// Pokedex : 408
+    if (message.content === '?cranidos') {
+    	message.channel.send('```md\nCranidos\n> PokeDex Number : 408\n> Egg Group : Monster\n> Evolution : Cranidos → Rampardos (Lv.30)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 409
+    if (message.content === '?rampardos') {
+    	message.channel.send('```md\nRampardos\n> PokeDex Number : 409\n> Egg Group : Monster\n> Evolution : Cranidos → Rampardos (Lv.30)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 410
+    if (message.content === '?shieldon') {
+    	message.channel.send('```md\nShieldon\n> PokeDex Number : 410\n> Egg Group : Monster\n> Evolution : Shieldon → Bastiodon (Lv.30)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 411
+    if (message.content === '?bastiodon') {
+    	message.channel.send('```md\nBastiodon\n> PokeDex Number : 411\n> Egg Group : Monster\n> Evolution : Shieldon → Bastiodon (Lv.30)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 412
+    if (message.content === '?burmy') {
+    	message.channel.send('```md\nBurmy\n> PokeDex Number : 412\n> Egg Group : Bug\n> Evolution : Burmy → Wormadam (Lv.20 + Female)\n> Evolution : Burmy → Mothim   (Lv.20 + Male)\n#Map                Region  Type    Time    Rarity      Level   Item\nHoney Tree          Sinnoh  H.Tree  M/D/N   Uncommon    5-20    -\n```');
+  	}
+// Pokedex : 413
+    if (message.content === '?wormadam') {
+    	message.channel.send('```md\nWormadam\n> PokeDex Number : 413\n> Egg Group : Bug\n> Evolution : Burmy → Wormadam (Lv.20 + Female)\n> Evolution : Burmy → Mothim   (Lv.20 + Male)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 414
+    if (message.content === '?mothim') {
+    	message.channel.send('```md\nMothim\n> PokeDex Number : 414\n> Egg Group : Bug\n> Evolution 1 : Burmy → Wormadam (Lv.20 + Female)\n> Evolution 2 : Burmy → Mothim   (Lv.20 + Male)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 415
+    if (message.content === '?combee') {
+    	message.channel.send('```md\nCombee\n> PokeDex Number : 415\n> Egg Group : Bug\n> Evolution : Combee → Vespiquen (Lv.21 - Female)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 12            Unova   Grass   M/D/N   Uncommon    47      -\nRoute 12            Unova   D.Grass M/D/N   Uncommon    52      -\nHoney Tree          Sinnoh  H.Tree  M/D/N   Uncommon    5-20    -\n```');
+  	}
+// Pokedex : 416
+    if (message.content === '?vespiquen') {
+    	message.channel.send('```md\nVespiquen\n> PokeDex Number : 416\n> Egg Group : Bug\n> Evolution : Combee → Vespiquen (Lv.21 - Female)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 12            Unova   Grass   M/D/N   Special     60-65   -\n```');
+  	}
+// Pokedex : 417
+    if (message.content === '?pachirisu') {
+    	message.channel.send('```md\nPachirisu\n> PokeDex Number : 417\n> Egg Group : Field , Fairy\n#Map                Region  Type    Time    Rarity      Level   Item\nFuego Ironworks     Sinnoh  Grass   M/D/N   Rare        29      -\nRoute 205           Sinnoh  Grass   M/D/N   Rare        9-14    -\nValley Windworks    Sinnoh  Grass   M/D/N   Horde       8-9     -\nValley Windworks    Sinnoh  Grass   M/D/N   Rare        9-11    -\n```');
+  	}
+// Pokedex : 418
+    if (message.content === '?buizel') {
+    	message.channel.send('```md\nBuizel\n> PokeDex Number : 418\n> Egg Group : Water A , Field\n> Evolution : Buizel → Floatzel (Lv.26)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 3             Unova   Grass   M/D/N   Special     12-14   -\nRoute 11            Unova   Water   M/D/N   V.Common    35-55   -\nRoute 11            Unova   Water   M/D/N   Horde       35-55   -\nRoute 14            Unova   Water   M/D/N   V.Common    35-55   -\nRoute 14            Unova   Water   M/D/N   Horde       35-55   -\nRoute 205           Sinnoh  Grass   M/D/N   V.Common    10-14   -\nRoute 205           Sinnoh  Grass   M/D/N   Horde       8-12    -\nRoute 212           Sinnoh  Grass   M/D/N   Rare        23-25   -\nRoute 213           Sinnoh  Grass   N       Horde       22-23   -\nRoute 213           Sinnoh  Grass   M/D/N   V.Common    23-25   -\nRoute 224           Sinnoh  Grass   M/D/N   Rare        49      -\nValley Windworks    Sinnoh  Grass   M/D/N   Common      9-11    -\n```');
+  	}
+// Pokedex : 419
+    if (message.content === '?floatzel') {
+    	message.channel.send('```md\nFloatzel\n> PokeDex Number : 419\n> Egg Group : Water A , Field\n> Evolution : Buizel → Floatzel (Lv.26)\n#Map                Region  Type    Time    Rarity      Level   Item\nCold Storage        Unova   Grass   M/D/N   Special     28-29   -\nMoor Of Icirrus     Unova   Water   M/D/N   Special     39-40   -\nRoute 3             Unova   Water   M/D/N   Special     30-40   -\nRoute 6             Unova   Water   M/D/N   Special     30-40   -\nRoute 11            Unova   Water   M/D/N   Special     60-65   -\nRoute 14            Unova   Water   M/D/N   Special     60-65   -\nFuego Ironworks     Sinnoh  Grass   M/D/N   Common      29-31   -\nRoute 213           Sinnoh  Grass   M/D/N   Uncommon    26      -\nRoute 218           Sinnoh  Grass   M/D/N   V.Common    29-31   -\nRoute 218           Sinnoh  Grass   M/D/N   Horde       28-29   -\nRoute 221           Sinnoh  Grass   M/D/N   Common      28-31   -\nRoute 222           Sinnoh  Grass   M/D/N   Common      38-42   -\nRoute 222           Sinnoh  Grass   M/D/N   Horde       38-39   -\nRoute 224           Sinnoh  Grass   M/D/N   Common      53-54   -\nRoute 230           Sinnoh  Grass   M/D/N   Common      50-52   -\nVictory Road        Sinnoh  Cave    M/D/N   Common      42-51   -\nVictory Road        Sinnoh  Cave    M/D/N   Horde       41-48   -\nVictory Road        Sinnoh  Water   M/D/N   V.Common    30-55   -\nVictory Road        Sinnoh  Water   M/D/N   Horde       30-50   -\n```');
+  	}
+// Pokedex : 420
+    if (message.content === '?cherubi') {
+    	message.channel.send('```md\nCherubi\n> PokeDex Number : 420\n> Egg Group : Plant , Fairy\n> Evolution : Cherubi → Cherrim (Lv.25)\n#Map                Region  Type    Time    Rarity      Level   Item\nHoney Tree          Sinnoh  H.Tree  M/D/N   Uncommon    5-20    -\n```');
+  	}
+// Pokedex : 421
+    if (message.content === '?cherrim') {
+    	message.channel.send('```md\nCherrim\n> PokeDex Number : 421\n> Egg Group : Plant , Fairy\n> Evolution : Cherubi → Cherrim (Lv.25)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 422
+    if (message.content === '?shellos') {
+    	message.channel.send('```md\nShellos\n> PokeDex Number : 422\n> Egg Group : Water A , Chaos\n> Evolution : Shellos → Gastrodon (Lv.30)\n#Map                Region  Type    Time    Rarity      Level   Item\nCanalave City       Sinnoh  Water   M/D/N   Uncommon    20-30   -\nFuego Ironworks     Sinnoh  Grass   M/D/N   Uncommon    28      -\nFuego Ironworks     Sinnoh  Water   M/D/N   Common      20-30   -\nPastoria City       Sinnoh  Water   M/D/N   Uncommon    20-30   -\nRoute 205           Sinnoh  Grass   M/D/N   V.Common    9-14    -\nRoute 205           Sinnoh  Grass   M/D/N   Horde       8-9     -\nRoute 205           Sinnoh  Water   M/D/N   V.Common    20-30   -\nRoute 205           Sinnoh  Water   M/D/N   Horde       20-30   -\nRoute 212           Sinnoh  Grass   M/D/N   Uncommon    23-26   -\nRoute 212           Sinnoh  Grass   M/D/N   Horde       22-23   -\nRoute 212           Sinnoh  Water   M/D/N   Uncommon    20-30   -\nRoute 212           Sinnoh  Water   M/D/N   Horde       20-30   -\nRoute 213           Sinnoh  Grass   M/D/N   V.Common    24-26   -\nRoute 213           Sinnoh  Grass   M/D/N   Horde       22-23   -\nRoute 213           Sinnoh  Water   M/D/N   Common      20-30   -\nRoute 213           Sinnoh  Water   M/D/N   Horde       20-30   -\nRoute 218           Sinnoh  Grass   M/D/N   Uncommon    28      -\nRoute 218           Sinnoh  Water   M/D/N   V.Common    20-30   -\nRoute 221           Sinnoh  Grass   M/D/N   Uncommon    28      -\nRoute 224           Sinnoh  Grass   M/D/N   Rare        49      -\nValley Windworks    Sinnoh  Grass   M/D/N   V.Common    9-12    -\nValley Windworks    Sinnoh  Water   M/D/N   V.Common    20-30   -\nValley Windworks    Sinnoh  Water   M/D/N   Horde       20-30   -\n```');
+  	}
+// Pokedex : 423
+    if (message.content === '?gastrodon') {
+    	message.channel.send('```md\nGastrodon\n> PokeDex Number : 423\n> Egg Group : Water A , Chaos\n> Evolution : Shellos → Gastrodon (Lv.30)\n#Map                Region  Type    Time    Rarity      Level   Item\nCanalave City       Sinnoh  Water   M/D/N   Rare        30-40   -\nFuego Windworks     Sinnoh  Grass   M/D/N   Uncommon    30-31   -\nFuego Windworks     Sinnoh  Water   M/D/N   Rare        30-40   -\nPastoria City       Sinnoh  Water   M/D/N   Rare        30-40   -\nRoute 205           Sinnoh  Water   M/D/N   Rare        30-40   -\nRoute 212           Sinnoh  Water   M/D/N   Rare        30-40   -\nRoute 213           Sinnoh  Water   M/D/N   Rare        30-40   -\nRoute 218           Sinnoh  Grass   M/D/N   Uncommon    30      -\nRoute 218           Sinnoh  Water   M/D/N   Rare        30-40   -\nRoute 221           Sinnoh  Grass   M/D/N   Uncommon    30      -\nRoute 221           Sinnoh  Grass   M/D/N   Horde       30      -\nRoute 222           Sinnoh  Grass   M/D/N   Uncommon    40-42   -\nRoute 224           Sinnoh  Grass   M/D/N   Common      52-53   -\nRoute 224           Sinnoh  Grass   M/D/N   Horde       49      -\nRoute 224           Sinnoh  Water   M/D/N   Common      35-55   -\nRoute 230           Sinnoh  Grass   M/D/N   Rare        51      -\nValley Windworks    Sinnoh  Water   M/D/N   Rare        30-40   -\n```');
+  	}
+// Pokedex : 424
+    if (message.content === '?ambipom') {
+    	message.channel.send('```md\nAmbipom\n> PokeDex Number : 424\n> Egg Group : Field\n> Evolution : Aipom → Ambipom (Lv.Up + Double Hit)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 425
+    if (message.content === '?drifloon') {
+    	message.channel.send('```md\nDrifloon\n> PokeDex Number : 425\n> Egg Group : Chaos\n> Evolution : Drifloon → Drifblim (Lv.28)\n#Map                Region  Type    Time    Rarity      Level   Item\nCelestial Tower     Unova   Shadow  M/D/N   Special     32-33   -\nValley Windworks    Sinnoh  Grass   M/D/N   Uncommon    10      -\n```');
+  	}
+// Pokedex : 426
+    if (message.content === '?drifblim') {
+    	message.channel.send('```md\nDrifblim\n> PokeDex Number : 426\n> Egg Group : Chaos\n> Evolution : Drifloon → Drifblim (Lv.28)\n#Map                Region  Type    Time    Rarity      Level   Item\nCelestial Tower     Unova   Shadow  M/D/N   Special     32-33   -\nGiant Chasm         Unova   Grass   M/D/N   Rare        49      -\nGiant Chasm         Unova   D.Grass M/D/N   Rare        54      -\nRoute 13            Unova   Grass   M/D/N   Uncommon    49      -\nRoute 13            Unova   D.Grass M/D/N   Uncommon    54      -\nRoute 13            Unova   Grass   N       Horde       46-47   -\nRoute 14            Unova   Grass   M/D/N   Uncommon    49      -\nRoute 14            Unova   D.Grass M/D/N   Uncommon    54      -\n```');
+  	}
+// Pokedex : 427
+    if (message.content === '?buneary') {
+    	message.channel.send('```md\nBuneary\n> PokeDex Number : 427\n> Egg Group : Field , Humanoid\n> Evolution : Buneary → Lopunny (Happiness)\n#Map                Region  Type    Time    Rarity      Level   Item\nEterna Forest       Sinnoh  Grass   M/D/N   Common      11-13   -\nEterna Forest       Sinnoh  Grass   M/D/N   Horde       10      -\n```');
+  	}
+// Pokedex : 428
+    if (message.content === '?lopunny') {
+    	message.channel.send('```md\nLopunny\n> PokeDex Number : 428\n> Egg Group : Field , Humanoid\n> Evolution : Buneary → Lopunny (Happiness)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 429
+    if (message.content === '?mismagius') {
+    	message.channel.send('```md\nMismagius\n> PokeDex Number : 429\n> Egg Group : Chaos\n> Evolution : Misdreavus → Mismagius (Use Duskstone)\n#Map                Region  Type    Time    Rarity      Level   Item\nAbundant Shrine     Unova   Grass   M/D/N   Special     60-65   -\n```');
+  	}
+// Pokedex : 430
+    if (message.content === '?honchkrow') {
+    	message.channel.send('```md\nHonchkrow\n> PokeDex Number : 430\n> Egg Group : Flying\n> Evolution : Murkrow → Honchkrow (Use Duskstone)\n#Map                Region  Type    Time    Rarity      Level   Item\nAbundant Shrine     Unova   Shadow  M/D/N   Special     60-65   -\nAbundant Shrine     Unova   Shadow  M/D/N   Special     32-33   -\nRoute 10            Unova   Shadow  M/D/N   Special     43-44   -\n```');
+  	}
+// Pokedex : 431
+    if (message.content === '?glameow') {
+    	message.channel.send('```md\nGlameow\n> PokeDex Number : 431\n> Egg Group : Field\n> Evolution : Glameow → Purugly (Lv.38)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 218           Sinnoh  Grass   M/D/N   Uncommom    29-30   -\nRoute 222           Sinnoh  Grass   M/D/N   Uncommom    40      -\n```');
+  	}
+// Pokedex : 432
+    if (message.content === '?purugly') {
+    	message.channel.send('```md\nPurugly\n> PokeDex Number : 432\n> Egg Group : Field\n> Evolution : Glameow → Purugly (Lv.38)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 222           Sinnoh  Grass   M/D/N   Rare        41-42   -\nRoute 229           Sinnoh  Grass   M/D/N   Horde       48-50   -\nRoute 229           Sinnoh  Grass   M/D/N   Uncommom    50      -\n```');
+  	}
+// Pokedex : 433
+    if (message.content === '?chingling') {
+    	message.channel.send('```md\nChingling\n> PokeDex Number : 433\n> Egg Group : Cannot Breed\n> Evolution : Chingling → Chimecho (Happiness + Night)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 434
+    if (message.content === '?stunky') {
+    	message.channel.send('```md\nStunky\n> PokeDex Number : 434\n> Egg Group : Field\n> Evolution : Stunky → Skuntank (Lv.34)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 206           Sinnoh  Grass   M/D/N   Horde       14-16   -\nRoute 206           Sinnoh  Grass   M/D/N   Uncommom    16-18   -\nRoute 208           Sinnoh  Grass   M/D/N   Uncommom    18      -\nRoute 214           Sinnoh  Grass   M/D/N   Uncommom    23-24   -\nRoute 214           Sinnoh  Grass   M/D/N   Horde       21-22   -\nRoute 221           Sinnoh  Grass   M/D/N   Uncommom    28      -\n```');
+  	}
+// Pokedex : 435
+    if (message.content === '?skuntank') {
+    	message.channel.send('```md\nSkuntank\n> PokeDex Number : 435\n> Egg Group : Field\n> Evolution : Stunky → Skuntank (Lv.34)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 221           Sinnoh  Grass   M/D/N   Rare        34      -\nRoute 225           Sinnoh  Grass   M/D/N   Uncommom    51      -\n```');
+  	}
+// Pokedex : 436
+    if (message.content === '?bronzor') {
+    	message.channel.send('```md\nBronzor\n> PokeDex Number : 436\n> Egg Group : Genderless\n> Evolution : Bronzor → Bronzong (Lv.33)\n#Map                Region  Type    Time    Rarity      Level   Item\nMT.Coronet          Sinnoh  Cave    M/D/N   Rare        14-36   -\nMT.Coronet          Sinnoh  Cave    M/D/N   Horde       13-37   -\nRoute 206           Sinnoh  Grass   M/D/N   Uncommom    16-18   -\nRoute 211           Sinnoh  Grass   M/D/N   Uncommom    14-29   -\nTurnback Cave       Sinnoh  Inside  M/D/N   Rare        44-64   -\nWayward Cave        Sinnoh  Cave    M/D/N   Commom      18-20   -\nWayward Cave        Sinnoh  Cave    M/D/N   Horde       14-17   -\n```');
+  	}
+// Pokedex : 437
+    if (message.content === '?bronzong') {
+    	message.channel.send('```md\nBronzong\n> PokeDex Number : 437\n> Egg Group : Genderless\n> Evolution : Bronzor → Bronzong (Lv.33)\n#Map                Region  Type    Time    Rarity      Level   Item\nAbundant Shrine     Sinnoh  Grass   M/D/N   Commom      48-50   -\nAbundant Shrine     Sinnoh  Grass   M/D/N   Horde       46-47   -\nAbundant Shrine     Sinnoh  D.Grass M/D/N   Commom      53-55   -\nMT.Coronet          Sinnoh  Cave    M/D/N   Commom      37-42   -\nMT.Coronet          Sinnoh  Cave    M/D/N   Horde       37      -\nMT.Coronet          Sinnoh  Grass   M/D/N   Rare        39-40   -\nTurnback Cave       Sinnoh  Inside  M/D/N   Uncommom    45-66   -\n```');
+  	}
+// Pokedex : 438
+    if (message.content === '?bonsly') {
+    	message.channel.send('```md\nBonsly\n> PokeDex Number : 438\n> Egg Group : Cannot Breed\n> Evolution : Bonsly → Sudowoodo (Lv.Up + Mimic)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 439
+    if (message.content === '?mimejr') {
+    	message.channel.send('```md\nMime Jr.\n> PokeDex Number : 439\n> Egg Group : Cannot Breed\n> Evolution : Mime Jr. → Mr.Mime (Lv.Up + Mimic)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 440
+    if (message.content === '?happiny') {
+    	message.channel.send('```md\nHappiny\n> PokeDex Number : 440\n> Egg Group : Cannot Breed\n> Evolution : Happiny → Chansey (Lv.Up+ Hold Ovalstone + Day Time) → Blissey (Happiness)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 441
+    if (message.content === '?chatot') {
+    	message.channel.send('```md\nChatot\n> PokeDex Number : 441\n> Egg Group : Flying\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 213           Sinnoh  Grass   M/D     Commom      23-25   -\nRoute 213           Sinnoh  Grass   M/D     Horde       22-23   -\nRoute 218           Sinnoh  Grass   M/D     Uncommom    28-30   -\nRoute 222           Sinnoh  Grass   M/D     Rare        38-41   -\nRoute 224           Sinnoh  Grass   M/D     Uncommom    52-54   -\n```');
+  	}
+// Pokedex : 442
+    if (message.content === '?spiritomb') {
+    	message.channel.send('```md\nSpiritomb\n> PokeDex Number : 442\n> Egg Group : Chaos\n#Map                Region  Type    Time    Rarity      Level   Item\nTurnback Cave       Sinnoh  Rocks   M/D/N   V.Rare      50-55   -\n```');
+  	}
+// Pokedex : 443
+    if (message.content === '?gible') {
+    	message.channel.send('```md\nGible\n> PokeDex Number : 443\n> Egg Group : Monster , Dragon\n> Evolution : Gible → Garbite (Lv.24) → Garchomp (Lv.48)\n#Map                Region  Type    Time    Rarity      Level   Item\nWayward Cave        Sinnoh  Cave    M/D/N   Commom      17-20   -\nWayward Cave        Sinnoh  Cave    M/D/N   Horde       15-17   -\n```');
+  	}
+// Pokedex : 444
+    if (message.content === '?gabite') {
+    	message.channel.send('```md\nGarbite\n> PokeDex Number : 444\n> Egg Group : Monster , Dragon\n> Evolution : Gible → Garbite (Lv.24) → Garchomp (Lv.48)\n#Map                Region  Type    Time    Rarity      Level   Item\nVictory Road        Sinnoh  Cave    M/D/N   Rare        41-50   -\nVictory Road        Sinnoh  Cave    M/D/N   Horde       47-49   -\n```');
+  	}
+// Pokedex : 445
+    if (message.content === '?garchomp') {
+    	message.channel.send('```md\nGarchomp\n> PokeDex Number : 445\n> Egg Group : Monster , Dragon\n> Evolution : Gible → Garbite (Lv.24) → Garchomp (Lv.48)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 446
+    if (message.content === '?munchlax') {
+    	message.channel.send('```md\nMunchlax\n> PokeDex Number : 446\n> Egg Group : Cannot Breed\n> Evolution : Munchlax → Snorlax (Happiness)\n#Map                Region  Type    Time    Rarity      Level   Item\nHoney Tree          Sinnoh  H.Tree  M/D/N   V.Rare      5-20    -\n```');
+  	}
+// Pokedex : 447
+    if (message.content === '?riolu') {
+    	message.channel.send('```md\nRiolu\n> PokeDex Number : 447\n> Egg Group : Cannot Breed\n> Evolution : Riolu → Lucario (Happiness + Day Time)\n#Map                Region  Type    Time    Rarity      Level   Item\nChallengers Cave   Unova   Cave    M/D/N   Rare        49-50   -\nGuidance Chamber    Unova   D.Cloud M/D/N   Special     36-41   -\nPinwheel Forest     Unova   Grass   M/D/N   Special     13-15   -\nIron Island         Sinnoh  Cave    M/D/N   Rare        30      -\n```');
+  	}
+// Pokedex : 448
+    if (message.content === '?lucario') {
+    	message.channel.send('```md\nLucario\n> PokeDex Number : 448\n> Egg Group : Field , Humanoid\n> Evolution : Riolu → Lucario (Happiness + Day Time)\n#Map                Region  Type    Time    Rarity      Level   Item\nChallengers Cave   Unova   D.Cloud M/D/N   Special     60-65    -\nGuidance Chamber    Unova   D.Cloud M/D/N   Special     36-41    -\n```');
+  	}
+// Pokedex : 449
+    if (message.content === '?hippopotas') {
+    	message.channel.send('```md\nHippopotas\n> PokeDex Number : 449\n> Egg Group : Field\n> Evolution : Hippopotas → Hippowdon (Lv.34)\n#Map                Region  Type    Time    Rarity      Level   Item\nManiac Tunnel       Sinnoh  Cave    M/D/N   Commom      22-26   -\nManiac Tunnel       Sinnoh  Cave    M/D/N   Horde       22-25   -\nRuin Maniac Cave    Sinnoh  Cave    M/D/N   Uncommom    22-25   -\n```');
+  	}
+// Pokedex : 450
+    if (message.content === '?hippowdon') {
+    	message.channel.send('```md\nHippowdon\n> PokeDex Number : 450\n> Egg Group : Field\n> Evolution : Hippopotas → Hippowdon (Lv.34)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 228           Sinnoh  Grass   M/D/N   Commom      50-51   -\n```');
+  	}
+// Pokedex : 451
+    if (message.content === '?skorupi') {
+    	message.channel.send('```md\nSkorupi\n> PokeDex Number : 451\n> Egg Group : Bug , Water C\n> Evolution : Skorupi → Drapion (Lv.40)\n#Map                Region  Type    Time    Rarity      Level   Item\nGreat Marsh         Sinnoh  Inside  M/D/N   V.Rare      27-30   -\n```');
+  	}
+// Pokedex : 452
+    if (message.content === '?drapion') {
+    	message.channel.send('```md\nDrapion\n> PokeDex Number : 452\n> Egg Group : Bug , Water C\n> Evolution : Skorupi → Drapion (Lv.40)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 453
+    if (message.content === '?croagunk') {
+    	message.channel.send('```md\nCroagunk\n> PokeDex Number : 453\n> Egg Group : Humanoid\n> Evolution : Croagunk → Toxicroak (Lv.37)\n#Map                Region  Type    Time    Rarity      Level   Item\nGreat Marsh         Sinnoh  Inside  M/D/N   V.Rare      27-30   -\nRoute 212           Sinnoh  Grass   M/D/N   Rare        24-25   -\n```');
+  	}
+// Pokedex : 454
+    if (message.content === '?toxicroak') {
+    	message.channel.send('```md\nToxicroak\n> PokeDex Number : 454\n> Egg Group : Humanoid\n> Evolution : Croagunk → Toxicroak (Lv.37)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 455
+    if (message.content === '?carnivine') {
+    	message.channel.send('```md\nCarnivine\n> PokeDex Number : 455\n> Egg Group : Plant\n#Map                Region  Type    Time    Rarity      Level   Item\nGreat Marsh         Sinnoh  Inside  M/D/N   V.Rare      27-30   -\n```');
+  	}
+// Pokedex : 456
+    if (message.content === '?finneon') {
+    	message.channel.send('```md\nFinneon\n> PokeDex Number : 456\n> Egg Group : Water B\n> Evolution : Finneon → Lumineon (Lv.31)\n#Map                Region  Type    Time    Rarity      Level   Item\nP2 Laboratory       Unova   S.Rod   M/D/N   V.Commom    35-55   -\nRoute 17            Unova   S.Rod   M/D/N   V.Commom    35-55   -\nRoute 18            Unova   S.Rod   M/D/N   V.Commom    35-55   -\nCanalave City       Sinnoh  G.Rod   M/D/N   V.Commom    10-25   -\nFuego Ironworks     Sinnoh  G.Rod   M/D/N   V.Commom    10-25   -\nIron Island         Sinnoh  G.Rod   M/D/N   V.Commom    10-25   -\nRoute 205           Sinnoh  G.Rod   M/D/N   V.Commom    10-25   -\nRoute 218           Sinnoh  G.Rod   M/D/N   V.Commom    10-25   -\nRoute 219           Sinnoh  G.Rod   M/D/N   V.Commom    10-25   -\nRoute 220           Sinnoh  G.Rod   M/D/N   V.Commom    10-25   -\nRoute 221           Sinnoh  G.Rod   M/D/N   V.Commom    10-25   -\nValley Windworks    Sinnoh  G.Rod   M/D/N   V.Commom    10-25   -\n```');
+  	}
+// Pokedex : 457
+    if (message.content === '?lumineon') {
+    	message.channel.send('```md\nLumineon\n> PokeDex Number : 457\n> Egg Group : Water B\n> Evolution : Finneon → Lumineon (Lv.31)\n#Map                Region  Type    Time    Rarity      Level   Item\nP2 Laboratory       Unova   Fishing M/D/N   Special     35-70   -\nRoute 17            Unova   Fishing M/D/N   Special     55-60   -\nRoute 18            Unova   Fishing M/D/N   Special     55-60   -\nCanalave City       Sinnoh  S.Rod   M/D/N   V.Commom    31-55   -\nFuego Ironworks     Sinnoh  S.Rod   M/D/N   V.Commom    31-55   -\nIron Island         Sinnoh  S.Rod   M/D/N   V.Commom    31-55   -\nRoute 205           Sinnoh  S.Rod   M/D/N   V.Commom    31-50   -\nRoute 218           Sinnoh  S.Rod   M/D/N   V.Commom    31-55   -\nRoute 219           Sinnoh  S.Rod   M/D/N   Rare        31-35   -\nRoute 219           Sinnoh  S.Rod   M/D/N   V.Commom    31-55   -\nRoute 220           Sinnoh  S.Rod   M/D/N   Rare        31-55   -\nRoute 220           Sinnoh  S.Rod   M/D/N   Commom      31-55   -\nRoute 221           Sinnoh  S.Rod   M/D/N   Rare        31-55   -\nRoute 221           Sinnoh  S.Rod   M/D/N   V.Commom    31-55   -\nValley Windworks    Sinnoh  S.Rod   M/D/N   V.Commom    31-50   -\n```');
+  	}
+// Pokedex : 458
+    if (message.content === '?mantyke') {
+    	message.channel.send('```md\nMantyke\n> PokeDex Number : 458\n> Egg Group : Cannot Breed\n> Evolution : Mantyke → Mantine (Lv.Up + Remoriad In Party)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 459
+    if (message.content === '?snover') {
+    	message.channel.send('```md\nSnover\n> PokeDex Number : 459\n> Egg Group : Monster , Plant\n> Evolution : Snover → Abomasnow (Lv.40)\n#Map                Region  Type    Time    Rarity      Level   Item\nAcuity Lakefront    Sinnoh  Grass   M/D     Horde       32-33   -\nAcuity Lakefront    Sinnoh  Grass   M/D/N   V.Common    32-35   -\nLake Acuity         Sinnoh  Grass   M/D/N   Horde       36-38   -\nLake Acuity         Sinnoh  Grass   M/D/N   V.Common    38-40   -\nMT.Coronet          Sinnoh  Grass   M/D/N   Common      36-38   -\nRoute 216           Sinnoh  Grass   M/D/N   Horde       32-33   -\nRoute 216           Sinnoh  Grass   M/D/N   V.Common    32-35   -\nRoute 217           Sinnoh  Grass   M/D/N   V.Common    32-35   -\nRoute 217           Sinnoh  Grass   M/D/N   Horde       32-33   -\n```');
+  	}
+// Pokedex : 460
+    if (message.content === '?abomasnow') {
+    	message.channel.send('```md\nAbomasnow\n> PokeDex Number : 460\n> Egg Group : Monster , Plant\n> Evolution : Snover → Abomasnow (Lv.40)\n#Map                Region  Type    Time    Rarity      Level   Item\nMT.Coronet          Sinnoh  Grass   M/D/N   Horde       40      -\nMT.Coronet          Sinnoh  Grass   M/D/N   Common      40      -\n```');
+  	}
+// Pokedex : 461
+    if (message.content === '?weavile') {
+    	message.channel.send('```md\nWeavile\n> PokeDex Number : 461\n> Egg Group : Field\n> Evolution : Sneasel → Weavile (Lv.Up + Hold Razor Claw + Night Time)\n#Map                Region  Type    Time    Rarity      Level   Item\nDragonspiral Tower  Unova   Grass   M/D/N   Special     37-38   -\nGiant Chasm         Unova   D.Cloud M/D/N   Special     60-65   -\n```');
+  	}
+// Pokedex : 462
+    if (message.content === '?magnezone') {
+    	message.channel.send('```md\nMagnezone\n> PokeDex Number : 462\n> Egg Group : Genderless\n> Evolution : Magnemite → Magneton (Lv.30) → Magnezone (Lv.Up at Magnetic Field)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 463
+    if (message.content === '?lickilicky') {
+    	message.channel.send('```md\nLickilicky\n> PokeDex Number : 463\n> Egg Group : Monster\n> Evolution : Lickitung → Lickilicky (Lv.Up + Rollout)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 464
+    if (message.content === '?rhyperior') {
+    	message.channel.send('```md\nRhyperior\n> PokeDex Number : 464\n> Egg Group : Monster , Field\n> Evolution : Rhyhorn → Rhydon (Lv.42) → Rhyperior (Hold Protector + Trade)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 465
+    if (message.content === '?tangrowth') {
+    	message.channel.send('```md\nTangrowth\n> PokeDex Number : 465\n> Egg Group : Plant\n> Evolution : Tangela → Tangrowth (Lv.Up + AncientPower)\n#Map                Region  Type    Time    Rarity      Level   Item\nGiant Chasm         Unova   Grass   M/D/N   Special     60-65   -\nRoute 13            Unova   Grass   M/D/N   Special     60-65   -\n```');
+  	}
+// Pokedex : 466
+    if (message.content === '?electivire') {
+    	message.channel.send('```md\nElectivire\n> PokeDex Number : 466\n> Egg Group : Humanoid\n> Evolution : Elekid → Electabuzz (Lv.30) → Electivire (Hold Electirizer + Trade)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 467
+    if (message.content === '?magmortar') {
+    	message.channel.send('```md\nMagmortar\n> PokeDex Number : 467\n> Egg Group : Humanoid\n> Evolution : Magby → Magmar (Lv.30) → Magmortar (Hold Magmarizer + Trade)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 468
+    if (message.content === '?togekiss') {
+    	message.channel.send('```md\nTogekiss\n> PokeDex Number : 468\n> Egg Group : Flying , Fairy\n> Evolution : Togepi → Togetic (Happiness) → Togekiss (Use Shinystone)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 469
+    if (message.content === '?yanmega') {
+    	message.channel.send('```md\nYanmega\n> PokeDex Number : 469\n> Egg Group : Bug\n> Evolution : Yanma → Yanmega (Lv.Up + AncientPower)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 470
+    if (message.content === '?leafeon') {
+    	message.channel.send('```md\nLeafeon\n> PokeDex Number : 470\n> Egg Group 1 : Field\n> Evolution 2 : Eevee → Vaporeon (Use Waterstone)\n> Evolution 3 : Eevee → Jolteon (Use Thunderstone)\n> Evolution 4 : Eevee → Flareon (Use Firestone)\n> Evolution 5 : Eevee → Espeon (Happiness + Day Time)\n> Evolution 6 : Eevee → Umbreon (Happiness + Night Time)\n> Evolution 7 : Eevee → Leafeon (Lv.Up near Mossy Rock)\n> Evolution 8 : Eevee → Glaceon (Lv.Up near Icy Rock)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 471
+    if (message.content === '?glaceon') {
+    	message.channel.send('```md\nGlaceon\n> PokeDex Number : 471\n> Egg Group 1 : Field\n> Evolution 2 : Eevee → Vaporeon (Use Waterstone)\n> Evolution 3 : Eevee → Jolteon (Use Thunderstone)\n> Evolution 4 : Eevee → Flareon (Use Firestone)\n> Evolution 5 : Eevee → Espeon (Happiness + Day Time)\n> Evolution 6 : Eevee → Umbreon (Happiness + Night Time)\n> Evolution 7 : Eevee → Leafeon (Lv.Up near Mossy Rock)\n> Evolution 8 : Eevee → Glaceon (Lv.Up near Icy Rock)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 472
+    if (message.content === '?gliscor') {
+    	message.channel.send('```md\nGliscor\n> PokeDex Number : 472\n> Egg Group : Bug\n> Evolution : Gligar → Gliscor (Lv.Up + Hold Razor Fang + Night Time)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 11            Unova   Grass   M/D/N   Special     60-65   -\nRoute 11            Unova   Shadow  M/D/N   Special     60-65   -\nRoute 15            Unova   Grass   M/D/N   Special     60-65   -\nRoute 15            Unova   Shadow  M/D/N   Special     60-65   -\nVictory Road        Unova   Shadow  M/D/N   Special     45-48   -\n```');
+  	}
+// Pokedex : 473
+    if (message.content === '?mamoswine') {
+    	message.channel.send('```md\nMamoswine\n> PokeDex Number : 473\n> Egg Group : Field\n> Evolution : Swinub → Piloswine (Lv.33) → Mamoswine (Lv.Up + AncientPower)\n#Map                Region  Type    Time    Rarity      Level   Item\nDragonspiral Tower  Unova   Grass   M/D/N   Special     37-38   -\nGiant Chasm         Unova   D.Cloud M/D/N   Special     60-65   -\nGiant Chasm         Unova   Grass   M/D/N   Special     60-65   -\n```');
+  	}
+// Pokedex : 474
+    if (message.content === '?porygonz') {
+    	message.channel.send('```md\nPorygon-Z\n> PokeDex Number : 474\n> Egg Group : Genderless\n> Evolution : Porygon → Porygon2 (Hold Up-Grade + Trade) → Porygon-Z (Hold Dubious Disc + Trade)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 475
+    if (message.content === '?gallade') {
+    	message.channel.send('```md\nGallade\n> PokeDex Number : 475\n> Egg Group : Chaos\n> Evolution : Ralts → Kirlia (Lv.20) → Gardevoir (Lv.30)\n> Evolution : Ralts → Kirlia (Lv.20) → Gallade (Use Dawnstone + Male Gender)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 476
+    if (message.content === '?probopass') {
+    	message.channel.send('```md\nProbopass\n> PokeDex Number : 476\n> Egg Group : Mineral\n> Evolution : Nosepass → Probopass (Lv.Up at Magnetic Field)\n#Map                Region  Type    Time    Rarity      Level   Item\nMT.Coronet          Sinnoh  Rocks   M/D/N   Uncommom    42      -\n```');
+  	}
+// Pokedex : 477
+    if (message.content === '?dusknoir') {
+    	message.channel.send('```md\nDusknoir\n> PokeDex Number : 477\n> Egg Group : Chaos\n> Evolution : Duskull → Dusclops (Lv.37) → Dusknoir (Hold Reaper Cloth + Trade)\nNo Wild Locations Found.```');
+  	}
+// Pokedex : 478
+    if (message.content === '?froslass') {
+    	message.channel.send('```md\nFroslass\n> PokeDex Number : 478\n> Egg Group : Fairy , Mineral\n> Evolution : Snorunt → Glalie (Lv.42)\n> Evolution : Snorunt → Froslass (Use Dawnstone + Female Gender)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 479
+    if (message.content === '?rotom') {
+    	message.channel.send('```md\nRotom\n> PokeDex Number : 479\n> Egg Group : Genderless\n#Map                Region  Type    Time    Rarity      Level   Item\nOld Chateau         Sinnoh  Inside  M/D/N   Rare        15      -\n```');
+  	}
+
+
+
+
+
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 4
+    if (message.content === '?x') {
+    	message.channel.send('x');
   	}
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 client.login(process.env.BOT_TOKEN);
