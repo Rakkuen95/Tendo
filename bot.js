@@ -18,12 +18,11 @@ client.on('message', message => {
     if (message.content === '?random') {
     	message.channel.send(Math.floor(Math.random() * 100) + 1);
   	}
-    if (message.content === '?avatar') {
-      message.reply(message.author.displayAvatarURL());
-    }
-    if (message.content === '?emelia') {
-    const attachment = new MessageAttachment('https://steamuserimages-a.akamaihd.net/ugc/853846651767258913/852DF0F219770551938B1981155073AE3B2A96FF/');
-      message.channel.send(attachment);
+  if (message.content === '!rip') {
+    // Create the attachment using MessageAttachment
+    const attachment = new MessageAttachment('https://i.imgur.com/w3duR07.png');
+    // Send the attachment in the message channel
+    message.channel.send(attachment);
   }
 
 
