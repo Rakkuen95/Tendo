@@ -32,7 +32,7 @@ client.on('message', message => {
     // Read more about all that you can do with the constructor
     // over at https://discord.js.org/#/docs/main/master/class/MessageEmbed
     const embed = new MessageEmbed()
-	.setColor('#00a2ff')
+	.setColor('#c500ff')
 	.setTitle('Dive Ball')
 	.setDescription('**Price** : $1,500\n**Rate** : x3.0\n**Effect** : Diving , Surfing , or Fishing\n**Location** : Mossdeep City\n')
 	.setThumbnail('https://cdn.bulbagarden.net/upload/9/9a/Dream_Dive_Ball_Sprite.png')
