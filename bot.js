@@ -21,6 +21,15 @@ client.on('message', message => {
     if (message.content === '?random') {
     	message.channel.send(Math.floor(Math.random() * 100) + 1);
   	}
+// Send the user's avatar URL
+    if (message.content === '?avatar') {
+        message.reply(message.author.displayAvatarURL());
+        }
+
+
+
+
+
 // Dive Ball
   if (message.content === '^item dive ball') {
     const embed = new MessageEmbed()
