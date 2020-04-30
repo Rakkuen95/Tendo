@@ -45,7 +45,7 @@ client.on('message', message => {
 	.setDescription('**Price** : $1,500\n**Rate** : x3.0\n**Effect** : Diving , Surfing , or Fishing\n**Location** : Mossdeep City\n')
 	.setThumbnail('https://cdn.bulbagarden.net/upload/9/9a/Dream_Dive_Ball_Sprite.png')
 	.setTimestamp()
-	.setFooter('PokeMMO Vietnamese', 'https://apkdirectory.com/logos/pokemmo.png');
+	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
     message.channel.send(embed);
   }
   if (message.content === '^s bulbasaur') {
