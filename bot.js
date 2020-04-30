@@ -38,7 +38,7 @@ client.on('message', message => {
     if (message.content === '?random') {
     	message.channel.send(Math.floor(Math.random() * 100) + 1);
   	}
-  if (message.content === '?item dive ball') {
+  if (message.content === '^item dive ball') {
     const embed = new MessageEmbed()
 	.setColor('#c500ff')
 	.setTitle('Dive Ball')
@@ -48,17 +48,16 @@ client.on('message', message => {
 	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
     message.channel.send(embed);
   }
-  if (message.content === '^s bulbasaur') {
+  if (message.content === '^item dusk ball') {
     const embed = new MessageEmbed()
 	.setColor('#c500ff')
-	.setTitle('Bulbasaur')
-	.setDescription('```md\n> PokeDex Number : 001\n> Egg Group : Monster , Plant\n> Evolution : Bulbasaur → Ivysaur (Lv.16) → Venusaur (Lv.32)\n#Map                Type    Time    Rarity      Level   Item\nRoute 5             Grass   M/D/N   Rare        10      -\n```')
+	.setTitle('Dive Ball')
+	.setDescription('**Price** : $1,400\n**Rate** : x3.5\n**Effect** : Inside a Cave or Night Time**Location** : Shopping Mall or Veilstones Department Store\n')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/5/59/Dream_Dusk_Ball_Sprite.png')
 	.setTimestamp()
 	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
     message.channel.send(embed);
   }
-
-
 
 // POKEMMO DEX NATIONAL 
 // GEN-1
