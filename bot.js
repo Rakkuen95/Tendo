@@ -1246,184 +1246,184 @@ client.on('message', message => {
     	message.channel.send('```md\nDarumaka\n> PokeDex Number : 554\n> Egg Group : Field\n> Evolution : Darumaka → Darmanitan (Lv.35)\n#Map                Region  Type    Time    Rarity      Level   Item\nDesert Resort       Unova   Grass   M/D/N   V.Common    19-20   -\nDesert Resort       Unova   Grass   M/D/N   Horde       17-19   -\nRoute 4             Unova   Grass   M/D/N   V.Common    15-18   -\nRoute 4             Unova   Grass   M/D/N   Horde       14-15   -\n```');
   	}
 // Pokedex : 555
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?darmanitan') {
+    	message.channel.send('```md\nDarmanitan\n> PokeDex Number : 555\n> Egg Group : Field\n> Evolution : Darumaka → Darmanitan (Lv.35)\nNo wild location found.\n```');
   	}
 // Pokedex : 556
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?maractus') {
+    	message.channel.send('```md\nMaractus\n> PokeDex Number : 556\n> Egg Group : Plant\n#Map                Region  Type    Time    Rarity      Level   Item\nDesert Resort       Unova   Grass   M/D/N   Uncommon    20      -\nDesert Resort       Unova   Grass   N       Horde       17-19   -\n```');
   	}
 // Pokedex : 557
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?dwebble') {
+    	message.channel.send('```md\nDwebble\n> PokeDex Number : 557\n> Egg Group : Bug\n> Evolution : Dwebble → Crustle (Lv.34)\n#Map                Region  Type    Time    Rarity      Level   Item\nDesert Resort       Unova   Grass   M/D/N   Uncommon    20-22   -\nRoute 18            Unova   Grass   M/D/N   Common      30-31   -\n```');
   	}
 // Pokedex : 558
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?crustle') {
+    	message.channel.send('```md\nCrustle\n> PokeDex Number : 558\n> Egg Group : Bug\n> Evolution : Dwebble → Crustle (Lv.34)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 18            Unova   D.Grass M/D/N   Common      34-35   -\nRoute 18            Unova   D.Grass M/D/N   Horde       34      -\n```');
   	}
 // Pokedex : 559
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?scraggy') {
+    	message.channel.send('```md\nScraggy\n> PokeDex Number : 559\n> Egg Group : Field , Dragon\n> Evolution : Scraggy → Scrafty (Lv.39)\n#Map                Region  Type    Time    Rarity      Level   Item\nDesert Resort       Unova   Grass   M/D/N   V.Common    20      -\nP2 Laboratory       Unova   Grass   M/D/N   Common      29-31   -\nRoute 1             Unova   D.Grass M/D/N   V.Common    32-35   -\nRoute 1             Unova   Grass   M/D/N   Special     3-4     -\nRoute 4             Unova   Grass   M/D/N   V.Common    16-17   -\nRoute 18            Unova   Grass   M/D/N   V.Common    28-31   -\nRoute 18            Unova   Grass   M/D/N   Horde       27-28   -\nRoute 18            Unova   D.Grass M/D/N   V.Common    32-35   -\n```');
   	}
 // Pokedex : 560
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?scrafty') {
+    	message.channel.send('```md\nScrafty\n> PokeDex Number : 560\n> Egg Group : Field , Dragon\n> Evolution : Scraggy → Scrafty (Lv.39)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 18            Unova   Grass   M/D/N   Special     39-40   -\n```');
   	}
 // Pokedex : 561
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?sigilyph') {
+    	message.channel.send('```md\nSigilyph\n> PokeDex Number : 561\n> Egg Group : Flying\n#Map                Region  Type    Time    Rarity      Level   Item\nDesert Resort       Unova   Shadow  M/D/N   Special     22-24   -\nDesert Resort       Unova   Grass   M/D/N   Rare        20      -\nDesert Resort       Unova   Grass   M/D/N   Horde       17-19   -\nRoute 4             Unova   Shadow  M/D/N   Special     19-21   -\n```');
   	}
 // Pokedex : 562
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?yamask') {
+    	message.channel.send('```md\nYamask\n> PokeDex Number : 562\n> Egg Group : Mineral , Chaos\n> Evolution : Yamask → Cofagrigus (Lv.34)\n#Map                Region  Type    Time    Rarity      Level   Item\nRelic Castle        Unova   Cave    M/D/N   Rare        19-22   -\nRelic Castle        Unova   Cave    M/D/N   Horde       18-19   -\n```');
   	}
 // Pokedex : 563
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?cofagrigus') {
+    	message.channel.send('```md\nCofagrigus\n> PokeDex Number : 563\n> Egg Group : Mineral , Chaos\n> Evolution : Yamask → Cofagrigus (Lv.34)\n#Map                Region  Type    Time    Rarity      Level   Item\nRelic Castle        Unova   Cave    M/D/N   V.Common    34-49   -\nRelic Castle        Unova   Cave    M/D/N   Horde       34-47   -\n```');
   	}
 // Pokedex : 564
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?tirtouga') {
+    	message.channel.send('```md\nTirtouga\n> PokeDex Number : 564\n> Egg Group : Water A , Water C\n> Evolution : Tirtouga → Carracosta (Lv.37)\nNo wild location found.\n```');
   	}
 // Pokedex : 565
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?carracosta') {
+    	message.channel.send('```md\nCarracosta\n> PokeDex Number : 565\n> Egg Group : Water A , Water C\n> Evolution : Tirtouga → Carracosta (Lv.37)\nNo wild location found.\n```');
   	}
 // Pokedex : 566
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?archen') {
+    	message.channel.send('```md\nArchen\n> PokeDex Number : 566\n> Egg Group : Flying , Water C\n> Evolution : Archen → Archeops (Level 37)\nNo wild location found.\n```');
   	}
 // Pokedex : 567
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?archeops') {
+    	message.channel.send('```md\nArcheops\n> PokeDex Number : 567\n> Egg Group : Flying , Water C\n> Evolution : Archen → Archeops (Lv.37)\nNo wild location found.\n```');
   	}
 // Pokedex : 568
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?trubbish') {
+    	message.channel.send('```md\nTrubbish\n> PokeDex Number : 568\n> Egg Group : Mineral\n> Evolution : Trubbish → Garbodor (Lv.36)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 5             Unova   Grass   M/D/N   Common      19-21   -\nRoute 5             Unova   D.Grass M/D/N   Common      22-24   -\nRoute 16            Unova   Grass   M/D/N   Common      19-21   -\nRoute 16            Unova   D.Grass M/D/N   Common      22-24   -\nRoute 16            Unova   D.Grass M/D/N   Horde       21-22   -\n```');
   	}
 // Pokedex : 569
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?garbodor') {
+    	message.channel.send('```md\nGarbodor\n> PokeDex Number : 569\n> Egg Group : Mineral\n> Evolution : Trubbish → Garbodor (Lv.36)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 9             Unova   Grass   M/D/N   Uncommon    31-33   -\nRoute 9             Unova   D.Grass M/D/N   Uncommon    31-33   -\n```');
   	}
 // Pokedex : 570
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?zorua') {
+    	message.channel.send('```md\nZorua\n> PokeDex Number : 570\n> Egg Group : Field\n> Evolution : Zorua → Zoroark (Lv.30)\n#Map                Region  Type    Time    Rarity      Level   Item\nLostlorn Forest     Unova   Grass   D       Horde       18-19   -\n```');
   	}
 // Pokedex : 571
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?zoroark') {
+    	message.channel.send('```md\nZoroark\n> PokeDex Number : 571\n> Egg Group : Field\n> Evolution : Zorua → Zoroark (Lv.30)\nNo wild location found.\n```');
   	}
 // Pokedex : 572
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?minccino') {
+    	message.channel.send('```md\nMinccino\n> PokeDex Number : 572\n> Egg Group : Field\n> Evolution : Minccino → Cinccino (Use Shinystone)\n#Map                Region  Type    Time    Rarity      Level   Item\nCold Storage        Unova   Grass   M/D/N   Uncommon    20      -\nCold Storage        Unova   D.Grass M/D/N   Uncommon    24      -\nRoute 5             Unova   Grass   M/D/N   V.Common    19-22   -\nRoute 5             Unova   Grass   M/D/N   Horde       18-19   -\nRoute 5             Unova   D.Grass M/D/N   V.Common    22-25   -\nRoute 9             Unova   Grass   M/D/N   Common      32      -\nRoute 9             Unova   D.Grass M/D/N   Common      32      -\nRoute 16            Unova   Grass   M/D/N   V.Common    19-22   -\nRoute 16            Unova   D.Grass M/D/N   V.Common    22-25   -\nRoute 16            Unova   D.Grass M/D/N   Horde       21-22   -\n```');
   	}
 // Pokedex : 573
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?cinccino') {
+    	message.channel.send('```md\nCinccino\n> PokeDex Number : 573\n> Egg Group : Field\n> Evolution : Minccino → Cinccino (Use Shinystone)\n#Map                Region  Type    Time    Rarity      Level   Item\nCold Storage        Unova   Grass   M/D/N   Special     28-29   -\nRoute 5             Unova   Grass   M/D/N   Special     23-25   -\nRoute 9             Unova   Grass   M/D/N   Special     41-42   -\nRoute 16            Unova   Grass   M/D/N   Special     23-25   -\n```');
   	}
 // Pokedex : 574
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?gothita') {
+    	message.channel.send('```md\nGothita\n> PokeDex Number : 574\n> Egg Group : Humanoid\n> Evolution : Gothita → Gothorita (Lv.32) → Gothitelle (Lv.41)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 5             Unova   Grass   M/D/N   Common      19-22   -\nRoute 5             Unova   D.Grass M/D/N   Common      22-25   -\nRoute 16            Unova   Grass   M/D/N   Common      19-22   -\nRoute 16            Unova   Grass   M/D/N   Horde       18-19   -\nRoute 16            Unova   D.Grass M/D/N   Common      22-25   -\n```');
   	}
 // Pokedex : 575
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?gothorita') {
+    	message.channel.send('```md\nGothorita\n> PokeDex Number : 575\n> Egg Group : Humanoid\n> Evolution : Gothita → Gothorita (Lv.32) → Gothitelle (Lv.41)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 9             Unova   Grass   M/D/N   Common      32-34   -\nRoute 9             Unova   D.Grass M/D/N   Common      32-34   -\nRoute 9             Unova   D.Grass M/D/N   Horde       32      -\n```');
   	}
 // Pokedex : 576
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?gothitelle') {
+    	message.channel.send('```md\nGothitelle\n> PokeDex Number : 576\n> Egg Group : Humanoid\n> Evolution : Gothita → Gothorita (Lv.32) → Gothitelle (Lv.41)\nNo wild location found.\n```');
   	}
 // Pokedex : 577
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?solosis') {
+    	message.channel.send('```md\nSolosis\n> PokeDex Number : 577\n> Egg Group : Chaos\n> Evolution : Solosis → Duosion (Lv.32) → Reuniclus (Lv.41)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 5             Unova   Grass   M/D/N   Common      19-22   -\nRoute 5             Unova   D.Grass M/D/N   Common      22-25   -\nRoute 16            Unova   Grass   M/D/N   Common      19-22   -\nRoute 16            Unova   Grass   M/D/N   Horde       19      -\nRoute 16            Unova   D.Grass M/D/N   Common      22-25   -\n```');
   	}
 // Pokedex : 578
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?duosion') {
+    	message.channel.send('```md\nDuosion\n> PokeDex Number : 578\n> Egg Group : Chaos\n> Evolution : Solosis → Duosion (Lv.32) → Reuniclus (Lv.41)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 9             Unova   Grass   M/D/N   Common      32-34   -\nRoute 9             Unova   D.Grass M/D/N   Common      32-34   -\nRoute 9             Unova   Grass   M/D/N   Horde       32      -\n```');
   	}
 // Pokedex : 579
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?reuniclus') {
+    	message.channel.send('```md\nReuniclus\n> PokeDex Number : 579\n> Egg Group : Chaos\n> Evolution : Solosis → Duosion (Lv.32) → Reuniclus (Lv.41)\nNo wild location found.\n```');
   	}
 // Pokedex : 580
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?ducklett') {
+    	message.channel.send('```md\nDucklett\n> PokeDex Number : 580\n> Egg Group : Water A , Flying\n> Evolution : Ducklett → Swanna (Lv.35)\n#Map                Region  Type    Time    Rarity      Level   Item\nChargestone Cave    Unova   Shadow  M/D/N   Special     29-30   -\nCold Storage        Unova   Shadow  M/D/N   Special     28-29   -\nDriftveil D.Bridge  Unova   Shadow  M/D/N   Special     27-28   -\nPinwheel Forest     Unova   Shadow  M/D/N   Special     13-15   -\nRoute 3             Unova   Shadow  M/D/N   Special     12-14   -\nRoute 6             Unova   Shadow  M/D/N   Special     29-30   -\nTwist Mountain      Uonva   Shadow  M/D/N   Special     33-34   -\n```');
   	}
 // Pokedex : 581
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?swanna') {
+    	message.channel.send('```md\nSwanna\n> PokeDex Number : 581\n> Egg Group : Water A , Flying\n> Evolution : Ducklett → Swanna (Lv.35)\n#Map                Region  Type    Time    Rarity      Level   Item\nAbundant Shrine     Unova   Shadow  M/D/N   Special     60-65   -\nMarvelous Bridge    Unova   Grass   M/D/N   Special     47-50   -\nMarvelous Bridge    Unova   Shadow  M/D/N   Special     60-65   -\nMoor of Icirrus     Unova   Shadow  M/D/N   Special     39-40   -\nRoute 11            Unova   Shadow  M/D/N   Special     60-65   -\nRoute 14            Unova   Shadow  M/D/N   Special     60-65   -\nVillage Bridge      Unova   Shadow  M/D/N   Special     60-65   -\n```');
   	}
 // Pokedex : 582
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?vanillite') {
+    	message.channel.send('```md\nVanillite\n> PokeDex Number : 582\n> Egg Group : Mineral\n> Evolution : Vanillite → Vanillish (Lv.35) → Vanilluxe (Lv.47)\n#Map                Region  Type    Time    Rarity      Level   Item\nCold Storage        Unova   Grass   M/D/N   Horde       19-20   -\nCold Storage        Unova   D.Grass M/D/N   Horde       23-24   -\nCold Storage        Unova   Grass   M/D/N   V.Common    20-23   -\nCold Storage        Unova   D.Grass M/D/N   V.Common    24-27   -\nDragonspiral Tower  Unova   Grass   M/D/N   Common      31-33   -\nDragonspiral Tower  Unova   Grass   M/D/N   Horde       29-30   -\nRoute 6             Unova   Grass   M/D/N   Uncommon    23-25   -\nRoute 6             Unova   D.Grass M/D/N   Uncommon    27-29   -\n```');
   	}
 // Pokedex : 583
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?vanillish') {
+    	message.channel.send('```md\nVanillish\n> PokeDex Number : 583\n> Egg Group : Mineral\n> Evolution : Vanillite → Vanillish (Lv.35) → Vanilluxe (Lv.47)\n#Map                Region  Type    Time    Rarity      Level   Item\nDragonspiral Tower  Unova   D.Grass M/D/N   Common      35-37   -\nDragonspiral Tower  Unova   D.Grass M/D/N   Horde       35      -\n```');
   	}
 // Pokedex : 584
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?vanilluxe') {
+    	message.channel.send('```md\nVanilluxe\n> PokeDex Number : 584\n> Egg Group : Mineral\n> Evolution : Vanillite → Vanillish (Lv.35) → Vanilluxe (Lv.47)\nNo wild location found.\n```');
   	}
 // Pokedex : 585
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?deerling') {
+    	message.channel.send('```md\nDeerling\n> PokeDex Number : 585\n> Egg Group : Field\n> Evolution : Deerling → Sawsbuck (Lv.34)\n#Map                Region  Type    Time    Rarity      Level   Item\nDragonspiral Tower  Unova   Grass   M/D/N   V.Common    31-32   -\nDragonspiral Tower  Unova   Grass   M/D/N   Horde       29-30   -\nRoute 6             Unova   Grass   M/D/N   V.Common    23-25   -\nRoute 6             Unova   Grass   M/D/N   Horde       21-22   -\nRoute 6             Unova   D.Grass M/D/N   V.Common    26-28   -\nRoute 7             Unova   Grass   M/D/N   Common      26      -\nRoute 7             Unova   D.Grass M/D/N   Common      30      -\n```');
   	}
 // Pokedex : 586
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?sawsbuck') {
+    	message.channel.send('```md\nSawsbuck\n> PokeDex Number : 586\n> Egg Group : Field\n> Evolution : Deerling → Sawsbuck (Lv.34)\n#Map                Region  Type    Time    Rarity      Level   Item\nDragonspiral Tower  Unova   D.Grass M/D/N   V.Common    34-36   -\n```');
   	}
 // Pokedex : 587
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?emolga') {
+    	message.channel.send('```md\nEmolga\n> PokeDex Number : 587\n> Egg Group : Field\n#Map                Region  Type    Time    Rarity      Level   Item\nAbundant Shrine     Unova   Grass   M/D/N   Special     60-65   -\nDragonspiral Tower  Unova   Grass   M/D/N   Special     37-38   -\nGiant Chasm         Unova   Grass   M/D/N   Special     60-65   -\nLostlorn Forest     Unova   Grass   M/D/N   Special     24-26   -\nRoute 5             Unova   Grass   M/D/N   Special     23-25   -\nRoute 6             Unova   Grass   M/D/N   Special     29-30   -\nRoute 7             Unova   Grass   M/D/N   Special     31-32   -\nRoute 9             Unova   Grass   M/D/N   Special     41-42   -\nRoute 10            Unova   Grass   M/D/N   Special     34-44   -\nRoute 11            Unova   Grass   M/D/N   Special     60-65   -\nRoute 12            Unova   Grass   M/D/N   Special     60-65   -\nRoute 13            Unova   Grass   M/D/N   Special     60-65   -\nRoute 14            Unova   Grass   M/D/N   Special     60-65   -\nRoute 15            Unova   Grass   M/D/N   Special     60-65   -\nRoute 16            Unova   Grass   M/D/N   Special     23-25   -\nVillage Bridge      Unova   Grass   M/D/N   Special     60-65   -\n```');
   	}
 // Pokedex : 588
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?karrablast') {
+    	message.channel.send('```md\nKarrablast\n> PokeDex Number : 588\n> Egg Group : Bug\n> Evolution : Karrablast → Escavalier (Trade for Shelmet)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 6             Unova   Grass   M/D/N   Common      22-24   -\nRoute 6             Unova   Grass   M/D/N   Horde       21-22   -\nRoute 6             Unova   D.Grass M/D/N   Common      26-28   -\nRoute 11            Unova   Grass   M/D/N   Rare        49      -\nRoute 11            Unova   D.Grass M/D/N   Rare        54      -\n```');
   	}
 // Pokedex : 589
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?escavalier') {
+    	message.channel.send('```md\nEscavalier\n> PokeDex Number : 589\n> Egg Group : Bug\n> Evolution : Karrablast → Escavalier (Trade for Shelmet)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 6             Unova   Grass   M/D/N   Special     29-30   -\nRoute 11            Unova   Grass   M/D/N   Special     60-65   -\n```');
   	}
 // Pokedex : 590
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?foongus') {
+    	message.channel.send('```md\nFoongus\n> PokeDex Number : 590\n> Egg Group : Plant\n> Evolution : Foongus → Amoongus (Lv.39)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 6             Unova   Grass   M/D/N   Common      23-25   -\nRoute 6             Unova   D.Grass M/D/N   Common      27-29   -\nRoute 7             Unova   Grass   M/D/N   Uncommon    27-29   -\nRoute 7             Unova   D.Grass M/D/N   Uncommon    31-33   -\nRoute 10            Unova   Grass   M/D/N   Common      34-35   -\n```');
   	}
 // Pokedex : 591
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?amoogus') {
+    	message.channel.send('```md\nAmoongus\n> PokeDex Number : 591\n> Egg Group : Plant\n> Evolution : Foongus → Amoongus (Lv.39)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 10            Unova   D.Grass M/D/N   Common      39-40   -\nRoute 10            Unova   D.Grass M/D/N   Horde       39      -\nRoute 11            Unova   Grass   M/D/N   Uncommon    48      -\nRoute 11            Unova   D.Grass M/D/N   Uncommon    53      -\nRoute 11            Unova   D.Grass M/D/N   Horde       50-52   -\n```');
   	}
 // Pokedex : 592
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?frillish') {
+    	message.channel.send('```md\nFrillish\n> PokeDex Number : 592\n> Egg Group : Chaos\n> Evolution : Frillish → Jellicent (Lv.40)\n#Map                Region  Type    Time    Rarity      Level   Item\nDriftveil City      Unova   Water   M/D/N   V.Common    25-35   -\nDriftveil City      Unova   Water   M/D/N   Horde       25-35   -\nP2 Laboratory       Unova   Water   M/D/N   V.Common    25-35   -\nP2 Laboratory       Unova   Water   M/D/N   Horde       25-35   -\nRoute 4             Unova   Water   M/D/N   V.Common    25-35   -\nRoute 4             Unova   Water   M/D/N   Horde       25-35   -\nRoute 17            Unova   Water   M/D/N   V.Common    25-35   -\nRoute 17            Unova   Water   M/D/N   Horde       25-35   -\nRoute 18            Unova   Water   M/D/N   V.Common    25-35   -\nRoute 18            Unova   Water   M/D/N   Horde       25-35   -\n```');
   	}
 // Pokedex : 593
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?jellicent') {
+    	message.channel.send('```md\nJellicent\n> PokeDex Number : 593\n> Egg Group : Chaos\n> Evolution : Frillish → Jellicent (Lv.40)\n#Map                Region  Type    Time    Rarity      Level   Item\nDriftveil City      Unova   Water   M/D/N   Special     40      -\nP2 Laboratory       Unova   Water   M/D/N   Special     40      -\nRoute 4             Unova   Water   M/D/N   Special     40      -\nRoute 13            Unova   Water   M/D/N   Special     60-65   -\nRoute 17            Unova   Water   M/D/N   Special     40      -\nRoute 18            Unova   Water   M/D/N   Special     40      -\n```');
   	}
 // Pokedex : 594
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?alomomola') {
+    	message.channel.send('```md\nAlomomola\n> PokeDex Number : 594\n> Egg Group : Water A , Water B\n#Map                Region  Type    Time    Rarity      Level   Item\nDriftveil City      Unova   Water   M/D/N   Special     20-30   -\nP2 Laboratory       Unova   Water   M/D/N   Special     10-20   -\nRoute 1             Unova   Water   D       Special     30-40   -\nRoute 4             Unova   Water   M/D/N   Special     30-40   -\nRoute 13            Unova   Water   M/D/N   Special     60-65   -\nRoute 17            Unova   Water   M/D/N   Special     30-40   -\nRoute 18            Unova   Water   M/D/N   Special     30-40   -\nUndella Bay         Unova   Water   M/D/N   Special     60-65   -\nUndella Town        Unova   Water   M/D/N   Special     60-65   -\n```');
   	}
 // Pokedex : 595
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?joltik') {
+    	message.channel.send('```md\nJoltik\n> PokeDex Number : 595\n> Egg Group : Bug\n> Evolution : Joltik → Galvantula (Lv.36)\n#Map                Region  Type    Time    Rarity      Level   Item\nChargestone Cave    Unova   Cave    M/D/N   V.Common    24-27   -\nChargestone Cave    Unova   Cave    M/D/N   Horde       22-24   -\n```');
   	}
 // Pokedex : 596
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?garvantula') {
+    	message.channel.send('```md\nGalvantula\n> PokeDex Number : 596\n> Egg Group : Bug\n> Evolution : Joltik → Galvantula (Lv.36)\nNo wild location found.\n```');
   	}
 // Pokedex : 597
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?ferroseed') {
+    	message.channel.send('```md\nFerroseed\n> PokeDex Number : 597\n> Egg Group : Plant , Mineral\n> Evolution : Ferroseed → Ferrothorn (Lv.40)\n#Map                Region  Type    Time    Rarity      Level   Item\nChargestone Cave    Unova   Cave    M/D/N   V.Common    24-26   -\nChargestone Cave    Unova   Cave    M/D/N   Horde       22-24   -\n```');
   	}
 // Pokedex : 598
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?ferrothorn') {
+    	message.channel.send('```md\nFerrothorn\n> PokeDex Number : 598\n> Egg Group : Plant , Mineral\n> Evolution : Ferroseed → Ferrothorn (Lv.40)\nNo wild location found.\n```');
   	}
 // Pokedex : 599
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?klink') {
+    	message.channel.send('```md\nKlink\n> PokeDex Number : 599\n> Egg Group : Gendeless\n> Evolution : Klink → Klang (Lv.38) → Klinklang (Lv.49)\n#Map                Region  Type    Time    Rarity      Level   Item\nChargestone Cave    Unova   Cave    M/D/N   V.Common    25-27   -\nChargestone Cave    Unova   Cave    M/D/N   Horde       22-24   -\nP2 Laboratory       Unova   Grass   M/D/N   Uncommon    29-31   -\n```');
   	}
 // Pokedex : 600
     if (message.content === '?x') {
