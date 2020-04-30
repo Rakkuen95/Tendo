@@ -14,8 +14,10 @@ const client = new Client();
  * The ready event is vital, it means that only _after_ this will your bot start reacting to information
  * received from Discord
  */
-client.on('ready', () => {
-  console.log('I am ready!');
+// Set the client user's presence
+client.user.setPresence({ activity: { name: 'with discord.js' }, status: 'idle' })
+  .then(console.log)
+  .catch(console.error);
 });
 
 client.on('message', message => {
