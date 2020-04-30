@@ -52,7 +52,7 @@ client.on('message', message => {
     const embed = new MessageEmbed()
 	.setColor('#c500ff')
 	.setTitle('Dive Ball')
-	.setDescription('**Price** : $1,400\n**Rate** : x3.5\n**Effect** : Inside a Cave or Night Time**Location** : Shopping Mall or Veilstones Department Store\n')
+	.setDescription('**Price** : $1,400\n**Rate** : x3.5\n**Effect** : Inside a Cave or Night Time\n**Location** : Shopping Mall or Veilstones Department Store\n')
 	.setThumbnail('https://cdn.bulbagarden.net/upload/5/59/Dream_Dusk_Ball_Sprite.png')
 	.setTimestamp()
 	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
