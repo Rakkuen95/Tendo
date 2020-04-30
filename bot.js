@@ -1,7 +1,22 @@
-'use strict';
+use strict';
 
+/**
+ * An example of how you can send embeds
+ */
+
+// Extract the required classes from the discord.js module
 const { Client, MessageEmbed } = require('discord.js');
-const client = new Discord.Client();
+
+// Create an instance of a Discord client
+const client = new Client();
+
+/**
+ * The ready event is vital, it means that only _after_ this will your bot start reacting to information
+ * received from Discord
+ */
+// Set the client user's presence
+ const activities_list = ["PokeMMO","with T1","with Oh My Girl","with Arin","with Startear","with Yasuo"]; 
+// creates an arraylist containing phrases you want your bot to switch through.
 
 client.on('ready', () => {
     setInterval(() => {
