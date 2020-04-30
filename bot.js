@@ -15,10 +15,7 @@ const client = new Client();
  * received from Discord
  */
 // Set the client user's presence
-client.user.setActivity("with depression", {
-  type: "STREAMING",
-  url: "https://www.twitch.tv/monstercat"
-});
+client.user.setActivity('YouTube', { type: 'WATCHING' });
 
 client.on('message', message => {
   // If the message is "how to embed"
