@@ -26,6 +26,12 @@ client.on('message', message => {
         message.reply(message.author.displayAvatarURL());
         }
 
+  if (message.content === '!rip') {
+    // Create the attachment using MessageAttachment
+    const attachment = new MessageAttachment('https://i.imgur.com/w3duR07.png');
+    // Send the attachment in the message channel
+    message.channel.send(attachment);
+  }
 
 
 
