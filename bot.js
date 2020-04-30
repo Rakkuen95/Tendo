@@ -1007,231 +1007,587 @@ client.on('message', message => {
 
 
 
-// Pokedex : 4
+// Pokedex : 495
+    if (message.content === '?snivy') {
+    	message.channel.send('```md\nSnivy\n> PokeDex Number : 495\n> Egg Group : Field , Plant\n> Evolution : Snivy → Servine (Lv.17) → Serperior (Lv.36)\n#Map                Region  Type    Time    Rarity      Level   Item\nLostlorn Forest     Unova   Grass   M/D/N   Rare       20      -\n```');
+  	}
+// Pokedex : 496
+    if (message.content === '?servine') {
+    	message.channel.send('```md\nServine\n> PokeDex Number : 496\n> Egg Group : Field , Plant\n> Evolution : Snivy → Servine (Lv.17) → Serperior (Lv.36)\nNo wild location found.\n```');
+  	}
+// Pokedex : 497
+    if (message.content === '?serperior') {
+    	message.channel.send('```md\nSerperior\n> PokeDex Number : 497\n> Egg Group : Field , Plant\n> Evolution : Snivy → Servine (Lv.17) → Serperior (Lv.36)\nNo wild location found.\n```');
+  	}
+// Pokedex : 498
+    if (message.content === '?tepig') {
+    	message.channel.send('```md\nTepig\n> PokeDex Number : 498\n> Egg Group : Field\n> Evolution : Tepig → Pignite (Lv.17) → Emboar (Lv.36)\n#Map                Region  Type    Time    Rarity      Level   Item\nTwist Mountain      Unova   Cave    M/D/N   Rare        25      -\n```');
+  	}
+// Pokedex : 499
+    if (message.content === '?pignite') {
+    	message.channel.send('```md\nPignite\n> PokeDex Number : 499\n> Egg Group : Field\n> Evolution : Tepig → Pignite (Lv.17) → Emboar (Lv.36)\nNo wild location found.\n```');
+  	}
+// Pokedex : 500
+    if (message.content === '?emboar') {
+    	message.channel.send('```md\nEmboar\n> PokeDex Number : 500\n> Egg Group : Field\n> Evolution : Tepig → Pignite (Lv.17) → Emboar (Lv.36)\nNo wild location found.\n```');
+  	}
+// Pokedex : 501
+    if (message.content === '?oshawott') {
+    	message.channel.send('```md\nOshawott\n> PokeDex Number : 501\n> Egg Group : Field\n> Evolution : Oshawott → Dewott (Lv.17) → Samurott (Lv.36)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 6             Unova   Water   M/D/N   Rare        25      -\n```');
+  	}
+// Pokedex : 502
+    if (message.content === '?dewott') {
+    	message.channel.send('```md\nDewott\n> PokeDex Number : 502\n> Egg Group : Field\n> Evolution : Oshawott → Dewott (Lv.17) → Samurott (Lv.36)\nNo wild location found.\n```');
+  	}
+// Pokedex : 503
+    if (message.content === '?samurott') {
+    	message.channel.send('```md\nSamurott\n> PokeDex Number : 503\n> Egg Group : Field\n> Evolution : Oshawott → Dewott (Lv.17) → Samurott (Lv.36)\nNo wild location found.\n```');
+  	}
+// Pokedex : 504
+    if (message.content === '?patrat') {
+    	message.channel.send('```md\nPatrat\n> PokeDex Number : 504\n> Egg Group : Field\n> Evolution : Patrat → Watchog (Lv.20)\n#Map                Region  Type   	Time    Rarity      Level   Item\nDreamyard           Unova   Grass  	M/D/N   V.Common 	8-11    -\nRoute 1             Unova   Grass  	M/D/N   V.Common 	2-4     -\nRoute 2             Unova   Grass  	M/D/N   V.Common 	4-7     -\nRoute 3             Unova   Grass   M/D/N   Common      8       -\nRoute 3             Unova   D.Grass M/D/N   Common      10      -\n```');
+  	}
+// Pokedex : 505
+    if (message.content === '?watchog') {
+    	message.channel.send('```md\nWatchog\n> PokeDex Number : 505\n> Egg Group : Field\n> Evolution : Patrat → Watchog (Lv.20)\n#Map                Region  Type    Time    Rarity      Level   Item\nDreamyard           Unova   D.Grass M/D/N   Uncommon    47      -\nP2 Laboratory       Unova   Grass   M/D/N   V.Common    28-31   -\nRoute 1             Unova   D.Grass M/D/N   V.Common    32-35   -\nRoute 1             Unova   D.Grass M/D/N   Horde       30-32   -\nRoute 7             Unova   Grass   M/D/N   Common      27-29   -\nRoute 7             Unova   Grass   M/D/N   Horde       27-29   -\nRoute 7             Unova   D.Grass M/D/N   Common      31-33   -\nRoute 15            Unova   D.Grass M/D/N   Rare        55      -\nRoute 18            Unova   Grass   M/D/N   Common      28-30   -\nRoute 18            Unova   D.Grass M/D/N   Common      32-34   -\n```');
+  	}
+// Pokedex : 506
+    if (message.content === '?lillipup') {
+    	message.channel.send('```md\nLillipup\n> PokeDex Number : 506\n> Egg Group : Field\n> Evolution : Lillipup → Herdier (Lv.16) → Stoutland (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 1             Unova   Grass   M/D/N   V.Common    2-4     -\nRoute 2             Unova   Grass   M/D/N   V.Common    4-7     -\nRoute 3             Unova   Grass   M/D/N   Uncommon    9       -\nRoute 3             Unova   D.Grass M/D/N   Uncommon    11      -\n```');
+  	}
+// Pokedex : 507
+    if (message.content === '?herdier') {
+    	message.channel.send('```md\nHerdier\n> PokeDex Number : 507\n> Egg Group : Field\n> Evolution : Lillipup → Herdier (Lv.16) → Stoutland (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nCold Storage        Unova   Grass   M/D/N   V.Common    21-23   -\nCold Storage        Unova   Grass   M/D/N   Horde       19-20   -\nCold Storage        Unova   D.Grass M/D/N   V.Common    25-27   -\nP2 Laboratory       Unova   Grass   M/D/N   V.Common    28-31   -\nP2 Laboratory       Unova   Grass   M/D/N   Horde       27-28   -\nRoute 1             Unova   D.Grass M/D/N   V.Common    32-34   -\nRoute 10            Unova   Grass   M/D/N   Common      33-34   -\nRoute 10            Unova   D.Grass M/D/N   Common      38-39   -\nRoute 10            Unova   Grass   M/D/N   Horde       32-33   -\nRoute 10            Unova   D.Grass M/D/N   Horde       39      -\n```');
+  	}
+// Pokedex : 508
+    if (message.content === '?stoutland') {
+    	message.channel.send('```md\nStoutland\n> PokeDex Number : 508\n> Egg Group : Field\n> Evolution : Lillipup → Herdier (Lv.16) → Stoutland (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 10            Unova   Grass   M/D/N   Special     36-44   -\n```');
+  	}
+// Pokedex : 509
+    if (message.content === '?purrloin') {
+    	message.channel.send('```md\nPurrloin\n> PokeDex Number : 509\n> Egg Group : Field\n> Evolution : Purrloin → Liepard (Lv.20)\n#Map                Region  Type    Time    Rarity      Level   Item\nDreamyard           Unova   Grass   M/D/N   V.Common    8-11    -\nRoute 2             Unova   Grass   M/D/N   V.Common    4-5     -\nRoute 3             Unova   Grass   M/D/N   Common      9       -\nRoute 3             Unova   D.Grass M/D/N   Common      11      -\nRoute 3             Unova   Grass   N       Horde       7-8     -\nRoute 3             Unova   D.Grass N       Horde       8-9     -\n```');
+  	}
+// Pokedex : 510
+    if (message.content === '?liepard') {
+    	message.channel.send('```md\nLiepard\n> PokeDex Number : 510\n> Egg Group : Field\n> Evolution : Purrloin → Liepard (Lv.20)\n#Map                Region  Type    Time    Rarity      Level   Item\nDreamyard           Unova   D.Grass M/D/N   Uncommon    47      -\nDreamyard           Unova   D.Grass M/D/N   Horde       46-47   -\nRoute 5             Unova   Grass   M/D/N   Common      20-22   -\nRoute 5             Unova   D.Grass M/D/N   Common      23-25   -\nRoute 5             Unova   D.Grass M/D/N   Horde       23-25   -\nRoute 9             Unova   Grass   M/D/N   Uncommon    33      -\nRoute 9             Unova   D.Grass M/D/N   Uncommon    33      -\nRoute 16            Unova   Grass   M/D/N   Common      20-22   -\nRoute 16            Unova   D.Grass M/D/N   Common      23-25   -\n```');
+  	}
+// Pokedex : 511
+    if (message.content === '?pansage') {
+    	message.channel.send('```md\nPansage\n> PokeDex Number : 511\n> Egg Group : Field\n> Evolution : Pansage → Simisage (Use Leafstone)\n#Map                Region  Type    Time    Rarity      Level   Item\nLostlorn Forest     Unova   Grass   M/D/N   Rare        19-22   -\nLostlorn Forest     Unova   D.Grass M/D/N   Rare        32-35   -\nPinwheel Forest     Unova   Grass   M/D/N   Rare        14-17   -\nPinwheel Forest     Unova   D.Grass M/D/N   Rare        22-25   -\n```');
+  	}
+// Pokedex : 512
+    if (message.content === '?simisage') {
+    	message.channel.send('```md\nSimisage\n> PokeDex Number : 512\n> Egg Group : Field\n> Evolution : Pansage → Simisage (Use Leafstone)\n#Map                Region  Type    Time    Rarity      Level   Item\nLostlorn Forest     Unova   Grass   M/D/N   Special     24-26   -\nPinwheel Forest     Unova   Grass   M/D/N   Special     17-19   -\n```');
+  	}
+// Pokedex : 513
+    if (message.content === '?pansear') {
+    	message.channel.send('```md\nPansear\n> PokeDex Number : 513\n> Egg Group : Field\n> Evolution : Pansear → Simisear (Use Firestone)\n#Map                Region  Type    Time    Rarity      Level   Item\nLostlorn Forest     Unova   Grass   M/D/N   Rare        19-22   -\nLostlorn Forest     Unova   D.Grass M/D/N   Rare        32-35   -\nPinwheel Forest     Unova   Grass   M/D/N   Rare        14-17   -\nPinwheel Forest     Unova   D.Grass M/D/N   Rare        22-25   -\n```');
+  	}
+// Pokedex : 514
+    if (message.content === '?simisear') {
+    	message.channel.send('```md\nSimisear\n> PokeDex Number : 514\n> Egg Group : Field\n> Evolution : Pansear → Simisear (Use Firestone)\n#Map                Region  Type    Time    Rarity      Level   Item\nLostlorn Forest     Unova   Grass   M/D/N   Special     24-26   -\nPinwheel Forest     Unova   Grass   M/D/N   Special     17-19   -\n```');
+  	}
+// Pokedex : 515
+    if (message.content === '?panpour') {
+    	message.channel.send('```md\nPanpour\n> PokeDex Number : 515\n> Egg Group : Field\n> Evolution : Panpour → Simipour (Use Waterstone)\n#Map                Region  Type    Time    Rarity      Level   Item\nLostlorn Forest     Unova   Grass   M/D/N   Rare        19-22   -\nLostlorn Forest     Unova   D.Grass M/D/N   Rare        32-35   -\nPinwheel Forest     Unova   Grass   M/D/N   Rare        14-17   -\nPinwheel Forest     Unova   D.Grass M/D/N   Rare        22-25   -\n```');
+  	}
+// Pokedex : 516
+    if (message.content === '?simipour') {
+    	message.channel.send('```md\nSimipour\n> PokeDex Number : 516\n> Egg Group : Field\n> Evolution : Panpour → Simipour (Use Waterstone)\n#Map                Region  Type    Time    Rarity      Level   Item\nLostlorn Forest     Unova   Grass   M/D/N   Special     24-26   -\nPinwheel Forest     Unova   Grass   M/D/N   Special     17-19   -\n```');
+  	}
+// Pokedex : 517
+    if (message.content === '?munna') {
+    	message.channel.send('```md\nMunna\n> PokeDex Number : 517\n> Egg Group : Field\n> Evolution : Munna → Musharna (Use Moonstone)\n#Map                Region  Type    Time    Rarity      Level   Item\nDreamyard           Unova   D.Grass M/D/N   V.Common    48-49   -\nDreamyard           Unova   Grass   M/D/N   V.Common    8-10    -\n```');
+  	}
+// Pokedex : 518
+    if (message.content === '?musharna') {
+    	message.channel.send('```md\nMusharna\n> PokeDex Number : 518\n> Egg Group : Field\n> Evolution : Munna → Musharna (Use Moonstone)\n#Map                Region  Type    Time    Rarity      Level   Item\nDreamyard           Unova   Grass   M/D/N   Special     10-12   -\n```');
+  	}
+// Pokedex : 519
+    if (message.content === '?pidove') {
+    	message.channel.send('```md\nPidove\n> PokeDex Number : 519\n> Egg Group : Flying\n> Evolution : Pidove → Tranquill (Lv.21) → Unfezant (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nPinwheel Forest     Unova   Grass   M/D/N   Uncommon    12-16   -\nPinwheel Forest     Unova   Grass   M/D     Horde       10-12   -\nPinwheel Forest     Unova   D.Grass M/D/N   Uncommon    14-15   -\nRoute 3             Unova   Grass   M/D/N   V.Common    8-11    -\nRoute 3             Unova   Grass   M/D     Horde       7-8     -\nRoute 3             Unova   D.Grass M/D/N   V.Common    10-13   -\nRoute 3             Unova   D.Grass M/D     Horde       8-9     -\n```');
+  	}
+// Pokedex : 520
+    if (message.content === '?tranquill') {
+    	message.channel.send('```md\nTranquill\n> PokeDex Number : 520\n> Egg Group : Flying\n> Evolution : Pidove → Tranquill (Lv.21) → Unfezant (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nLostlorn Forest     Unova   Grass   M/D/N   Uncommon    21-22   -\nLostlorn Forest     Unova   D.Grass M/D/N   Uncommon    34-35   -\nPinwheel Forest     Unova   D.Grass M/D/N   Uncommon    23-24   -\nRoute 6             Unova   D.Grass M/D/N   Horde       24-26   -\nRoute 12            Unova   Grass   M/D/N   Common      48-50   -\nRoute 12            Unova   D.Grass M/D/N   Common      53-55   -\nRoute 12            Unova   D.Grass M/D/N   Horde       50-52   -\n```');
+  	}
+// Pokedex : 521
+    if (message.content === '?unfezant') {
+    	message.channel.send('```md\nUnfezant\n> PokeDex Number : 521\n> Egg Group : Flying\n> Evolution : Pidove → Tranquill (Lv.21) → Unfezant (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nLostlorn Forest     Unova   Shadow  M/D/N   Special     32-42   -\nRoute 7             Unova   Grass   M/D/N   Special     32      -\nRoute 12            Unova   Shadow  M/D/N   Special     60-65   -\n```');
+  	}
+// Pokedex : 522
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 523
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 524
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 525
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 526
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 527
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 528
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 529
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 530
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 531
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 532
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 533
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 534
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 535
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 536
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 537
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 538
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 539
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 540
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 541
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 542
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 543
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 544
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 545
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 546
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 547
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 548
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 549
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 550
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 551
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 552
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 553
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 554
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 555
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 556
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 557
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 558
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 559
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 560
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 561
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 562
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 563
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 564
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 565
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 566
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 567
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 568
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 569
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 570
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 571
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 572
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 573
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-// Pokedex : 4
+// Pokedex : 574
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
+// Pokedex : 575
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 576
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 577
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 578
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 579
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 580
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 581
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 582
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 583
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 584
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 585
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 586
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 587
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 588
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 589
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 590
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 591
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 592
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 593
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 594
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 595
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 596
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 597
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 598
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 599
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 600
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 601
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 602
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 603
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 604
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 605
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 606
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 607
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 608
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 609
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 610
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 611
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 612
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 613
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 614
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 615
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 616
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 617
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 618
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 619
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 620
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 621
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 622
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 623
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 624
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 625
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 626
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 627
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 628
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 629
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 630
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 631
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 632
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 633
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 634
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 635
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 636
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 637
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 643
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 644
+    if (message.content === '?x') {
+    	message.channel.send('x');
+  	}
+
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 client.login(process.env.BOT_TOKEN);
