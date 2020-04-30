@@ -1,4 +1,4 @@
-use strict';
+'use strict';
 
 /**
  * An example of how you can send embeds
