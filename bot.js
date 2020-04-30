@@ -34,7 +34,7 @@ client.on('message', message => {
 	.setFooter('PokeMMO Vietnamese', 'https://apkdirectory.com/logos/pokemmo.png');
     message.channel.send(embed);
   }
-});
+
 
 
 
