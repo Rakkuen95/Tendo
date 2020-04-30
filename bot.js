@@ -15,7 +15,7 @@ const client = new Client();
  * received from Discord
  */
 // Set the client user's presence
- const activities_list = ["Playing","Watching","Doing","Ganking"]; 
+ const activities_list = ["PokeMMO","with Kpop","with Oh My Girl","with Arin"]; 
 // creates an arraylist containing phrases you want your bot to switch through.
 
 client.on('ready', () => {
