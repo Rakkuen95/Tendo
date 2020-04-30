@@ -32,10 +32,8 @@ client.on('message', message => {
     // Read more about all that you can do with the constructor
     // over at https://discord.js.org/#/docs/main/master/class/MessageEmbed
     const embed = new MessageEmbed()
-	.setColor('#0099ff')
+	.setColor('#ff0000')
 	.setTitle('Dive Ball')
-	.setURL('https://pokemmo.eu/')
-	.setAuthor('PokeMMO', 'https://apkdirectory.com/logos/pokemmo.png', 'https://discord.js.org')
 	.setDescription('**Price** : $1,500\nRate : x3.0\nEffect : Diving , Surfing , or Fishing\nLocation : Mossdeep City\n')
 	.setThumbnail('https://cdn.bulbagarden.net/upload/9/9a/Dream_Dive_Ball_Sprite.png')
 	.setTimestamp()
