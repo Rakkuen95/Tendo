@@ -1,4 +1,6 @@
-const Discord = require('discord.js');
+'use strict';
+
+const { Client, MessageEmbed } = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
