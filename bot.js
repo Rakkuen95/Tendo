@@ -25,13 +25,22 @@ client.on('message', message => {
     // Read more about all that you can do with the constructor
     // over at https://discord.js.org/#/docs/main/master/class/MessageEmbed
     const embed = new MessageEmbed()
-      // Set the title of the field
-      .setTitle('A slick little embed')
-      // Set the color of the embed
-      .setColor(0xff0000)
-      // Set the main content of the embed
-      .setDescription('Hello, this is a slick embed!');
-    // Send the embed to the same channel as the message
+	.setColor('#0099ff')
+	.setTitle('Some title')
+	.setURL('https://discord.js.org/')
+	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
+	.setDescription('Some description here')
+	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
+	.addFields(
+		{ name: 'Regular field title', value: 'Some value here' },
+		{ name: '\u200B', value: '\u200B' },
+		{ name: 'Inline field title', value: 'Some value here', inline: true },
+		{ name: 'Inline field title', value: 'Some value here', inline: true },
+	)
+	.addField('Inline field title', 'Some value here', true)
+	.setImage('https://i.imgur.com/wSTFkRM.png')
+	.setTimestamp()
+	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
     message.channel.send(embed);
   }
 });
