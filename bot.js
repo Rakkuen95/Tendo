@@ -1590,7 +1590,6 @@ client.on('message', message => {
     if (message.content === '?x') {
     	message.channel.send('x');
   	}
-
 });
 
 client.login(process.env.BOT_TOKEN);
