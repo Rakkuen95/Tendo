@@ -41,11 +41,8 @@ client.on('message', message => {
 	.addFields(
 		{ name: 'Regular field title', value: 'Some value here' },
 		{ name: '\u200B', value: '\u200B' },
-		{ name: 'Inline field title', value: 'Some value here', inline: true },
-		{ name: 'Inline field title', value: 'Some value here', inline: true },
 	)
 	.addField('Inline field title', 'Some value here', true)
-	.setImage('https://www.serebii.net/pokearth/maps/hoenn-em/2.png')
 	.setTimestamp()
 	.setFooter('PokeMMO Vietnamese', 'https://apkdirectory.com/logos/pokemmo.png');
     message.channel.send(embed);
