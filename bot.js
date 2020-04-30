@@ -23,7 +23,7 @@ client.on('message', message => {
   	}
 // Send the user's avatar URL
     if (message.content === '?avatar') {
-        message.reply(message.author.displayAvatarURL());
+        message.channel.send(message.author.displayAvatarURL());
         }
 
   if (message.content === '!rip') {
