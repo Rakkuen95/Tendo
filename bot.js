@@ -1235,20 +1235,20 @@ client.on('message', message => {
     	message.channel.send('```md\nStrialton City      Unova   Water   D/M/N   V.Common    25-35   -\nStrialton City      Unova   Water   D/M/N   Horde       25-35   -\nStrialton City      Unova   S.Rod   D/M/N   V.Common    35-55   -\nStrialton City      Unova   Water   D/M/N   Special     30-40   -\nStrialton City      Unova   Fishing D/M/N   Special     55-60   -\nVictory Road        Unova   Water   D/M/N   V.Common    35-55   -\nVictory Road        Unova   Water   D/M/N   Horde       35-55   -\nVictory Road        Unova   S.Rod   D/M/N   V.Common    35-55   -\nVictory Road        Unova   Water   D/M/N   Special     45-48   -\nVictory Road        Unova   Fishing D/M/N   Special     55-60   -\nVillage Bridge      Unova   Water   D/M/N   V.Common    35-55   -\nVillage Bridge      Unova   Water   D/M/N   Horde       35-55   -\nVillage Bridge      Unova   S.Rod   D/M/N   V.Common    35-55   -\nVillage Bridge      Unova   Water   D/M/N   Special     60-65   -\nVillage Bridge      Unova   Fishing D/M/N   Special     60-65   -\nWellspring Cave     Unova   Water   D/M/N   V.Common    25-35   -\nWellspring Cave     Unova   Water   D/M/N   Horde       25-35   -\nWellspring Cave     Unova   S.Rod   D/M/N   V.Common    35-55   -\nWellspring Cave     Unova   Water   D/M/N   Special     10-40   -\nWellspring Cave     Unova   Fishing D/M/N   Special     35-60   -\n```');
     }
 // Pokedex : 551
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?sandile') {
+    	message.channel.send('```md\nSandile\n> PokeDex Number : 551\n> Egg Group : Field\n> Evolution : Sandile → Krokorok (Lv.29) → Krookodile (Lv.40)\n#Map                Region  Type    Time    Rarity      Level   Item\nDesert Resort       Unova   Grass   D/M/N   V.Common    19-22   -\nDesert Resort       Unova   Grass   D/M/N   Horde       17-19   -\nRelic Castle        Unova   Cave    D/M/N   V.Rare      19-22   -\nRelic Castle        Unova   Cave    D/M/N   Horde       18-19   -\nRoute 4             Unova   Grass   D/M/N   V.Common    15-18   -\n```');
   	}
 // Pokedex : 552
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?krokorok') {
+    	message.channel.send('```md\nKrokorok\n> PokeDex Number : 552\n> Egg Group : Field\n> Evolution : Sandile → Krokorok (Lv.29) → Krookodile (Lv.40)\n#Map                Region  Type    Time    Rarity      Level   Item\nRelic Castle        Unova   Cave    M/D/N   V.Common    34-50   -\nRelic Castle        Unova   Cave    M/D/N   Horde       32-47   -\n```');
   	}
 // Pokedex : 553
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?krokodile') {
+    	message.channel.send('```md\nKrokodile\n> PokeDex Number : 553\n> Egg Group : Field\n> Evolution : Sandile → Krokorok (Lv.29) → Krookodile (Lv.40)\nNo wild location found.\n```');
   	}
 // Pokedex : 554
-    if (message.content === '?x') {
-    	message.channel.send('x');
+    if (message.content === '?darumaka') {
+    	message.channel.send('```md\nDarumaka\n> PokeDex Number : 554\n> Egg Group : Field\n> Evolution : Darumaka → Darmanitan (Lv.35)\n#Map                Region  Type    Time    Rarity      Level   Item\nDesert Resort       Unova   Grass   M/D/N   V.Common    19-20   -\nDesert Resort       Unova   Grass   M/D/N   Horde       17-19   -\nRoute 4             Unova   Grass   M/D/N   V.Common    15-18   -\nRoute 4             Unova   Grass   M/D/N   Horde       14-15   -\n```');
   	}
 // Pokedex : 555
     if (message.content === '?x') {
