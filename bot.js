@@ -23,15 +23,12 @@ client.on('message', message => {
   	}
 // Send the user's avatar URL
     if (message.content === '?avatar') {
-        message.channel.send(message.author.displayAvatarURL());
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setImage(message.author.displayAvatarURL())
+    message.channel.send(embed);
         }
 
-  if (message.content === '!rip') {
-    // Create the attachment using MessageAttachment
-    const attachment = new MessageAttachment('https://i.imgur.com/w3duR07.png');
-    // Send the attachment in the message channel
-    message.channel.send(attachment);
-  }
 
 
 
