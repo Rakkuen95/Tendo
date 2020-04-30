@@ -15,9 +15,14 @@ const client = new Client();
  * received from Discord
  */
 // Set the client user's presence
-client.user.setPresence({ activity: { name: 'with discord.js' }, status: 'idle' })
-  .then(console.log)
-  .catch(console.error);
+bot.on('ready', () => {
+    bot.user.setStatus('available')
+    bot.user.setPresence({
+        game: {
+            name: 'with depression',
+            type: "STREAMING",
+            url: "https://www.twitch.tv/monstercat"
+        }
 });
 
 client.on('message', message => {
