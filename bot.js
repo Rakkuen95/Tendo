@@ -35,14 +35,13 @@ client.on('message', message => {
 	.setColor('#0099ff')
 	.setTitle('Dive Ball')
 	.setURL('https://pokemmo.eu/')
-	.setAuthor('PokeMMO', 'https://cdn.bulbagarden.net/upload/9/9a/Dream_Dive_Ball_Sprite.png', 'https://discord.js.org')
+	.setAuthor('PokeMMO', 'https://apkdirectory.com/logos/pokemmo.png', 'https://discord.js.org')
 	.setDescription('Some description here')
-	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/9/9a/Dream_Dive_Ball_Sprite.png')
 	.addFields(
 		{ name: 'Regular field title', value: 'Some value here' },
 		{ name: '\u200B', value: '\u200B' },
 	)
-	.addField('Inline field title', 'Some value here', true)
 	.setTimestamp()
 	.setFooter('PokeMMO Vietnamese', 'https://apkdirectory.com/logos/pokemmo.png');
     message.channel.send(embed);
