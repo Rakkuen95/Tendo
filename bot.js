@@ -38,10 +38,7 @@ client.on('message', message => {
     if (message.content === '?random') {
     	message.channel.send(Math.floor(Math.random() * 100) + 1);
   	}
-  if (message.content === '!embed') {
-    // We can create embeds using the MessageEmbed constructor
-    // Read more about all that you can do with the constructor
-    // over at https://discord.js.org/#/docs/main/master/class/MessageEmbed
+  if (message.content === '?item dive ball') {
     const embed = new MessageEmbed()
 	.setColor('#c500ff')
 	.setTitle('Dive Ball')
@@ -51,7 +48,16 @@ client.on('message', message => {
 	.setFooter('PokeMMO Vietnamese', 'https://apkdirectory.com/logos/pokemmo.png');
     message.channel.send(embed);
   }
-
+  if (message.content === '^s bulbasaur') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setTitle('Bulbasaur')
+	.setDescription('```md\nBulbasaur\n> PokeDex Number : 001\n> Egg Group : Monster , Plant\n> Evolution : Bulbasaur → Ivysaur (Lv.16) → Venusaur (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 5             Kanto   Grass   M/D/N   Rare        10      -\n```')
+	.setThumbnail('https://projectpokemon.org/images/sprites-models/bw-animated/001.gif')
+	.setTimestamp()
+	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
+    message.channel.send(embed);
+  }
 
 
 
