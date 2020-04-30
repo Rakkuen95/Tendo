@@ -53,7 +53,7 @@ client.on('message', message => {
 	.setColor('#c500ff')
 	.setTitle('Bulbasaur')
 	.setDescription('```md\nBulbasaur\n> PokeDex Number : 001\n> Egg Group : Monster , Plant\n> Evolution : Bulbasaur → Ivysaur (Lv.16) → Venusaur (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 5             Kanto   Grass   M/D/N   Rare        10      -\n```')
-	.setThumbnail('https://projectpokemon.org/images/sprites-models/bw-animated/001.gif')
+	.setThumbnail('https://img.pokemondb.net/sprites/black-white/normal/bulbasaur.png')
 	.setTimestamp()
 	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
     message.channel.send(embed);
