@@ -33,9 +33,9 @@ client.on('message', message => {
     // over at https://discord.js.org/#/docs/main/master/class/MessageEmbed
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
-	.setTitle('Route 102')
+	.setTitle('Dive Ball')
 	.setURL('https://pokemmo.eu/')
-	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
+	.setAuthor('PokeMMO', 'https://cdn.bulbagarden.net/upload/9/9a/Dream_Dive_Ball_Sprite.png', 'https://discord.js.org')
 	.setDescription('Some description here')
 	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
 	.addFields(
