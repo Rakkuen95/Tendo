@@ -1002,11 +1002,6 @@ client.on('message', message => {
     if (message.content === '?rotom') {
       message.channel.send('```md\nRotom\n> PokeDex Number : 479\n> Egg Group : Genderless\n#Map                Region  Type    Time    Rarity      Level   Item\nOld Chateau         Sinnoh  Inside  M/D/N   Rare        15      -\n```');
   	}
-
-
-
-
-
 // Pokedex : 495
     if (message.content === '?snivy') {
     	message.channel.send('```md\nSnivy\n> PokeDex Number : 495\n> Egg Group : Field , Plant\n> Evolution : Snivy → Servine (Lv.17) → Serperior (Lv.36)\n#Map                Region  Type    Time    Rarity      Level   Item\nLostlorn Forest     Unova   Grass   M/D/N   Rare       20      -\n```');
