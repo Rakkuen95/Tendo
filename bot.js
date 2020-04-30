@@ -36,12 +36,8 @@ client.on('message', message => {
 	.setTitle('Dive Ball')
 	.setURL('https://pokemmo.eu/')
 	.setAuthor('PokeMMO', 'https://apkdirectory.com/logos/pokemmo.png', 'https://discord.js.org')
-	.setDescription('Some description here')
+	.setDescription('**Price** : $1,500\nRate : x3.0\nEffect : Diving , Surfing , or Fishing\nLocation : Mossdeep City\n')
 	.setThumbnail('https://cdn.bulbagarden.net/upload/9/9a/Dream_Dive_Ball_Sprite.png')
-	.addFields(
-		{ name: 'Regular field title', value: 'Some value here' },
-		{ name: '\u200B', value: '\u200B' },
-	)
 	.setTimestamp()
 	.setFooter('PokeMMO Vietnamese', 'https://apkdirectory.com/logos/pokemmo.png');
     message.channel.send(embed);
