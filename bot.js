@@ -28,7 +28,9 @@ client.on('message', message => {
 	.setImage(message.author.displayAvatarURL())
     message.channel.send(embed);
         }
-
+    if (message.content === `?server`) {
+	message.channel.send(`Server Name: ${message.guild.name}\nTotal Members: ${message.guild.memberCount}`);
+        }
 
 
 
