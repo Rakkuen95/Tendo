@@ -29,10 +29,28 @@ client.on('message', message => {
     message.channel.send(embed);
         }
     if (message.content === `?server`) {
-	message.channel.send(`Server Name: ${message.guild.name}\nTotal Members: ${message.guild.memberCount}`);
+	message.channel.send(`**Server Name**: ${message.guild.name}\n**Total Members**: ${message.guild.memberCount}`);
         }
+    if (message.content === `?thumb`) {
+message.react('👍').then(() => message.react('👎'));
 
+const filter = (reaction, user) => {
+	return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
+};
 
+message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
+	.then(collected => {
+		const reaction = collected.first();
+
+		if (reaction.emoji.name === '👍') {
+			message.reply('you reacted with a thumbs up.');
+		} else {
+			message.reply('you reacted with a thumbs down.');
+		}
+	})
+	.catch(collected => {
+		message.reply('you reacted with neither a thumbs up, nor a thumbs down.');
+	});
 
 
 // Dive Ball
