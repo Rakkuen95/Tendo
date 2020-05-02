@@ -31,8 +31,8 @@ client.on('message', message => {
     if (message.content === '?elite') {
     const embed = new MessageEmbed()
 	.setColor('#c500ff')
-	.setImage('https://4.bp.blogspot.com/-gf_qCDV2OOc/W-OH1mvo0eI/AAAAAAAAWwY/JPjbVU7e15spq85Abz0Y-YNmTK9MGHlXgCK4BGAYYCw/w1200-h630-p-k-no-nu/pokemon-lets-go-pikachu-eevee-novo-visual-elite-dos-quatro.jpg')
 	.setImage('https://www.slashgear.com/wp-content/uploads/2018/11/Pokemon-lets-Go-gym-leaders-980x620.jpg')
+	.setImage('https://attackofthefanboy.com/wp-content/uploads/2018/11/pokemon-lets-go-last-gym-leaders.jpg')
     message.channel.send(embed);
         }
 
@@ -234,6 +234,10 @@ message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
 // GEN-1
 // Pokedex : 001
     if (message.content === '?bulbasaur') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setImage('https://img.pokemondb.net/artwork/large/bulbasaur.jpg')
+    	message.channel.send(embed);
     	message.channel.send('```md\nBulbasaur\n> PokeDex Number : 001\n> Egg Group : Monster , Plant\n> Evolution : Bulbasaur → Ivysaur (Lv.16) → Venusaur (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 5             Kanto   Grass   M/D/N   Rare        10      -\n```');
   	}
 // Pokedex : 002
