@@ -3,9 +3,9 @@ const client = new Client();
 const activities_list = ["PokeMMO","Nonstop","with Oh My Girl","with Arin","with Startear","with Waifu"]; 
 client.on('ready', () => {
     setInterval(() => {
-        const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
-        client.user.setActivity(activities_list[index]); // sets bot's activities to one of the phrases in the arraylist.
-    }, 10000); // Runs this every 10 seconds.
+        const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
+        client.user.setActivity(activities_list[index]);
+    }, 10000);
 });
 
 client.on('message', message => {
@@ -21,7 +21,7 @@ client.on('message', message => {
     if (message.content === '?random') {
     	message.channel.send(Math.floor(Math.random() * 100) + 1);
   	}
-// Send the user's avatar URL
+
     if (message.content === '?avatar') {
     const embed = new MessageEmbed()
 	.setColor('#c500ff')
@@ -31,7 +31,7 @@ client.on('message', message => {
 
     if (message.content === '?quiz') {
 const quiz = require('./quiz.json');
-const item = quiz[Math.floor(Math.random() * quiz.length)];
+const item = quiz[Math.floor(Math.random() * quiz.length - 1) + 1];
 const filter = response => {
 	return item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
 };
@@ -39,10 +39,10 @@ const filter = response => {
 message.channel.send(item.question).then(() => {
 	message.channel.awaitMessages(filter, { max: 1, time: 30000, errors: ['time'] })
 		.then(collected => {
-			message.channel.send(`${collected.first().author} got the correct answer!`);
+			message.channel.send(`${collected.first().author} đã trả lời chính xác!`);
 		})
 		.catch(collected => {
-			message.channel.send('Looks like nobody got the answer this time.');
+			message.channel.send('Có vẻ như không ai đủ thông minh.');
 		});
 });
   }
