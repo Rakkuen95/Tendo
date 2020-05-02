@@ -41,8 +41,8 @@ client.on('message', message => {
     message.channel.send('Emilia');
   }
 
- if (message.content === '?abc') {
-    var tests = ["bcd", "cde", "xyz"]
+ if (message.content === '?waifu') {
+    var tests = ["[userName] xin hãy hành hạ em!", "[userName] muốn ăn em?", "[userName] xin hãy trói em!"]
     message.channel.send(tests[Math.floor(Math.random() * tests.length)])
   }
 
