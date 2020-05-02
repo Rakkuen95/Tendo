@@ -28,22 +28,15 @@ client.on('message', message => {
 	.setImage(message.author.displayAvatarURL())
     message.channel.send(embed);
         }
-    if (message.content === '?elite') {
-    const embed = new MessageEmbed()
-	.setColor('#c500ff')
-	.setImage('https://www.slashgear.com/wp-content/uploads/2018/11/Pokemon-lets-Go-gym-leaders-980x620.jpg')
-	.setImage('https://attackofthefanboy.com/wp-content/uploads/2018/11/pokemon-lets-go-last-gym-leaders.jpg')
-    message.channel.send(embed);
-        }
+
   if (message.content === '?emilia') {
     const attachment = new MessageAttachment('https://i.pinimg.com/originals/fb/4a/82/fb4a827f677726e5cd64727fbfa33382.gif');
     message.channel.send(attachment);
-    message.channel.send('Emilia');
   }
 
  if (message.content === '?waifu') {
-    var tests = ["[userName] xin hãy hành hạ em!", "[userName] muốn ăn em?", "[userName] xin hãy trói em!"]
-    message.channel.send(tests[Math.floor(Math.random() * tests.length)])
+    var tests = ["xin hãy hành hạ em!", "muốn ăn em?", "xin hãy trói em!"]
+    message.reply(tests[Math.floor(Math.random() * tests.length)])
   }
 
     if (message.content === `?server`) {
