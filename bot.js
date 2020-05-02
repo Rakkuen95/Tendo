@@ -31,7 +31,7 @@ client.on('message', message => {
 
     if (message.content === '?quiz') {
 const quiz = require('./quiz.json');
-const item = quiz[Math.floor(Math.random() * quiz.length)];
+const item = quiz[Math.floor(Math.random() * quiz.length - 1) + 1];
 const filter = response => {
 	return item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
 };
