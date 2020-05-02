@@ -15,9 +15,6 @@ client.on('message', message => {
     if (message.content === '?startear') {
     	message.channel.send('https://i.imgur.com/YxJTidU.png');
   	}
-    if (message.content === '?test') {
-    	message.channel.send(Context.Message.Author.Mention);
-  	}
     if (message.content === '?emprovjp') {
     	message.channel.send('https://i.imgur.com/y9oCTLn.png');
   	}
