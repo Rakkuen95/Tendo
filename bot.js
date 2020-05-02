@@ -29,16 +29,6 @@ client.on('message', message => {
     message.channel.send(embed);
         }
 
-[
-	{
-		"question": "What colour is the sky?",
-		"answers": ["blue"]
-	},
-	{
-		"question": "How many letters are there in the alphabet?",
-		"answers": ["26", "twenty-six", "twenty six", "twentysix"]
-	}
-]
     if (message.content === '?quiz') {
 const quiz = require('./quiz.json');
 const item = quiz[Math.floor(Math.random() * quiz.length)];
