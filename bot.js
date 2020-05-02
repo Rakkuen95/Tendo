@@ -28,6 +28,17 @@ client.on('message', message => {
 	.setImage(message.author.displayAvatarURL())
     message.channel.send(embed);
         }
+    if (message.content === '?elite') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setImage('https://4.bp.blogspot.com/-gf_qCDV2OOc/W-OH1mvo0eI/AAAAAAAAWwY/JPjbVU7e15spq85Abz0Y-YNmTK9MGHlXgCK4BGAYYCw/w1200-h630-p-k-no-nu/pokemon-lets-go-pikachu-eevee-novo-visual-elite-dos-quatro.jpg')
+	.setImage('https://www.slashgear.com/wp-content/uploads/2018/11/Pokemon-lets-Go-gym-leaders-980x620.jpg')
+    message.channel.send(embed);
+        }
+
+
+
+
     if (message.content === `?server`) {
 	message.channel.send(`**Server Name**: ${message.guild.name}\n**Total Members**: ${message.guild.memberCount}`);
         }
