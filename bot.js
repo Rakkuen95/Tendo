@@ -1,6 +1,6 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
-const activities_list = ["PokeMMO","LoL","OPG","Bronze V","Startear-Sama","69 Style"]; 
+const activities_list = ["1%","2%","3%","4%","5%"]; 
 client.on('ready', () => {
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
