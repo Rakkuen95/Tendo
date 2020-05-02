@@ -198,7 +198,7 @@ message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
     const embed = new MessageEmbed()
 	.setColor('#c500ff')
 	.setTitle('Premier Ball')
-	.setDescription('**Rate** : x1.0\n**Effect** : None\n**Location** : PokeMMO Event Prize\n')
+	.setDescription('**Rate** : x1.5\n**Effect** : None\n**Location** : PokeMMO Event Prize\n')
 	.setThumbnail('https://cdn.bulbagarden.net/upload/6/64/Dream_Premier_Ball_Sprite.png')
 	.setTimestamp()
 	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
