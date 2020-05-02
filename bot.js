@@ -27,6 +27,13 @@ client.on('message', message => {
 	.setImage(message.author.displayAvatarURL())
     message.channel.send(embed);
         }
+	if(message.content == "!ping"){ // Check if message is "!ping"
+			message.channel.send("Pinging ...") // Placeholder for pinging ... 
+			.then((msg) => { // Resolve promise
+				msg.edit("Ping: " + (Date.now() - msg.createdTimestamp)) // Edits message with current timestamp minus timestamp of message
+			});
+		}
+
 
     if (message.content === '?quiz') {
 const quiz = require('./quiz.json');
