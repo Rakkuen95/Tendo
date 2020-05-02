@@ -29,12 +29,35 @@ client.on('message', message => {
     message.channel.send(embed);
         }
 
-// Bulk delete messages
-if (message.content === '?delete') {
-channel.bulkDelete(5)
-  .then(messages => console.log(`Bulk deleted ${messages.size} messages`))
-  .catch(console.error);
+[
+	{
+		"question": "What colour is the sky?",
+		"answers": ["blue"]
+	},
+	{
+		"question": "How many letters are there in the alphabet?",
+		"answers": ["26", "twenty-six", "twenty six", "twentysix"]
+	}
+]
+    if (message.content === '?quiz') {
+const quiz = require('./quiz.json');
+const item = quiz[Math.floor(Math.random() * quiz.length)];
+const filter = response => {
+	return item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
+};
+
+message.channel.send(item.question).then(() => {
+	message.channel.awaitMessages(filter, { max: 1, time: 30000, errors: ['time'] })
+		.then(collected => {
+			message.channel.send(`${collected.first().author} got the correct answer!`);
+		})
+		.catch(collected => {
+			message.channel.send('Looks like nobody got the answer this time.');
+		});
+});
   }
+
+
   if (message.content === '?emilia') {
     const attachment = new MessageAttachment('https://i.pinimg.com/originals/fb/4a/82/fb4a827f677726e5cd64727fbfa33382.gif');
     message.channel.send(attachment);
