@@ -38,6 +38,7 @@ client.on('message', message => {
   if (message.content === '?emilia') {
     const attachment = new MessageAttachment('https://i.pinimg.com/originals/fb/4a/82/fb4a827f677726e5cd64727fbfa33382.gif');
     message.channel.send(attachment);
+    message.channel.send('Emilia');
   }
 
 
@@ -237,11 +238,7 @@ message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
 // GEN-1
 // Pokedex : 001
     if (message.content === '?bulbasaur') {
-    	const attachment = new MessageAttachment('https://i.imgur.com/xQrEXeL.png');
-    	message.channel.send(attachment);
     	message.channel.send('```md\nBulbasaur\n> PokeDex Number : 001\n> Egg Group : Monster , Plant\n> Evolution : Bulbasaur → Ivysaur (Lv.16) → Venusaur (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 5             Kanto   Grass   M/D/N   Rare        10      -\n```');
-    	const attachment = new MessageAttachment('https://i.imgur.com/xQrEXeL.png');
-    	message.channel.send(attachment);
   	}
 // Pokedex : 002
     if (message.content === '?ivysaur') {
