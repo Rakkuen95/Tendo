@@ -42,7 +42,6 @@ const item = quiz[Math.floor(Math.random() * quiz.length)];
 const filter = response => {
 	return item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
 };
-
 message.channel.send(item.question).then(() => {
 	message.channel.awaitMessages(filter, { max: 1, time: 30000, errors: ['time'] })
 		.then(collected => {
@@ -53,6 +52,25 @@ message.channel.send(item.question).then(() => {
 		});
 });
   }
+
+const scores = require("./scores.json");
+typeof scores; // object
+if(message.author.bot) return;
+if(!scores[message.author.tag]){ 
+	scores[message.author.id] = { 
+		money: 0 
+	};
+}
+scores[message.author.tag].money += 25;
+fs.writeFileSync("./scores.json", JSON.stringify(scores));
+
+
+
+
+
+
+
+
 
 
   if (message.content === '?emilia') {
