@@ -53,25 +53,6 @@ message.channel.send(item.question).then(() => {
 });
   }
 
-const scores = require("./scores.json");
-typeof scores; // object
-if(message.author.bot) return;
-if(!scores[message.author.tag]){ 
-	scores[message.author.id] = { 
-		money: 0 
-	};
-}
-scores[message.author.tag].money += 25;
-fs.writeFileSync("./scores.json", JSON.stringify(scores));
-
-
-
-
-
-
-
-
-
 
   if (message.content === '?emilia') {
     const attachment = new MessageAttachment('https://i.pinimg.com/originals/fb/4a/82/fb4a827f677726e5cd64727fbfa33382.gif');
