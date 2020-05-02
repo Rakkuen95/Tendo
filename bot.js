@@ -35,7 +35,10 @@ client.on('message', message => {
 	.setImage('https://attackofthefanboy.com/wp-content/uploads/2018/11/pokemon-lets-go-last-gym-leaders.jpg')
     message.channel.send(embed);
         }
-
+  if (message.content === '!rip') {
+    const attachment = new MessageAttachment('https://img5.goodfon.com/wallpaper/nbig/f/b6/re-zero-kara-hajimeru-isekai-seikatsu-zhizn-v-alternativno-9.jpg');
+    message.channel.send(attachment);
+  }
 
 
 
