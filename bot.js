@@ -33,8 +33,9 @@ client.on('message', message => {
 				msg.edit("Ping: " + (Date.now() - msg.createdTimestamp)) // Edits message with current timestamp minus timestamp of message
 			});
 		}
-
-
+    if (message.content === '?delete') {
+message.channel.bulkDelete(100);
+  }
     if (message.content === '?quiz') {
 const quiz = require('./quiz.json');
 const item = quiz[Math.floor(Math.random() * quiz.length)];
