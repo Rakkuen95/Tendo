@@ -1,5 +1,5 @@
 // Extract the required classes from the discord.js module
-const { Client, MessageAttachment } = require('discord.js');
+const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 
 // Create an instance of a Discord client
 const client = new Client();
@@ -20,6 +20,14 @@ client.on('message', message => {
     // Send the attachment in the message channel
     message.channel.send(attachment);
   }
+
+// Send the user's avatar URL
+    if (message.content === '?avatar') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setImage(message.author.displayAvatarURL())
+    message.channel.send(embed);
+        }
 });
 
 client.login(process.env.BOT_TOKEN);
