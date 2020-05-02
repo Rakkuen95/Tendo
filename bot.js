@@ -40,14 +40,12 @@ client.on('message', message => {
     message.channel.send(attachment);
     message.channel.send('Emilia');
   }
-  if (message.content === '?baka') { 
-    return message.reply('Oniichan')
+
+ if (message.content === '?abc') {
+    var tests = ["bcd", "cde", "xyz"]
+    message.channel.send(tests[Math.floor(Math.random() * tests.length)])
   }
-  if (message.content.startsWith("?tungxu")) {
-const coinflip = ["lật", "úp"];
-let randomMessage = coinflip[Math.floor(Math.random() * coinflip.length)]
-let message.channel.send(randomMessage)
-    }
+
     if (message.content === `?server`) {
 	message.channel.send(`**Server Name**: ${message.guild.name}\n**Total Members**: ${message.guild.memberCount}`);
         }
