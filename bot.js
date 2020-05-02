@@ -29,6 +29,12 @@ client.on('message', message => {
     message.channel.send(embed);
         }
 
+// Bulk delete messages
+if (message.content === '?delete') {
+channel.bulkDelete(5)
+  .then(messages => console.log(`Bulk deleted ${messages.size} messages`))
+  .catch(console.error);
+  }
   if (message.content === '?emilia') {
     const attachment = new MessageAttachment('https://i.pinimg.com/originals/fb/4a/82/fb4a827f677726e5cd64727fbfa33382.gif');
     message.channel.send(attachment);
