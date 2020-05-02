@@ -21,7 +21,9 @@ client.on('message', message => {
     if (message.content === '?random') {
     	message.channel.send(Math.floor(Math.random() * 100) + 1);
   	}
-
+    if (message.content === '?abc') {
+    	message.channel.send["cde","bcd","def","efg"];
+  	}
     if (message.content === '?avatar') {
     const embed = new MessageEmbed()
 	.setColor('#c500ff')
