@@ -762,7 +762,7 @@ message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
   	}
 // Pokedex : 126
     if (message.content === '?magmar') {
-    	message.channel.send('```md\nMagmar\n> PokeDex Number : 126\n> Egg Group : Humanoid\n> Evolution : Magby → Magmar (Lv.30) → Magmortar (Hold Magmarizer + Trade)\n#Map                Region  Type    Time    Rarity      Level   Item\nMt.Ember           Kanto   Grass   M/D/N   Rare        38-42   -\nPokemon Mansion     Kanto   Inside  M/D/N   Rare        30-34   -\nFuego Ironworks     Sinnoh  Grass   M/D/N   Uncommon    30-31   -\nFuego Ironworks     Sinnoh  Grass   M/D     Horde       30      -\n```');
+    	message.channel.send('```md\nMagmar\n> PokeDex Number : 126\n> Egg Group : Humanoid\n> Evolution : Magby → Magmar (Lv.30) → Magmortar (Hold Magmarizer + Trade)\n#Map                Region  Type    Time    Rarity      Level   Item\nMt.Ember            Kanto   Grass   M/D/N   Rare        38-42   -\nPokemon Mansion     Kanto   Inside  M/D/N   Rare        30-34   -\nFuego Ironworks     Sinnoh  Grass   M/D/N   Uncommon    30-31   -\nFuego Ironworks     Sinnoh  Grass   M/D     Horde       30      -\n```');
   	}
 // Pokedex : 127
     if (message.content === '?pinsir') {
@@ -846,11 +846,11 @@ message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
   	}
 // Pokedex : 147
     if (message.content === '?dratini') {
-    	message.channel.send('```md\nDratini\n> PokeDex Number : 147\n> Egg Group : Water A , Dragon\n> Evolution : Dragon → Dragonair (Lv.30) → Dragonite(Lv.55)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 10            Kanto   S.Rod   M/D/N   Rare        25-30   -\nSafari Zone         Kanto   S.Rod   M/D/N   Uncommon    25-30   -\nDragonspiral Tower  Unova   S.Rod   M/D/N   Uncommon    25-40   -\nMt.Coronet         Sinnoh  S.Rod   M/D/N   Common      15-25   -\n```');
+    	message.channel.send('```md\nDratini\n> PokeDex Number : 147\n> Egg Group : Water A , Dragon\n> Evolution : Dragon → Dragonair (Lv.30) → Dragonite(Lv.55)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 10            Kanto   S.Rod   M/D/N   Rare        25-30   -\nSafari Zone         Kanto   S.Rod   M/D/N   Uncommon    25-30   -\nDragonspiral Tower  Unova   S.Rod   M/D/N   Uncommon    25-40   -\nMt.Coronet          Sinnoh  S.Rod   M/D/N   Common      15-25   -\n```');
   	}
 // Pokedex : 148
     if (message.content === '?dragonair') {
-    	message.channel.send('```md\nDragonair\n> PokeDex Number : 148\n> Egg Group : Water A , Dragon\n> Evolution : Dragon → Dragonair (Lv.30) → Dragonite(Lv.55)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 10            Kanto   S.Rod   M/D/N   V.Rare      30      -\nSafari Zone         Kanto   S.Rod   M/D/N   Rare        30      -\nDragonspiral Tower  Unova   S.Rod   M/D/N   Rare        30-40   -\nMt.Coronet         Sinnoh  S.Rod   M/D/N   Rare        30-55   -\n```');
+    	message.channel.send('```md\nDragonair\n> PokeDex Number : 148\n> Egg Group : Water A , Dragon\n> Evolution : Dragon → Dragonair (Lv.30) → Dragonite(Lv.55)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 10            Kanto   S.Rod   M/D/N   V.Rare      30      -\nSafari Zone         Kanto   S.Rod   M/D/N   Rare        30      -\nDragonspiral Tower  Unova   S.Rod   M/D/N   Rare        30-40   -\nMt.Coronet          Sinnoh  S.Rod   M/D/N   Rare        30-55   -\n```');
   	}
 // Pokedex : 149
     if (message.content === '?dragonite') {
