@@ -58,6 +58,10 @@ message.channel.send(item.question).then(() => {
     const attachment = new MessageAttachment('https://i.pinimg.com/originals/fb/4a/82/fb4a827f677726e5cd64727fbfa33382.gif');
     message.channel.send(attachment);
   }
+  if (message.content === '?mm') {
+    const attachment = new MessageAttachment('https://i.imgur.com/oiJc8dm.png');
+    message.channel.send(attachment);
+  }
 
  if (message.content === '?waifu') {
     var tests = ["xin hãy hành hạ em!", "muốn ăn em?", "xin hãy trói em!"]
