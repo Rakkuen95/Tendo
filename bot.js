@@ -1,11 +1,8 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const activities_list = ["Banned","Bored","Loser","WhyU","Please"]; 
-client.on('ready', () => {
-    setInterval(() => {
-        const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
-        client.user.setActivity(activities_list[index]);
-    }, 10000);
+client.once('ready', () => {
+message.channel.send('I am already!');
 });
 
 client.on('message', message => {
