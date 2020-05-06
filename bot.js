@@ -11,19 +11,25 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (command === 's about') {
+	const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
+	if (!prefixRegex.test(message.content)) return;
+
+	const [, matchedPrefix] = message.content.match(prefixRegex);
+	const args = message.content.slice(matchedPrefix.length).trim().split(/ +/);
+	const command = args.shift().toLowerCase();
+    if (command === 'about') {
     	message.channel.send('```md\nTeam phát triển MMO Bot bao gồm\nGen 1st : Startear\nGen 2nd : liiih\nGen 3rd : dragoncv\nGen 4th : DXgamer\nGen 5th : SniderLane\n```');
   	}
-    if (command === 's startear') {
+    if (command === 'startear') {
     	message.channel.send('https://i.imgur.com/YxJTidU.png');
   	}
-    if (command === 's emprovjp') {
+    if (command === 'emprovjp') {
     	message.channel.send('https://i.imgur.com/y9oCTLn.png');
   	}
-    if (command === 's random') {
+    if (command === 'random') {
     	message.channel.send(Math.floor(Math.random() * 100) + 1);
   	}
-    if (command === 's avatar') {
+    if (command === 'avatar') {
     const embed = new MessageEmbed()
 	.setColor('#c500ff')
 	.setImage(message.author.displayAvatarURL())
