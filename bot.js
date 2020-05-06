@@ -13,7 +13,7 @@ client.on('message', message => {
 
 // TEST
 
-  if (message.content.toLowerCase() === '?mm') {
+  if (message.content.toLowerCase() === '?waifu') {
     const attachment = new MessageAttachment["https://pbs.twimg.com/profile_images/1034456572548861959/nFGt347o.jpg", "https://i.pinimg.com/originals/0e/43/16/0e431671f5f75cc00befc10c03afc69f.png", "https://i.pinimg.com/originals/5f/43/dd/5f43dd906cc876b0fa3ce33a881f53f1.jpg"];
     message.channel.send(attachment[Math.floor(Math.random() * attachment.length)])
   }
