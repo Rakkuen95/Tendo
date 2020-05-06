@@ -9,12 +9,6 @@ client.on('ready', () => {
     }, 10000);
 });
 
-    if (message.content.toLowerCase() === '?anime') {
-    number = 3;
-    imageNumber = Math.floor (Math.random() * number) + 1;
-    message.channel.send ({files: ["./images/" + imageNumber + ".jpg"]})
-}
-
 client.on('message', message => {
 
 // TEST
@@ -40,15 +34,7 @@ client.on('message', message => {
 	.setImage(message.author.displayAvatarURL())
     message.channel.send(embed);
         }
-	if(message.content.toLowerCase() == "!ping"){ // Check if message is "!ping"
-			message.channel.send("Pinging ...") // Placeholder for pinging ... 
-			.then((msg) => { // Resolve promise
-				msg.edit("Ping: " + (Date.now() - msg.createdTimestamp)) // Edits message with current timestamp minus timestamp of message
-			});
-		}
-    if (message.content.toLowerCase() === '?delete') {
-message.channel.bulkDelete(100);
-  }
+
     if (message.content.toLowerCase() === '?quiz') {
 const quiz = require('./quiz.json');
 const item = quiz[Math.floor(Math.random() * quiz.length)];
