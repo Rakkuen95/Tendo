@@ -8,10 +8,6 @@ client.on('ready', () => {
     }, 10000);
 });
 
-client.once('ready', () => {
-<guild>.channels.cache.find(ch => ch.name === 'bot-commands').send('I came back!');
-});
-
 client.on('message', message => {
     if (message.content === '?about') {
     	message.channel.send('```md\nTeam phát triển MMO Bot bao gồm\nGen 1st : Startear\nGen 2nd : liiih\nGen 3rd : dragoncv\nGen 4th : DXgamer\nGen 5th : SniderLane\n```');
