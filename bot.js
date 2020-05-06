@@ -109,7 +109,8 @@ const rando_imgs = [
 message.channel.send(`${message.author} gave you a hug!`, {
     file: rando_imgs[Math.floor(Math.random() * rando_imgs.length)]
 });
-
+}
+	
 // POKEMMO DEX NATIONAL 
 	
 // GEN-1
