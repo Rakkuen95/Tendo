@@ -40,9 +40,10 @@ client.on('message', message => {
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
-	.setURL('https://discord.js.org/')
 	.addField('Inline field title', 'Some value here', true)
 	.addField('Inline field title', 'Some value here', true)
+	.addField('Inline field title', 'Some value here')
+	.addField('Inline field title', 'Some value here')
 	.setImage('https://cdn.bulbagarden.net/upload/1/11/Trick_Room_V.png')
 	.setTimestamp()
 	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
