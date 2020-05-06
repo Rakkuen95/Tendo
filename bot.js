@@ -100,7 +100,7 @@ message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
 	
 // Pokedex : 001
     if (message.content.toLowerCase() === '?bulbasaur') {
-    	<message>.author.send('```md\nBulbasaur\n> PokeDex Number : 001\n> Egg Group : Monster , Plant\n> Evolution : Bulbasaur → Ivysaur (Lv.16) → Venusaur (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 5             Kanto   Grass   M/D/N   Rare        10      -\n```');
+    	message.author.send('```md\nBulbasaur\n> PokeDex Number : 001\n> Egg Group : Monster , Plant\n> Evolution : Bulbasaur → Ivysaur (Lv.16) → Venusaur (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 5             Kanto   Grass   M/D/N   Rare        10      -\n```');
   	}
 // Pokedex : 002
     if (message.content.toLowerCase() === '?ivysaur') {
