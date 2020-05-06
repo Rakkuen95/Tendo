@@ -2,7 +2,6 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const activities_list = ["Banned","Bored","Loser","WhyU","Please"]; 
 client.on('ready', () => {
-client.channels.cache.get(`699951219292242041`).send('Tôi đã hoạt động trở lại!');
   console.log(`Logged in as ${client.user.tag}!`)
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
@@ -10,7 +9,15 @@ client.channels.cache.get(`699951219292242041`).send('Tôi đã hoạt động t
     }, 10000);
 });
 
+
+
 client.on('message', message => {
+
+// TEST
+
+    if (message.content.toLowerCase() === '?help') {
+    	message.channel.send('```md# Các lệnh hiện tại khả dụng :?pokemon        Hiện thông tin vị trí của Pokemon (Example : ?pikachu)# Các lệnh đang được lập trình :?item           Hiện thông tin tác dụng của Item (Example : ?poke ball)?location       Hiện thông tin của một nơi (Example :?route 1)?move           Hiện thông tin tác dụng của Move (Example : ?tackle)?smogon         Hiện thông tin cần có cho một Pokemon PvP (Example ?s pikachu)# Các lệnh linh tinh :?help           Hiện tin nhắn này?random         Hiện ngẫu nhiên từ 1-100?avatar         Hiện Avatar của bản thân?server         Hiện số lượng thành viên của kênh Discord?about          Hiện các thành viên đang làm việc cho dự án Elite```')
+  	}
     if (message.content.toLowerCase() === '?about') {
     	message.channel.send('```md\nTeam phát triển MMO Bot bao gồm\nGen 1st : Startear\nGen 2nd : liiih\nGen 3rd : dragoncv\nGen 4th : DXgamer\nGen 5th : SniderLane\n```');
   	}
@@ -54,8 +61,6 @@ message.channel.send(item.question).then(() => {
 		});
 });
   }
-
-// TEST
 
   if (message.content.toLowerCase() === '?emilia') {
     const attachment = new MessageAttachment('https://i.pinimg.com/originals/fb/4a/82/fb4a827f677726e5cd64727fbfa33382.gif');
