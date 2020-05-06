@@ -36,14 +36,14 @@ client.on('message', message => {
     message.channel.send(embed);
         }
 
-    if (message.content.toLowerCase() === '?test') {
+    if (message.content.toLowerCase() === '?ball') {
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
-	.setTitle('Some title')
-	.addField('Inline field title', 'Some value here', true)
-	.addField('Inline field title', 'Some value here', true)
-	.addField('Inline field title', 'Some value here')
-	.addField('Inline field title', 'Some value here')
+	.setTitle('Dusk Ball')
+	.addField('Price', '$1,400', true)
+	.addField('Rate', 'x3,5', true)
+	.addField('Effect', 'Inside a Cave or Night Time')
+	.addField('Location', 'Shopping Mall or Veilstones Department Store')
 	.setImage('https://cdn.bulbagarden.net/upload/1/11/Trick_Room_V.png')
 	.setTimestamp()
 	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
