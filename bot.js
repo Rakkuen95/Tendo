@@ -100,25 +100,7 @@ message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
 		message.reply('you reacted with neither a thumbs up, nor a thumbs down.');
 	});
 }
-const GoogleImages = require("google-images");
-const { Client, Attachment } = require("discord.js");
-const client = new Client;
-const googleImages = new GoogleImages("", "");
 
-async function onMessage(message) {
-  if (message.content === "riolu") return;
-  try {
-    const results = await googleImages.search("Riolu Pokemon");
-    const reply = !results.length ?
-      "No results" :
-      new Attachment(results[Math.floor(Math.random() * results.length)].url);
-    message.channel.send(reply);
-  }
-  catch (e) {
-    console.error(e);
-    message.channel.send("Error happened, see the console");
-  }
-}
 	
 // POKEMMO DEX NATIONAL 
 	
