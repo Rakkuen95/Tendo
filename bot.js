@@ -20,7 +20,7 @@ client.on('message', message => {
     	message.channel.send('```md\nTeam phát triển MMO Bot bao gồm\nGen 1st : Startear\nGen 2nd : liiih\nGen 3rd : dragoncv\nGen 4th : DXgamer\nGen 5th : SniderLane\n```');
   	}
   if (message.content.toLowerCase() === '?startear') {
-    const attachment = new MessageAttachment('https://i.imgur.com/70jnuXC.png');
+    const attachment = new MessageAttachment('https://i.imgur.com/8vGJnCN.png');
     message.channel.send(attachment);
   }
     if (message.content.toLowerCase() === '?emprovjp') {
