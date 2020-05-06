@@ -36,7 +36,7 @@ client.on('message', message => {
     message.channel.send(embed);
         }
 
-    if (message.content.toLowerCase() === '?ball') {
+    if (message.content.toLowerCase() === '?test') {
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Dusk Ball')
@@ -44,7 +44,8 @@ client.on('message', message => {
 	.addField('Rate', 'x3,5', true)
 	.addField('Effect', 'Inside a Cave or Night Time')
 	.addField('Location', 'Shopping Mall or Veilstones Department Store')
-	.setImage('https://cdn.bulbagarden.net/upload/1/11/Trick_Room_V.png')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/5/59/Dream_Dusk_Ball_Sprite.png')
+	.setImage('https://cdn.bulbagarden.net/upload/thumb/d/d0/Dusk_Ball_anime.png/375px-Dusk_Ball_anime.png')
 	.setTimestamp()
 	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
 	message.channel.send(embed);
