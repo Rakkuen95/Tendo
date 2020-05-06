@@ -100,6 +100,15 @@ message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
 		message.reply('you reacted with neither a thumbs up, nor a thumbs down.');
 	});
 }
+    if (message.content.toLowerCase() === '?hug') {
+const rando_imgs = [
+'https://media.giphy.com/media/THmLt0Cf02EXcPGDV1/giphy.gif',
+'https://media.giphy.com/media/3o6Zth3OnNv6qDGQ9y/giphy.gif',
+'https://media.giphy.com/media/roVZxEfHaVCWA/giphy.gif',
+]
+message.channel.send(`${message.author} gave you a hug!`, {
+    file: rando_imgs[Math.floor(Math.random() * rando_imgs.length)]
+});
 
 // POKEMMO DEX NATIONAL 
 	
