@@ -16,7 +16,7 @@ client.on('message', message => {
 // TEST
 
     if (message.content.toLowerCase() === '?help') {
-    	message.channel.send('```md# Các lệnh hiện tại khả dụng :?pokemon        Hiện thông tin vị trí của Pokemon (Example : ?pikachu)# Các lệnh đang được lập trình :?item           Hiện thông tin tác dụng của Item (Example : ?poke ball)?location       Hiện thông tin của một nơi (Example :?route 1)?move           Hiện thông tin tác dụng của Move (Example : ?tackle)?smogon         Hiện thông tin cần có cho một Pokemon PvP (Example ?s pikachu)# Các lệnh linh tinh :?help           Hiện tin nhắn này?random         Hiện ngẫu nhiên từ 1-100?avatar         Hiện Avatar của bản thân?server         Hiện số lượng thành viên của kênh Discord?about          Hiện các thành viên đang làm việc cho dự án Elite```')
+    	message.channel.send('```md\n# Các lệnh hiện tại khả dụng :\n?pokemon        Hiện thông tin vị trí của Pokemon (Example : ?pikachu)\n# Các lệnh đang được lập trình :\n?item           Hiện thông tin tác dụng của Item (Example : ?poke ball)\n?location       Hiện thông tin của một nơi (Example :?route 1)\n?move           Hiện thông tin tác dụng của Move (Example : ?tackle)\n?smogon         Hiện thông tin cần có cho một Pokemon PvP (Example ?s pikachu)\n# Các lệnh linh tinh :\n?help           Hiện tin nhắn này\n?random         Hiện ngẫu nhiên từ 1-100\n?avatar         Hiện Avatar của bản thân\n?server         Hiện số lượng thành viên của kênh Discord\n?about          Hiện các thành viên đang làm việc cho dự án Elite\n```')
   	}
     if (message.content.toLowerCase() === '?about') {
     	message.channel.send('```md\nTeam phát triển MMO Bot bao gồm\nGen 1st : Startear\nGen 2nd : liiih\nGen 3rd : dragoncv\nGen 4th : DXgamer\nGen 5th : SniderLane\n```');
