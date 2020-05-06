@@ -2,7 +2,7 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const activities_list = ["Banned","Bored","Loser","WhyU","Please"]; 
 client.on('ready', () => {
-client.channels.get(699917089305002077).send('Chào mọi người!')
+client.channels.get(699917089305002077).send('Chào mọi người!');
   console.log(`Logged in as ${client.user.tag}!`)
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
