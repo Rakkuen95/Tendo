@@ -54,7 +54,7 @@ client.on('message', message => {
 	.setImage('https://cdn.bulbagarden.net/upload/1/11/Trick_Room_V.png')
 	.setTimestamp()
 	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
-channel.send(embed);
+	message.channel.send(embed);
         }
 
     if (message.content.toLowerCase() === '?quiz') {
