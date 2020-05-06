@@ -53,6 +53,7 @@ message.channel.send(item.question).then(() => {
 });
   }
 
+// TEST
 
   if (message.content === '?emilia') {
     const attachment = new MessageAttachment('https://i.pinimg.com/originals/fb/4a/82/fb4a827f677726e5cd64727fbfa33382.gif');
@@ -93,174 +94,10 @@ message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
 	});
 }
 
-// Dive Ball
-  if (message.content === '^item dive ball') {
-    const embed = new MessageEmbed()
-	.setColor('#c500ff')
-	.setTitle('Dive Ball')
-	.setDescription('**Price** : $1,500\n**Rate** : x3.0\n**Effect** : Diving , Surfing , or Fishing\n**Location** : Mossdeep City\n')
-	.setThumbnail('https://cdn.bulbagarden.net/upload/9/9a/Dream_Dive_Ball_Sprite.png')
-	.setTimestamp()
-	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
-    message.channel.send(embed);
-  }
-// Dusk Ball
-  if (message.content === '^item dusk ball') {
-    const embed = new MessageEmbed()
-	.setColor('#c500ff')
-	.setTitle('Dusk Ball')
-	.setDescription('**Price** : $1,400\n**Rate** : x3.5\n**Effect** : Inside a Cave or Night Time\n**Location** : Shopping Mall or Veilstones Department Store\n')
-	.setThumbnail('https://cdn.bulbagarden.net/upload/5/59/Dream_Dusk_Ball_Sprite.png')
-	.setTimestamp()
-	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
-    message.channel.send(embed);
-  }
-// Great Ball
-  if (message.content === '^item great ball') {
-    const embed = new MessageEmbed()
-	.setColor('#c500ff')
-	.setTitle('Great Ball')
-	.setDescription('**Price** : $600\n**Rate** : x1.5\n**Effect** : None\n**Location** : Everywhere\n')
-	.setThumbnail('https://cdn.bulbagarden.net/upload/b/bf/Dream_Great_Ball_Sprite.png')
-	.setTimestamp()
-	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
-    message.channel.send(embed);
-  }
-// Heal Ball
-  if (message.content === '^item heal ball') {
-    const embed = new MessageEmbed()
-	.setColor('#c500ff')
-	.setTitle('Heal Ball')
-	.setDescription('**Price** : $500\n**Rate** : x1.0\n**Effect** : Restores HP and Removes Status Ailments\n**Location** : Shopping Mall or Veilstones Department Store\n')
-	.setThumbnail('https://cdn.bulbagarden.net/upload/0/0e/Dream_Heal_Ball_Sprite.png')
-	.setTimestamp()
-	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
-    message.channel.send(embed);
-  }
-// Luxury Ball
-  if (message.content === '^item luxury ball') {
-    const embed = new MessageEmbed()
-	.setColor('#c500ff')
-	.setTitle('Luxury Ball')
-	.setDescription('**Price** : $1,000\n**Rate** : x1.0\n**Effect** : Increases Happiness\n**Location** : Shopping Mall or Verdanturf Town\n')
-	.setThumbnail('https://cdn.bulbagarden.net/upload/7/7e/Dream_Luxury_Ball_Sprite.png')
-	.setTimestamp()
-	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
-    message.channel.send(embed);
-  }
-// Master Ball
-  if (message.content === '^item master ball') {
-    const embed = new MessageEmbed()
-	.setColor('#c500ff')
-	.setTitle('Master Ball')
-	.setDescription('**Rate** : x255.0\n**Effect** : 100% Success\n**Location** : Stories\n')
-	.setThumbnail('https://cdn.bulbagarden.net/upload/9/95/Dream_Master_Ball_Sprite.png')
-	.setTimestamp()
-	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
-    message.channel.send(embed);
-  }
-// Nest Ball
-  if (message.content === '^item nest ball') {
-    const embed = new MessageEmbed()
-	.setColor('#c500ff')
-	.setTitle('Nest Ball')
-	.setDescription('**Price** : $1,000\n**Rate** : x3.0 (< Lv. 20) , x2.0 (< Lv. 30) , x1.0 (>Lv. 30)\n**Effect** : Depends on Levels\n**Location** : Shopping Mall , Verdenturf Town , or Veilstones Department Store\n')
-	.setThumbnail('https://cdn.bulbagarden.net/upload/8/8c/Dream_Nest_Ball_Sprite.png')
-	.setTimestamp()
-	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
-    message.channel.send(embed);
-  }
-// Net Ball
-  if (message.content === '^item net ball') {
-    const embed = new MessageEmbed()
-	.setColor('#c500ff')
-	.setTitle('Net Ball')
-	.setDescription('**Price** : $1,000\n**Rate** : x3.0\n**Effect** : Water or Bug Type\n**Location** : Shopping Mall , Mossdeep City , or Veilstones Department Store\n')
-	.setThumbnail('https://cdn.bulbagarden.net/upload/a/a0/Dream_Net_Ball_Sprite.png')
-	.setTimestamp()
-	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
-    message.channel.send(embed);
-  }
-// Quick Ball
-  if (message.content === '^item quick ball') {
-    const embed = new MessageEmbed()
-	.setColor('#c500ff')
-	.setTitle('Quick Ball')
-	.setDescription('**Price** : $1,200\n**Rate** : x4.0\n**Effect** : First Turn\n**Location** : Shoppiing Mall or Veilstones Department Store\n')
-	.setThumbnail('https://cdn.bulbagarden.net/upload/9/90/Dream_Quick_Ball_Sprite.png')
-	.setTimestamp()
-	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
-    message.channel.send(embed);
-  }
-// Poke Ball
-  if (message.content === '^item poke ball') {
-    const embed = new MessageEmbed()
-	.setColor('#c500ff')
-	.setTitle('Poke Ball')
-	.setDescription('**Price** : $200\n**Rate** : x1.0\n**Effect** : None\n**Location** : Everywhere\n')
-	.setThumbnail('https://cdn.bulbagarden.net/upload/7/79/Dream_Pok%C3%A9_Ball_Sprite.png')
-	.setTimestamp()
-	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
-    message.channel.send(embed);
-  }
-// Premier Ball
-  if (message.content === '^item premier ball') {
-    const embed = new MessageEmbed()
-	.setColor('#c500ff')
-	.setTitle('Premier Ball')
-	.setDescription('**Rate** : x1.5\n**Effect** : None\n**Location** : PokeMMO Event Prize\n')
-	.setThumbnail('https://cdn.bulbagarden.net/upload/6/64/Dream_Premier_Ball_Sprite.png')
-	.setTimestamp()
-	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
-    message.channel.send(embed);
-  }
-// Repeat Ball
-  if (message.content === '^item repeat ball') {
-    const embed = new MessageEmbed()
-	.setColor('#c500ff')
-	.setTitle('Repeat Ball')
-	.setDescription('**Price** : $1,350\n**Rate** : x2.5\n**Effect** : Caught Pokemon\n**Location** : Shopping Mall , Rustboro City or Veilstones Department Store\n')
-	.setThumbnail('https://cdn.bulbagarden.net/upload/d/df/Dream_Repeat_Ball_Sprite.png')
-	.setTimestamp()
-	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
-    message.channel.send(embed);
-  }
-// Safari Ball
-  if (message.content === '^item safari ball') {
-    const embed = new MessageEmbed()
-	.setColor('#c500ff')
-	.setTitle('Safari Ball')
-	.setDescription('**Rate** : x1.5\n**Effect** : Only Safari\n**Location** : Safari Zone\n')
-	.setThumbnail('https://cdn.bulbagarden.net/upload/1/15/Dream_Safari_Ball_Sprite.png')
-	.setTimestamp()
-	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
-    message.channel.send(embed);
-  }
-// Timer Ball
-  if (message.content === '^item timer ball') {
-    const embed = new MessageEmbed()
-	.setColor('#c500ff')
-	.setTitle('Timer Ball')
-	.setDescription('**Price** : $900\n**Rate** : x1.0 (<11th Turns) , x2.0 (<21st Turns) , x3.0 (>21st Turns)\n**Effect** : Depends on Turns\n**Location** : Shopping Mall, Rustboro City or Veilstones Department Store\n')
-	.setThumbnail('https://cdn.bulbagarden.net/upload/f/f0/Dream_Timer_Ball_Sprite.png')
-	.setTimestamp()
-	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
-    message.channel.send(embed);
-  }
-// Ultra Ball
-  if (message.content === '^item ultra ball') {
-    const embed = new MessageEmbed()
-	.setColor('#c500ff')
-	.setTitle('Ultra Ball')
-	.setDescription('**Price** : $1,200\n**Rate** : x2.0\n**Effect** : None\n**Location** : Everywhere\n')
-	.setThumbnail('https://cdn.bulbagarden.net/upload/a/a8/Dream_Ultra_Ball_Sprite.png')
-	.setTimestamp()
-	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
-    message.channel.send(embed);
-  }
-
 // POKEMMO DEX NATIONAL 
+	
 // GEN-1
+	
 // Pokedex : 001
     if (message.content.toLowerCase() === '?bulbasaur') {
     	message.channel.send('```md\nBulbasaur\n> PokeDex Number : 001\n> Egg Group : Monster , Plant\n> Evolution : Bulbasaur → Ivysaur (Lv.16) → Venusaur (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 5             Kanto   Grass   M/D/N   Rare        10      -\n```');
@@ -924,6 +761,9 @@ message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
     if (message.content === '?mew') {
     	message.channel.send('???');
   	}
+
+// GEN-4
+
 // Pokedex : 387
     if (message.content === '?turtwig') {
     	message.channel.send('```md\nTurtwig\n> PokeDex Number : 387\n> Egg Group : Monster , Plant\n> Evolution : Turtwig → Grotle (Lv.18) → Torterra (Lv.32)\n#Map                Region  Type    Time    Rarity      Level   Item\nSendoff Spring      Sinnoh  Grass   M/D/N   Rare        35      -\n```');
@@ -1296,6 +1136,9 @@ message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
     if (message.content === '?rotom') {
       message.channel.send('```md\nRotom\n> PokeDex Number : 479\n> Egg Group : Genderless\n#Map                Region  Type    Time    Rarity      Level   Item\nOld Chateau         Sinnoh  Inside  M/D/N   Rare        15      -\n```');
   	}
+
+// GEN-5
+
 // Pokedex : 495
     if (message.content === '?snivy') {
     	message.channel.send('```md\nSnivy\n> PokeDex Number : 495\n> Egg Group : Field , Plant\n> Evolution : Snivy → Servine (Lv.17) → Serperior (Lv.36)\n#Map                Region  Type    Time    Rarity      Level   Item\nLostlorn Forest     Unova   Grass   M/D/N   Rare        20      -\n```');
@@ -1919,7 +1762,176 @@ message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
     if (message.content === '?genesect') {
     	message.channel.send('???');
   	}
+
+// Item Dex
+
+// Dive Ball
+  if (message.content === '^item dive ball') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setTitle('Dive Ball')
+	.setDescription('**Price** : $1,500\n**Rate** : x3.0\n**Effect** : Diving , Surfing , or Fishing\n**Location** : Mossdeep City\n')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/9/9a/Dream_Dive_Ball_Sprite.png')
+	.setTimestamp()
+	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
+    message.channel.send(embed);
+  }
+// Dusk Ball
+  if (message.content === '^item dusk ball') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setTitle('Dusk Ball')
+	.setDescription('**Price** : $1,400\n**Rate** : x3.5\n**Effect** : Inside a Cave or Night Time\n**Location** : Shopping Mall or Veilstones Department Store\n')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/5/59/Dream_Dusk_Ball_Sprite.png')
+	.setTimestamp()
+	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
+    message.channel.send(embed);
+  }
+// Great Ball
+  if (message.content === '^item great ball') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setTitle('Great Ball')
+	.setDescription('**Price** : $600\n**Rate** : x1.5\n**Effect** : None\n**Location** : Everywhere\n')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/b/bf/Dream_Great_Ball_Sprite.png')
+	.setTimestamp()
+	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
+    message.channel.send(embed);
+  }
+// Heal Ball
+  if (message.content === '^item heal ball') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setTitle('Heal Ball')
+	.setDescription('**Price** : $500\n**Rate** : x1.0\n**Effect** : Restores HP and Removes Status Ailments\n**Location** : Shopping Mall or Veilstones Department Store\n')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/0/0e/Dream_Heal_Ball_Sprite.png')
+	.setTimestamp()
+	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
+    message.channel.send(embed);
+  }
+// Luxury Ball
+  if (message.content === '^item luxury ball') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setTitle('Luxury Ball')
+	.setDescription('**Price** : $1,000\n**Rate** : x1.0\n**Effect** : Increases Happiness\n**Location** : Shopping Mall or Verdanturf Town\n')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/7/7e/Dream_Luxury_Ball_Sprite.png')
+	.setTimestamp()
+	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
+    message.channel.send(embed);
+  }
+// Master Ball
+  if (message.content === '^item master ball') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setTitle('Master Ball')
+	.setDescription('**Rate** : x255.0\n**Effect** : 100% Success\n**Location** : Stories\n')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/9/95/Dream_Master_Ball_Sprite.png')
+	.setTimestamp()
+	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
+    message.channel.send(embed);
+  }
+// Nest Ball
+  if (message.content === '^item nest ball') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setTitle('Nest Ball')
+	.setDescription('**Price** : $1,000\n**Rate** : x3.0 (< Lv. 20) , x2.0 (< Lv. 30) , x1.0 (>Lv. 30)\n**Effect** : Depends on Levels\n**Location** : Shopping Mall , Verdenturf Town , or Veilstones Department Store\n')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/8/8c/Dream_Nest_Ball_Sprite.png')
+	.setTimestamp()
+	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
+    message.channel.send(embed);
+  }
+// Net Ball
+  if (message.content === '^item net ball') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setTitle('Net Ball')
+	.setDescription('**Price** : $1,000\n**Rate** : x3.0\n**Effect** : Water or Bug Type\n**Location** : Shopping Mall , Mossdeep City , or Veilstones Department Store\n')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/a/a0/Dream_Net_Ball_Sprite.png')
+	.setTimestamp()
+	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
+    message.channel.send(embed);
+  }
+// Quick Ball
+  if (message.content === '^item quick ball') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setTitle('Quick Ball')
+	.setDescription('**Price** : $1,200\n**Rate** : x4.0\n**Effect** : First Turn\n**Location** : Shoppiing Mall or Veilstones Department Store\n')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/9/90/Dream_Quick_Ball_Sprite.png')
+	.setTimestamp()
+	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
+    message.channel.send(embed);
+  }
+// Poke Ball
+  if (message.content === '^item poke ball') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setTitle('Poke Ball')
+	.setDescription('**Price** : $200\n**Rate** : x1.0\n**Effect** : None\n**Location** : Everywhere\n')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/7/79/Dream_Pok%C3%A9_Ball_Sprite.png')
+	.setTimestamp()
+	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
+    message.channel.send(embed);
+  }
+// Premier Ball
+  if (message.content === '^item premier ball') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setTitle('Premier Ball')
+	.setDescription('**Rate** : x1.5\n**Effect** : None\n**Location** : PokeMMO Event Prize\n')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/6/64/Dream_Premier_Ball_Sprite.png')
+	.setTimestamp()
+	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
+    message.channel.send(embed);
+  }
+// Repeat Ball
+  if (message.content === '^item repeat ball') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setTitle('Repeat Ball')
+	.setDescription('**Price** : $1,350\n**Rate** : x2.5\n**Effect** : Caught Pokemon\n**Location** : Shopping Mall , Rustboro City or Veilstones Department Store\n')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/d/df/Dream_Repeat_Ball_Sprite.png')
+	.setTimestamp()
+	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
+    message.channel.send(embed);
+  }
+// Safari Ball
+  if (message.content === '^item safari ball') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setTitle('Safari Ball')
+	.setDescription('**Rate** : x1.5\n**Effect** : Only Safari\n**Location** : Safari Zone\n')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/1/15/Dream_Safari_Ball_Sprite.png')
+	.setTimestamp()
+	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
+    message.channel.send(embed);
+  }
+// Timer Ball
+  if (message.content === '^item timer ball') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setTitle('Timer Ball')
+	.setDescription('**Price** : $900\n**Rate** : x1.0 (<11th Turns) , x2.0 (<21st Turns) , x3.0 (>21st Turns)\n**Effect** : Depends on Turns\n**Location** : Shopping Mall, Rustboro City or Veilstones Department Store\n')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/f/f0/Dream_Timer_Ball_Sprite.png')
+	.setTimestamp()
+	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
+    message.channel.send(embed);
+  }
+// Ultra Ball
+  if (message.content === '^item ultra ball') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setTitle('Ultra Ball')
+	.setDescription('**Price** : $1,200\n**Rate** : x2.0\n**Effect** : None\n**Location** : Everywhere\n')
+	.setThumbnail('https://cdn.bulbagarden.net/upload/a/a8/Dream_Ultra_Ball_Sprite.png')
+	.setTimestamp()
+	.setFooter('MMOVietnamese', 'https://i.imgur.com/M89H3PF.png');
+    message.channel.send(embed);
+  }
+
+
+
 });
-
-
 client.login(process.env.BOT_TOKEN);
