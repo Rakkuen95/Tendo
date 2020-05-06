@@ -9,7 +9,11 @@ client.on('ready', () => {
     }, 10000);
 });
 
-
+    if (message.content.toLowerCase() === '?anime') {
+    number = 3;
+    imageNumber = Math.floor (Math.random() * number) + 1;
+    message.channel.send ({files: ["./images/" + imageNumber + ".jpg"]})
+}
 
 client.on('message', message => {
 
