@@ -767,6 +767,566 @@ message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
     	message.channel.send('???');
   	}
 
+
+
+// GEN-3
+// Pokedex : 252
+    if (message.content.toLowerCase() === '?treecko') {
+    	message.channel.send('```md\nTreecko\n> PokeDex Number : 252\n> Egg Group : Monster , Dragon\n> Evolution : Treecko → Grovyle (Lv.16) → Sceptile (Lv.36)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 119           Hoenn   Grass   M/D/N   Rare        25      -\n```');
+  	}
+// Pokedex : 253
+    if (message.content.toLowerCase() === '?grovyle') {
+    	message.channel.send('```md\nGrovyle\n> PokeDex Number : 253\n> Egg Group : Monster , Dragon\n> Evolution : Treecko → Grovyle (Lv.16) → Sceptile (Lv.36)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 254
+    if (message.content.toLowerCase() === '?sceptile') {
+    	message.channel.send('```md\nSceptile\n> PokeDex Number : 254\n> Egg Group : Monster , Dragon\n> Evolution : Treecko → Grovyle (Lv.16) → Sceptile (Lv.36)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 255
+    if (message.content.toLowerCase() === '?torchic') {
+    	message.channel.send('```md\nTorchic\n> PokeDex Number : 255\n> Egg Group : Field\n> Evolution : Torchic → Combusken (Lv.16) → Blaziken (Lv.36)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 112           Hoenn   Grass   M/D/N   Rare        15      -\n```');
+  	}
+// Pokedex : 256
+    if (message.content.toLowerCase() === '?combusken') {
+    	message.channel.send('```md\nCombusken\n> PokeDex Number : 256\n> Egg Group : Field\n> Evolution : Torchic → Combusken (Lv.16) → Blaziken (Lv.36)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 257
+    if (message.content.toLowerCase() === '?blaziken') {
+    	message.channel.send('```md\nBlaziken\n> PokeDex Number : 257\n> Egg Group : Field\n> Evolution : Torchic → Combusken (Lv.16) → Blaziken (Lv.36)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 258
+    if (message.content.toLowerCase() === '?mudkip') {
+    	message.channel.send('```md\nMudkip\n> PokeDex Number : 258\n> Egg Group : Monster , Water A\n> Evolution : Mudkip → Marshtomp (Lv.16) → Swampert (Lv.36)\n#Map            Region  Type    Time    Rarity      Level   Item\nRoute 120       Hoenn   Water   M/D/N   Rare        25      -\n```');
+  	}
+// Pokedex : 259
+    if (message.content.toLowerCase() === '?marshtomp') {
+    	message.channel.send('```md\nMarshtomp\n> PokeDex Number : 259\n> Egg Group : Monster , Water A\n> Evolution : Mudkip → Marshtomp (Lv.16) → Swampert (Lv.36)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 260
+    if (message.content.toLowerCase() === '?swampert') {
+    	message.channel.send('```md\nSwampert\n> PokeDex Number : 260\n> Egg Group : Monster , Water A\n> Evolution : Mudkip → Marshtomp (Lv.16) → Swampert (Lv.36)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 261
+    if (message.content.toLowerCase() === '?poochyena') {
+    	message.channel.send('```md\nPoochyena\n> PokeDex Number : 261\n> Egg Group : Field\n> Evolution : Poochyena → Mightyena (Lv.18)\n#Map                Region  Type    Time    Rarity      Level   Item\nAltering Cave       Kanto   Cave    M/D/N   V.Rare      8-20    -\nAltering Cave       Hoenn   Cave    M/D/N   V.Rare      8-20    -\nPetalburg Woods     Hoenn   Grass   M/D/N   V.Common    5-6     -\nRoute 101           Hoenn   Grass   M/D/N   V.Common    2-3     -\nRoute 102           Hoenn   Grass   M/D/N   Common      3-4     -\nRoute 103           Hoenn   Grass   M/D/N   V.Common    2-4     -\nRoute 104           Hoenn   Grass   M/D/N   V.Common    4-5     -\nRoute 110           Hoenn   Grass   M/D/N   Uncommon    13      -\nRoute 116           Hoenn   Grass   M/D/N   Common      6-8     -\nRoute 117           Hoenn   Grass   M/D/N   Common      13-14   -\nRoute 120           Hoenn   Grass   M/D/N   Uncommon    25      -\nRoute 121           Hoenn   Grass   M/D/N   Uncommon    27-29   -\nRoute 123           Hoenn   Grass   M/D/N   Rare        28-30   -\n```');
+  	}
+// Pokedex : 262
+    if (message.content.toLowerCase() === '?mightyena') {
+    	message.channel.send('```md\nMightyena\n> PokeDex Number : 262\n> Egg Group : Field\n> Evolution : Poochyena → Mightyena (Lv.18)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 120           Hoenn   Grass    M/D/N  Uncommon    25-27   -\nRoute 120           Hoenn   Grass    M/D/N  Horde       24-25   -\nRoute 121           Hoenn   Grass    M/D/N  Uncommon    28-30   -\nRoute 123           Hoenn   Grass    M/D/N  Uncommon    29-31   -\nRoute 123           Hoenn   Grass    M/D/N  Horde       26-28   -\n```');
+  	}
+// Pokedex : 263
+    if (message.content.toLowerCase() === '?zigzagoon') {
+    	message.channel.send('```md\nZigzagoon\n> PokeDex Number : 263\n> Egg Group : Field\n> Evolution : Zigzagoon →  Linoone (Lv.20)\n#Map                Region  Type    Time    Rarity      Level   Item\nAltering Cave       Kanto   Cave    M/D/N   V.Rare      8-16    -\nAltering Cave       Hoenn   Cave    M/D/N   V.Rare      8-16    -\n Petalburg Woods     Hoenn   Grass   M/D/N   V.Common    5-6     -\nRoute 101           Hoenn   Grass   M/D/N   V.Common    2-3     -\nRoute 102           Hoenn   Grass   M/D/N   Common      3-4     -\nRoute 103           Hoenn   Grass   M/D/N   V.Common    3-4     -\nRoute 104           Hoenn   Grass   M/D/N   V.Common    4-5     -\nRoute 110           Hoenn   Grass   M/D/N   Uncommon    13      -\nRoute 116           Hoenn   Grass   M/D/N   Common      6-8     -\nRoute 117           Hoenn   Grass   M/D/N   Common      13-14   -\nRoute 118           Hoenn   Grass   M/D/N   V.Common    24-26   -\nRoute 119           Hoenn   Grass   M/D/N   Common      25-27   -\nRoute 120           Hoenn   Grass   M/D/N   Uncommon    25      -\nRoute 121           Hoenn   Grass   M/D/N   Uncommon    27-29   -\nRoute 123           Hoenn   Grass   M/D/N   Rare        28-30   -\n```');
+  	}
+// Pokedex : 264
+    if (message.content.toLowerCase() === '?linoone') {
+    	message.channel.send('```md\nLinoone\n> PokeDex Number : 264\n> Egg Group : Field\n> Evolution : Zigzagoon →  Linoone (Lv.20)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 118           Hoenn   Grass   M/D/N   Uncommon    26      -\nRoute 118           Hoenn   Grass   M/D/N   Horde       24-26   -\nRoute 119           Hoenn   Grass   M/D/N   Common      25-27   -\nRoute 120           Hoenn   Grass   M/D/N   Uncommon    25-27   -\nRoute 121           Hoenn   Grass   M/D/N   Uncommon    28-30   -\nRoute 121           Hoenn   Grass   M/D/N   Horde       26-28   -\nRoute 123           Hoenn   Grass   M/D/N   Uncommon    29-31   -\nRoute 123           Hoenn   Grass   M/D/N   Horde       26-28   -\n```');
+  	}
+// Pokedex : 265
+    if (message.content.toLowerCase() === '?wurmple') {
+    	message.channel.send('```md\nWurmple\n> PokeDex Number : 265\n> Egg Group : Bug\n> Evolution 1 : Wurmple → Silcoon (Lv.7) → Beautifly (Lv.10)\n> Evolution 2 : Wurmple → Cascoon (Lv.7) → Dustox (Lv.10)\n#Map                Region  Type    Time    Rarity      Level   Item\nPetalburg Woods     Hoenn   Grass   M/D/N   Common      4-5     -\nRoute 101           Hoenn   Grass   M/D/N   V.Common    13      -\nRoute 102           Hoenn   Grass   M/D/N   V.Common    6-8     -\nRoute 104           Hoenn   Grass   M/D/N   Common      13-14   -\nEterna forest       Sinnoh  Grass   M/D/N   Uncommon    24-26   -\nHoney Tree          Sinnoh  H.Tree  M/D/N   Common      25-27   -\nRoute 204           Sinnoh  Grass   M/D     Uncommon    25      -\nRoute 204           Sinnoh  Grass   M/D     Horde       27-29   -\nRoute 205           Sinnoh  Grass   M/D     Rare        28-30   -\n```');
+  	}
+// Pokedex : 266
+    if (message.content.toLowerCase() === '?silcoon') {
+    	message.channel.send('```md\nSilcoon\n> PokeDex Number : 266\n> Egg Group : Bug\n> Evolution 1 : Wurmple → Silcoon (Lv.7) → Beautifly (Lv.10)\n> Evolution 2 : Wurmple → Cascoon (Lv.7) → Dustox (Lv.10)\n#Map                Region  Type    Time    Rarity      Level   Item\nPetalburg Woods     Hoenn   Grass   M/D/N   Common      4-5     -\nEnterna forest      Hoenn   Grass   M/D/N   V.Common    13      -\nHoney Tree          Hoenn   Grass   M/D/N   V.Common    6-8     -\nRoute 205           Hoenn   Grass   M/D/N   Common      13-14   -\n```');
+  	}
+// Pokedex : 267
+    if (message.content.toLowerCase() === '?beautifly') {
+    	message.channel.send('```md\nBeautifly\n> PokeDex Number : 267\n> Egg Group : Bug\n> Evolution 1 : Wurmple → Silcoon (Lv.7) → Beautifly (Lv.10)\n> Evolution 2 : Wurmple → Cascoon (Lv.7) → Dustox (Lv.10)\n#Map                Region  Type    Time    Rarity      Level   Item\nEnterna Forest      Sinnoh  Grass   M/D/N   V.Rare      14      -\nHoney Tree          Sinnoh  H.Tree  M/D/N   Common      10-20   -\nRoute 205           Sinnoh  Grass   M/D/N   V.Rare      15      -\nRoute 224           Sinnoh  Grass   M/D/N   Rare        52      -\nRoute 229           Sinnoh  Grass   M/D/N   Rare        48      -\nRoute 230           Sinnoh  Grass   M/D/N   Rare        51      -\n```');
+  	}
+// Pokedex : 268
+    if (message.content.toLowerCase() === '?cascoon') {
+    	message.channel.send('```md\nCascoon\n> PokeDex Number : 268\n> Egg Group : Bug\n> Evolution 1 : Wurmple → Silcoon (Lv.7) → Beautifly (Lv.10)\n> Evolution 2 : Wurmple → Cascoon (Lv.7) → Dustox (Lv.10)\n#Map                Region  Type    Time    Rarity      Level   Item\nPetalburg Woods     Sinnoh  Grass   M/D/N   V.Rare      15      -\nEnterna Forest      Sinnoh  Grass   M/D/N   V.Rare      14      -\nHoney Tree          Sinnoh  H.Tree  M/D/N   Common      10-20   -\nRoute 205           Sinnoh  Grass   M/D/N   Rare        52      -\n```');
+  	}
+// Pokedex : 269
+    if (message.content.toLowerCase() === '?dustox') {
+    	message.channel.send('```md\nDustox\n> PokeDex Number : 269\n> Egg Group : Bug\n> Evolution 1 : Wurmple → Silcoon (Lv.7) → Beautifly (Lv.10)\n> Evolution 2 : Wurmple → Cascoon (Lv.7) → Dustox (Lv.10)\n#Map                Region  Type    Time    Rarity      Level   Item\nEnterna Forest      Sinnoh   Grass  M/D/N   V.Rare      14      -\nHoney Tree          Sinnoh   H.Tree M/D/N   Common      10-20   -\nRoute 205           Sinnoh   Grass  M/D/N   V.Rare      15      -\nRoute 224           Sinnoh   Grass  M/D/N   Rare        52      -\nRoute 229           Sinnoh   Grass  M/D/N   Rare        48      -\nRoute 230           Sinnoh   Grass  M/D/N   Rare        51      -\n```');
+  	}
+// Pokedex : 270
+    if (message.content.toLowerCase() === '?lotad') {
+    	message.channel.send('```md\nLotad\n> PokeDex Number : 270\n> Egg Group : Water A , Grass\n> Evolution : Lotad → Lombre (Lv.14) → Ludicolo (Use Waterstone)\n#Map                Region  Type    Time    Rarity      Level   Item\nPetalburg City      Hoenn   Grass   M/D/N   Uncommon    20-30   -\nRoute 102           Hoenn   Grass   M/D/N   Uncommon    3-4     -\nRoute 102           Hoenn   Grass   M/D/N   Uncommon    20-30   -\nRoute 111           Hoenn   Grass   M/D/N   Uncommon    20-30   -\nRoute 114           Hoenn   H.Tree  M/D/N   Common      16-19   -\nRoute 114           Hoenn   Grass   M/D/N   Uncommon    20-30   -\nRoute 114           Hoenn   Grass   M/N     Horde       15-17   -\nRoute 117           Hoenn   Grass   M/D/N   Common      20-30   -\nRoute 120           Hoenn   Grass   M/D/N   Uncommon    25-30   -\nRoute 123           Hoenn   Grass   M/D/N   Uncommon    25-30   -\n```');
+  	}
+// Pokedex : 271
+    if (message.content.toLowerCase() === '?lombre') {
+    	message.channel.send('```md\nLombre\n> PokeDex Number : 271\n> Egg Group : Water A , Grass\n> Evolution : Lotad → Lombre (Lv.14) → Ludicolo (Use Waterstone)\n#Map                Region  Type    Time    Rarity      Level   Item\nPetalburg City      Hoenn   Water   N       Rare        20-30   -\nRoute 102           Hoenn   Water   N       Rare        20-30   -\nRoute 114           Hoenn   Grass   M/D/N   Rare        16-19   -\nRoute 114           Hoenn   Water   M/D/N   Rare        20-30   -\nRoute 117           Hoenn   Water   M/D/N   Common      20-30   -\nRoute 117           Hoenn   Water   M/D/N   Horde       20-30   -\nRoute 120           Hoenn   Water   M/D/N   Uncommon    25-30   -\nRoute 123           Hoenn   Water   N       Rare        25-30   -\n```');
+  	}
+// Pokedex : 272
+    if (message.content.toLowerCase() === '?ludicolo') {
+    	message.channel.send('```md\nLudicolo\n> PokeDex Number : 272\n> Egg Group : Water A , Grass\n> Evolution : Lotad → Lombre (Lv.14) → Ludicolo (Use Waterstone)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 273
+    if (message.content.toLowerCase() === '?seedot') {
+    	message.channel.send('```md\nSeedot\n> PokeDex Number : 273\n> Egg Group : Field , Grass\n> Evolution : Seedot → Nuzleaf (Lv.14) → Shiftry (Use Leafstone)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 102           Hoenn   Grass   M/D/N   Uncommon    3-4     -\nRoute 104           Hoenn   Grass   M/D/N   Uncommon    16-19   -\nRoute 104           Hoenn   Grass   M/D     Horde       15-17   -\nRoute 117           Hoenn   Grass   M/D/N   Uncommon    13      -\nRoute 120           Hoenn   Grass   M/D/N   Rare        25      -\n```');
+  	}
+// Pokedex : 274
+    if (message.content.toLowerCase() === '?nuzleaf') {
+    	message.channel.send('```md\nNuzleaf\n> PokeDex Number : 274\n> Egg Group : Field , Grass\n> Evolution : Seedot → Nuzleaf (Lv.14) → Shiftry (Use Leafstone)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 114           Hoenn   Grass   M/D/N   Rare        16-19   -\n```');
+  	}
+// Pokedex : 275
+    if (message.content.toLowerCase() === '?shiftry') {
+    	message.channel.send('```md\nShiftry\n> PokeDex Number : 275\n> Egg Group : Field , Grass\n> Evolution : Seedot → Nuzleaf (Lv.14) → Shiftry (Use Leafstone)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 276
+    if (message.content.toLowerCase() === '?taillow') {
+    	message.channel.send('```md\nTaillow\n> PokeDex Number : 276\n> Egg Group : Flying\n> Evolution : Taillow → Swellow (Lv.22)\n#Map                Region  Type    Time    Rarity      Level   Item\nPetalburg Woods     Hoenn   Grass   M/D     Rare        5-6     -\nRoute 104           Hoenn   Grass   M/D/N   Uncommon    3-5     -\nRoute 115           Hoenn   Grass   M/D/N   Uncommon    23-25   -\nRoute 116           Hoenn   Grass   M/D/N   Uncommon    6-7     -\n```');
+  	}
+// Pokedex : 277
+    if (message.content.toLowerCase() === '?swellow') {
+    	message.channel.send('```md\nSwellow\n> PokeDex Number : 277\n> Egg Group : Flying\n> Evolution : Taillow → Swellow (Lv.22)\n#Map                Region  Type    Time    Rarity      Level   Item\n Route 115           Hoenn   Grass   M/D/N   Uncommon    25      -\nGiant Chasm         Hoenn   Grass   M/D/N   Rare        47      -\nGiant Chasm         Hoenn   D.Grass M/D/N   Rare        52      -\nLostlorn Forest     Hoenn   Shadow  M/D/N   Special     32-42   -\nRoute 13            Hoenn   Grass   M/D     Horde       46-47   -\nRoute 13            Hoenn   Grass   M/D/N   Uncommon    47      -\nRoute 13            Hoenn   D.Grass M/D/N   Uncommon    52      -\n```');
+  	}
+// Pokedex : 278
+    if (message.content.toLowerCase() === '?wingull') {
+    	message.channel.send('```md\nWingull\n> PokeDex Number : 278\n> Egg Group : Flying , Water A\n> Evolution : Wingull → Pelipper (Lv.25)\n#Map                Region  Type    Time    Rarity      Level   Item\nDewford Town        Hoenn   Water   M/D/N   Rare        20-30   -\nLilycove City       Hoenn   Water   M/D/N   Uncommon    25-30   -\nLilycove City       Hoenn   Water   M/D/N   Horde       25-30   -\nMt.Pyre             Hoenn   Grass   M/D/N   Uncommon    30      -\nRoute 103           Hoenn   Water   M/D/N   Uncommon    20-30   -\nRoute 103           Hoenn   Grass   M/D/N   Horde       2-4     -\nRoute 103           Hoenn   Water   M/D/N   Uncommon    20-30   -\nRoute 104           Hoenn   Water   M/D/N   Common      20-30   -\nRoute 104           Hoenn   Grass   M/D/N   Horde       3-5     -\nRoute 104           Hoenn   Water   M/D/N   Uncommon    20-30   -\nRoute 105           Hoenn   Water   M/D/N   V.Common    20-30   -\nRoute 105           Hoenn   Water   M/D/N   Horde       20-30   -\nRoute 106           Hoenn   Water   M/D/N   Uncommon    20-30   -\nRoute 106           Hoenn   Water   M/D/N   Horde       20-30   -\nRoute 107           Hoenn   Water   M/D/N   Uncommon    20-30   -\nRoute 108           Hoenn   Water   M/D/N   Uncommon    20-30   -\nRoute 108           Hoenn   Water   M/D/N   Horde       20-30   -\nRoute 109           Hoenn   Water   M/D/N   Uncommon    20-30   -\nRoute 109           Hoenn   Water   M/D/N   Horde       20-30   -\n```');
+    	message.channel.send('```md\nRoute 110           Hoenn   Grass   M/D/N   Uncommon    13      -\nRoute 110           Hoenn   Water   M/D/N   Uncommon    20-30   -\nRoute 115           Hoenn   Grass   M/D/N   Uncommon    24-26   -\nRoute 115           Hoenn   Water   M/D/N   Horde       20-30   -\nRoute 115           Hoenn   Water   M/D/N   Uncommon    20-30   -\nRoute 118           Hoenn   Grass   M/D/N   Uncommon    25-27   -\nRoute 118           Hoenn   Water   M/D/N   Uncommon    20-30   -\nRoute 119           Hoenn   Water   M/D/N   Uncommon    20-30   -\nRoute 121           Hoenn   Grass   M/D/N   Uncommon    27-29   -\nRoute 121           Hoenn   Water   M/D/N   Uncommon    25-30   -\nRoute 122           Hoenn   Water   M/D/N   Horde       25-30   -\nRoute 122           Hoenn   Water   M/D/N   Uncommon    25-30   -\nRoute 123           Hoenn   Grass   M/D/N   Rare        28-30   -\nRoute 134           Hoenn   Water   M/D/N   Horde       20-30   -\nRoute 134           Hoenn   Water   M/D/N   Uncommon    20-30   -\nSlateport City      Hoenn   Water   M/D/N   Horde       20-30   -\nSlateport City      Hoenn   Water   M/D/N   Uncommon    20-30   -\nDriftveil D.Bridge  Unova   Shadow  M/D/N   Special     27-28   -\nRoute 1             Unova   Shadow  M/D/N   Special     34-38   -\nRoute 13            Unova   Water   M/D/N   V.Common    35-55   -\nUndella Bay         Unova   Water   M/D/N   V.Common    35-55   -\nUndella Town        Unova   Water   M/D/N   V.Common    35-55   -\n```');
+    	message.channel.send('```md\nCanalave City       Sinnoh  Water   M/D/N   Uncommon    20-30   -\nFuego Ironworks     Sinnoh  Grass   M/D/N   Uncommon    29      -\nFuego Ironworks     Sinnoh  Water   M/D/N   Uncommon    20-30   -\nIron Island         Sinnoh  Water   M/D/N   Common      20-30   -\nPastoria City       Sinnoh  Water   M/D/N   Uncommon    20-30   -\nPokemon League      Sinnoh  Water   M/D/N   Common      30-40   -\nRoute 205           Sinnoh  Water   M/D/N   Uncommon    20-30   -\nRoute 213           Sinnoh  Grass   M/D/N   Uncommon    24-26   -\nRoute 213           Sinnoh  Water   M/D/N   Uncommon    20-30   -\nRoute 218           Sinnoh  Water   M/D/N   Uncommon    29      -\nRoute 218           Sinnoh  Water   M/D/N   Uncommon    20-30   -\nRoute 219           Sinnoh  Water   M/D/N   Horde       20-30   -\nRoute 219           Sinnoh  Water   M/D/N   Uncommon    20-30   -\nRoute 220           Sinnoh  Water   M/D/N   Uncommon    20-30   -\nRoute 221           Sinnoh  Grass   M/D/N   Uncommon    29      -\nRoute 221           Sinnoh  Water   M/D/N   Horde       20-30   -\nRoute 221           Sinnoh  Water   M/D/N   Uncommon    20-30   -\nRoute 222           Sinnoh  Grass   M/D/N   Uncommon    38-41   -\nRoute 222           Sinnoh  Water   M/D/N   Uncommon    30-40   -\nRoute 226           Sinnoh  Grass   M/D/N   Uncommon    47-49   -\nRoute 226           Sinnoh  Water   M/D/N   Uncommon    35-45   -\nRoute 229           Sinnoh  Water   M/D/N   Horde       40-55   -\nRoute 229           Sinnoh  Water   M/D/N   Uncommon    40-55   -\nRoute 230           Sinnoh  Grass   M/D/N   Rare        48      -\nSunyshore City      Sinnoh  Water   M/D/N   Uncommon    30-40   -\n Valley Windworks    Sinnoh  Water   M/D/N   Uncommon    20-30   -\n```');
+  	}
+// Pokedex : 279
+    if (message.content.toLowerCase() === '?pelipper') {
+    	message.channel.send('```md\nPelipper\n> PokeDex Number : 279\n> Egg Group : Flying , Water A\n> Evolution : Wingull → Pelipper (Lv.25)\n#Map                Region  Type    Time    Rarity      Level   Item\nBattle Frontier     Hoenn   Water   M/D/N   V.Common    45-55   -\nDewford Town        Hoenn   Water   M/D/N   Uncommon    25-30   -\nEver Grande City    Hoenn   Water   M/D/N   V.Common    30-40   -\nEver Grande City    Hoenn   Water   M/D/N   Horde       30-40   -\nLilycove City       Hoenn   Water   M/D/N   Uncommon    25-30   -\nMossdeep City       Hoenn   Water   M/D/N   V.Common    25-35   -\nPacifidlog Town     Hoenn   Water   M/D/N   V.Common    30-40   -\nPacifidlog Town     Hoenn   Water   M/D/N   Horde       30-40   -\nRoute 103           Hoenn   Water   M/D/N   Uncommon    25-30   -\nRoute 104           Hoenn   Water   M/D/N   Uncommon    25-30   -\nRoute 105           Hoenn   Water   M/D/N   Uncommon    25-30   -\nRoute 106           Hoenn   Water   M/D/N   Uncommon    25-30   -\nRoute 107           Hoenn   Water   M/D/N   Uncommon    25-30   -\nRoute 107           Hoenn   Water   M/D/N   Uncommon    25-30   -\nRoute 108           Hoenn   Water   M/D/N   Horde       25-30   -\nRoute 108           Hoenn   Water   M/D/N   Uncommon    25-30   -\nRoute 109           Hoenn   Water   M/D/N   Uncommon    25-30   -\nRoute 110           Hoenn   Water   M/D/N   Uncommon    25-30   -\nRoute 115           Hoenn   Water   M/D/N   Uncommon    25-30   -\n```');
+    	message.channel.send('```md\nRoute 118           Hoenn   Grass   M/D/N   Uncommon    26      -\nRoute 118           Hoenn   Water   M/D/N   Uncommon    25-30   -\nRoute 119           Hoenn   Water   M/D/N   Uncommon    25-30   -\nRoute 121           Hoenn   Grass   M/D/N   Uncommon    30      -\nRoute 121           Hoenn   Water   M/D/N   Uncommon    25-30   -\nRoute 122           Hoenn   Water   M/D/N   Uncommon    25-30   -\nRoute 123           Hoenn   Grass   M/D/N   Rare        31      -\nRoute 124           Hoenn   Water   M/D/N   V.Common    25-30   -\nRoute 125           Hoenn   Water   M/D/N   V.Common    25-30   -\nRoute 125           Hoenn   Water   M/D/N   Horde       25-35   -\nRoute 126           Hoenn   Water   M/D/N   V.Common    30-35   -\nRoute 126           Hoenn   Water   M/D     Horde       30-35   -\nRoute 127           Hoenn   Water   M/D/N   V.Common    25-35   -\nRoute 127           Hoenn   Water   M/D/N   Horde       30-35   -\nRoute 128           Hoenn   Water   M/D/N   V.Common    30-35   -\nRoute 128           Hoenn   Water   M/D/N   V.Common    30-35   -\nRoute 129           Hoenn   Water   M/D/N   Horde       30-40   -\nRoute 130           Hoenn   Water   M/D/N   V.Common    30-40   -\nRoute 130           Unova   Water   M/D/N   Horde       30-40   -\nRoute 131           Unova   Water   M/D/N   V.Common    30-40   -\nRoute 131           Hoenn   Water   M/D/N   Horde       30-40   -\nRoute 132           Hoenn   Water   M/D/N   V.Common    30-40   -\nRoute 133           Hoenn   Water   M/D/N   V.Common    30-40   -\nRoute 134           Hoenn   Water   M/D/N   Uncommon    25-30   -\n```');
+    	message.channel.send('```md\nSlateport City      Hoenn   Water   M/D/N   Uncommon    25-30   -\nCold Storage        Unova   Shadow  M/D/N   Special     28-29   -\nMavelous Bridge     Unova   Shadow  M/D/N   Special     60-65   -\nRoute 13            Unova   Water   M/D/N   Horde       35-55   -\nRoute 13            Unova   Shadow  M/D/N   Special     60-65   -\nRoute 13            Unova   Water   M/D/N   Common      35-55   -\nRoute 14            Unova   Shadow  M/D/N   Special     60-65   -\nRoute 18            Unova   Shadow  M/D/N   Special     36-38   -\nUndella Bay         Unova   Water   M/D/N   Horde       35-55   -\nUndella Bay         Unova   Water   M/D/N   Common      35-55   -\nUndella Town        Unova   Water   M/D/N   V.Common    35-55   -\nCanalave City       Sinnoh  Water   M/D/N   Rare        25-40   -\nFuego Ironworks     Sinnoh  Water   M/D/N   Rare        25-40   -\nIron Island         Sinnoh  Water   M/D/N   Rare        25-40   -\nIron Island         Sinnoh  Water   M/D/N   Horde       25-40   -\nPastoria City       Sinnoh  Water   M/D/N   Rare        25-40   -\nPokemon League      Sinnoh  Water   M/D/N   Common      35-55   -\n```');
+    	message.channel.send('```md\nRoute 205           Sinnoh  Water   M/D/N   Rare        25-40   -\nRoute 213           Sinnoh  Water   M/D/N   Rare        25-40   -\nRoute 218           Sinnoh  Water   M/D/N   Rare        25-40   -\nRoute 219           Sinnoh  Water   M/D/N   Rare        25-40   -\nRoute 220           Sinnoh  Water   M/D/N   Rare        25-40   -\nRoute 221           Hoenn   Water   M/D/N   Rare        25-40   -\nRoute 222           Hoenn   Water   M/D/N   Rare        40      -\nRoute 222           Hoenn   Grass   M/D/N   Uncommon    30-40   -\nRoute 222           Hoenn   Water   M/D/N   Horde       25-40   -\nRoute 223           Hoenn   Water   M/D/N   V.Common    30-50   -\nRoute 224           Hoenn   Water   M/D/N   Uncommon    51      -\nRoute 224           Hoenn   Grass   M/D/N   V.Common    40-55   -\nRoute 224           Hoenn   Water   M/D/N   Horde       35-55   -\nRoute 226           Hoenn   Water   M/D/N   Horde       35-55   -\nRoute 226           Hoenn   Water   M/D/N   Uncommon    40-55   -\nRoute 229           Hoenn   Water   M/D/N   Common      45-55   -\nRoute 230           Hoenn   Grass   M/D/N   Uncommon    48-50   -\nRoute 230           Hoenn   Water   M/D/N   Uncommon    40-55   -\nSunyshore City      Hoenn   Water   M/D/N   Uncommon    30-50   -\nValley Windworks    Hoenn   Water   M/D/N   Rare        25-40   -\n```');
+  	}
+// Pokedex : 280
+    if (message.content.toLowerCase() === '?ralts') {
+    	message.channel.send('```md\nRalts\n> PokeDex Number : 280\n> Egg Group : Chaos\n> Evolution 1 : Ralts → Kirlia (Lv.20) → Gardevoir (Lv.30)\n> Evolution 2 : Ralts → Kirlia (Lv.20) → Gallade (Use Dawnstone)\n#Map                Region  Type    Time    Rarity      Level   Item\n Route 102           Hoenn   Grass   M/D/N   Rare        4       -\nRoute 208           Sinnoh  Grass   M/D/N   Uncommon    16      -\nRoute 209           Sinnoh  Grass   M/D/N   Horde       16      -\nRoute 209           Sinnoh  Grass   M/D/N   Uncommon    16      -\nRoute 212           Sinnoh  Grass   M/D     Rare        22      -\n```');
+  	}
+// Pokedex : 281
+    if (message.content.toLowerCase() === '?kirlia') {
+    	message.channel.send('```md\nKirlia\n> PokeDex Number : 281\n> Egg Group : Chaos\n> Evolution 1 : Ralts → Kirlia (Lv.20) → Gardevoir (Lv.30)\n> Evolution 2 : Ralts → Kirlia (Lv.20) → Gallade (Use Dawnstone)\n#Map                Region  Type    Time    Rarity      Level   Item\n Route 212           Sinnoh  Grass   M/D/N   Uncommon    22-24   -\n```');
+  	}
+// Pokedex : 282
+    if (message.content.toLowerCase() === '?gardevoir') {
+    	message.channel.send('```md\nGardevoir\n> PokeDex Number : 282\n> Egg Group : Chaos\n> Evolution 1 : Ralts → Kirlia (Lv.20) → Gardevoir (Lv.30)\n> Evolution 2 : Ralts → Kirlia (Lv.20) → Gallade (Use Dawnstone)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 283
+    if (message.content.toLowerCase() === '?surskit') {
+    	message.channel.send('```md\nSurskit\n> PokeDex Number : 283\n> Egg Group : Water A , Bug\n> Evolution : Surskit → Masquerain (Lv.22)\n#Map                Region  Type    Time    Rarity      Level   Item\n Petalburg City      Hoenn   Water   M/D/N   Uncommon    20-30   -\nPetalburg City      Hoenn   Water   M/D/N   Horde       20-30   -\nRoute 102           Hoenn   Grass   M/D/N   Rare        3       -\nRoute 102           Hoenn   Water   M/D/N   Uncommon    20-30   -\nRoute 111           Hoenn   Water   M/D/N   Uncommon    20-30   -\nRoute 111           Hoenn   Water   M/D/N   Horde       20-30   -\nRoute 114           Hoenn   Grass   M/D/N   Rare        19      -\nRoute 114           Hoenn   Water   M/D/N   Uncommon    20-30   -\nRoute 117           Hoenn   Grass   M/D/N   Rare        14      -\nRoute 117           Hoenn   Water   M/D/N   Uncommon    20-30   -\n Route 120           Hoenn   Water   M/D/N   Common      25-30   -\nRoute 123           Hoenn   Water   M/D/N   Uncommon    25-30   -\nRoute 123           Hoenn   Water   M/D/N   Horde       25-30   -\nRoute 229           Sinnoh  Water   M/D/N   Horde       35-45   -\nRoute 229           Sinnoh  Water   M/D/N   V.Common    35-45   -\n```');
+  	}
+// Pokedex : 284
+    if (message.content.toLowerCase() === '?masquerain') {
+    	message.channel.send('```md\nMasquerain\n> PokeDex Number : 284\n> Egg Group : Water A , Bug\n> Evolution : Surskit → Masquerain (Lv.22)\n#Map                Region  Type    Time    Rarity      Level   Item\n Petalburg City      Hoenn   Water   M/D/N   Rare        22-30   -\nRoute 102           Hoenn   Water   M/D/N   Rare        22-30   -\nRoute 111           Hoenn   Grass   M/D/N   Rare        20-30   -\nRoute 114           Hoenn   Water   M/D/N   Rare        22-30   -\nRoute 117           Hoenn   Water   M/D/N   Rare        22-30   -\nRoute 120           Hoenn   Water   M/D/N   Rare        25-30   -\nRoute 123           Hoenn   Grass   M/D/N   Rare        25-30   -\nRoute 229           Sinnoh  Water   M/D/N   Uncommon    35-55   -\n```');
+  	}
+// Pokedex : 285
+    if (message.content.toLowerCase() === '?shroomish') {
+    	message.channel.send('```md\nShroomish\n> PokeDex Number : 285\n> Egg Group : Fairy , Plant\n> Evolution : Shroomish → Breloom (Lv.23)\n#Map                Region  Type    Time    Rarity      Level   Item\n Petalburg City      Hoenn   Grass   M/D/N   Uncommon        5-6     -\n```');
+  	}
+// Pokedex : 286
+    if (message.content.toLowerCase() === '?breloom') {
+    	message.channel.send('```md\nBreloom\n> PokeDex Number : 286\n> Egg Group : Fairy , Plant\n> Evolution : Shroomish → Breloom (Lv.23)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 287
+    if (message.content.toLowerCase() === '?slakoth') {
+    	message.channel.send('```md\nSlakoth\n> PokeDex Number : 287\n> Egg Group : Field\n> Evolution : Slakoth → Vigoroth (Lv.18) → Slaking (Lv.36)\n#Map                Region  Type    Time    Rarity      Level   Item\nAltering Cave       Kanto   Cave    M/D/N   V.Rare      12-16   -\n Altering Cave       Kanto   Cave    M/D/N   V.Rare      12-16   -\nPetalburg Woods     Hoenn   Grass   M/D/N   Uncommon    5-6     -\n```');
+  	}
+// Pokedex : 288
+    if (message.content.toLowerCase() === '?vigoroth') {
+    	message.channel.send('```md\nVigoroth\n> PokeDex Number : 288\n> Egg Group : Field\n> Evolution : Slakoth → Vigoroth (Lv) → Slaking (Lv.36)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 289
+    if (message.content.toLowerCase() === '?slaking') {
+    	message.channel.send('```md\nSlaking\n> PokeDex Number : 289\n> Egg Group : Field\n> Evolution : Slakoth → Vigoroth (Lv.18) → Slaking (Lv.36)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 290
+    if (message.content.toLowerCase() === '?nincada') {
+    	message.channel.send('```md\nNincada\n> PokeDex Number : 290\n> Egg Group : Bug\n> Evolution : Nincada → Ninjask (Lv.20)\n> Evolution : Nincada → Shedinja (Lv.20 + Pokeball + Space in Party)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 116           Hoenn   Grass   M/D/N   Common      6-8     -\n```');
+  	}
+// Pokedex : 291
+    if (message.content.toLowerCase() === '?ninjask') {
+    	message.channel.send('```md\nNinjask\n> PokeDex Number : 291\n> Egg Group : Bug\n> Evolution : Nincada → Ninjask (Lv.20)\n> Evolution : Nincada → Shedinja (Lv.20 + Pokeball + Space in Party)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 292
+    if (message.content.toLowerCase() === '?shedinja') {
+    	message.channel.send('```md\nShedinja\n> PokeDex Number : 292\n> Egg Group : Cannot Breed\n> Evolution : Nincada → Ninjask (Lv.20)\n> Evolution : Nincada → Shedinja (Lv.20 + Pokeball + Space in Party)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 293
+    if (message.content.toLowerCase() === '?whismur') {
+    	message.channel.send('```md\nWhismur\n> PokeDex Number : 293\n> Egg Group : Monster , Field\n> Evolution : Whismur → Loudred (Lv.20) → Exploud (Lv.40)\n#Map                Region  Type    Time    Rarity      Level   Item\n Desert Underpass    Hoenn   Cave    M/D/N   V.Common    40-45   -\nRoute 116           Hoenn   Grass   M/D/N   Common      6-7     -\n         Rusturf Runnel      Hoenn   Cave    M/D/N   V.Common    7-10    -\nRusturf Runnel      Hoenn   Cave    M/D/N   Horde       5-8     -\nVictory Road        Hoenn   Cave    M/D/N   Rare        36-38   -\n```');
+  	}
+// Pokedex : 294
+    if (message.content.toLowerCase() === '?loudred') {
+    	message.channel.send('```md\nLoudred\n> PokeDex Number : 294\n> Egg Group : Monster , Field\n> Evolution : Whismur → Loudred (Lv.20) → Exploud (Lv.40)\n#Map                Region  Type    Time    Rarity      Level   Item\n Desert Underpass    Hoenn   Cave    M/D/N   Uncommon    40-45   -\nDesert Underpass    Hoenn   Cave    M/D/N   Horde       40-45   -\n         Victory Road        Hoenn   Cave    M/D/N   Uncommon    38-42   -\n```');
+  	}
+// Pokedex : 295
+    if (message.content.toLowerCase() === '?exploud') {
+    	message.channel.send('```md\nExploud\n> PokeDex Number : 295\n> Egg Group : Monster , Field\n> Evolution : Whismur → Loudred (Lv.20) → Exploud (Lv.40)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 296
+    if (message.content.toLowerCase() === '?makuhita') {
+    	message.channel.send('```md\nMakuhita\n> PokeDex Number : 296\n> Egg Group : Humanoid\n> Evolution : Makuhita → Hariyama (Lv.24)\n#Map                Region  Type    Time    Rarity      Level   Item\n Granite Cave        Hoenn   Cave    M/D/N   Uncommon    9-13   -\nGranite Cave        Hoenn   Cave    M/D/N   Horde       6-11   -\n         Victory Road        Hoenn   Cave    M/D/N   Rare        36-38  -\n```');
+  	}
+// Pokedex : 297
+    if (message.content.toLowerCase() === '?hariyama') {
+    	message.channel.send('```md\nHariyama\n> PokeDex Number : 297\n> Egg Group : Humanoid\n> Evolution : Makuhita → Hariyama (Lv.24)\n#Map                Region  Type    Time    Rarity      Level   Item\n Victory Road        Hoenn   Cave    M/D/N   Common      38-42   -\nVictory Road        Hoenn   Cave    M/D/N   Horde       36-38   -\n```');
+  	}
+// Pokedex : 298
+    if (message.content.toLowerCase() === '?azurill') {
+    	message.channel.send('```md\nAzurill\n> PokeDex Number : 298\n> Egg Group : Fairy , Water A\n> Evolution : Azurill → Marill (Happiness) → Azumarill (Lv.18)\nNo Wild Locations Found.\n```');
+  	}
+// Pokedex : 299
+    if (message.content.toLowerCase() === '?nosepass') {
+    	message.channel.send('```md\nNosepass\n> PokeDex Number : 299\n> Egg Group : Mineral\n> Evolution : Nosepass → Probopass (Lv.Up at Magnetic Field)\n#Map                Region  Type    Time    Rarity      Level   Item\n Granite Cave        Hoenn   Rocks   M/D/N   V.Common    15-20   -\nRoute 13            Unova   Grass   M/D/N   Special     60-65   -\nMt.Coronet          Sinnoh  Cave    M/D/N   Rare        14-37   -\nMt.Coronet          Sinnoh  Grass   M/D/N   Rare        38      -\nMt.Coronet          Sinnoh  Rocks   M/D/N   Uncommon    16-40   -\nMt.Coronet          Sinnoh  Cave    M/D/N   Horde        37     -\nRoute 208           Sinnoh  Rocks   M/D/N   Uncommon    19-20   -\nRoute 211           Sinnoh  Rocks   M/D/N   Uncommon    15-30   -\n```');
+  	}
+// Pokedex : 300
+    if (message.content.toLowerCase() === '?skitty') {
+    	message.channel.send('```md\nSkitty\n> PokeDex Number : 300\n> Egg Group : Field , Fairy\n> Evolution : Skitty → Delcatty (Use Moonstone)\n#Map                Region  Type    Time    Rarity      Level   Item\n Route 116           Hoenn   Grass   M/D/N   Rare        8       -\n```');
+  	}
+// Pokedex : 301
+    if (message.content.toLowerCase() === '?delcatty') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 302
+    if (message.content.toLowerCase() === '?sableye') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 303
+    if (message.content.toLowerCase() === '?mawile') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 304
+    if (message.content.toLowerCase() === '?aron') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 305
+    if (message.content.toLowerCase() === '?lairon') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 306
+    if (message.content.toLowerCase() === '?aggron') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 307
+    if (message.content.toLowerCase() === '?meditite') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 308
+    if (message.content.toLowerCase() === '?medicham') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 309
+    if (message.content.toLowerCase() === '?electrike') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 310
+    if (message.content.toLowerCase() === '?manetric') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 311
+    if (message.content.toLowerCase() === '?plusle') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 312
+    if (message.content.toLowerCase() === '?minun') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 313
+    if (message.content.toLowerCase() === '?volbeat') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 314
+    if (message.content.toLowerCase() === '?illumise') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 315
+    if (message.content.toLowerCase() === '?rosedare') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 316
+    if (message.content.toLowerCase() === '?gulpin') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 317
+    if (message.content.toLowerCase() === '?swalot') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 318
+    if (message.content.toLowerCase() === '?carvanha') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 319
+    if (message.content.toLowerCase() === '?sharpedo') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 320
+    if (message.content.toLowerCase() === '?wailmer') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 321
+    if (message.content.toLowerCase() === '?wailord') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 322
+    if (message.content.toLowerCase() === '?numel') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 323
+    if (message.content.toLowerCase() === '?camerupt') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 324
+    if (message.content.toLowerCase() === '?torkoal') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 325
+    if (message.content.toLowerCase() === '?spoink') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 326
+    if (message.content.toLowerCase() === '?grumpig') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 327
+    if (message.content.toLowerCase() === '?spinda') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 328
+    if (message.content.toLowerCase() === '?trapinch') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 329
+    if (message.content.toLowerCase() === '?vibrava') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 330
+    if (message.content.toLowerCase() === '?flygon') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 331
+    if (message.content.toLowerCase() === '?cacnea') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 332
+    if (message.content.toLowerCase() === '?cacturne') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 333
+    if (message.content.toLowerCase() === '?swablu') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 334
+    if (message.content.toLowerCase() === '?altaria') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 335
+    if (message.content.toLowerCase() === '?zangoose') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 336
+    if (message.content.toLowerCase() === '?seviper') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 337
+    if (message.content.toLowerCase() === '?lunatone') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 338
+    if (message.content.toLowerCase() === '?solrock') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 339
+    if (message.content.toLowerCase() === '?barboach') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 340
+    if (message.content.toLowerCase() === '?whiscash') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 341
+    if (message.content.toLowerCase() === '?corphish') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 342
+    if (message.content.toLowerCase() === '?crawdaunt') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 343
+    if (message.content.toLowerCase() === '?baltoy') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 344
+    if (message.content.toLowerCase() === '?claydol') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 345
+    if (message.content.toLowerCase() === '?lileep') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 346
+    if (message.content.toLowerCase() === '?cradily') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 347
+    if (message.content.toLowerCase() === '?anorith') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 348
+    if (message.content.toLowerCase() === '?armaldo') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 349
+    if (message.content.toLowerCase() === '?feebas') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 350
+    if (message.content.toLowerCase() === '?milotic') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 351
+    if (message.content.toLowerCase() === '?castform') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 352
+    if (message.content.toLowerCase() === '?kecleon') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 353
+    if (message.content.toLowerCase() === '?shuppet') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 354
+    if (message.content.toLowerCase() === '?banette') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 355
+    if (message.content.toLowerCase() === '?duskull') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 356
+    if (message.content.toLowerCase() === '?dusclops') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 357
+    if (message.content.toLowerCase() === '?tropius') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 358
+    if (message.content.toLowerCase() === '?chimecho') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 359
+    if (message.content.toLowerCase() === '?absol') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 360
+    if (message.content.toLowerCase() === '?wynaut') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 361
+    if (message.content.toLowerCase() === '?snorunt') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 362
+    if (message.content.toLowerCase() === '?glalie') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 363
+    if (message.content.toLowerCase() === '?spheal') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 364
+    if (message.content.toLowerCase() === '?sealeo') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 365
+    if (message.content.toLowerCase() === '?walrein') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 366
+    if (message.content.toLowerCase() === '?clamperl') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 367
+    if (message.content.toLowerCase() === '?huntail') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 368
+    if (message.content.toLowerCase() === '?gorebyss') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 369
+    if (message.content.toLowerCase() === '?relicanth') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 370
+    if (message.content.toLowerCase() === '?luvdisc') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 371
+    if (message.content.toLowerCase() === '?bagon') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 372
+    if (message.content.toLowerCase() === '?shelgon') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 373
+    if (message.content.toLowerCase() === '?salamence') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 374
+    if (message.content.toLowerCase() === '?beldum') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 375
+    if (message.content.toLowerCase() === '?metang') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 376
+    if (message.content.toLowerCase() === '?metagross') {
+    	message.channel.send('x');
+  	}
+// Pokedex : 377
+    if (message.content.toLowerCase() === '?regirock') {
+    	message.channel.send('???');
+  	}
+// Pokedex : 378
+    if (message.content.toLowerCase() === '?regice') {
+    	message.channel.send('???');
+  	}
+// Pokedex : 379
+    if (message.content.toLowerCase() === '?registeel') {
+    	message.channel.send('???');
+  	}
+// Pokedex : 380
+    if (message.content.toLowerCase() === '?latias') {
+    	message.channel.send('???');
+  	}
+// Pokedex : 381
+    if (message.content.toLowerCase() === '?latios') {
+    	message.channel.send('???');
+  	}
+// Pokedex : 382
+    if (message.content.toLowerCase() === '?kyogre') {
+    	message.channel.send('???');
+  	}
+// Pokedex : 383
+    if (message.content.toLowerCase() === '?groudon') {
+    	message.channel.send('???');
+  	}
+// Pokedex : 384
+    if (message.content.toLowerCase() === '?rayquaza') {
+    	message.channel.send('???');
+  	}
+// Pokedex : 385
+    if (message.content.toLowerCase() === '?jirachi') {
+    	message.channel.send('???');
+  	}
+// Pokedex : 386
+    if (message.content.toLowerCase() === '?deoxys') {
+    	message.channel.send('???');
+  	}
+
+
+
+
+
+
+
+
+
+
+
+
 // GEN-4
 
 // Pokedex : 387
