@@ -781,7 +781,7 @@ message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
   	}
 // Pokedex : 155
     if (message.content.toLowerCase() === '?cyndaquil') {
-    	message.channel.send('```md\nCyndaquil\n> PokeDex Number : 155\n> Egg Group : Field\n> Evolution : Cyndaquil → Quilava (Lv.14) → Typhlosion (Lv.36)\n#Map                Region  Type    Time    Rarity      Level   Item\nSafari Zone         Hoenn   Grass   M/D/N   Rare        35      -\n        ```');
+    	message.channel.send('```md\nCyndaquil\n> PokeDex Number : 155\n> Egg Group : Field\n> Evolution : Cyndaquil → Quilava (Lv.14) → Typhlosion (Lv.36)\n#Map                Region  Type    Time    Rarity      Level   Item\nSafari Zone         Hoenn   Grass   M/D/N   Rare        35      -\n```');
   	}
 // Pokedex : 156
     if (message.content.toLowerCase() === '?quilava') {
@@ -793,7 +793,7 @@ message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
   	}
 // Pokedex : 158
     if (message.content.toLowerCase() === '?totodile') {
-    	message.channel.send('```md\nTotodile\n> PokeDex Number : 158\n> Egg Group : Monster , Water A\n> Evolution : Totodile → Croconaw (Lv.18) → Feraligatr (Lv.30)\n#Map                Region  Type    Time    Rarity      Level   Item\nSafari Zone         Hoenn   Water   M/D/N   Rare        35      -\n        ```');
+    	message.channel.send('```md\nTotodile\n> PokeDex Number : 158\n> Egg Group : Monster , Water A\n> Evolution : Totodile → Croconaw (Lv.18) → Feraligatr (Lv.30)\n#Map                Region  Type    Time    Rarity      Level   Item\nSafari Zone         Hoenn   Water   M/D/N   Rare        35      -\n```');
   	}
 // Pokedex : 159
     if (message.content.toLowerCase() === '?croconaw') {
