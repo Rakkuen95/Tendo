@@ -966,207 +966,207 @@ message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
   	}
 // Pokedex : 201
     if (message.content.toLowerCase() === '?unown') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nUnown\n> PokeDex Number : 201\n> Egg Group : Cannot Breed\n#Map                Region  Type    Time    Rarity      Level   Item\nDilford Chamber     Kanto   Cave    M/D/N   V.Common    25      -\nLiptoo Chamber      Kanto   Cave    M/D/N   V.Common    25      -\nMonean Chamber      Kanto   Cave    M/D/N   V.Common    25      -\nRixy Chamber        Kanto   Cave    M/D/N   V.Common    25      -\nScufib Chamber      Kanto   Cave    M/D/N   V.Common    25      -\nViapois Chamber     Kanto   Cave    M/D/N   V.Common    25      -\nWeepth Chamber      Kanto   Cave    M/D/N   V.Common    25      -\nSolaceon Ruins      Sinnoh  Cave    M/D/N   Common      25-30   -\n```');
   	}
 // Pokedex : 202
     if (message.content.toLowerCase() === '?wobbuffet') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nWobbuffet\n> PokeDex Number : 202\n> Egg Group : Chaos\n> Evolution : Wynaut → Wobbuffet (Lv.15)\n#Map                Region  Type    Time    Rarity      Level   Item\nCerulean Cave       Kanto   Cave    M/D/N   Rare        54-60   -\nCerulean Cave       Kanto   Cave    M/D/N   Horde       52-54   -\nRuin Valley         Kanto   Grass   M/D/N   Rare        50-52   -\nSafari Zone         Unova   Grass   M/D/N   Rare        28-30   -\n```');
   	}
 // Pokedex : 203
     if (message.content.toLowerCase() === '?girafarig') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nGirafaring\n> PokeDex Number : 203\n> Egg Group : Field\n#Map                Region  Type    Time    Rarity      Level   Item\nSafari Zone         Hoenn   Grass   M/D/N   Rare        28-30   -\nRoute 214           Sinnoh  Grass   M/D/N   Uncommon    24      -\nRoute 221           Sinnoh  Grass   M/D/N   Uncommon    28-30   -\nValor Lakefront     Sinnoh  Grass   M/D/N   Common      26-28   -\nValor Lakefront     Sinnoh  Grass   M/D/N   Horde       25-26   -\n```');
   	}
 // Pokedex : 204
     if (message.content.toLowerCase() === '?pineco') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nPineco\n> PokeDex Number : 204\n> Egg Group : Bug\n> Evolution : Pineco → Forretress (Lv.31)\n#Map                Region  Type    Time    Rarity      Level   Item\nAltering Cave       Kanto   Cave    M/D/N   V.Rare      19-29   -\nAltering Cave       Hoenn   Grass   M/D/N   V.Rare      19-29   -\nSafari Zone         Hoenn   Grass   M/D/N   V.Rare      35-37   -\n```');
   	}
 // Pokedex : 205
     if (message.content.toLowerCase() === '?forretress') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nForretress\n> PokeDex Number : 205\n> Egg Group : Bug\n> Evolution : Pineco → Forretress (Lv.31)\n#Map                Region  Type    Time    Rarity      Level   Item\nAltering Cave       Kanto   Cave    M/D/N   V.Rare      19-29   -\nAltering Cave       Hoenn   Grass   M/D/N   V.Rare      19-29   -\nSafari Zone         Hoenn   Grass   M/D/N   V.Rare      35-37   -\n```');
   	}
 // Pokedex : 206
     if (message.content.toLowerCase() === '?dunsparce') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nDunsparce\n> PokeDex Number : 206\n> Egg Group : Field\n#Map                Region  Type    Time    Rarity      Level   Item\nThree Isle Port     Kanto   Grass   M/D/N   V.Common    46-48   -\nThree Isle Port     Kanto   Grass   M/D/N   V.Common    46-48   -\nRoute 2             Unova   Grass   M/D/N   Special     6-7     -\nRoute 12            Unova   Grass   M/D/N   Uncommon    48-48   -\nRoute 12            Unova   Grass   M/D/N   Special     53-54   -\n```');
   	}
 // Pokedex : 207
     if (message.content.toLowerCase() === '?gligar') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nGligar\n> PokeDex Number : 207\n> Egg Group : Bug\n> Evolution : Gligar → Gliscor (Hold Razorfang + Nighttime)\n#Map                Region  Type    Time    Rarity      Level   Item\nSafari Zone         Hoenn   Grass   M/D/N   Rare        37-40   -\nRoute 11            Unova   Grass   M/D/N   Unommon     47-50   -\nRoute 11            Unova   D.Grass M/D/N   Unommon     52-55   -\nRoute 11            Unova   Grass   M/D/N   Horde       50-52   -\nRoute 15            Unova   Grass   M/D/N   Unommon     47-49   -\nRoute 15            Unova   D.Grass M/D/N   Uncommon    52-54   -\nRoute 18            Unova   Grass   M/D/N   Special     38-40   -\nVictory Road        Unova   Shadow  M/D/N   Special     45-48   -\nRoute 206           Sinnoh  Grass   M/D/N   Uncommon    16-18   -\n```');
   	}
 // Pokedex : 208
     if (message.content.toLowerCase() === '?steelix') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nSteelix\n> PokeDex Number : 208\n> Egg Group : Mineral\n> Evolution : Onix → Steelix (Use Metalcoat)\nNo Wild Locations Found.\n```');
   	}
 // Pokedex : 209
     if (message.content.toLowerCase() === '?snubbull') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nSnubbull\n> PokeDex Number : 209\n> Egg Group : Field , Fairy\n> Evolution : Snubbull → Granbull (Lv.23)\n#Map                Region  Type    Time    Rarity      Level   Item\nAltering Cave       Kanto   Cave    M/D/N   V.Rare      18-28   -\nRoute 5             Kanto   Grass   M/D/N   Rare        12-14   -\nRoute 6             Kanto   Grass   M/D/N   Rare        12-14   -\nRoute 7             Kanto   Grass   M/D/N   Rare        18-20   -\nRoute 8             Kanto   Grass   M/D/N   Rare        18-20   -\nAltering Cave       Hoenn   Cave    M/D/N   V.Rare      18-28   -\nSafari Zone         Hoenn   Grass   M/D/N   Rare        35-37   -\n```');
   	}
 // Pokedex : 210
     if (message.content.toLowerCase() === '?granbull') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nGranbull\n> PokeDex Number : 210\n> Egg Group : Field , Fairy\n> Evolution : Snubbull → Granbull (Lv.23)\nNo Wild Locations Found.\n```');
   	}
 // Pokedex : 211
     if (message.content.toLowerCase() === '?qwilfish') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nQwilfish\n> PokeDex Number : 211\n> Egg Group : Water B\n#Map                Region  Type    Time    Rarity      Level   Item\nFive Isle Meadow    Kanto   S.Rod   M/D/N   Uncommon    25-40   -\nGreen Path          Kanto   S.Rod   M/D/N   Uncommon    25-40   -\nMemorial Pillar     Kanto   S.Rod   M/D/N   Uncommon    25-40   -\nOutcast Island      Kanto   S.Rod   M/D/N   Uncommon    25-40   -\nResort Gorgeous     Kanto   S.Rod   M/D/N   Uncommon    25-40   -\nRoute 12            Kanto   S.Rod   M/D/N   Rare        25-40   -\nRoute 13            Kanto   S.Rod   M/D/N   Rare        25-40   -\nTanoby Ruins        Kanto   S.Rod   M/D/N   Uncommon    25-40   -\nTrainer Tower       Kanto   S.Rod   M/D/N   Uncommon    25-40   -\nWater Labyrinth     Kanto   S.Rod   M/D/N   Uncommon    25-40   -\nWater Path          Kanto   S.Rod   M/D/N   Uncommon    25-40   -\nP2 Laboratory       Unova   Fishing M/D/N   Special     35-60   -\nRoute 1             Unova   Fishing M/D/N   Special     55-60   -\nRoute 17            Unova   Fishing M/D/N   Special     55-60   -\nRoute 18            Unova   Fishing M/D/N   Special     55-60   -\nIron Island         Sinnoh  S.Rod   M/D/N   Rare        20-50   -\n```');
   	}
 // Pokedex : 212
     if (message.content.toLowerCase() === '?scizor') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nScizor\n> PokeDex Number : 212\n> Egg Group : Bug\n> Evolution : Scyther → Scizor (Hold Metalcoat + Trade)\nNo Wild Locations Found.\n```');
   	}
 // Pokedex : 213
     if (message.content.toLowerCase() === '?shuckle') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nShuckle\n> PokeDex Number : 213\n> Egg Group : Bug\n#Map                Region  Type    Time    Rarity      Level   Item\nSafari Zone         Hoenn   Rocks   M/D/N   V.Common    35-40   -\n```');
   	}
 // Pokedex : 214
     if (message.content.toLowerCase() === '?heracross') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nHeracross\n> PokeDex Number : 214\n> Egg Group : Bug\n#Map                Region  Type    Time    Rarity      Level   Item\nPattern Bush        Kanto   Grass   M/D/N   Uncommon    50-52   -\n     Safari Zone         Hoenn   Grass   M/D/N   V.Rare      28-30   -\nRoute 12            Unova   Grass   M/D/N   Rare        50      -\nRoute 12            Unova   D.Grass M/D/N   Rare        55      -\nHoney Tree          Sinnoh  H.Tree  M/D/N   Common      5-20    -\n```');
   	}
 // Pokedex : 215
     if (message.content.toLowerCase() === '?sneasel') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nSneasel\n> PokeDex Number : 215\n> Egg Group : Field\n#Map                Region  Type    Time    Rarity      Level   Item\nIcefall Cave        Kanto   Cave    M/D/N   Rare        48-50   -\nCold Storage        Unova   Grass   M/D/N   Special     28-29   -\nDragonspiral Tower  Unova   Grass   M/D/N   Special     37-38   -\nGiant Chasm         Unova   Cave    M/D/N   Horde       46-47   -\nGiant Chasm         Unova   Cave    M/D/N   Uncommon    48      -\nAcuity Lakefront    Sinnoh  Grass   M/D/N   Common      33-35   -\nLake Acuity         Sinnoh  Grass   M/D/N   Common      41      -\nRoute 216           Sinnoh  Grass   M/D/N   V.Common    33-35   -\nRoute 216           Sinnoh  Grass   M/D/N   Horde       32-33   -\nRoute 217           Sinnoh  Grass   M/D/N   Common      33-35   -\nSnowpoint Temple    Sinnoh  Cave    M/D/N   V.Common    50-56   -\nSnowpoint Temple    Sinnoh  Cave    M/D/N   Horde       47-51   -\n```');
   	}
 // Pokedex : 216
     if (message.content.toLowerCase() === '?teddiursa') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nTeddiursa\n> PokeDex Number : 216\n> Egg Group : Field\n> Evolution : Teddiursa → Ursaring (Lv.30)\n#Map                Region  Type    Time    Rarity      Level   Item\nAltering Cave       Kanto   Grass   M/D/N   V.Rare      8-20    -\n     Altering Cave       Hoenn   Cave    M/D/N   V.Rare      8-20    -\nSafari Zone         Hoenn   Grass   M/D/N   Uncommon    35-37   -\n```');
   	}
 // Pokedex : 217
     if (message.content.toLowerCase() === '?ursaring') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nUrsaring\n> PokeDex Number : 217\n> Egg Group : Field\n> Evolution : Teddiursa → Ursaring (Lv.30)\n#Map                Region  Type    Time    Rarity      Level   Item\nVictory Road        Kanto   Cave    M/D/N   Uncommon    44-48   -\n     Victory Road        Kanto   Cave    M/D/N   Horde       42-44   -\n```');
   	}
 // Pokedex : 218
     if (message.content.toLowerCase() === '?slugma') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nSlugma\n> PokeDex Number : 218\n> Egg Group : Chaos\n> Evolution : Slugma → Magcargo (Lv.38)\n#Map                Region  Type    Time    Rarity      Level   Item\nMt.Ember            Kanto   Cave    M/D/N   Common      38-48   -\n     Mt.Ember            Kanto   Cave    M/D/N   Horde       44-46   -\n     Mt.Ember            Kanto   Cave    M/D/N   Common      48-50   -\n     Route 16            Kanto   Cave    M/D     Rare        20-25   -\nRoute 17            Kanto   Cave    M/D/N   Uncommon    24-28   -\nRoute 18            Kanto   Cave    M/D     Rare        26-28   -\nFiery Path          Hoenn   Cave    M/D/N   Uncommon    15      -\nRoute 113           Hoenn   Cave    M/D/N   Common      15-18   -\nStark Mountain      Sinnoh  Cave    M/D/N   Rare        52-53   -\n```');
   	}
 // Pokedex : 219
     if (message.content.toLowerCase() === '?magcargo') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nMagcargo\n> PokeDex Number : 219\n> Egg Group : Chaos\n> Evolution : Slugma → Magcargo (Lv.38)\n#Map                Region  Type    Time    Rarity      Level   Item\nMt.Ember            Kanto   Cave    M/D/N   Rare        40-48   -\n     Mt.Ember            Kanto   Cave    M/D/N   Horde       44-46   -\n     Mt.Ember            Kanto   Rocks   M/D/N   Uncommon    48-50   -\n     Stark Mountain      Sinnoh  Cave    M/D/N   Common      55-58   -\nStark Mountain      Sinnoh  Cave    M/D/N   Rare        54-56   -\nStark Mountain      Sinnoh  Rocks   M/D/N   V.Common    56-60   -\n```');
   	}
 // Pokedex : 220
     if (message.content.toLowerCase() === '?swinub') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nSwinub\n> PokeDex Number : 220\n> Egg Group : Field\n> Evolution : Swinub → Piloswine (Lv.33) → Mamoswine (Lv Up + Ancientpower)\n#Map                Region  Type    Time    Rarity      Level   Item\nIcefall Cave        Kanto   Cave    M/D/N   Rare        48-50   -\n     Acuity Lakefront    Sinnoh  Cave    M/D/N   Common      32-34   -\n     Route 217           Sinnoh  Rocks   M/D/N   Common      32-34   -\n     Route 217           Sinnoh  Rocks   M/D/N   Horde       32-33   -\n     ```');
   	}
 // Pokedex : 221
     if (message.content.toLowerCase() === '?piloswine') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nPiloswine\n> PokeDex Number : 221\n> Egg Group : Field\n> Evolution : Swinub → Piloswine (Lv.33) → Mamoswine (Lv Up + Ancientpower)\n#Map                Region  Type    Time    Rarity      Level   Item\nIcefall Cave        Kanto   Cave    M/D/N   Rare        48-50   -\n     Icefall Cave        Kanto   Cave    M/D/N   Horde       46-48   -\n     Dragonspiral Tower  Unova   Grass   M/D/N   Special     37-38   -\nGiant Chasm         Unova   Grass   M/D/N   Common      47-49   -\nGiant Chasm         Unova   Grass   M/D/N   Horde       46-47   -\nGiant Chasm         Unova   Grass   M/D/N   V.Common    52-54   -\nGiant Chasm         Unova   Grass   M/D/N   V.Common    57-59   -\n Giant Chasm         Unova   Grass   M/D/N   Horde       52-55   -\n```');
   	}
 // Pokedex : 222
     if (message.content.toLowerCase() === '?corsola') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nCorsola\n> PokeDex Number : 222\n> Egg Group : Water A , Water C\n#Map                Region  Type    Time    Rarity      Level   Item\nCerulean City       Kanto   G.Rod   M/D     Rare        10-25   -\nCerulean City       Kanto   S.Rod   M/D/N   Uncommon    25-40   -\nRoute 19            Kanto   G.Rod   M/D     Rare        10-25   -\nRoute 19            Kanto   S.Rod   M/D     Uncommon    25-40   -\nEver Grande City    Hoenn   S.Rod   M/D/N   Uncommon    30-40   -\nRoute 128           Hoenn   S.Rod   M/D/N   Uncommon    30-40   -\nUnderwater          Hoenn   Water   M/D/N   Rare        30-35   -\nUnderwater          Hoenn   Water   M/D/N   Horde       30-35   -\nRoute 13            Unova   Water   M/D/N   Special     60-65   -\nUndella Town        Unova   Water   M/D/N   Special     60-65   -\n```');
   	}
 // Pokedex : 223
     if (message.content.toLowerCase() === '?remoraid') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nRemoraid\n> PokeDex Number : 223\n> Egg Group : Water A , Water B\n> Evolution : Remoraid → Octillery (Lv.25)\n#Map                Region  Type    Time    Rarity      Level   Item\nFive Isle Meadow    Kanto   S.Rod   M/D/N   Uncommon    25-40   -\nGreen Path          Kanto   S.Rod   M/D/N   Uncommon    25-40   -\nMemorial Pillar     Kanto   S.Rod   M/D/N   Uncommon    25-40   -\nTanoby Ruins        Kanto   S.Rod   M/D/N   Uncommon    25-40   -\nTrainer Tower       Kanto   S.Rod   M/D/N   Uncommon    25-40   -\nWater Labyrinth     Kanto   S.Rod   M/D/N   Uncommon    25-40   -\nWater Path          Kanto   S.Rod   M/D/N   Uncommon    25-40   -\nBattle Frontier     Kanto   G.Rod   M/D/N   Common      15-30   -\nBattle Frontier     Hoenn   S.Rod   M/D/N   V.Common    30-40   -\nSafari  Zone        Hoenn   G.Rod   M/D/N   Common      15-30   -\nSafari  Zone        Hoenn   S.Rod   M/D/N   V.Common    30-40   -\n    Undella Bay         Unova   S.Rod   M/D/N   V.Common    35-55   -\nUndella Town        Unova   S.Rod   M/D/N   V.Common    35-55   -\nPastoria City       Sinnoh  G.Rod   M/D/N   V.Common    10-25   -\nPokemon League      Sinnoh  G.Rod   M/D/N   V.Common    10-25   -\nRoute 212           Sinnoh  G.Rod   M/D/N   Uncommon    10-25   -\nRoute 213           Sinnoh  G.Rod   M/D/N   V.Common    10-25   -\nRoute 222           Sinnoh  G.Rod   M/D/N   V.Common    10-25   -\nRoute 223           Sinnoh  G.Rod   M/D/N   V.Common    10-25   -\nRoute 224           Sinnoh  G.Rod   M/D/N   V.Common    10-25   -\nRoute 230           Sinnoh  G.Rod   M/D/N   V.Common    10-25   -\nSunyshore City      Sinnoh  G.Rod   M/D/N   V.Common    10-25   -\nVictory Road        Sinnoh  G.Rod   M/D/N   V.Common    10-25   -\n```');
   	}
 // Pokedex : 224
     if (message.content.toLowerCase() === '?octillery') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nOctillery\n> PokeDex Number : 224\n> Egg Group : Water A , Water B\n> Evolution : Remoraid → Octillery (Lv.25)\n#Map                Region  Type    Time    Rarity      Level   Item\nBattle Frontier     Hoenn   S.Rod   M/D/N   Rare        30-40   -\n Safari Zone         Hoenn   S.Rod   M/D/N   Rare        30-40   -\nUndella Bay         Unova   Fishing M/D/N   Special     55-60   -\nUndella Town        Unova   Fishing M/D/N   Special     55-60   -\nPastoria City       Sinnoh  S.Rod   M/D/N   V.Common    30-55   -\nPokemon League      Sinnoh  S.Rod   M/D/N   Common      30-55   -\nRoute 212           Sinnoh  S.Rod   M/D/N   Uncommon    30-55   -\nRoute 213           Sinnoh  S.Rod   M/D/N   V.Common    30-55   -\nRoute 222           Sinnoh  S.Rod   M/D/N   V.Common    30-55   -\nRoute 223           Sinnoh  S.Rod   M/D/N   Rare        25-35   -\nRoute 223           Sinnoh  S.Rod   M/D/N   Rare        40-55   -\nRoute 224           Sinnoh  S.Rod   M/D/N   Common      30-55   -\nRoute 230           Sinnoh  S.Rod   M/D/N   Rare        40-55   -\nSunyshore City      Sinnoh  S.Rod   M/D/N   V.Common    30-55   -\n```');
   	}
 // Pokedex : 225
     if (message.content.toLowerCase() === '?delibird') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nDelibird\n> PokeDex Number : 225\n> Egg Group : Water A , Field\n#Map                Region  Type    Time    Rarity      Level   Item\nIcefall Cave        Kanto   Cave    M/D/N   V.Rare      48-50   -\nGiant Chasm         Unova   Cave    M/D/N   Uncommon    48      -\nGiant Chasm         Unova   Shadow  M/D/N   Special     60-65   -\nMoor Of Icirrus     Unova   Shadow  M/D/N   Special     39-40   -\nTwist Mountain      Unova   Shadow  M/D/N   Special     33-34   -\n```');
   	}
 // Pokedex : 226
     if (message.content.toLowerCase() === '?mantine') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nMantine\n> PokeDex Number : 226\n> Egg Group : Water A\n> Evolution : Mantyke → Mantine (Lv Up + Remoraid In Party)\n#Map                Region  Type    Time    Rarity      Level   Item\nTanoby Ruins        Kanto   Water   M/D/N   Rare        40-50   -\nTrainer Tower       Kanto   Water   M/D/N   Rare        40-50   -\nBattle Frontier     Hoenn   Water   M/D/N   Rare        45-55   -\nRoute 1             Unova   Water   M/D/N   Special     30-40   -\nUndella Bay         Unova   Water   M/D/N   V.Common    35-55   -\nUndella Town        Unova   Water   M/D/N   V.Common    35-55   -\nUndella Town        Unova   Water   M/D/N   Horde       35-55   -\nRoute 223           Unova   Water   M/D/N   Uncommon    30-50   -\nRoute 223           Unova   Water   M/D/N   Horde       30-40   -\nSunyshore City      Unova   Water   M/D/N   Uncommon    30-45   -\n```');
   	}
 // Pokedex : 227
     if (message.content.toLowerCase() === '?skarmory') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nSkarmory\n> PokeDex Number : 227\n> Egg Group : Flying\n#Map                Region  Type    Time    Rarity      Level   Item\nSevault Canyon      Kanto   Grass   M/D/N   Rare        50-52   -\nRoute 113           Hoenn   Grass   M/D/N   Rare        16-18   -\nRoute 227           Sinnoh  Grass   M/D/N   Rare        53      -\nStark Mountain      Sinnoh  Grass   M/D/N   Rare        53-55   -\n```');
   	}
 // Pokedex : 228
     if (message.content.toLowerCase() === '?houndour') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nHoundour\n> PokeDex Number : 228\n> Egg Group : Field\n> Evolution : Houndour → Houndoom (Lv.24)\n#Map                Region  Type    Time    Rarity      Level   Item\nAltering Cave       Kanto   Cave    M/D/N   V.Rare      8-16    -\nRoute 7             Kanto   Grass   N       Uncommon    19-22   -\nRoute 7             Kanto   Grass   N       Horde       15-17   -\nAltering Cave       Hoenn   Cave    M/D/N   V.Rare      8-16    -\nSafari Zone         Hoenn   Grass   M/D/N   Rare        36-39   -\nRoute 214           Sinnoh  Grass   M/D/N   Uncommon    22-24   -\nValor Lakefront     Sinnoh  Grass   M/D/N   Uncommon    27-28   -\nValor Lakefront     Sinnoh  Grass   N       Horde       25-27   -\n```');
   	}
 // Pokedex : 229
     if (message.content.toLowerCase() === '?houndoom') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nHoundoom\n> PokeDex Number : 229\n> Egg Group : Field\n> Evolution : Houndour → Houndoom (Lv.24)\nNo Wild Locations Found.\n```');
   	}
 // Pokedex : 230
     if (message.content.toLowerCase() === '?kingdra') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nKingdra\n> PokeDex Number : 230\n> Egg Group : Water A , Dragon\n> Evolution : Horsea → Seadra (Lv.32) → Kingdra (Hold Dragon Scale + Trade)\n#Map                Region  Type    Time    Rarity      Level   Item\nP2 Laboratory       Unova   Fishing M/D/N   Special     45-70   -\nRoute 17            Unova   Fishing M/D/N   Special     55-60   -\nRoute 18            Unova   Fishing M/D/N   Special     45-70   -\n```');
   	}
 // Pokedex : 231
     if (message.content.toLowerCase() === '?phanpy') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nPhanpy\n> PokeDex Number : 231\n> Egg Group : Field\n> Evolution : Phanpy → Donphan (Lv.25)\n#Map                Region  Type    Time    Rarity      Level   Item\nCanyon Entrance     Kanto   Grass   M/D/N   Uncommon    48-50   -\nCanyon Entrance     Kanto   Grass   M/D/N   Horde       46-48   -\nSevault Canyon      Kanto   Grass   M/D/N   Rare        50-52   -\nSafari Zone         Kanto   Grass   M/D/N   Rare        27-29   -\n```');
   	}
 // Pokedex : 232
     if (message.content.toLowerCase() === '?donphan') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nDonphan\n> PokeDex Number : 232\n> Egg Group : Field\n> Evolution : Phanpy → Donphan (Lv.25)\n#Map                Region  Type    Time    Rarity      Level   Item\nSevault Canyon      Kanto   Grass   M/D/N   Uncommon    48-50   -\nVictory Road        Kanto   Grass   M/D/N   Horde       46-48   -\nVictory Road        Kanto   Grass   M/D/N   Rare        50-52   -\nSafari Zone         Hoenn   Grass   M/D/N   Rare        27-29   -\n```');
   	}
 // Pokedex : 233
     if (message.content.toLowerCase() === '?porygon2') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nPorygon2\n> PokeDex Number : 233\n> Egg Group : Genderless\n> Evolution : Porygon → Porygon2 (Hold Up-Grade + Trade) → Porygon-Z (Hold Dubious Disc + Trade)\nNo Wild Locations Found.\n```');
   	}
 // Pokedex : 234
     if (message.content.toLowerCase() === '?stantler') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nStantler\n> PokeDex Number : 234\n> Egg Group : Field\n#Map                Region  Type    Time    Rarity      Level   Item\nAltering Cave       Kanto   Cave    M/D/N   V.Rare      12-20   -\nAltering Cave       Hoenn   Cave    M/D/N   V.Rare      12-20   -\nSafari Zone         Hoenn   Grass   M/D/N   Rare        36-39   -\nAbundant Shrine     Unova   Grass   M/D/N   Uncommon    48      -\nAbundant Shrine     Unova   Grass   M/D/N   Horde       46-47   -\nAbundant Shrine     Unova   D.Grass M/D/N   Uncommon    53      -\nAbundant Shrine     Unova   D.Grass M/D/N   Horde       50-52   -\n```');
   	}
 // Pokedex : 235
     if (message.content.toLowerCase() === '?smeargle') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nSmeargle\n> PokeDex Number : 235\n> Egg Group : Field\n#Map                Region  Type    Time    Rarity      Level   Item\nAltering Cave       Kanto   Cave    M/D/N   V.Rare      18-29   -\nAltering Cave       Hoenn   Cave    M/D/N   V.Rare      18-29   -\nArtisan Cave        Hoenn   Cave    M/D/N   V.Common    40-50   -\nArtisan Cave        Hoenn   Cave    M/D/N   Horde       40-50   -\n```');
   	}
 // Pokedex : 236
     if (message.content.toLowerCase() === '?tyrogue') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nTyrogue\n> PokeDex Number : 236\n> Egg Group : Cannot Breed\n> Evolution 1 : Tyrogue → Hitmonlee (Lv.20 + Atk > Def)\n> Evolution 2 : Tyrogue → Hitmonchan (Lv.20 + Atk < Def)\n> Evolution 3 : Tyrogue → Hitmontop (Lv.20 + Atk = Def)\nNo Wild Locations Found.\n```');
   	}
 // Pokedex : 237
     if (message.content.toLowerCase() === '?hitmontop') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nHitmontop\n> PokeDex Number : 237\n> Egg Group : Humanoid\n> Evolution 1 : Tyrogue → Hitmonlee (Lv.20 + Atk > Def)\n> Evolution 2 : Tyrogue → Hitmonchan (Lv.20 + Atk < Def)\n> Evolution 3 : Tyrogue → Hitmontop (Lv.20 + Atk = Def)\nNo Wild Locations Found.\n```');
   	}
 // Pokedex : 238
     if (message.content.toLowerCase() === '?smoochum') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nSmoochum\n> PokeDex Number : 238\n> Egg Group : Cannot Breed\n> Evolution : Smoochum → Jynx (Lv.30)\nNo Wild Locations Found.\n```');
   	}
 // Pokedex : 239
     if (message.content.toLowerCase() === '?elekid') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nElekid\n> PokeDex Number : 239\n> Egg Group : Cannot Breed\n> Evolution : Elekid → Electabuzz (Lv.30) → Electivire (Hold Electirizer + Trade)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 10            Kanto   Grass   M/D     Rare        15      -\n```');
   	}
 // Pokedex : 240
     if (message.content.toLowerCase() === '?magby') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nMagby\n> PokeDex Number : 240\n> Egg Group : Cannot Breed\n> Evolution : Magby → Magmar (Lv.30) → Magmortar (Hold Magmarizer + Trade)\nNo Wild Locations Found.\n```');
   	}
 // Pokedex : 241
     if (message.content.toLowerCase() === '?miltank') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nMiltank\n> PokeDex Number : 241\n> Egg Group : Field\n#Map                Region  Type    Time    Rarity      Level   Item\nSafari Zone         Hoenn   Grass   M/D/N   V.Rare      37-40   -\n```');
   	}
 // Pokedex : 242
     if (message.content.toLowerCase() === '?blissey') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nBlissey\n> PokeDex Number : 242\n> Egg Group : Fairy\n> Evolution : Happiny → Chansey (Lv.Up+ Hold Ovalstone + Day Time) → Blissey (Happiness)\nNo Wild Locations Found.\n```');
   	}
 // Pokedex : 243
     if (message.content.toLowerCase() === '?raikou') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nRaikou\n> PokeDex Number : 243\n> Egg Group : Cannot Breed\nNo Wild Locations Found.\n```');
   	}
 // Pokedex : 244
     if (message.content.toLowerCase() === '?entei') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nEntei\n> PokeDex Number : 244\n> Egg Group : Cannot Breed\nNo Wild Locations Found.\n```');
   	}
 // Pokedex : 245
     if (message.content.toLowerCase() === '?suicune') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nSuicune\n> PokeDex Number : 245\n> Egg Group : Cannot Breed\nNo Wild Locations Found.\n```');
   	}
 // Pokedex : 246
     if (message.content.toLowerCase() === '?larvitar') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nLarvitar\n> PokeDex Number : 246\n> Egg Group : Monster\n> Evolution : Larvitar → Pupitar (Lv.30) → Tyranitar (Lv.55)\n#Map                Region  Type    Time    Rarity      Level   Item\nSevault Canyon      Kanto   Grass   M/D/N   Rare        50-52   -\nTwist Mountain      Unova   D.Cloud M/D/N   Special     33-34   -\n```');
   	}
 // Pokedex : 247
     if (message.content.toLowerCase() === '?pupitar') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nPupitar\n> PokeDex Number : 247\n> Egg Group : Monster\n> Evolution : Larvitar → Pupitar (Lv.30) → Tyranitar (Lv.55)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 15            Unova   Grass   M/D/N   Rare        48-50   -\nRoute 15            Unova   D.Grass M/D/N   Rare        53-55   -\n```');
   	}
 // Pokedex : 248
     if (message.content.toLowerCase() === '?tyranitar') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nTyranitar\n> PokeDex Number : 248\n> Egg Group : Monster\n> Evolution : Larvitar → Pupitar (Lv.30) → Tyranitar (Lv.55)\n#Map                Region  Type    Time    Rarity      Level   Item\nRoute 15            Unova   Grass   M/D/N   Special     60-65   -\n```');
   	}
 // Pokedex : 249
     if (message.content.toLowerCase() === '?lugia') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nLugia\n> PokeDex Number : 249\n> Egg Group : Cannot Breed\nNo Wild Locations Found.\n```');
   	}
 // Pokedex : 250
     if (message.content.toLowerCase() === '?ho-oh') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nHo-oh\n> PokeDex Number : 250\n> Egg Group : Cannot Breed\nNo Wild Locations Found.\n```');
   	}
 // Pokedex : 251
     if (message.content.toLowerCase() === '?celebi') {
-    	message.channel.send('x');
+    	message.channel.send('```md\nCelebi\n> PokeDex Number : 251\n> Egg Group : Cannot Breed\nNo Wild Locations Found.\n```');
   	}
 
 // GEN-3
