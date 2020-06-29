@@ -21,5 +21,6 @@ client.on('message', message => {
         }
     if (message.content.toLowerCase() === '?kien') {
     message.channel.send('Kiên thật sự ngu ngốc\nBảo vệ Clar cũng không xong');	    
+	            }
 });
 client.login(process.env.BOT_TOKEN);
