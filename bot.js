@@ -21,6 +21,13 @@ client.on('message', message => {
         }
     if (message.content.toLowerCase() === '?kien') {
     message.channel.send('Kiên thật sự ngu ngốc\nBảo vệ Clar cũng không xong');	    
-	            }
+        }
+    if (message.content.toLowerCase() === '?123') {
+var facts = ["1", "2", "3"];
+var fact = Math.floor(Math.random() * facts.length);
+message.channel.send(facts[fact]);
+        }
+
+
 });
 client.login(process.env.BOT_TOKEN);
