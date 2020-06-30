@@ -20,12 +20,9 @@ client.on('message', message => {
     message.channel.send(embed);
         }
     if (message.content.toLowerCase() === '?kien') {
-    message.channel.send('Kiên thật sự ngu ngốc\nBảo vệ Clar cũng không xong');	    
-        }
-    if (message.content.toLowerCase() === '?123') {
-var facts = ["1", "2", "3"];
-var fact = Math.floor(Math.random() * facts.length);
-message.channel.send(facts[fact]);
+var kien = ["Kiên thật sự ngu ngốc\nBảo vệ Clar cũng không xong", "2", "3"];
+var recipe = Math.floor(Math.random() * kien.length);
+message.channel.send(kien[recipe]);
         }
 
 
