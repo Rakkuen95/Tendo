@@ -24,7 +24,11 @@ var kien = ["Kiên thật sự ngu ngốc\nBảo vệ Clar cũng không xong", "
 var recipe = Math.floor(Math.random() * kien.length);
 message.channel.send(kien[recipe]);
         }
-
+    if (message.content.toLowerCase() === '?clar') {
+var clar = ["Ông trời tạo ra địa chấn\nvà Clar là điểm nhấn", "Chụy hỉu hông\nem chạy ngang qua thấy Clar đẹp thui\nchụy hỉu hông", "Xin Clar hãy tôn trọng hàm răng của mình"];
+var recipe = Math.floor(Math.random() * clar.length);
+message.channel.send(clar[recipe]);
+        }
 
 });
 client.login(process.env.BOT_TOKEN);
