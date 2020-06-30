@@ -20,12 +20,12 @@ client.on('message', message => {
     message.channel.send(embed);
         }
     if (message.content.toLowerCase() === '?kien') {
-var kien = ["Kiên thật sự ngu ngốc\nBảo vệ Clar cũng không xong", "Kiên không sai , chứ ai sai ?", "Bé Kiên chào cô chú đi con"];
+var kien = ["Kiên thật sự ngu ngốc\nBảo vệ Clar cũng không xong", "Kiên không sai\nChứ ai sai ?", "Bé Kiên chào cô chú đi con"];
 var recipe = Math.floor(Math.random() * kien.length);
 message.channel.send(kien[recipe]);
         }
     if (message.content.toLowerCase() === '?clar') {
-var clar = ["Ông trời tạo ra địa chấn\nvà Clar là điểm nhấn", "Chụy hỉu hông\nem chạy ngang qua thấy Clar đẹp thui\nchụy hỉu hông", "Xin Clar hãy tôn trọng hàm răng của mình"];
+var clar = ["Ông trời tạo ra địa chấn\nVà Clar là điểm nhấn", "Chụy hỉu hông\nEm chạy ngang qua thấy Clar đẹp thui\nChụy hỉu hông", "Xin Clar hãy tôn trọng hàm răng của mình"];
 var recipe = Math.floor(Math.random() * clar.length);
 message.channel.send(clar[recipe]);
         }
