@@ -29,6 +29,10 @@ var clar = ["Ông trời tạo ra địa chấn\nVà Clar là điểm nhấn", "
 var recipe = Math.floor(Math.random() * clar.length);
 message.channel.send(clar[recipe]);
         }
+    if (message.content.toLowerCase() === '?bliz') {
+var bliz = ["Bliz dạo này còn làm ở đó hông ta", "Bliz tôn trọng hàm răng của mình\nBlizcrank", "Bliz nằm trong top 8 tỷ người đẹp nhất thế giới"];
+var recipe = Math.floor(Math.random() * bliz.length);
+message.channel.send(bliz[recipe]);
 
 });
 client.login(process.env.BOT_TOKEN);
