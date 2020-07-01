@@ -11,7 +11,7 @@ client.on('ready', () => {
 		}, 10000);
 });
 
-const channel = <client>.channels.cache.get('<707501654756425731>');
+const channel = <client>.channels.cache.get('707501654756425731');
 	message.channel.send('Tao đã trở lại');
 
 client.on("message", async message => {
