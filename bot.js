@@ -35,4 +35,4 @@ var recipe = Math.floor(Math.random() * bliz.length);
 message.channel.send(bliz[recipe]);
         }
 });
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.NzAzOTYwODY5MDcxMDkzODQw.XvxWpA.ST3dzHh9-7eoaEU0v1N7sNra7Vk);
