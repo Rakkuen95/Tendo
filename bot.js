@@ -22,7 +22,7 @@ client.on("message", async message => {
 	.setImage(message.author.displayAvatarURL())
 	message.channel.send(embed);
 	} 
-const channel = <client>.channels.cache.get('707501654756425731');
+const channel = client.channels.cache.get('707501654756425731');
 	message.channel.send('Tao đã trở lại');
 });
 
