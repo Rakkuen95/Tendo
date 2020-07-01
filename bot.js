@@ -40,7 +40,6 @@ client.on("message", async message => {
         const xpAdd = Math.floor(Math.random() * 10) + 50;
         const curxp = score.points;
         const curlvl = score.level;
-        const nxtLvl = score.level * 5000;
         score.points = curxp + xpAdd;
         if (nxtLvl <= score.points) {
             score.level = curlvl + 1;
