@@ -12,7 +12,7 @@ client.on('ready', () => {
 });
 
 client.on('ready', client => {
-	client.channels.cache.get('707501654756425731').send('Hello here!')
+	client.channels.cache.get(707501654756425731).send('Hello here!')
 });
 
 client.on("message", async message => {
