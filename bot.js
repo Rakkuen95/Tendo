@@ -16,13 +16,14 @@ client.on('message', message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-	if (command === 'ping') {
-		client.commands.get('ping').execute(message, args);
+	if (command === 'avatar') {
+    const embed = new MessageEmbed()
+	.setColor('#c500ff')
+	.setImage(message.author.displayAvatarURL())
+    message.channel.send(embed);
 	} else if (command === 'beep') {
-		client.commands.get('beep').execute(message, args);
-	} else if (command === 'server') {
-		client.commands.get('server').execute(message, args);
+		message.channel.send('Boop.');
 	}
-	// do the same for the rest of the commands...
+	// other commands...
 });
 client.login(process.env.BOT_TOKEN);
