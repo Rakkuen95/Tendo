@@ -17,10 +17,12 @@ client.on('message', message => {
 	const command = args.shift().toLowerCase();
 
 	if (command === 'ping') {
-		message.channel.send('Pong.');
+		client.commands.get('ping').execute(message, args);
 	} else if (command === 'beep') {
-		message.channel.send('Boop.');
+		client.commands.get('beep').execute(message, args);
+	} else if (command === 'server') {
+		client.commands.get('server').execute(message, args);
 	}
-	// other commands...
+	// do the same for the rest of the commands...
 });
 client.login(process.env.BOT_TOKEN);
