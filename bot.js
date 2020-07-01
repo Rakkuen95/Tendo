@@ -1,6 +1,5 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
-const { prefix } = require('./config.json');
 const activities_list = ["with Rakkuen","with Albedox","with Claris","with Ngoc"]; 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`)
