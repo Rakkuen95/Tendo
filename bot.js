@@ -12,7 +12,7 @@ client.on('ready', () => {
 });
 
 const channel = <client>.channels.cache.get('<707501654756425731>');
-	message.channel.send(('Tao đã trở lại');
+	message.channel.send('Tao đã trở lại');
 
 client.on("message", async message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
