@@ -26,8 +26,7 @@ client.on("message", message => {
 	if (command === 'garchomp') {
 	const attachment = new MessageAttachment('https://static.pokemonpets.com/images/monsters-images-800-800/8445-Mega-Garchomp.png');
 	message.channel.send(attachment);
-  }
-});
+	} 
 });
 
 client.login(process.env.BOT_TOKEN);
