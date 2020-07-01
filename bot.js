@@ -18,19 +18,13 @@ client.on("message", async message => {
 	const command = args.shift().toLowerCase();
 
 	if (command === 'avatar') {
-	message.channel.send('Đây là Avatar của bạn nè');
 	const embed = new MessageEmbed()
 	.setColor('#000000')
 	.setImage(message.author.displayAvatarURL())
 	message.channel.send(embed);
 	} 
-	if (command === 'beep') {
-	message.channel.send('Boop.');
-	}
-	if (command === "ping") {
-	const msg = await message.channel.send('Pinging...');
-	message.delete()
-	message.channel.send('Hello');
+	if (command === 'ping') {
+	message.channel.send('Hello ${message.author.username}');
 	}
 });
 
