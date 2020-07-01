@@ -11,6 +11,9 @@ client.on('ready', () => {
 		}, 10000);
 });
 
+const channel = <client>.channels.cache.get('707501654756425731');
+channel.send('Tao đã trở lại');
+
 client.on("message", async message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const args = message.content.slice(prefix.length).split(/ +/);
@@ -22,13 +25,6 @@ client.on("message", async message => {
 	.setImage(message.author.displayAvatarURL())
 	message.channel.send(embed);
 	} 
-	if (command === 'wow') {
-	Promise.all([
-		message.react('🍎'),
-		message.react('🍊'),
-		message.react('🍇'),
-	])
-	}
 });
 
 client.login(process.env.BOT_TOKEN);
