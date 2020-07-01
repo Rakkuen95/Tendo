@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+const { Discord } = require("discord.js");
 const client = new Client();
 const config = require("./data.json");
 const prefix = "!";
@@ -13,6 +13,7 @@ client.on('ready', () => {
 
 client.on("message", async message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
+	//if(message.author.id !== config.ownerID) return; Dùng để bảo mật lệnh
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
@@ -32,4 +33,5 @@ client.on("message", async message => {
 	message.channel.send('Hello');
 	}
 });
+
 client.login(process.env.BOT_TOKEN);
