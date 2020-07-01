@@ -13,7 +13,6 @@ client.on('ready', () => {
 
 client.on("message", async message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
-	//if(message.author.id !== config.ownerID) return; Dùng để bảo mật lệnh
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
@@ -24,14 +23,10 @@ client.on("message", async message => {
 	message.channel.send(embed);
 	} 
 	if (command === 'ping') {
-	message.channel.send(`Hello ${message.author.username}`);
-	}
-	if (command === "asl") {
-	let age = args[0]; // Remember arrays are 0-based!.
-	let sex = args[1];
-	let location = args[2];
-	message.reply(`Hello ${message.author.username}, I see you're a ${age} year old ${sex} from ${location}. Wanna date?`);
+	client.commands.get('ping').execute(message, args);
 	}
 });
 
 client.login(process.env.BOT_TOKEN);
+//${message.author.username} MENTION BẢN THÂN
+//if(message.author.id !== config.ownerID) return; BẢO MẬT LỆNH
