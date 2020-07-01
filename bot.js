@@ -16,13 +16,14 @@ client.on('message', message => {
 	const command = args.shift().toLowerCase();
 
 	if (command === 'avatar') {
-    const embed = new MessageEmbed()
+	message.channel.send('Đây là Avatar của bạn nè');
+	const embed = new MessageEmbed()
 	.setColor('#000000')
-	.setDescription('Đây là Avatar của bạn nè')
 	.setImage(message.author.displayAvatarURL())
-    message.channel.send(embed);
-	} else if (command === 'beep') {
-		message.channel.send('Boop.');
+	message.channel.send(embed);
+	} 
+	if (command === 'beep') {
+	message.channel.send('Boop.');
 	}
 
 });
