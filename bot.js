@@ -9,7 +9,7 @@ client.on('ready', () => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
         client.user.setActivity(activities_list[index]);
 		}, 10000);
-	client.channels.cache.get('707501654756425731').send('Hello here!')
+	client.channels.cache.get('707501654756425731').send('Comeback!')
 });
 
 client.on("message", async message => {
@@ -23,6 +23,44 @@ client.on("message", async message => {
 	.setImage(message.author.displayAvatarURL())
 	message.channel.send(embed);
 	} 
+
+ let score;
+    if (message.guild) {
+        score = bot.getScore.get(message.author.id, message.guild.id);
+        if (!score) {
+            score = {
+                id: `${message.guild.id}-${message.author.id}`,
+                user: message.author.id,
+                guild: message.guild.id,
+                points: 0,
+                level: 1,
+            };
+        }
+	const nxtLvl = 5000 * (Math.pow(2, score.level) - 1);
+        const xpAdd = Math.floor(Math.random() * 10) + 50;
+        const curxp = score.points;
+        const curlvl = score.level;
+        const nxtLvl = score.level * 5000;
+        score.points = curxp + xpAdd;
+        if (nxtLvl <= score.points) {
+            score.level = curlvl + 1;
+            const lvlup = new MessageEmbed()
+                .setAuthor(
+                    `Congrats ${message.author.username}`,
+                    message.author.displayAvatarURL()
+                )
+                .setTitle('You have leveled up!')
+                .setThumbnail('https://i.imgur.com/lXeBiMs.png')
+                .setColor('#000000')
+                .addField('New Level', curlvl + 1);
+            message.channel.send(lvlup).then(msg => {
+                msg.delete({
+                    timeout: 10000,
+                });
+            });
+        }
+        bot.setScore.run(score);
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
