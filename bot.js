@@ -21,4 +21,9 @@ client.on('message', message => {
        }
 
 });
-client.login(process.env.yap3aZC1s4lTRiIkERGzQHSY7f6LSZdu);
+
+ 
+
+// THIS  MUST  BE  THIS  WAY
+
+client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
