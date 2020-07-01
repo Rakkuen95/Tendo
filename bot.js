@@ -4,7 +4,6 @@ const { prefix } = require('./config.json');
 const activities_list = ["with Rakkuen","with Albedox","with Claris","with Ngoc"]; 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`)
-	console.log(message.content);
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
         client.user.setActivity(activities_list[index]);
