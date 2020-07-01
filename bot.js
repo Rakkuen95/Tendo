@@ -11,7 +11,9 @@ client.on('ready', () => {
 		}, 10000);
 });
 
-client.channels.get(`707501654756425731`).send(`Tao đã trở lại`)
+client.on('ready', client => {
+	client.channels.cache.get('707501654756425731').send('Hello here!')
+});
 
 client.on("message", async message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
