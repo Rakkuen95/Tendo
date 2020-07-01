@@ -25,6 +25,9 @@ client.on('message', message => {
 	if (command === 'beep') {
 	message.channel.send('Boop.');
 	}
-
+	if (command === "ping") {
+	const msg = await message.channel.send('Pinging...');
+	msg.edit('Hello');
+	}
 });
 client.login(process.env.BOT_TOKEN);
