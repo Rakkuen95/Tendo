@@ -27,7 +27,8 @@ client.on("message", async message => {
 	}
 	if (command === "ping") {
 	const msg = await message.channel.send('Pinging...');
-	msg.edit('Hello');
+	message.delete()
+	message.channel.send('Hello');
 	}
 });
 client.login(process.env.BOT_TOKEN);
