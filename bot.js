@@ -1,4 +1,4 @@
-const { Client } = require('discord.js');
+const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const activities_list = ["with Rakkuen","with Albedox","with Claris","with Ngoc"]; 
 client.on('ready', () => {
