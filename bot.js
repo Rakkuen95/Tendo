@@ -26,7 +26,7 @@ client.on("message", async message => {
 	if (command === 'ping') {
 	message.channel.send(`Hello ${message.author.username}`);
 	}
-	if (message.mentions.@703960869071093840) {
+	if (message.mentions.<@703960869071093840>) {
 	message.channel.send('Alo');
 	}
 });
