@@ -24,7 +24,10 @@ client.on("message", async message => {
 	message.channel.send(embed);
 	} 
 	if (command === 'ping') {
-	message.channel.send('Hello ${message.author.username}');
+	message.channel.send('Hello' ${message.author.username});
+	}
+	if (message.mentions.@703960869071093840) {
+	message.channel.send('Alo');
 	}
 });
 
