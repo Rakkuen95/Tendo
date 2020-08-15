@@ -2,7 +2,7 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const config = require("./data.json");
 const prefix = "!";
-const activities_list = ["with Rakkuen","with Albedox","with Claris","with Ngoc"]; 
+const activities_list = ["with Rakkuen","with VNBoostingStar","with PvP Ranked","with Bosses"]; 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`)
 		setInterval(() => {
