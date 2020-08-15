@@ -23,8 +23,8 @@ client.on("message", message => {
 	.setImage(message.author.displayAvatarURL())
 	message.channel.send(embed);
 	} 
-	if (command === 'garchomp') {
-	const attachment = new MessageAttachment('https://static.pokemonpets.com/images/monsters-images-800-800/8445-Mega-Garchomp.png');
+	if (command === 'discord') {
+	const attachment = new MessageAttachment('https://meanwood.io/wp-content/uploads/2019/12/wp_article_discrim-1.gif');
 	message.channel.send(attachment);
 	} 
 });
