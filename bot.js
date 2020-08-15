@@ -24,7 +24,7 @@ client.on("message", message => {
 	message.channel.send(embed);
 	} 
 	if (command === 'discord') {
-	const attachment = new MessageAttachment('https://meanwood.io/wp-content/uploads/2019/12/wp_article_discrim-1.gif');
+	const attachment = new MessageAttachment('https://thumbs.gfycat.com/AmbitiousInfantileIndochinesetiger-small.gif');
 	message.channel.send(attachment);
 	} 
 });
