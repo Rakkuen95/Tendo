@@ -23,14 +23,19 @@ client.on("message", message => {
 	.setImage(message.author.displayAvatarURL())
 	message.channel.send(embed);
 	} 
-	if (command === 'tendo') {
+	if (command === 'kimochi') {
 	const messages = [
-		`Anh **${message.author.username}** ơi em sướng quá!`,
-		`Anh **${message.author.username}** ơi em ra rồi!`,
-		`Anh **${message.author.username}** ơi em 2 vạch!`
+		`Anh **${message.author.username}** ơi Tendo sướng quá!`,
+		`Anh **${message.author.username}** ơi Tendo ra rồi!`,
+		`Anh **${message.author.username}** ơi Tendo 2 vạch nà!`
+		`Anh **${message.author.username}** rút ra đi mòa!`
+		`Anh **${message.author.username}** bơi vào đây nè!`
+		`Anh **${message.author.username}** nhớ đeo bao vào nha!`
 	]
 	const randomMessage = messages[Math.floor(Math.random() * messages.length)];
 	message.channel.send(randomMessage);
+	}
+	if (command === 'tendo') {
 	const attachment = new MessageAttachment('https://i.imgur.com/CdmJDTJ.png');
 	message.channel.send(attachment);
 	} 
