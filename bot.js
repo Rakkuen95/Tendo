@@ -33,6 +33,9 @@ client.on("message", message => {
 	message.channel.send(randomMessage);
 	console.log(randomMessage)
 	} 
+	if (command === 'hello') {
+	message.channel.send("Hey " + message.author + " how's it going?");
+	} 
 });
 
 client.login(process.env.BOT_TOKEN);
