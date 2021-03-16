@@ -28,13 +28,17 @@ client.on("message", message => {
 	message.channel.send(attachment);
 	} 
 	if (command === 'ohaiyo') {
-	const messages = ["kimochi", "itai", "chotomate", "konichiwa"]
+	const messages = [
+`Anh **${message.author.username}** ơi em sướng quá!`,
+`Anh **${message.author.username}** ơi em ra rồi!`,
+`Anh **${message.author.username}** ơi em ra đây!`
+]
 	const randomMessage = messages[Math.floor(Math.random() * messages.length)];
 	message.channel.send(randomMessage);
 	console.log(randomMessage)
 	} 
 	if (command === 'hello') {
-	message.channel.send(`Anh **${message.author.username}** em sướng quá!`);
+	message.channel.send(`Anh **${message.author.username}** ơi em sướng quá!`);
 	} 
 });
 
