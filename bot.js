@@ -46,9 +46,11 @@ client.on("message", message => {
 	if (command === 'card') {
 	const messages = ["A","2","3","4","5","6","7","8","9","J","Q","K"]
 	const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-	message.channel.send("Lá đầu tiên là :" + randomMessage);
-	message.channel.send("Lá thứ hai là :" + randomMessage);
-	message.channel.send("Lá cuối cùng là :" + randomMessage);
+	const randomMessage2 = messages[Math.floor(Math.random() * messages.length)];
+	const randomMessage3 = messages[Math.floor(Math.random() * messages.length)];
+	message.channel.send("Lá đầu tiên là : " + randomMessage);
+	message.channel.send("Lá thứ hai là : " + randomMessage2);
+	message.channel.send("Lá cuối cùng là : " + randomMessage3);
 	}
 });
 
