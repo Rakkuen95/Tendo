@@ -28,9 +28,9 @@ client.on("message", message => {
 		`Anh **${message.author.username}** ơi em sướng quá!`,
 		`Anh **${message.author.username}** ơi em ra rồi!`,
 		`Anh **${message.author.username}** ơi em 2 vạch!`
+	]
 	const attachment = new MessageAttachment('https://i.imgur.com/CdmJDTJ.png');
 	message.channel.send(attachment);
-	]
 	const randomMessage = messages[Math.floor(Math.random() * messages.length)];
 	message.channel.send(randomMessage);
 	} 
