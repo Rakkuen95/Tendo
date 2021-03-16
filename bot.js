@@ -43,7 +43,10 @@ client.on("message", message => {
 	const rating = Math.floor(Math.random() * 100) + 1;
 	message.reply(`Tendo đánh giá bạn **${rating}/100** điểm`);
 	}
-
+	if (command === 'card') {
+	const messages = ["A","2","3","4","5","6","7","8","9","J","Q","K"]
+	const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+	message.channel.send(randomMessage,randomMessage,randomMessage);
 });
 
 client.login(process.env.BOT_TOKEN);
