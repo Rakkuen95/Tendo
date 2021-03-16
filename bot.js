@@ -23,7 +23,7 @@ client.on("message", message => {
 	.setImage(message.author.displayAvatarURL())
 	message.channel.send(embed);
 	} 
-	if (command === 'tendou') {
+	if (command === 'tendo') {
 	const messages = [
 		`Anh **${message.author.username}** ơi em sướng quá!`,
 		`Anh **${message.author.username}** ơi em ra rồi!`,
