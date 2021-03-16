@@ -30,6 +30,7 @@ client.on("message", message => {
 	if (command === 'ohaiyo') {
 	const messages = ["kimochi", "itai", "chotomate", "konichiwa"]
 	const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+	message.channel.send(randomMessage);
 	console.log(randomMessage)
 	} 
 });
