@@ -34,7 +34,7 @@ client.on("message", message => {
 	console.log(randomMessage)
 	} 
 	if (command === 'hello') {
-	message.channel.send(`Hey ${message.author.username} how's it going?`);
+	message.channel.send(`Anh **${message.author.username}** em sướng quá!`);
 	} 
 });
 
