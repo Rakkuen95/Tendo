@@ -46,7 +46,7 @@ client.on("message", message => {
 	if (command === 'card') {
 	const messages = ["A","2","3","4","5","6","7","8","9","J","Q","K"]
 	const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-	message.channel.send({randomMessage} , {randomMessage} , {randomMessage});
+	message.channel.send(${randomMessage} , ${randomMessage} , ${randomMessage});
 	}
 });
 
