@@ -23,21 +23,21 @@ client.on("message", message => {
 	.setImage(message.author.displayAvatarURL())
 	message.channel.send(embed);
 	} 
-	if (command === 'discord') {
-	const attachment = new MessageAttachment('https://thumbs.gfycat.com/AmbitiousInfantileIndochinesetiger-small.gif');
-	message.channel.send(attachment);
-	} 
-	if (command === 'hello') {
+	if (command === 'tendou') {
 	const messages = [
 		`Anh **${message.author.username}** ơi em sướng quá!`,
 		`Anh **${message.author.username}** ơi em ra rồi!`,
-		`Anh **${message.author.username}** ơi em kimochi quá!`
+		`Anh **${message.author.username}** ơi em 2 vạch!`
+	const attachment = new MessageAttachment('https://i.imgur.com/CdmJDTJ.png');
+	message.channel.send(attachment);
 	]
 	const randomMessage = messages[Math.floor(Math.random() * messages.length)];
 	message.channel.send(randomMessage);
-	const attachment = new MessageAttachment('https://idolypride.jp/shared/img/character/thumb_11.png');
-	message.channel.send(attachment);
 	} 
+	if (command === 'rate') {
+	const rating = Math.floor(Math.random() * 100) + 1;
+	message.reply(`Tendo đánh giá bạn **${rating}/100** điểm`);
+	}
 
 });
 
