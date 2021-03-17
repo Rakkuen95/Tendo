@@ -45,7 +45,7 @@ message.channel.send(`Tendo đánh giá **${message.author.username}** đạt ${
 }
 
 
-if (command === `pic`) {    
+if (command === 'pic') {    
 	const images = [
 	"https://i.pinimg.com/474x/48/b9/76/48b976e1bd6a96a375d60d920605cefe.jpg", 
 	"https://i.pinimg.com/474x/52/7a/a4/527aa4d89f61efe7e94854f417309ffc.jpg", 
