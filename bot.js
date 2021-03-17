@@ -45,12 +45,22 @@ client.on("message", message => {
 	}
 	if (command === 'card') {
 	const messages = ["A","2","3","4","5","6","7","8","9","J","Q","K"]
-	const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-	const randomMessage2 = messages[Math.floor(Math.random() * messages.length)];
-	const randomMessage3 = messages[Math.floor(Math.random() * messages.length)];
-	message.channel.send("Lá đầu tiên là : " + randomMessage);
-	message.channel.send("Lá thứ hai là : " + randomMessage2);
-	message.channel.send("Lá cuối cùng là : " + randomMessage3);
+	const J = 10;
+	const Q = 10;
+	const K = 10;
+	const Num1 = messages[Math.floor(Math.random() * messages.length)];
+	const Num2 = messages[Math.floor(Math.random() * messages.length)];
+	const Num3 = messages[Math.floor(Math.random() * messages.length)];
+	message.channel.send("Lá đầu tiên là : " + Num1);
+	message.channel.send("Lá thứ hai là : " + Num2);
+	message.channel.send("Lá cuối cùng là : " + Num3);
+	const Tong = Num1+Num2+Num3;
+		if(0<Tong<10)
+		message.channel.send("Tổng cộng là : "Tong);
+		if(10<=Tong<20)
+		message.channel.send("Tổng cộng là : "Tong-10);
+		if(20<=Tong<=30)
+		message.channel.send("Tổng cộng là : "Tong-20);
 	}
 });
 
