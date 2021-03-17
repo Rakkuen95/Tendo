@@ -45,9 +45,9 @@ client.on("message", message => {
 	}
 	if (command === 'card') {
 	const messages = ["A","2","3","4","5","6","7","8","9","J","Q","K"]
-	const J = 10;
-	const Q = 10;
-	const K = 10;
+	var J = 10;
+	var Q = 10;
+	var K = 10;
 	const Num1 = messages[Math.floor(Math.random() * messages.length)];
 	const Num2 = messages[Math.floor(Math.random() * messages.length)];
 	const Num3 = messages[Math.floor(Math.random() * messages.length)];
