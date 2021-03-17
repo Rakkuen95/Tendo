@@ -42,19 +42,19 @@ client.on("message", message => {
 	if (command === 'rate') {
 	const rating = Math.floor(Math.random() * 100) + 1;
 	message.reply(`Tendo đánh giá bạn ${rating}/100 điểm!`);
-		if (0 <= ${rating} < 20) {
+		if (0 <= rating < 20) {
 		message.reply("Tendo đang tỏ ra khinh bỉ bạn");
 		}
-		if (20 <= ${rating} < 40) {
+		if (20 <= rating < 40) {
 		message.reply("Tendo đang tỏ ra khinh bỉ bạn");	
 		}
-		if (40 <= ${rating} < 60) {
+		if (40 <= rating < 60) {
 		message.reply("Tendo đang tỏ ra khinh bỉ bạn");	
 		}
-		if (60 <= ${rating} < 80) {
+		if (60 <= rating < 80) {
 		message.reply("Tendo đang tỏ ra khinh bỉ bạn");	
 		}
-		if (80 <= ${rating} <= 100) {
+		if (80 <= rating <= 100) {
 		message.reply("Tendo đang tỏ ra khinh bỉ bạn");	
 		}
 	}
