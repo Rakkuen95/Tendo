@@ -9,7 +9,7 @@ client.on('ready', () => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
         client.user.setActivity(activities_list[index]);
 		}, 10000);
-	client.channels.cache.get('821287593643212832').send('Ohaiyo!')
+	client.channels.cache.get('821287593643212832').send('Comeback!')
 });
 
 client.on("message", message => {
@@ -41,30 +41,19 @@ client.on("message", message => {
 	} 
 	if (command === 'rate') {
 	const rating = Math.floor(Math.random() * 100) + 1;
-	message.reply(`Tendo đánh giá bạn **${rating}/100** điểm`);
+	message.reply(`Tendo đánh giá bạn ${rating}/100 điểm!`);
+		if (0 <= ${rating} < 20)
+		message.reply("Tendo đang tỏ ra khinh bỉ bạn");	
+		if (20 <= ${rating} < 40)
+		message.reply("Tendo đang tỏ ra khinh bỉ bạn");	
+		if (40 <= ${rating} < 60)
+		message.reply("Tendo đang tỏ ra khinh bỉ bạn");	
+		if (60 <= ${rating} < 80)
+		message.reply("Tendo đang tỏ ra khinh bỉ bạn");	
+		if (80 <= ${rating} <= 100)
+		message.reply("Tendo đang tỏ ra khinh bỉ bạn");	
 	}
-	if (command === 'card') {
-	const messages = ["A","2","3","4","5","6","7","8","9","J","Q","K"]
-	var J = 10;
-	var Q = 10;
-	var K = 10;
-	const Num1 = messages[Math.floor(Math.random() * messages.length)];
-	const Num2 = messages[Math.floor(Math.random() * messages.length)];
-	const Num3 = messages[Math.floor(Math.random() * messages.length)];
-	message.channel.send("Lá đầu tiên là : " + Num1);
-	message.channel.send("Lá thứ hai là : " + Num2);
-	message.channel.send("Lá cuối cùng là : " + Num3);
-	const Tong = Num1+Num2+Num3;
-		if(0<Tong<10){
-		const Tong1 = Tong;
-		message.channel.send("Tổng cộng là : "Tong1);}
-		if(10<=Tong<20){
-		const Tong2 = Tong;
-		message.channel.send("Tổng cộng là : "Tong2);}
-		if(20<=Tong<=30){
-		const Tong3 = Tong;
-		message.channel.send("Tổng cộng là : "Tong3);}
-	}
+
 });
 
 client.login(process.env.BOT_TOKEN);
