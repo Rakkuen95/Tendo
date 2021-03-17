@@ -41,21 +41,21 @@ client.on("message", message => {
 	} 
 	if (command === 'rate') {
 	const rating = Math.floor(Math.random() * 100) + 1;
-	message.reply(`Tendo đánh giá bạn ${rating}/100 điểm!`);
+	message.channel.send(`Tendo đánh giá **${message.author.username}** đạt ${rating}/100 điểm!`);
 		if (0 <= rating < 20) {
-		message.reply("Tendo đang tỏ ra khinh bỉ bạn");
+		message.channel.send(`Tendo đang tỏ ra khinh bỉ ${message.author.username}`);
 		}
 		if (20 <= rating < 40) {
-		message.reply("Tendo đang tỏ ra khinh bỉ bạn");	
+		message.channel.send(`Tendo không quan tâm ${message.author.username}`);	
 		}
 		if (40 <= rating < 60) {
-		message.reply("Tendo đang tỏ ra khinh bỉ bạn");	
+		message.channel.send(`Tendo đang tỏ ra thích thú ${message.author.username}`);	
 		}
 		if (60 <= rating < 80) {
-		message.reply("Tendo đang tỏ ra khinh bỉ bạn");	
+		message.channel.send(`Tendo muốn đi chơi với ${message.author.username}`);	
 		}
 		if (80 <= rating <= 100) {
-		message.reply("Tendo đang tỏ ra khinh bỉ bạn");	
+		message.channel.send(`Tendo đang tỏ ra khinh bỉ ${message.author.username}`);	
 		}
 	}
 
