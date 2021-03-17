@@ -42,19 +42,19 @@ client.on("message", message => {
 	if (command === 'rate') {
 	const rating = Math.floor(Math.random() * 100) + 1;
 	message.channel.send(`Tendo đánh giá **${message.author.username}** đạt ${rating}/100 điểm!`);
-		if (0 <= rating < 20) {
+		if (rating >= 0 || rating < 20) {
 		message.channel.send(`Tendo đang tỏ ra khinh bỉ ${message.author.username}`);
 		}
-		if (20 <= rating < 40) {
+		if (rating >= 20 || rating < 40) {
 		message.channel.send(`Tendo không quan tâm ${message.author.username}`);	
 		}
-		if (40 <= rating < 60) {
+		if (rating >= 40 || rating < 60) {
 		message.channel.send(`Tendo đang tỏ ra thích thú ${message.author.username}`);	
 		}
-		if (60 <= rating < 80) {
+		if (rating >= 60 || rating < 80) {
 		message.channel.send(`Tendo muốn đi chơi với ${message.author.username}`);	
 		}
-		if (80 <= rating <= 100) {
+		if (rating >= 80 || rating < 100) {
 		message.channel.send(`Tendo đang tỏ ra khinh bỉ ${message.author.username}`);	
 		}
 	}
