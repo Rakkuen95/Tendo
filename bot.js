@@ -3,10 +3,6 @@ const client = new Client();
 const config = require("./data.json");
 const prefix = "!";
 
-const { Users, CurrencyShop } = require('./dbObjects');
-const { Op } = require('sequelize');
-const currency = new Discord.Collection();
-
 const activities_list = ["Lux","Idoly Pride","les plumes","TrySail"]; 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`)
@@ -16,28 +12,36 @@ client.on('ready', () => {
 		}, 10000);
 	client.channels.cache.get('821287593643212832').send('Comeback!')
 });
+client.on("message", message => {
+	if (!message.content.startsWith(prefix) || message.author.bot) return;
+	const args = message.content.slice(prefix.length).split(/ +/);
+	const command = args.shift().toLowerCase();
 
-client.on('message', async message => {
-	if (message.author.bot) return;
-	currency.add(message.author.id, 1);
-
-	if (!message.content.startsWith(prefix)) return;
-	const input = message.content.slice(prefix.length).trim();
-	if (!input.length) return;
-	const [, command, commandArgs] = input.match(/(\w+)\s*([\s\S]*)/);
-
-	if (command === 'balance') {
-		// [gamma]
-	} else if (command === 'inventory') {
-		// [delta]
-	} else if (command === 'transfer') {
-		// [epsilon]
-	} else if (command === 'buy') {
-		// [zeta]
-	} else if (command === 'shop') {
-		// [theta]
-	} else if (command === 'leaderboard') {
-		// [lambda]
+	if (command === 'avatar') {
+	const embed = new MessageEmbed()
+	.setColor('#000000')
+	.setImage(message.author.displayAvatarURL())
+	message.channel.send(embed);
+	} 
+	if (command === 'kimochi') {
+	const messages = [
+		`Anh **${message.author.username}** ơi Tendo sướng quá!`,
+		`Anh **${message.author.username}** ơi Tendo ra rồi!`,
+		`Anh **${message.author.username}** ơi Tendo 2 vạch nà!`,
+		`Anh **${message.author.username}** rút ra đi mòa!`,
+		`Anh **${message.author.username}** bơi vào đây nè!`,
+		`Anh **${message.author.username}** nhớ đeo bao vào nha!`
+	]
+	const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+	message.channel.send(randomMessage);
+	}
+	if (command === 'tendo') {
+	const attachment = new MessageAttachment('https://i.imgur.com/CdmJDTJ.png');
+	message.channel.send(attachment);
+	} 
+	if (command === 'rate') {
+	const rating = Math.floor(Math.random() * 100) + 1;
+	message.channel.send(`Tendo đánh giá **${message.author.username}** đạt ${rating}/100 điểm!`);
 	}
 
 });
