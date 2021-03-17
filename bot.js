@@ -55,11 +55,11 @@ client.on("message", message => {
 	message.channel.send("Lá thứ hai là : " + Num2);
 	message.channel.send("Lá cuối cùng là : " + Num3);
 	const Tong = Num1+Num2+Num3;
-		if(0<Tong<10)
+		if(0<Tong<10);
 		message.channel.send("Tổng cộng là : "Tong);
-		if(10<=Tong<20)
+		if(10<=Tong<20);
 		message.channel.send("Tổng cộng là : "Tong-10);
-		if(20<=Tong<=30)
+		if(20<=Tong<=30);
 		message.channel.send("Tổng cộng là : "Tong-20);
 	}
 });
