@@ -48,14 +48,12 @@ message.channel.send(`Tendo đánh giá **${message.author.username}** đạt ${
 if (command === 'pic') {    
 	const images = [
 	'https://i.pinimg.com/474x/48/b9/76/48b976e1bd6a96a375d60d920605cefe.jpg', 
-	'https://i.pinimg.com/474x/52/7a/a4/527aa4d89f61efe7e94854f417309ffc.jpg', 
-	'https://styles.redditmedia.com/t5_2ss60/styles/communityIcon_bx5asf07hi711.png?width=256&s=aa64b672872834f8d49bf3ae560543a9d9bd7ee6'
+	'https://i.pinimg.com/474x/52/7a/a4/527aa4d89f61efe7e94854f417309ffc.jpg'
 	];
-	const image = Math.floor(Math.random() * images.length);
-	const embed = new MessageEmbed()
-	.setTitle('Here is your random pic')
-	.setAuthor('hello')
-	.setImage(String([images[image]]))
+	const image = images[Math.floor(Math.random() * images.length)];
+	const random = new Discord.MessageEmbed()
+	.setTitle('Here is your random grogu comic')
+	.setImage(image);
 	message.channel.send(random);
 }
 	
