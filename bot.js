@@ -42,16 +42,29 @@ client.on("message", message => {
 	message.channel.send(`Tendo đánh giá **${message.author.username}** đạt ${rating}/100 điểm!`);
 	}
 
-	if (command === 'rate2') {
+	if (command === 'chest') {
+	const embed = new MessageEmbed()
 	const rating = Math.floor(Math.random() * 10) + 1;
 		if ((rating > 0) && (rating < 3))
-		message.channel.send("C")
+		.setTitle('Tier 1')
+		.setDescription('Chúc mừng bạn đã trúng 0 Coins')
+		.setColor('#ffffff')
+		message.channel.send(embed);
 		if ((rating >= 3) && (rating < 6))
-		message.channel.send("B")
+		.setTitle('Tier 2')
+		.setDescription('Chúc mừng bạn đã trúng 10 Coins')
+		.setColor('#96ff00')
+		message.channel.send(embed);
 		if ((rating >= 6) && (rating < 9))
-		message.channel.send("A")
+		.setTitle('Tier 3')
+		.setDescription('Chúc mừng bạn đã trúng 20 Coins')
+		.setColor('#00d2ff')
+		message.channel.send(embed);
 		if ((rating >= 9) && (rating <= 10))
-		message.channel.send("S")
+		.setTitle('Tier 4')
+		.setDescription('Chúc mừng bạn đã trúng 50 Coins')
+		.setColor('#b000ff')
+		message.channel.send(embed);
 	}
 });
 
