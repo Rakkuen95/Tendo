@@ -48,28 +48,36 @@ client.on("message", message => {
 		const embed = new MessageEmbed()
 		.setColor('#FEFEFE')
 		.setTitle('Tier 1')
+		.setURL('https://google.vn/')
 		.setDescription('Chúc mừng bạn đã trúng 0 Coins')
+		.setImage('https://i.pinimg.com/originals/17/aa/53/17aa5373d7639e1baf8a6ef8f85e9a8d.gif')
 		message.channel.send(embed);
 		}
 		if ((rating >= 3) && (rating < 6)){
 		const embed = new MessageEmbed()
 		.setColor('#96ff00')
 		.setTitle('Tier 2')
+		.setURL('https://google.vn/')
 		.setDescription('Chúc mừng bạn đã trúng 10 Coins')
+		.setImage('https://i.pinimg.com/originals/90/b7/1e/90b71e6909cab410620383865e35f23e.gif')
 		message.channel.send(embed);
 		}
 		if ((rating >= 6) && (rating < 9)){
 		const embed = new MessageEmbed()
 		.setColor('#00d2ff')
 		.setTitle('Tier 3')
+		.setURL('https://google.vn/')
 		.setDescription('Chúc mừng bạn đã trúng 20 Coins')
+		.setImage('https://data.whicdn.com/images/353236267/original.gif')
 		message.channel.send(embed);
 		}
 		if ((rating >= 9) && (rating <= 10)){
 		const embed = new MessageEmbed()
 		.setColor('#b000ff')
 		.setTitle('Tier 4')
+		.setURL('https://google.vn/')
 		.setDescription('Chúc mừng bạn đã trúng 50 Coins')
+		.setImage('https://files.gamebanana.com/img/ico/sprays/5d7e23934727f.gif')
 		message.channel.send(embed);
 		}
 	}
