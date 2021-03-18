@@ -20,7 +20,7 @@ client.on("message", message => {
 	if (command === 'ping') {
 	message.delete({ timeout: 5000 })
 	message.channel.send("pong");
-
+	}
 	if (command === 'avatar') {
 	const embed = new MessageEmbed()
 	.setColor('#000000')
