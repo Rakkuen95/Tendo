@@ -51,7 +51,7 @@ client.on("message", message => {
 		message.channel.send("B")
 		else if (6 <= rating < 9)
 		message.channel.send("A")
-		else if (9 <= rating < 10)
+		else if (9 <= rating <= 10)
 		message.channel.send("S")
 	}
 });
