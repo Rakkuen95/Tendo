@@ -68,7 +68,7 @@ const exampleEmbed = new MessageEmbed()
 	.setTimestamp()
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
 
-	message.channel.send.send(exampleEmbed);
+	message.channel.send(exampleEmbed);
 	}
 });
 //
