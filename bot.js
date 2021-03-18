@@ -44,10 +44,38 @@ client.on("message", message => {
 
 	if (command === 'chest') {
 	const rating = Math.floor(Math.random() * 10) + 1;
-		if ((rating > 0) && (rating < 5))
-		message.channel.send('A')
-		if ((rating >= 5) && (rating <= 10))
-		message.channel.send('B')
+		if ((rating > 0) && (rating < 3)){
+		const embed = new MessageEmbed()
+		.setColor('#ffffff')
+		.setTitle('Tier 1')
+		.setDescription('Chúc mừng bạn đã trúng 0 Coins')
+
+		message.channel.send(embed);
+		}
+		if ((rating >= 3) && (rating < 6)){
+		const embed = new MessageEmbed()
+		.setColor('#96ff00')
+		.setTitle('Tier 2')
+		.setDescription('Chúc mừng bạn đã trúng 10 Coins')
+
+		message.channel.send(embed);
+		}
+		if ((rating >= 6) && (rating < 9)){
+		const embed = new MessageEmbed()
+		.setColor('#00d2ff')
+		.setTitle('Tier 3')
+		.setDescription('Chúc mừng bạn đã trúng 20 Coins')
+
+		message.channel.send(embed);
+		}
+		if ((rating >= 9) && (rating <= 10)){
+		const embed = new MessageEmbed()
+		.setColor('#b000ff')
+		.setTitle('Tier 4')
+		.setDescription('Chúc mừng bạn đã trúng 50 Coins')
+
+		message.channel.send(embed);
+		}
 	}
 	if (command === 'exam') {
 const exampleEmbed = new MessageEmbed()
