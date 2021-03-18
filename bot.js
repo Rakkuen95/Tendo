@@ -44,17 +44,6 @@ const rating = Math.floor(Math.random() * 100) + 1;
 message.channel.send(`Tendo đánh giá **${message.author.username}** đạt ${rating}/100 điểm!`);
 }
 
-
-if (command === 'pic') {    
-	const images = [`https://i.pinimg.com/474x/48/b9/76/48b976e1bd6a96a375d60d920605cefe.jpg`,`https://i.pinimg.com/474x/52/7a/a4/527aa4d89f61efe7e94854f417309ffc.jpg`];
-	const image = images[Math.floor(Math.random() * images.length)];
-	const random = new Discord.MessageEmbed()
-	.setTitle('Here is your random grogu comic')
-	.setImage(image);
-	message.channel.send(random);
-}
-	
-	
 });
 
 client.login(process.env.BOT_TOKEN);
