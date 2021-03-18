@@ -60,7 +60,7 @@ client.on("message", message => {
 	message.channel.send(rating)
 		if (0 <= rating < 5)
 		return message.channel.send("B")
-		if (5 <= rating <= 10)
+		else if (5 <= rating <= 10)
 		return message.channel.send("A")
 	}
 });
