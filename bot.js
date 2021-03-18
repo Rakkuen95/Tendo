@@ -59,41 +59,50 @@ client.on("message", message => {
 	}
 
 	if (command === 'chest') {
-	const rating = Math.floor(Math.random() * 10) + 1;
-		if ((rating > 0) && (rating < 3)){
+	const rating = Math.floor(Math.random() * 100) + 1;
+		if ((rating > 0) && (rating < 50)){
 		const embed = new MessageEmbed()
+		const point1 = Math.floor(Math.random() * 10) + 1;
 		.setColor('#FEFEFE')
 		.setTitle('Tier 1')
-		.setURL('https://google.vn/')
-		.setDescription(`Chúc mừng **${message.author.username}** đã trúng 0 Coins`)
-		.setImage('https://i.pinimg.com/originals/17/aa/53/17aa5373d7639e1baf8a6ef8f85e9a8d.gif')
+		.setDescription(`**${message.author.username}** đã nhận được ${point1} điểm!`)
+		.setImage()
 		message.channel.send(embed);
 		}
-		if ((rating >= 3) && (rating < 6)){
+		if ((rating >= 50) && (rating < 75)){
 		const embed = new MessageEmbed()
-		.setColor('#96ff00')
+		const point2 = Math.floor(Math.random() * 15) + 11;
+		.setColor('#7aff8d')
 		.setTitle('Tier 2')
-		.setURL('https://google.vn/')
-		.setDescription(`Chúc mừng **${message.author.username}** đã trúng 1 Coins`)
-		.setImage('https://i.pinimg.com/originals/90/b7/1e/90b71e6909cab410620383865e35f23e.gif')
+		.setDescription(`**${message.author.username}** đã nhận được ${point2} điểm!`)
+		.setImage()
 		message.channel.send(embed);
 		}
-		if ((rating >= 6) && (rating < 9)){
+		if ((rating >= 75) && (rating < 90)){
 		const embed = new MessageEmbed()
-		.setColor('#00d2ff')
+		const point3 = Math.floor(Math.random() * 25) + 26;
+		.setColor('#58a0e3')
 		.setTitle('Tier 3')
-		.setURL('https://google.vn/')
-		.setDescription(`Chúc mừng **${message.author.username}** đã trúng 2 Coins`)
-		.setImage('https://data.whicdn.com/images/353236267/original.gif')
+		.setDescription(`**${message.author.username}** đã nhận được ${point3} điểm!`)
+		.setImage()
 		message.channel.send(embed);
 		}
-		if ((rating >= 9) && (rating <= 10)){
+		if ((rating >= 90) && (rating < 98)){
 		const embed = new MessageEmbed()
-		.setColor('#b000ff')
+		const point4 = Math.floor(Math.random() * 50) + 51;
+		.setColor('#ad58e3')
 		.setTitle('Tier 4')
-		.setURL('https://google.vn/')
-		.setDescription(`Chúc mừng **${message.author.username}** đã trúng 3 Coins`)
-		.setImage('https://files.gamebanana.com/img/ico/sprays/5d7e23934727f.gif')
+		.setDescription(`**${message.author.username}** đã nhận được ${point4} điểm!`)
+		.setImage()
+		message.channel.send(embed);
+		}
+		if ((rating >= 98) && (rating <= 100)){
+		const embed = new MessageEmbed()
+		const point5 = Math.floor(Math.random() * 100) + 101;
+		.setColor('#f8f105')
+		.setTitle('Tier 5')
+		.setDescription(`**${message.author.username}** đã nhận được ${point5} điểm!`)
+		.setImage()
 		message.channel.send(embed);
 		}
 	}
