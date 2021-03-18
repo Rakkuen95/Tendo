@@ -25,9 +25,9 @@ client.on("message", message => {
 	} 
 	if (command === 'hello') {
 	const messages = [
-		`Nếu như ngày ${message.author.username} bước đến/nThì ${message.author.username} đã yêu thương em.`,
-		`Tại sao mày mình biết ${message.author.username} là gay ?/nVì Tendo là gay.`,
-		`Thế giới này là của Tendo và/nTendo có quyền đi với ${message.author.username}.`,
+		`Nếu như ngày ${message.author.username} bước đến\nThì ${message.author.username} đã yêu thương em.`,
+		`Tại sao mày mình biết ${message.author.username} là gay ?\nVì Tendo là gay.`,
+		`Thế giới này là của Tendo và\nTendo có quyền đi với ${message.author.username}.`,
 		`Tendo hello mấy cưng`,
 		]
 	const randomMessage = messages[Math.floor(Math.random() * messages.length)];
