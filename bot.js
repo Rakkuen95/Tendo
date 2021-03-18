@@ -43,8 +43,12 @@ client.on("message", message => {
 	}
 
 	if (command === 'rate2') {
-	const rating = Math.floor(Math.random() * 10);
+	const rating = Math.floor(Math.random() * 10) + 1;
 	message.channel.send(rating)
+		if (rating <5)
+		message.channel.send("B")
+		if (rating >=5)
+		message.channel.send("A")
 	}
 });
 
