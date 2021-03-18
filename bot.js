@@ -6,10 +6,10 @@ const prefix = "!";
 const activities_list = ["Lux","Idoly Pride","les plumes","TrySail"]; 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`)
-		setInterval(() => {
+	setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
         client.user.setActivity(activities_list[index]);
-		}, 10000);
+	}, 10000);
 	client.channels.cache.get('821287593643212832').send('Comeback!')
 });
 client.on("message", message => {
@@ -25,23 +25,21 @@ client.on("message", message => {
 	} 
 	if (command === 'kimochi') {
 	const messages = [
-		`Anh **${message.author.username}** ơi Tendo sướng quá!`,
-		`Anh **${message.author.username}** ơi Tendo ra rồi!`,
-		`Anh **${message.author.username}** ơi Tendo 2 vạch nà!`,
-		`Anh **${message.author.username}** rút ra đi mòa!`,
-		`Anh **${message.author.username}** bơi vào đây nè!`,
-		`Anh **${message.author.username}** nhớ đeo bao vào nha!`
-]
-const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-message.channel.send(randomMessage);
+		`Tendo đang tỏ ra khinh bỉ với **${message.author.username}** .!`,
+		`Tendo không quan tâm tới với **${message.author.username}** .!`,
+		`Tendo đang tỏ ra thích thú với **${message.author.username}** .!`,
+		`Tendo đang tỏ ra đáng yêu với **${message.author.username}** .!`,
+		]
+	const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+	message.channel.send(randomMessage);
 }
-if (command === 'tendo') {
-const attachment = new MessageAttachment('https://i.imgur.com/CdmJDTJ.png');
-message.channel.send(attachment);
+	if (command === 'tendo') {
+	const attachment = new MessageAttachment('https://i.imgur.com/CdmJDTJ.png');
+		message.channel.send(attachment);
 } 
-if (command === 'rate') {
-const rating = Math.floor(Math.random() * 100) + 1;
-message.channel.send(`Tendo đánh giá **${message.author.username}** đạt ${rating}/100 điểm!`);
+	if (command === 'rate') {
+	const rating = Math.floor(Math.random() * 100) + 1;
+	message.channel.send(`Tendo đánh giá **${message.author.username}** đạt ${rating}/100 điểm!`);
 }
 
 });
