@@ -61,6 +61,7 @@ client.on("message", message => {
 	if (command === 'chest') {
 	const rating = Math.floor(Math.random() * 100) + 1;
 		if ((rating > 0) && (rating < 50)){
+		message.delete(1000);
 		const point1 = Math.floor(Math.random() * 10) + 1;
 		const embed = new MessageEmbed()
 		.setColor('#FEFEFE')
@@ -70,6 +71,7 @@ client.on("message", message => {
 		message.channel.send(embed);
 		}
 		if ((rating >= 50) && (rating < 75)){
+		message.delete(1000);
 		const point2 = Math.floor(Math.random() * 15) + 11;
 		const embed = new MessageEmbed()
 		.setColor('#7aff8d')
@@ -79,6 +81,7 @@ client.on("message", message => {
 		message.channel.send(embed);
 		}
 		if ((rating >= 75) && (rating < 90)){
+		message.delete(1000);
 		const point3 = Math.floor(Math.random() * 25) + 26;
 		const embed = new MessageEmbed()
 		.setColor('#58a0e3')
@@ -88,6 +91,7 @@ client.on("message", message => {
 		message.channel.send(embed);
 		}
 		if ((rating >= 90) && (rating < 98)){
+		message.delete(1000);
 		const point4 = Math.floor(Math.random() * 50) + 51;
 		const embed = new MessageEmbed()
 		.setColor('#ad58e3')
@@ -97,6 +101,7 @@ client.on("message", message => {
 		message.channel.send(embed);
 		}
 		if ((rating >= 98) && (rating <= 100)){
+		message.delete(1000);
 		const point5 = Math.floor(Math.random() * 100) + 101;
 		const embed = new MessageEmbed()
 		.setColor('#f8f105')
