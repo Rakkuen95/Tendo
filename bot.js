@@ -50,7 +50,7 @@ client.on("message", message => {
 		message.channel.send('B')
 	}
 	if (command === 'exam') {
-const exampleEmbed = new Discord.MessageEmbed()
+const exampleEmbed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
 	.setURL('https://discord.js.org/')
