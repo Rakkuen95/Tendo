@@ -61,48 +61,48 @@ client.on("message", message => {
 	if (command === 'chest') {
 	const rating = Math.floor(Math.random() * 100) + 1;
 		if ((rating > 0) && (rating < 50)){
-		const embed = new MessageEmbed()
 		const point1 = Math.floor(Math.random() * 10) + 1;
+		const embed = new MessageEmbed()
 		.setColor('#FEFEFE')
 		.setTitle('Tier 1')
 		.setDescription(`**${message.author.username}** đã nhận được ${point1} điểm!`)
-		.setImage()
+		.setImage('')
 		message.channel.send(embed);
 		}
 		if ((rating >= 50) && (rating < 75)){
-		const embed = new MessageEmbed()
 		const point2 = Math.floor(Math.random() * 15) + 11;
+		const embed = new MessageEmbed()
 		.setColor('#7aff8d')
 		.setTitle('Tier 2')
 		.setDescription(`**${message.author.username}** đã nhận được ${point2} điểm!`)
-		.setImage()
+		.setImage('')
 		message.channel.send(embed);
 		}
 		if ((rating >= 75) && (rating < 90)){
-		const embed = new MessageEmbed()
 		const point3 = Math.floor(Math.random() * 25) + 26;
+		const embed = new MessageEmbed()
 		.setColor('#58a0e3')
 		.setTitle('Tier 3')
 		.setDescription(`**${message.author.username}** đã nhận được ${point3} điểm!`)
-		.setImage()
+		.setImage('')
 		message.channel.send(embed);
 		}
 		if ((rating >= 90) && (rating < 98)){
-		const embed = new MessageEmbed()
 		const point4 = Math.floor(Math.random() * 50) + 51;
+		const embed = new MessageEmbed()
 		.setColor('#ad58e3')
 		.setTitle('Tier 4')
 		.setDescription(`**${message.author.username}** đã nhận được ${point4} điểm!`)
-		.setImage()
+		.setImage('')
 		message.channel.send(embed);
 		}
 		if ((rating >= 98) && (rating <= 100)){
-		const embed = new MessageEmbed()
 		const point5 = Math.floor(Math.random() * 100) + 101;
+		const embed = new MessageEmbed()
 		.setColor('#f8f105')
 		.setTitle('Tier 5')
 		.setDescription(`**${message.author.username}** đã nhận được ${point5} điểm!`)
-		.setImage()
+		.setImage('')
 		message.channel.send(embed);
 		}
 	}
