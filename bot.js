@@ -47,11 +47,11 @@ client.on("message", message => {
 	message.channel.send(rating)
 		if (0 < rating < 3)
 		message.channel.send("C")
-		if (3 <= rating < 6)
+		else if (3 <= rating < 6)
 		message.channel.send("B")
-		if (6 <= rating < 9)
+		else if (6 <= rating < 9)
 		message.channel.send("A")
-		if (9 <= rating < 10)
+		else if (9 <= rating < 10)
 		message.channel.send("S")
 	}
 });
