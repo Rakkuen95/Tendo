@@ -32,19 +32,20 @@ client.on("message", message => {
 		]
 	const randomMessage = messages[Math.floor(Math.random() * messages.length)];
 	message.channel.send(randomMessage);
-}
+	}
 	if (command === 'tendo') {
 	const attachment = new MessageAttachment('https://i.imgur.com/CdmJDTJ.png');
 		message.channel.send(attachment);
-} 
+	} 
 	if (command === 'rate') {
 	const rating = Math.floor(Math.random() * 100) + 1;
 	message.channel.send(`Tendo đánh giá **${message.author.username}** đạt ${rating}/100 điểm!`);
-}
+	}
 
 	if (command === 'rate2') {
 	const rating = Math.floor(Math.random() * 10);
 	message.channel.send(rating)
+	}
 });
 
 client.login(process.env.BOT_TOKEN);
