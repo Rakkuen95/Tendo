@@ -17,6 +17,10 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
+	if (command === 'ping') {
+	message.delete({ timeout: 5000 })
+	message.channel.send("pong");
+
 	if (command === 'avatar') {
 	const embed = new MessageEmbed()
 	.setColor('#000000')
@@ -24,7 +28,6 @@ client.on("message", message => {
 	message.channel.send(embed);
 	} 
 	if (command === 'hello') {
-	then(msg => {msg.delete(10000)})
 	const messages = [
 		`Nếu như ngày ${message.author.username} bước đến\nThì ${message.author.username} đã yêu thương em.`,
 		`Tại sao mày mình biết ${message.author.username} là gay ?\nVì Tendo là gay.`,
