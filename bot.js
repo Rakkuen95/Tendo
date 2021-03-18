@@ -45,9 +45,15 @@ client.on("message", message => {
 	if (command === 'chest') {
 	const rating = Math.floor(Math.random() * 10) + 1;
 		if ((rating > 0) && (rating < 5))
-		message.channel.send('A');
+	const embed = new MessageEmbed()
+	.setColor('#000000')
+	.setImage(message.author.displayAvatarURL())
+	message.channel.send(embed);
 		if ((rating >= 5) && (rating <= 10))
-		message.channel.send('B');
+	const embed = new MessageEmbed()
+	.setColor('#000000')
+	.setImage(message.author.displayAvatarURL())
+	message.channel.send(embed);
 	}
 });
 
