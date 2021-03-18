@@ -62,6 +62,7 @@ client.on("message", message => {
 		return message.channel.send("B")
 		if (5 <= rating <= 10)
 		return message.channel.send("A")
+	}
 });
 
 client.login(process.env.BOT_TOKEN);
