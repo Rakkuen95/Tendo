@@ -46,10 +46,9 @@ client.on("message", message => {
 	const rating = Math.floor(Math.random() * 10) + 1;
 		if ((rating > 0) && (rating < 3)){
 		const embed = new MessageEmbed()
-		.setColor('#ffffff')
+		.setColor('#FEFEFE')
 		.setTitle('Tier 1')
 		.setDescription('Chúc mừng bạn đã trúng 0 Coins')
-
 		message.channel.send(embed);
 		}
 		if ((rating >= 3) && (rating < 6)){
@@ -57,7 +56,6 @@ client.on("message", message => {
 		.setColor('#96ff00')
 		.setTitle('Tier 2')
 		.setDescription('Chúc mừng bạn đã trúng 10 Coins')
-
 		message.channel.send(embed);
 		}
 		if ((rating >= 6) && (rating < 9)){
@@ -65,7 +63,6 @@ client.on("message", message => {
 		.setColor('#00d2ff')
 		.setTitle('Tier 3')
 		.setDescription('Chúc mừng bạn đã trúng 20 Coins')
-
 		message.channel.send(embed);
 		}
 		if ((rating >= 9) && (rating <= 10)){
@@ -73,7 +70,6 @@ client.on("message", message => {
 		.setColor('#b000ff')
 		.setTitle('Tier 4')
 		.setDescription('Chúc mừng bạn đã trúng 50 Coins')
-
 		message.channel.send(embed);
 		}
 	}
