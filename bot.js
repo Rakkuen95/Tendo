@@ -52,6 +52,7 @@ client.on("message", message => {
 		message.channel.send(embed);
 		if ((rating >= 3) && (rating < 6))
 		.setTitle('Tier 2')
+		.setURL('https://discord.js.org/')
 		.setDescription('Chúc mừng bạn đã trúng 10 Coins')
 		.setColor('#96ff00')
 		message.channel.send(embed);
