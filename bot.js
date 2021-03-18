@@ -71,7 +71,7 @@ const exampleEmbed = new Discord.MessageEmbed()
 channel.send(exampleEmbed);
 	}
 });
-
+//
 client.login(process.env.BOT_TOKEN);
 //${message.author.username} MENTION BẢN THÂN
 //if(message.author.id !== config.ownerID) return; BẢO MẬT LỆNH
