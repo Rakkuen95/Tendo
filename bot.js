@@ -45,7 +45,7 @@ client.on("message", message => {
 	if (command === 'rate2') {
 	const rating = Math.floor(Math.random() * 10) + 1;
 	message.channel.send(rating)
-		else if (0 < rating < 3)
+		if (0 < rating < 3) return;
 		message.channel.send("C")
 		else if (3 <= rating < 6)
 		message.channel.send("B")
