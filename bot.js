@@ -24,7 +24,7 @@ client.on("message", message => {
 	message.channel.send(embed);
 	} 
 	if (command === 'hello') {
-	.then(msg => {msg.delete(10000)})
+	then(msg => {msg.delete(10000)})
 	const messages = [
 		`Nếu như ngày ${message.author.username} bước đến\nThì ${message.author.username} đã yêu thương em.`,
 		`Tại sao mày mình biết ${message.author.username} là gay ?\nVì Tendo là gay.`,
