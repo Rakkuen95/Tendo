@@ -45,15 +45,23 @@ client.on("message", message => {
 	if (command === 'rate2') {
 	const rating = Math.floor(Math.random() * 10) + 1;
 	message.channel.send(rating)
-		if (0 < rating < 3) return;
+		if (0 < rating < 3)
 		message.channel.send("C")
-		if (3 <= rating < 6) return;
+		if (3 <= rating < 6)
 		message.channel.send("B")
-		if (6 <= rating < 9) return;
+		if (6 <= rating < 9)
 		message.channel.send("A")
-		if (9 <= rating <= 10) return;
+		if (9 <= rating <= 10)
 		message.channel.send("S")
 	}
+
+	if (command === 'rate3') {
+	const rating = Math.floor(Math.random() * 10) + 1;
+	message.channel.send(rating)
+		if (0 <= rating < 5)
+		return message.channel.send("B")
+		if (5 <= rating <= 10)
+		return message.channel.send("A")
 });
 
 client.login(process.env.BOT_TOKEN);
