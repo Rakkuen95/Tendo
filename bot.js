@@ -23,12 +23,12 @@ client.on("message", message => {
 	.setImage(message.author.displayAvatarURL())
 	message.channel.send(embed);
 	} 
-	if (command === 'kimochi') {
+	if (command === 'hello') {
 	const messages = [
-		`Tendo đang tỏ ra khinh bỉ với **${message.author.username}** .!`,
-		`Tendo không quan tâm tới với **${message.author.username}** .!`,
-		`Tendo đang tỏ ra thích thú với **${message.author.username}** .!`,
-		`Tendo đang tỏ ra đáng yêu với **${message.author.username}** .!`,
+		`Nếu như ngày ${message.author.username} bước đến/nThì ${message.author.username} đã yêu thương em.`,
+		`Tại sao mày mình biết ${message.author.username} là gay ?/nVì Tendo là gay.`,
+		`Thế giới này là của Tendo và/nTendo có quyền đi với ${message.author.username}.`,
+		`Tendo hello mấy cưng`,
 		]
 	const randomMessage = messages[Math.floor(Math.random() * messages.length)];
 	message.channel.send(randomMessage);
