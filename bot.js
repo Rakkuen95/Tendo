@@ -59,7 +59,6 @@ client.on("message", message => {
 	}
 
 	if (command === 'chest') {
-	message.delete(1000);
 	const rating = Math.floor(Math.random() * 100) + 1;
 		if ((rating > 0) && (rating < 50)){
 		const point1 = Math.floor(Math.random() * 10) + 1;
