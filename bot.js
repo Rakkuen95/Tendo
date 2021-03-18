@@ -42,6 +42,9 @@ client.on("message", message => {
 	message.channel.send(`Tendo đánh giá **${message.author.username}** đạt ${rating}/100 điểm!`);
 }
 
+	if (command === 'rate2') {
+	const rating = Math.floor(Math.random() * 10);
+	message.channel.send(rating)
 });
 
 client.login(process.env.BOT_TOKEN);
