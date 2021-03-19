@@ -71,7 +71,7 @@ client.on("message", message => {
 		.setColor('#FEFEFE')
 		.setTitle('Tier 1')
 		.addField(`**${message.author.username}** đã nhận được ${point1} điểm!`, 'Bạn đã mở 1 Loot Box', true)
-		.setImage('https://i.imgur.com/NfNsthO.png')
+		.setImage('https://i.imgur.com/xplyCxW.png')
 		message.channel.send(embed);
 		}
 		if ((rating >= 50) && (rating < 75)){
@@ -79,8 +79,8 @@ client.on("message", message => {
 		const embed = new MessageEmbed()
 		.setColor('#7aff8d')
 		.setTitle('Tier 2')
-		.setDescription(`**${message.author.username}** đã nhận được ${point2} điểm!`)
-		.setImage('https://i.imgur.com/p1BQvLe.png')
+		.addField(`**${message.author.username}** đã nhận được ${point2} điểm!`, 'Bạn đã mở 1 Loot Box', true)
+		.setImage('https://i.imgur.com/8zNZHro.png')
 		message.channel.send(embed);
 		}
 		if ((rating >= 75) && (rating < 90)){
@@ -88,8 +88,8 @@ client.on("message", message => {
 		const embed = new MessageEmbed()
 		.setColor('#58a0e3')
 		.setTitle('Tier 3')
-		.setDescription(`**${message.author.username}** đã nhận được ${point3} điểm!`)
-		.setImage('https://i.imgur.com/zhOnWBI.png')
+		.addField(`**${message.author.username}** đã nhận được ${point3} điểm!`, 'Bạn đã mở 1 Loot Box', true)
+		.setImage('https://i.imgur.com/rs0tWV4.png')
 		message.channel.send(embed);
 		}
 		if ((rating >= 90) && (rating < 98)){
@@ -97,8 +97,8 @@ client.on("message", message => {
 		const embed = new MessageEmbed()
 		.setColor('#ad58e3')
 		.setTitle('Tier 4')
-		.setDescription(`**${message.author.username}** đã nhận được ${point4} điểm!`)
-		.setImage('https://i.imgur.com/OHlPQe4.png')
+		.addField(`**${message.author.username}** đã nhận được ${point4} điểm!`, 'Bạn đã mở 1 Loot Box', true)
+		.setImage('https://i.imgur.com/hGHuaWL.png')
 		message.channel.send(embed);
 		}
 		if ((rating >= 98) && (rating <= 100)){
@@ -106,8 +106,8 @@ client.on("message", message => {
 		const embed = new MessageEmbed()
 		.setColor('#f8f105')
 		.setTitle('Tier 5')
-		.setDescription(`**${message.author.username}** đã nhận được ${point5} điểm!`)
-		.setImage('https://i.imgur.com/LiVnxPJ.png')
+		.addField(`**${message.author.username}** đã nhận được ${point5} điểm!`, 'Bạn đã mở 1 Loot Box', true)
+		.setImage('https://i.imgur.com/LZaXY4O.png')
 		message.channel.send(embed);
 		}
 	}
