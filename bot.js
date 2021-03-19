@@ -71,7 +71,7 @@ client.on("message", message => {
 		.setColor('#FEFEFE')
 		.setTitle('Tier 1')
 		.setDescription(`**${message.author.username}** đã nhận được ${point1} điểm!`)
-		.setImage('')
+		.setImage('https://i.imgur.com/b44vYrO.png')
 		message.channel.send(embed);
 		}
 		if ((rating >= 50) && (rating < 75)){
@@ -80,7 +80,7 @@ client.on("message", message => {
 		.setColor('#7aff8d')
 		.setTitle('Tier 2')
 		.setDescription(`**${message.author.username}** đã nhận được ${point2} điểm!`)
-		.setImage('')
+		.setImage('https://i.imgur.com/p1BQvLe.png')
 		message.channel.send(embed);
 		}
 		if ((rating >= 75) && (rating < 90)){
@@ -89,7 +89,7 @@ client.on("message", message => {
 		.setColor('#58a0e3')
 		.setTitle('Tier 3')
 		.setDescription(`**${message.author.username}** đã nhận được ${point3} điểm!`)
-		.setImage('')
+		.setImage('https://i.imgur.com/zhOnWBI.png')
 		message.channel.send(embed);
 		}
 		if ((rating >= 90) && (rating < 98)){
@@ -98,7 +98,7 @@ client.on("message", message => {
 		.setColor('#ad58e3')
 		.setTitle('Tier 4')
 		.setDescription(`**${message.author.username}** đã nhận được ${point4} điểm!`)
-		.setImage('')
+		.setImage('https://i.imgur.com/OHlPQe4.png')
 		message.channel.send(embed);
 		}
 		if ((rating >= 98) && (rating <= 100)){
@@ -107,7 +107,7 @@ client.on("message", message => {
 		.setColor('#f8f105')
 		.setTitle('Tier 5')
 		.setDescription(`**${message.author.username}** đã nhận được ${point5} điểm!`)
-		.setImage('')
+		.setImage('https://i.imgur.com/LiVnxPJ.png')
 		message.channel.send(embed);
 		}
 	}
