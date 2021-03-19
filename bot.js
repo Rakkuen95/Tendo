@@ -71,7 +71,7 @@ client.on("message", message => {
 		.setColor('#FEFEFE')
 		.setTitle('Tier 1')
 		.addField(`**${message.author.username}** đã nhận được ${point1} điểm!`, 'Bạn đã mở 1 Loot Box', true)
-		.setImage('https://i.imgur.com/AdFvVwR.png')
+		.setImage('https://i.imgur.com/NfNsthO.png')
 		message.channel.send(embed);
 		}
 		if ((rating >= 50) && (rating < 75)){
