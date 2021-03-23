@@ -17,8 +17,8 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-    	if (message.content.toUpperCase().startsWith(prefix + 'SAY')) {
-        message.channel.send(message.content.toUpperCase().replace(prefix + 'SAY', ''))
+    	if (message.content.toLowerCase().startsWith(prefix + 'say')) {
+        message.channel.send(message.content.replace(prefix + 'say', ''))
     	}
 
 
