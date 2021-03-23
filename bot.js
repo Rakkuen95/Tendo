@@ -36,8 +36,7 @@ client.on("message", message => {
 	message.channel.send(embed);
 	} 
 
-
-	if (message.content.toUpperCase().startsWith(prefix + 'box1')) {
+	if (command === 'box1' + message.content) {
 	message.delete({ timeout: 1000 })
 	const rating = Math.floor(Math.random() * 100) + 1;
 		if ((rating > 0) && (rating < 74)){
@@ -45,7 +44,7 @@ client.on("message", message => {
 		const embed = new MessageEmbed()
 		.setColor('#FEFEFE')
 		.setTitle('Tier 1')
-		.addField(`**${message.content.replace(prefix + 'box1', '')}** đã nhận được ${point1} điểm!`, 'Bạn đã mở 1 Event Box', true)
+		.addField(`**${message.content}** đã nhận được ${point1} điểm!`, 'Bạn đã mở 1 Event Box', true)
 		.setImage('https://i.imgur.com/xplyCxW.png')
 		message.channel.send(embed);
 		}
