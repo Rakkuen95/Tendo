@@ -18,11 +18,7 @@ client.on("message", message => {
 	const command = args.shift().toLowerCase();
 
     	if (message.content.toLowerCase().startsWith(prefix + 'say')) {
-	const target = message.content.replace(prefix + 'say', '');
-	const embed = new MessageEmbed()
-	.setColor('#000000')
-	.addField(target + ` đã nhận được 10 điểm!`, 'Bạn đã mở 1 Event Box', true)
-	message.channel.send(embed);
+	message.channel.send(message.content.replace(prefix + 'say', ''));
     	}
 
 
@@ -48,8 +44,9 @@ client.on("message", message => {
 		const embed = new MessageEmbed()
 		.setColor('#FEFEFE')
 		.setTitle('Tier 1')
-		.setDescription(target + ` đã nhận được ${point1} điểm!`)
+		.setDescription('**'+target+'**' + ` đã nhận được ${point1} điểm!`)
 		.setImage('https://i.imgur.com/xplyCxW.png')
+		.setTimestamp()
 		message.channel.send(embed);
 		}
 		if ((rating >= 74) && (rating < 89)){
@@ -57,8 +54,9 @@ client.on("message", message => {
 		const embed = new MessageEmbed()
 		.setColor('#7aff8d')
 		.setTitle('Tier 2')
-		.setDescription(target + ` đã nhận được ${point2} điểm!`)
+		.setDescription('**'+target+'**' + ` đã nhận được ${point2} điểm!`)
 		.setImage('https://i.imgur.com/8zNZHro.png')
+		.setTimestamp()
 		message.channel.send(embed);
 		}
 		if ((rating >= 89) && (rating < 96)){
@@ -66,8 +64,9 @@ client.on("message", message => {
 		const embed = new MessageEmbed()
 		.setColor('#58a0e3')
 		.setTitle('Tier 3')
-		.setDescription(target + ` đã nhận được ${point3} điểm!`)
+		.setDescription('**'+target+'**' + ` đã nhận được ${point3} điểm!`)
 		.setImage('https://i.imgur.com/rs0tWV4.png')
+		.setTimestamp()
 		message.channel.send(embed);
 		}
 		if ((rating >= 96) && (rating < 99)){
@@ -75,8 +74,9 @@ client.on("message", message => {
 		const embed = new MessageEmbed()
 		.setColor('#ad58e3')
 		.setTitle('Tier 4')
-		.setDescription(target + ` đã nhận được ${point4} điểm!`)
+		.setDescription('**'+target+'**' + ` đã nhận được ${point4} điểm!`)
 		.setImage('https://i.imgur.com/hGHuaWL.png')
+		.setTimestamp()
 		message.channel.send(embed);
 		}
 		if ((rating >= 99) && (rating <= 100)){
@@ -86,6 +86,7 @@ client.on("message", message => {
 		.setTitle('Tier 5')
 		.setDescription(target + ` đã nhận được ${point5} điểm!`)
 		.setImage('https://i.imgur.com/LZaXY4O.png')
+		.setTimestamp()
 		message.channel.send(embed);
 		}
 	}
