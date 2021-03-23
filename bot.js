@@ -35,8 +35,8 @@ client.on("message", message => {
 	message.channel.send(embed);
 	} 
 	
-    	if (message.content.toLowerCase().startsWith(prefix + 'box')) {
-	const target = message.content.replace(prefix + 'box','');
+    	if (message.content.toLowerCase().startsWith(prefix + 'ebox')) {
+	const target = message.content.replace(prefix + 'ebox','');
 	const point1 = Math.floor(Math.random() * 6) + 5;
 	const point2 = Math.floor(Math.random() * 11) + 10;
 	const point3 = Math.floor(Math.random() * 21) + 20;
@@ -47,7 +47,7 @@ client.on("message", message => {
 		if ((rating > 0) && (rating < 74)){
 		const embed = new MessageEmbed()
 		.setColor('#FEFEFE')
-		.setTitle('「 Event Box 」: Tier 1')
+		.setTitle('Event Box : Tier 1')
 		.setURL('https://pokemonrevolution.net/')
 		.addField('**'+target+'**' + ` đã nhận được ${point1} Coins`,"[Bạn có thể xem Event Shop tại đây](https://tinyurl.com/5anzuzed)", true)
 		.setImage('https://i.imgur.com/xplyCxW.png')
@@ -95,6 +95,81 @@ client.on("message", message => {
 		message.channel.send(embed);
 		}
 	}
+
+
+    	if (message.content.toLowerCase().startsWith(prefix + 'pbox')) {
+	const target = message.content.replace(prefix + 'pbox','');
+	const point1 = Math.floor(Math.random() * 31) + 30;
+	const point2 = Math.floor(Math.random() * 61) + 60;
+	const point3 = Math.floor(Math.random() * 121) + 120;
+	const point4 = Math.floor(Math.random() * 241) + 240;
+	const point5 = Math.floor(Math.random() * 481) + 480;
+	const rating = Math.floor(Math.random() * 100) + 1;
+	message.delete({ timeout: 1000 })
+		if ((rating > 0) && (rating < 74)){
+		const embed = new MessageEmbed()
+		.setColor('#FEFEFE')
+		.setTitle('💎 Premium Box : Tier 1')
+		.setURL('https://pokemonrevolution.net/')
+		.addField('**'+target+'**' + ` đã nhận được ${point1} Coins`,"[Bạn có thể xem Event Shop tại đây](https://tinyurl.com/5anzuzed)", true)
+		.setImage('https://i.imgur.com/xplyCxW.png')
+		.setTimestamp()
+		message.channel.send(embed);
+		}
+		if ((rating >= 74) && (rating < 89)){
+		const embed = new MessageEmbed()
+		.setColor('#7aff8d')
+		.setTitle('💎 Premium Box : Tier 2')
+		.setURL('https://pokemonrevolution.net/')
+		.addField('**'+target+'**' + ` đã nhận được ${point2} Coins`,"[Bạn có thể xem Event Shop tại đây](https://tinyurl.com/5anzuzed)", true)
+		.setImage('https://i.imgur.com/8zNZHro.png')
+		.setTimestamp()
+		message.channel.send(embed);
+		}
+		if ((rating >= 89) && (rating < 96)){
+		const embed = new MessageEmbed()
+		.setColor('#58a0e3')
+		.setTitle('💎 Premium Box : Tier 3')
+		.setURL('https://pokemonrevolution.net/')
+		.addField('**'+target+'**' + ` đã nhận được ${point3} Coins`,"[Bạn có thể xem Event Shop tại đây](https://tinyurl.com/5anzuzed)", true)
+		.setImage('https://i.imgur.com/rs0tWV4.png')
+		.setTimestamp()
+		message.channel.send(embed);
+		}
+		if ((rating >= 96) && (rating < 99)){
+		const embed = new MessageEmbed()
+		.setColor('#ad58e3')
+		.setTitle('💎 Premium Box : Tier 4')
+		.setURL('https://pokemonrevolution.net/')
+		.addField('**'+target+'**' + ` đã nhận được ${point4} Coins`,"[Bạn có thể xem Event Shop tại đây](https://tinyurl.com/5anzuzed)", true)
+		.setImage('https://i.imgur.com/hGHuaWL.png')
+		.setTimestamp()
+		message.channel.send(embed);
+		}
+		if ((rating >= 99) && (rating <= 100)){
+		const embed = new MessageEmbed()
+		.setColor('#f8f105')
+		.setTitle('💎 Premium Box : Tier 5')
+		.setURL('https://pokemonrevolution.net/')
+		.addField('**'+target+'**' + ` đã nhận được ${point5} Coins`,"[Bạn có thể xem Event Shop tại đây](https://tinyurl.com/5anzuzed)", true)
+		.setImage('https://i.imgur.com/LZaXY4O.png')
+		.setTimestamp()
+		message.channel.send(embed);
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 	if (command === 'exam') {
 	const exampleEmbed = new MessageEmbed()
 	.setColor('#0099ff')
