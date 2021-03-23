@@ -27,40 +27,7 @@ client.on("message", message => {
 	.setImage(message.author.displayAvatarURL())
 	message.channel.send(embed);
 	} 
-	if (command === 'hello') {
-	const messages = [
-		`Nếu như ngày ${message.author.username} bước đến\nThì ${message.author.username} đã yêu thương em.`,
-		`Tại sao mày mình biết ${message.author.username} là gay ?\nVì Tendo là gay.`,
-		`Thế giới này là của Tendo và\nTendo có quyền đi với ${message.author.username}.`,
-		`Thật không thể tin được\nThật không thể tin nổi`,
-		`Đẹp trai thì mới có nhiều đứa yêu\nXấu trai thì chó nó yêu.`,
-		`Cái đó không quan trọng\nQuan trọng là ${message.author.username} là người đàn ông cuối cùng của Tendo.`,
-		`${message.author.username} là ai\n? Cháu không biết cô , cô đi ra đi.`,
-		`Tìm một nơi tình yêu đưa lối\nMuộn phiền con tim ${message.author.username} bối rối.`,
-		`Á á Á á Á á Á á`,
-		`Chị ${message.author.username} im đi !!!`,
-		`Aba sạch tinh tươm.`,
-		`Thanh xuân như một ly trà\nĂn xong miếng bánh hết bà thanh xuân.`,
-		`Cái loại chó ${message.author.username} mà suốt ngày đòi ăn pate.`,
-		`Sơ quá , sợ quá\nPhải ban ${message.author.username} thôi.`,
-		`Xin chào tất cả các cháu quay trở lại kênh Bà ${message.author.username} Vlog.`,
-		`Tendo năm nay 70 tuổi mà Tendo chưa gặp trường hợp nào như thế này cả.`,
-		`Ờ mây ding , gút chóp em.`,
-		`Mèo méo meo mèo meo.`,
-		`Chào ${message.author.username}\nTendo đừng đây từ chiều.`,
-		`Không làm mà đòi có ăn thì ăn đầu buồi ăn cức\nNói thế cho nó nhanh`,
-		]
-	const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-	message.channel.send(randomMessage);
-	}
-	if (command === 'tendo') {
-	const attachment = new MessageAttachment('https://i.imgur.com/CdmJDTJ.png');
-		message.channel.send(attachment);
-	} 
-	if (command === 'rate') {
-	const rating = Math.floor(Math.random() * 100) + 1;
-	message.channel.send(`Tendo đánh giá **${message.author.username}** đạt ${rating}/100 điểm!`);
-	}
+
 
 	if (command === 'chest') {
 	message.delete({ timeout: 1000 })
@@ -112,7 +79,7 @@ client.on("message", message => {
 		}
 	}
 	if (command === 'exam') {
-const exampleEmbed = new MessageEmbed()
+	const exampleEmbed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
 	.setURL('https://discord.js.org/')
@@ -129,9 +96,17 @@ const exampleEmbed = new MessageEmbed()
 	.setImage('https://i.imgur.com/wSTFkRM.png')
 	.setTimestamp()
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
-
 	message.channel.send(exampleEmbed);
 	}
+
+	if (command === 'ping') {
+	message.channel.send("pong");
+	.then((msg)=> {setTimeout(function(){msg.edit('pang');}, 1000)
+	}});
+	}
+
+
+
 });
 //
 client.login(process.env.BOT_TOKEN);
