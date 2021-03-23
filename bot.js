@@ -21,7 +21,7 @@ client.on("message", message => {
 	const target = message.content.replace(prefix + 'say', '');
 	const embed = new MessageEmbed()
 	.setColor('#000000')
-	.addField(target + ` đã nhận được ${point1} điểm!`, 'Bạn đã mở 1 Event Box', true)
+	.addField(target + ` đã nhận được 10 điểm!`, 'Bạn đã mở 1 Event Box', true)
 	message.channel.send(embed);
     	}
 
