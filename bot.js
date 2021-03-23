@@ -99,7 +99,7 @@ client.on("message", message => {
 	message.channel.send(exampleEmbed);
 	}
 
-	if (command === 'ping') {
+	if (command === 'hello') {
 message.channel.send('my emote')
 .then((msg)=> {
   setTimeout(function(){
