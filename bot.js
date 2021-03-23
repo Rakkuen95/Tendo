@@ -19,7 +19,7 @@ client.on("message", message => {
 
     if (message.content.toUpperCase().startsWith(prefix + 'SAY')) {
         message.delete();
-        message.channel.send(message.content.replace(prefix + 'say', ''))
+        message.channel.send(message.content.replace(prefix + 'say', '') + 'abc')
     	}
 
 
