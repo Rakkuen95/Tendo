@@ -17,10 +17,9 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-    if (message.content.toLowerCase().startsWith('botspeak')){
-        message.channel.send(message.content.replace('botspeak',('')))
-        message.delete()
-    }
+	if (command === 'say ' + message.content) {
+	message.channel.send(message.content);
+	}
 
 
 
