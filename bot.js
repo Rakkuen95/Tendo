@@ -17,9 +17,13 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-	if (command === 'say ' + ${message.content}) {
-	message.channel.send(${message.content});
-	}
+    if (msg.startsWith(prefix + 'SAY')) {
+
+        message.delete();
+        var saymsg = message.content;
+        message.channel.send(saymsg.replace(prefix + 'say', ''))
+
+        }
 
 
 
