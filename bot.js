@@ -48,7 +48,7 @@ client.on("message", message => {
 		const embed = new MessageEmbed()
 		.setColor('#FEFEFE')
 		.setTitle('Tier 1')
-		.addField(target + ` đã nhận được ${point1} điểm!`, 'Bạn đã mở 1 Event Box', true)
+		.setDescription(target + ` đã nhận được ${point1} điểm!`)
 		.setImage('https://i.imgur.com/xplyCxW.png')
 		message.channel.send(embed);
 		}
@@ -57,7 +57,7 @@ client.on("message", message => {
 		const embed = new MessageEmbed()
 		.setColor('#7aff8d')
 		.setTitle('Tier 2')
-		.addField(`**${message.author.username}** đã nhận được ${point2} điểm!`, 'Bạn đã mở 1 Event Box', true)
+		.setDescription(target + ` đã nhận được ${point2} điểm!`)
 		.setImage('https://i.imgur.com/8zNZHro.png')
 		message.channel.send(embed);
 		}
@@ -66,7 +66,7 @@ client.on("message", message => {
 		const embed = new MessageEmbed()
 		.setColor('#58a0e3')
 		.setTitle('Tier 3')
-		.addField(`**${message.author.username}** đã nhận được ${point3} điểm!`, 'Bạn đã mở 1 Event Box', true)
+		.setDescription(target + ` đã nhận được ${point3} điểm!`)
 		.setImage('https://i.imgur.com/rs0tWV4.png')
 		message.channel.send(embed);
 		}
@@ -75,7 +75,7 @@ client.on("message", message => {
 		const embed = new MessageEmbed()
 		.setColor('#ad58e3')
 		.setTitle('Tier 4')
-		.addField(`**${message.author.username}** đã nhận được ${point4} điểm!`, 'Bạn đã mở 1 Event Box', true)
+		.setDescription(target + ` đã nhận được ${point4} điểm!`)
 		.setImage('https://i.imgur.com/hGHuaWL.png')
 		message.channel.send(embed);
 		}
@@ -84,7 +84,7 @@ client.on("message", message => {
 		const embed = new MessageEmbed()
 		.setColor('#f8f105')
 		.setTitle('Tier 5')
-		.addField(`**${message.author.username}** đã nhận được ${point5} điểm!`, 'Bạn đã mở 1 Event Box', true)
+		.setDescription(target + ` đã nhận được ${point5} điểm!`)
 		.setImage('https://i.imgur.com/LZaXY4O.png')
 		message.channel.send(embed);
 		}
