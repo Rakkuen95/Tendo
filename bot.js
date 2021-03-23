@@ -19,7 +19,10 @@ client.on("message", message => {
 
     	if (message.content.toLowerCase().startsWith(prefix + 'say')) {
 	const target = message.content.replace(prefix + 'say', '');
-        message.channel.send(target + 'hello')
+	const embed = new MessageEmbed()
+	.setColor('#000000')
+	.addField(target + ` đã nhận được ${point1} điểm!`, 'Bạn đã mở 1 Event Box', true)
+	message.channel.send(embed);
     	}
 
 
