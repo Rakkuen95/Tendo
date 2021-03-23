@@ -100,9 +100,8 @@ client.on("message", message => {
 	}
 
 	if (command === 'ping') {
-	message.channel.send("pong");
-	.then((msg)=> {setTimeout(function(){msg.edit('pang');}, 1000)
-	}});
+	message.channel.send("pong")
+	.then((sentMessage) => sentMessage.edit("pang"))
 	}
 
 
