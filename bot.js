@@ -17,8 +17,8 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-    	if (message.content.toUpperCase().startsWith(prefix + 'SAY')) {
-        const target = message.content.replace(prefix + 'say', '')
+    	if (message.content.toUpperCase().startsWith(prefix + 'say')) {
+        const target = message.content.toUpperCase().replace(prefix + 'say', '')
         message.channel.send(target + '123')
     	}
 
@@ -36,16 +36,15 @@ client.on("message", message => {
 	message.channel.send(embed);
 	} 
 	
-    	if (message.content.toUpperCase().startsWith(prefix + 'box1')) {
+	if (command === 'box') {
 	message.delete({ timeout: 1000 })
-        const target = message.content.replace(prefix + 'box1', '')
 	const rating = Math.floor(Math.random() * 100) + 1;
 		if ((rating > 0) && (rating < 74)){
 		const point1 = Math.floor(Math.random() * 6) + 5;
 		const embed = new MessageEmbed()
 		.setColor('#FEFEFE')
 		.setTitle('Tier 1')
-		.addField(target + ` đã nhận được ${point1} điểm!`, 'Bạn đã mở 1 Event Box', true)
+		.addField(`**${message.author.username}** đã nhận được ${point1} điểm!`, 'Bạn đã mở 1 Event Box', true)
 		.setImage('https://i.imgur.com/xplyCxW.png')
 		message.channel.send(embed);
 		}
