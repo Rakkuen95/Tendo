@@ -18,7 +18,8 @@ client.on("message", message => {
 	const command = args.shift().toLowerCase();
 
     	if (message.content.toLowerCase().startsWith(prefix + 'say')) {
-        message.channel.send(message.content.replace(prefix + 'say', ''))
+	const target = message.content.replace(prefix + 'say', '');
+        message.channel.send(target + 'hello')
     	}
 
 
