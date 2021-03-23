@@ -45,6 +45,7 @@ client.on("message", message => {
 		.setColor('#FEFEFE')
 		.setTitle('Tier 1')
 		.setDescription('**'+target+'**' + ` đã nhận được ${point1} điểm!`)
+		.addField('Bạn có thể xem Event Shop tại đây!', 'https://tinyurl.com/5anzuzed')
 		.setImage('https://i.imgur.com/xplyCxW.png')
 		.setTimestamp()
 		message.channel.send(embed);
@@ -112,8 +113,8 @@ client.on("message", message => {
 	}
 
 	if (command === 'hello') {
-	message.channel.send('my emote')
-	.then((msg)=> {setTimeout(function(){msg.edit('my others emotes');}, 3000)}); 
+	message.channel.send('ahihi')
+	.then((msg)=> {setTimeout(function(){msg.edit('ngok ngek');}, 3000)}); 
 	}
 
 
