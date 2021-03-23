@@ -100,10 +100,13 @@ client.on("message", message => {
 	}
 
 	if (command === 'ping') {
-	message.channel.send("pong")
-	.then((sentMessage) => sentMessage.edit("pang"))
+message.channel.send('my emote')
+.then((msg)=> {
+  setTimeout(function(){
+    msg.edit('my others emotes');
+  }, 1000)
+}); 
 	}
-
 
 
 });
