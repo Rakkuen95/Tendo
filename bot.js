@@ -37,54 +37,54 @@ client.on("message", message => {
 	
     	if (message.content.toLowerCase().startsWith(prefix + 'box')) {
 	const target = message.content.replace(prefix + 'box', '');
-	message.delete({ timeout: 1000 })
+	const point1 = Math.floor(Math.random() * 6) + 5;
+	const point2 = Math.floor(Math.random() * 11) + 10;
+	const point3 = Math.floor(Math.random() * 21) + 20;
+	const point4 = Math.floor(Math.random() * 41) + 40;
+	const point5 = Math.floor(Math.random() * 81) + 80;
 	const rating = Math.floor(Math.random() * 100) + 1;
+	message.delete({ timeout: 1000 })
 		if ((rating > 0) && (rating < 74)){
-		const point1 = Math.floor(Math.random() * 6) + 5;
 		const embed = new MessageEmbed()
 		.setColor('#FEFEFE')
 		.setTitle('Tier 1')
-		.setDescription("[Bạn có thể xem Event Shop tại đây](https://tinyurl.com/5anzuzed)","[Bạn có thể xem Event Profile tại đây](https://tinyurl.com/5anzuzed)")
+		.addField('**'+target+'**' + ` đã nhận được ${point1} điểm!`,"[Bạn có thể xem Event Shop tại đây](https://tinyurl.com/5anzuzed)", true)
 		.setImage('https://i.imgur.com/xplyCxW.png')
 		.setTimestamp()
 		message.channel.send(embed);
 		}
 		if ((rating >= 74) && (rating < 89)){
-		const point2 = Math.floor(Math.random() * 11) + 10;
 		const embed = new MessageEmbed()
 		.setColor('#7aff8d')
 		.setTitle('Tier 2')
-		.setDescription('**'+target+'**' + ` đã nhận được ${point2} điểm!`)
+		.addField('**'+target+'**' + ` đã nhận được ${point2} điểm!`,"[Bạn có thể xem Event Shop tại đây](https://tinyurl.com/5anzuzed)", true)
 		.setImage('https://i.imgur.com/8zNZHro.png')
 		.setTimestamp()
 		message.channel.send(embed);
 		}
 		if ((rating >= 89) && (rating < 96)){
-		const point3 = Math.floor(Math.random() * 21) + 20;
 		const embed = new MessageEmbed()
 		.setColor('#58a0e3')
 		.setTitle('Tier 3')
-		.setDescription('**'+target+'**' + ` đã nhận được ${point3} điểm!`)
+		.addField('**'+target+'**' + ` đã nhận được ${point3} điểm!`,"[Bạn có thể xem Event Shop tại đây](https://tinyurl.com/5anzuzed)", true)
 		.setImage('https://i.imgur.com/rs0tWV4.png')
 		.setTimestamp()
 		message.channel.send(embed);
 		}
 		if ((rating >= 96) && (rating < 99)){
-		const point4 = Math.floor(Math.random() * 41) + 40;
 		const embed = new MessageEmbed()
 		.setColor('#ad58e3')
 		.setTitle('Tier 4')
-		.setDescription('**'+target+'**' + ` đã nhận được ${point4} điểm!`)
+		.addField('**'+target+'**' + ` đã nhận được ${point4} điểm!`,"[Bạn có thể xem Event Shop tại đây](https://tinyurl.com/5anzuzed)", true)
 		.setImage('https://i.imgur.com/hGHuaWL.png')
 		.setTimestamp()
 		message.channel.send(embed);
 		}
 		if ((rating >= 99) && (rating <= 100)){
-		const point5 = Math.floor(Math.random() * 81) + 80;
 		const embed = new MessageEmbed()
 		.setColor('#f8f105')
 		.setTitle('Tier 5')
-		.setDescription(target + ` đã nhận được ${point5} điểm!`)
+		.addField('**'+target+'**' + ` đã nhận được ${point5} điểm!`,"[Bạn có thể xem Event Shop tại đây](https://tinyurl.com/5anzuzed)", true)
 		.setImage('https://i.imgur.com/LZaXY4O.png')
 		.setTimestamp()
 		message.channel.send(embed);
