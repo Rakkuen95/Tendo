@@ -36,7 +36,7 @@ client.on("message", message => {
 	} 
 	
     	if (message.content.toLowerCase().startsWith(prefix + 'box')) {
-	const target = message.content.replace(prefix + 'box', '');
+	const target = message.content.replace(prefix + 'box','');
 	const point1 = Math.floor(Math.random() * 6) + 5;
 	const point2 = Math.floor(Math.random() * 11) + 10;
 	const point3 = Math.floor(Math.random() * 21) + 20;
@@ -47,7 +47,8 @@ client.on("message", message => {
 		if ((rating > 0) && (rating < 74)){
 		const embed = new MessageEmbed()
 		.setColor('#FEFEFE')
-		.setTitle('Tier 1')
+		.setTitle('Event Box : Tier 1')
+		.setURL('https://pokemonrevolution.net/')
 		.addField('**'+target+'**' + ` đã nhận được ${point1} điểm!`,"[Bạn có thể xem Event Shop tại đây](https://tinyurl.com/5anzuzed)", true)
 		.setImage('https://i.imgur.com/xplyCxW.png')
 		.setTimestamp()
@@ -56,7 +57,8 @@ client.on("message", message => {
 		if ((rating >= 74) && (rating < 89)){
 		const embed = new MessageEmbed()
 		.setColor('#7aff8d')
-		.setTitle('Tier 2')
+		.setTitle('Event Box : Tier 2')
+		.setURL('https://pokemonrevolution.net/')
 		.addField('**'+target+'**' + ` đã nhận được ${point2} điểm!`,"[Bạn có thể xem Event Shop tại đây](https://tinyurl.com/5anzuzed)", true)
 		.setImage('https://i.imgur.com/8zNZHro.png')
 		.setTimestamp()
@@ -65,7 +67,8 @@ client.on("message", message => {
 		if ((rating >= 89) && (rating < 96)){
 		const embed = new MessageEmbed()
 		.setColor('#58a0e3')
-		.setTitle('Tier 3')
+		.setTitle('Event Box : Tier 3')
+		.setURL('https://pokemonrevolution.net/')
 		.addField('**'+target+'**' + ` đã nhận được ${point3} điểm!`,"[Bạn có thể xem Event Shop tại đây](https://tinyurl.com/5anzuzed)", true)
 		.setImage('https://i.imgur.com/rs0tWV4.png')
 		.setTimestamp()
@@ -74,7 +77,8 @@ client.on("message", message => {
 		if ((rating >= 96) && (rating < 99)){
 		const embed = new MessageEmbed()
 		.setColor('#ad58e3')
-		.setTitle('Tier 4')
+		.setTitle('Event Box : Tier 4')
+		.setURL('https://pokemonrevolution.net/')
 		.addField('**'+target+'**' + ` đã nhận được ${point4} điểm!`,"[Bạn có thể xem Event Shop tại đây](https://tinyurl.com/5anzuzed)", true)
 		.setImage('https://i.imgur.com/hGHuaWL.png')
 		.setTimestamp()
@@ -83,7 +87,8 @@ client.on("message", message => {
 		if ((rating >= 99) && (rating <= 100)){
 		const embed = new MessageEmbed()
 		.setColor('#f8f105')
-		.setTitle('Tier 5')
+		.setTitle('Event Box : Tier 5')
+		.setURL('https://pokemonrevolution.net/')
 		.addField('**'+target+'**' + ` đã nhận được ${point5} điểm!`,"[Bạn có thể xem Event Shop tại đây](https://tinyurl.com/5anzuzed)", true)
 		.setImage('https://i.imgur.com/LZaXY4O.png')
 		.setTimestamp()
