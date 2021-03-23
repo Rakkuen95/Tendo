@@ -18,8 +18,8 @@ client.on("message", message => {
 	const command = args.shift().toLowerCase();
 
     if (message.content.toUpperCase().startsWith(prefix + 'SAY')) {
-        message.delete();
-        message.channel.send(message.content.replace(prefix + 'say', '') + 'abc')
+        const target = message.content.replace(prefix + 'say', '')
+        message.channel.send(target + '123')
     	}
 
 
