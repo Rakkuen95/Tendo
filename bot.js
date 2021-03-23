@@ -36,7 +36,7 @@ client.on("message", message => {
 	message.channel.send(embed);
 	} 
 
-	if (command === 'box1' + message.content) {
+	if (command === 'box1') {
 	message.delete({ timeout: 1000 })
 	const rating = Math.floor(Math.random() * 100) + 1;
 		if ((rating > 0) && (rating < 74)){
