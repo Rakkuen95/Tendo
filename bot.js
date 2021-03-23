@@ -45,7 +45,8 @@ client.on("message", message => {
 		.setColor('#FEFEFE')
 		.setTitle('Tier 1')
 		.setDescription('**'+target+'**' + ` đã nhận được ${point1} điểm!`)
-		.addField("Field title", "Your text here: [link](http://example.com)")
+		.addField(, "[Bạn có thể xem Event Shop tại đây.](https://tinyurl.com/5anzuzed)")
+		.addField(, "[Bạn có thể xem Event Profile tại đây.](https://tinyurl.com/5csaahua)")
 		.setImage('https://i.imgur.com/xplyCxW.png')
 		.setTimestamp()
 		message.channel.send(embed);
