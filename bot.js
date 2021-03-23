@@ -37,51 +37,51 @@ client.on("message", message => {
 	} 
 
 
-	if (command === 'chest') {
+	if (command === 'box1') {
 	message.delete({ timeout: 1000 })
 	const rating = Math.floor(Math.random() * 100) + 1;
-		if ((rating > 0) && (rating < 50)){
-		const point1 = Math.floor(Math.random() * 10) + 1;
+		if ((rating > 0) && (rating < 74)){
+		const point1 = Math.floor(Math.random() * 6) + 5;
 		const embed = new MessageEmbed()
 		.setColor('#FEFEFE')
 		.setTitle('Tier 1')
-		.addField(`**${message.author.username}** đã nhận được ${point1} điểm!`, 'Bạn đã mở 1 Loot Box', true)
+		.addField(`**${message.author.username}** đã nhận được ${point1} điểm!`, 'Bạn đã mở 1 Event Box', true)
 		.setImage('https://i.imgur.com/xplyCxW.png')
 		message.channel.send(embed);
 		}
-		if ((rating >= 50) && (rating < 75)){
-		const point2 = Math.floor(Math.random() * 15) + 11;
+		if ((rating >= 74) && (rating < 89)){
+		const point2 = Math.floor(Math.random() * 11) + 10;
 		const embed = new MessageEmbed()
 		.setColor('#7aff8d')
 		.setTitle('Tier 2')
-		.addField(`**${message.author.username}** đã nhận được ${point2} điểm!`, 'Bạn đã mở 1 Loot Box', true)
+		.addField(`**${message.author.username}** đã nhận được ${point2} điểm!`, 'Bạn đã mở 1 Event Box', true)
 		.setImage('https://i.imgur.com/8zNZHro.png')
 		message.channel.send(embed);
 		}
-		if ((rating >= 75) && (rating < 90)){
-		const point3 = Math.floor(Math.random() * 25) + 26;
+		if ((rating >= 89) && (rating < 96)){
+		const point3 = Math.floor(Math.random() * 21) + 20;
 		const embed = new MessageEmbed()
 		.setColor('#58a0e3')
 		.setTitle('Tier 3')
-		.addField(`**${message.author.username}** đã nhận được ${point3} điểm!`, 'Bạn đã mở 1 Loot Box', true)
+		.addField(`**${message.author.username}** đã nhận được ${point3} điểm!`, 'Bạn đã mở 1 Event Box', true)
 		.setImage('https://i.imgur.com/rs0tWV4.png')
 		message.channel.send(embed);
 		}
-		if ((rating >= 90) && (rating < 98)){
-		const point4 = Math.floor(Math.random() * 50) + 51;
+		if ((rating >= 96) && (rating < 99)){
+		const point4 = Math.floor(Math.random() * 41) + 40;
 		const embed = new MessageEmbed()
 		.setColor('#ad58e3')
 		.setTitle('Tier 4')
-		.addField(`**${message.author.username}** đã nhận được ${point4} điểm!`, 'Bạn đã mở 1 Loot Box', true)
+		.addField(`**${message.author.username}** đã nhận được ${point4} điểm!`, 'Bạn đã mở 1 Event Box', true)
 		.setImage('https://i.imgur.com/hGHuaWL.png')
 		message.channel.send(embed);
 		}
-		if ((rating >= 98) && (rating <= 100)){
-		const point5 = Math.floor(Math.random() * 100) + 101;
+		if ((rating >= 99) && (rating <= 100)){
+		const point5 = Math.floor(Math.random() * 81) + 80;
 		const embed = new MessageEmbed()
 		.setColor('#f8f105')
 		.setTitle('Tier 5')
-		.addField(`**${message.author.username}** đã nhận được ${point5} điểm!`, 'Bạn đã mở 1 Loot Box', true)
+		.addField(`**${message.author.username}** đã nhận được ${point5} điểm!`, 'Bạn đã mở 1 Event Box', true)
 		.setImage('https://i.imgur.com/LZaXY4O.png')
 		message.channel.send(embed);
 		}
