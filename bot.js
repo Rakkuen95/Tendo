@@ -17,8 +17,8 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-	if (command === 'say ' + message.content) {
-	message.channel.send(message.content);
+	if (command === 'say ' + ${message.content}) {
+	message.channel.send(${message.content});
 	}
 
 
