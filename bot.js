@@ -45,7 +45,7 @@ client.on("message", message => {
 		.setColor('#FEFEFE')
 		.setTitle('Tier 1')
 		.setDescription('**'+target+'**' + ` đã nhận được ${point1} điểm!`)
-		.addField("Field title", "[Bạn có thể xem Event Shop tại đây.](https://tinyurl.com/5anzuzed)")
+		.addField("Field title", "[Bạn có thể xem Event Shop tại đây.](https://tinyurl.com/5anzuzed)", "[Bạn có thể xem Event Profile tại đây.](https://tinyurl.com/5csaahua)")
 		.addField("Field title", "[Bạn có thể xem Event Profile tại đây.](https://tinyurl.com/5csaahua)")
 		.setImage('https://i.imgur.com/xplyCxW.png')
 		.setTimestamp()
