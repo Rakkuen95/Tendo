@@ -18,7 +18,7 @@ client.on("message", message => {
 	const command = args.shift().toLowerCase();
 
     if (message.content.toLowerCase().startsWith('botspeak')){
-        message.channel.send(message.content.replace(botspeak', ''))
+        message.channel.send(message.content.replace('botspeak', ''))
         message.delete()
     }
 }
