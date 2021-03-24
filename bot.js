@@ -195,7 +195,7 @@ client.on("message", message => {
 	if (command === 'claim') {
 	message.channel.send(`**${message.author.username}** xin hãy chờ 3 phút !`)
 	message.delete({ timeout: 180000 })
-	message.channel.send(`**${message.author}** có thể Claim bây giờ !`)
+	message.channel.send((`**${message.author}** có thể Claim bây giờ !`){ timeout: 180000 })
 	}
 
 
