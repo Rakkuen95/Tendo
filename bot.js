@@ -2,7 +2,7 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const config = require("./data.json");
 const prefix = "^";
-
+ 
 const activities_list = ["Lux","Idoly Pride","les plumes","TrySail"]; 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`)
