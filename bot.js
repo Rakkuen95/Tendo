@@ -193,8 +193,8 @@ client.on("message", message => {
 	}
 
 	if (command === 'claim') {
-	message.channel.send('Còn 3 phút nữa !')
-	.then((message)=> {setTimeout((function(){message.edit('Còn 2 phút 30 giây nữa !');}, 30000)(function(){message.edit('Còn 2 phút nữa !');}, 30000)});
+	message.channel.send('Đếm ngược 3 phút !')
+	.then((message)=> {setTimeout((function(){message.edit(`**${message.author}** có thể Claim ngay bây giờ !`);}, 180000)});
 	}
 
 
