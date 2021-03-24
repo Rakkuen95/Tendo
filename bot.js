@@ -1,7 +1,7 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const config = require("./data.json");
-const prefix = "!";
+const prefix = "^";
 
 const activities_list = ["Lux","Idoly Pride","les plumes","TrySail"]; 
 client.on('ready', () => {
@@ -192,9 +192,9 @@ client.on("message", message => {
 	message.channel.send(exampleEmbed);
 	}
 
-	if (command === 'hello') {
-	message.channel.send('ahihi')
-	.then((msg)=> {setTimeout(function(){msg.edit('ngok ngek');}, 3000)}); 
+	if (command === 'claim') {
+	message.channel.send('Còn 3 phút nữa !')
+	.then((message)=> {setTimeout(function(){message.edit('Còn 2 phút 30 giây nữa !');}, 30000)}=> {setTimeout(function(){message.edit('Còn 2 phút nữa !');}, 30000)}        );
 	}
 
 
