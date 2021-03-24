@@ -194,7 +194,7 @@ client.on("message", message => {
 
 	if (command === 'claim') {
 	message.channel.send('Còn 3 phút nữa !')
-	.then((message)=> {setTimeout(function(){message.edit('Còn 2 phút 30 giây nữa !');}, 30000)}=> {setTimeout(function(){message.edit('Còn 2 phút nữa !');}, 30000)}        );
+	.then((message)=> {setTimeout((function(){message.edit('Còn 2 phút 30 giây nữa !');}, 30000)(function(){message.edit('Còn 2 phút nữa !');}, 30000)});
 	}
 
 
