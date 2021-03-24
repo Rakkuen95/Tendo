@@ -12,6 +12,13 @@ client.on('ready', () => {
 	}, 10000);
 	client.channels.cache.get('821287593643212832').send('Comeback!')
 });
+
+client.on('guildMemberAdd', member => {
+  	const channel = member.guild.channels.cache.find(ch => ch.name === '👏┇welcome');
+  	if (!channel) return;
+	channel.send(`Chào mừng ${member} đến với Lux HQ!`);
+});
+
 client.on("message", message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const args = message.content.slice(prefix.length).split(/ +/);
@@ -195,7 +202,7 @@ client.on("message", message => {
 	if (command === 'claim') {
 	message.channel.send(`**${message.author.username}** xin hãy chờ 3 phút !`)
 	message.delete({ timeout: 180000 })
-	message.channel.send((`**${message.author}** có thể Claim bây giờ !`){ timeout: 180000 })
+	message.channel.send((`**${message.author}** có thể Claim bây giờ !`))
 	}
 
 
