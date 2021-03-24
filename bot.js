@@ -194,7 +194,7 @@ client.on("message", message => {
 
 	if (command === 'claim') {
 	message.channel.send('Đếm ngược 3 phút !')
-	.then((message)=> {setTimeout((function(){message.edit(`**${message.author}** có thể Claim ngay bây giờ !`);}, 180000)});
+	.then((message)=> {setTimeout(function(){message.edit(`**${message.author}** có thể Claim ngay bây giờ !`);}, 180000)});
 	}
 
 
