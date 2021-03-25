@@ -27,7 +27,7 @@ console.log(`${coinAmt} ; ${baseAmt}`);
 
 if(coinAmt === baseAmt){
 	coins[message.author.id] = {
-		coins: coins[message.author.id] + coinAmt
+		coins: coins[message.author.id].coins + coinAmt
 	};
 fs.writeFile("./coins.json", JSON.stringify(coins), (err) => {
 	if(err) console.log(err)
