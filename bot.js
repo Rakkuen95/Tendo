@@ -23,11 +23,20 @@ client.on("message", message => {
 	message.channel.send(message.content.replace(prefix + 'say', ''));
     	}
 
-    	if (message.content.toLowerCase().startsWith(prefix + 'tell')) {
+    	if (message.content.toLowerCase().startsWith(prefix + 'add')) {
 	message.delete()
-	const text = message.content.replace(prefix + 'tell', '')
+	const text = message.content.replace(prefix + 'add', '')
 	const embed = new MessageEmbed()
-	.setColor('#000000')
+	.setColor('#0dff00')
+	.setDescription(text)
+	message.channel.send(embed);
+    	}
+
+    	if (message.content.toLowerCase().startsWith(prefix + 'use')) {
+	message.delete()
+	const text = message.content.replace(prefix + 'use', '')
+	const embed = new MessageEmbed()
+	.setColor('#ff0000')
 	.setDescription(text)
 	message.channel.send(embed);
     	}
