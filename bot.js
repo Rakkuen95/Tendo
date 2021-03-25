@@ -5,7 +5,7 @@ const config = require("./data.json");
 const prefix = "^";
 const coins = require("./coins.json");
 const fs = require("fs");
-  
+  ///////
 const activities_list = ["Lux","Idoly Pride","les plumes","TrySail"]; 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`)
