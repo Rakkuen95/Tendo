@@ -20,15 +20,11 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-if (command === "asl") {
-  let [age, sex, location] = args;
-  message.reply(`Hello ${message.author.username}, I see you're a ${age} year old ${sex} from ${location}. Wanna date?`);
-}
-
-    	if (message.content.toLowerCase().startsWith(prefix + 'say')) {
-	message.delete()
-	message.channel.send(message.content.replace(prefix + 'say', ''));
-    	}
+	if(command === "say"){
+  	let text = args.join(" ");
+  	message.delete();
+  	message.channel.send(text);
+	}
 
 	if (command === "add") {
 	message.delete()
