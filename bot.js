@@ -180,7 +180,7 @@ client.on("message", message => {
 	.setColor('#0099ff')
 	.setTitle('Some title')
 	.setURL('https://discord.js.org/')
-	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png',message.guild.iconURL())
+	.setAuthor('Discord Profile',message.guild.iconURL(),message.guild.iconURL())
 	.setDescription('Some description here')
 	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
 	.addField('Discord Name',message.guild.name, true)
