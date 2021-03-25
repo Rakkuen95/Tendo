@@ -5,7 +5,7 @@ const config = require("./data.json");
 const prefix = "^";
 const coins = require("./coins.json");
 const fs = require("fs");
-  ////////////
+
 const activities_list = ["Lux","Idoly Pride","les plumes","TrySail"]; 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`)
@@ -15,7 +15,7 @@ client.on('ready', () => {
 	}, 10000);
 	client.channels.cache.get('821287593643212832').send('Comeback!')
 });
-///////////////////////
+
 client.on("message", message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const args = message.content.slice(prefix.length).split(/ +/);
@@ -33,7 +33,7 @@ console.log(`${coinAmt} ; ${baseAmt}`);
 
 if(coinAmt === baseAmt){
 	coins[message.author.id] = {
-		coins: coins[message.author.id] + coinAmt
+		coins: coins[message.author.id].coins + coinAmt
 	};
 fs.writeFile("./coins.json", JSON.stringify(coins), (err) => {
 	if(err) console.log(err)
