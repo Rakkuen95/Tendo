@@ -30,12 +30,13 @@ if (command === "asl") {
 	message.channel.send(message.content.replace(prefix + 'say', ''));
     	}
 
-    	if (message.content.toLowerCase().startsWith(prefix + 'add')) {
+	if (command === "add") {
 	message.delete()
-	const text = message.content.replace(prefix + 'add', '')
+  	const name = args[0];
+  	const money = args[1];
 	const embed = new MessageEmbed()
 	.setColor('#7aff8d')
-	.setDescription(':yen:  '+text)
+	.setDescription(`:yen:  +**${name}** đã nhận được **${money} Coins** !`)
 	message.channel.send(embed);
     	}
 
