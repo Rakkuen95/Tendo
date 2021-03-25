@@ -3,7 +3,7 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const config = require("./data.json");
 const prefix = "^";
-const coins = require ("./coins.json");
+const coins = require("./coins.json");
  
 const activities_list = ["Lux","Idoly Pride","les plumes","TrySail"]; 
 client.on('ready', () => {
@@ -26,7 +26,7 @@ console.log(`${coinAmt} ; ${baseAmt}`);
 
 if(coinAmt === baseAmt){
 	coins[message.author.id] = {
-		coins: coins[message.author.id].coins + coinAmt
+		coins: coins[message.author.id].length + coinAmt
 	};
 fs.writeFile("./coins.json", JSON.stringify(coins), (err) => {
 	if(err) console.log(err)
