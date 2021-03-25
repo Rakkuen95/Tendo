@@ -1,4 +1,4 @@
-const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
+const Discord = require('discord.js');
 const client = new Client();
 const config = require("./data.json");
 const prefix = "^";
