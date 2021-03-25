@@ -2,6 +2,7 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const config = require("./data.json");
 const prefix = "^";
+let coins = require ("./coins.json");
  
 const activities_list = ["Lux","Idoly Pride","les plumes","TrySail"]; 
 client.on('ready', () => {
@@ -17,6 +18,22 @@ client.on("message", message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
+
+let coinAmt = Math.floor(Math.random() *1) +1;
+let baseAmt = Math.floor(Math.random() *1) +1;
+console.log(`${coinAmt} ; ${baseAmt}`);
+
+if(coinAmt === baseAmt){
+	coins[message.author.id] = {
+		coins: coins[message.author.id].coins + coinAmt
+	};
+fs.writeFile("./coins.json", JSON.stringify(coins), (err) => {
+	if(err) console.log(err)
+});
+}
+	     
+
+	
 
     	if (message.content.toLowerCase().startsWith(prefix + 'say')) {
 	message.delete()
