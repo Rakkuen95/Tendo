@@ -1,5 +1,4 @@
 {
-  "token": "insert-bot-token-here",
-  "prefix": "^",
+  "prefix": ".",
   "ownerID": "696175356109127692"
 }
