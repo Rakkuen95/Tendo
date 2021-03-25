@@ -36,16 +36,17 @@ if (command === "asl") {
   	const money = args[1];
 	const embed = new MessageEmbed()
 	.setColor('#7aff8d')
-	.setDescription(`:yen:  +**${name}** đã nhận được **${money} Coins** !`)
+	.setDescription(`:yen:  **${name}** đã nhận được **${money} Coins** !`)
 	message.channel.send(embed);
     	}
 
-    	if (message.content.toLowerCase().startsWith(prefix + 'use')) {
+	if (command === "use") {
 	message.delete()
-	const text = message.content.replace(prefix + 'use', '')
+  	const name = args[0];
+  	const money = args[1];
 	const embed = new MessageEmbed()
 	.setColor('#ff6666')
-	.setDescription(':yen:  '+text)
+	.setDescription(`:yen:  **${name}** đã sử dụng **${money} Coins** !`)
 	message.channel.send(embed);
     	}
 
