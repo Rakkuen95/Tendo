@@ -3,8 +3,7 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const config = require("./data.json");
 const prefix = "^";
-const coins = require("./coins.json");
-const fs = require("fs");
+
 
 const activities_list = ["Lux","Idoly Pride","les plumes","TrySail"]; 
 client.on('ready', () => {
@@ -21,27 +20,6 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-if(!coins[message.author.id]){
-	coins[message.author.id] = {
-		coins: 0
-	};
-}
-
-let coinAmt = Math.floor(Math.random() *1) +1;
-let baseAmt = Math.floor(Math.random() *1) +1;
-console.log(`${coinAmt} ; ${baseAmt}`);
-
-if(coinAmt === baseAmt){
-	coins[message.author.id] = {
-		coins: coins[message.author.id].coins + coinAmt
-	};
-fs.writeFile("./coins.json", JSON.stringify(coins), (err) => {
-	if(err) console.log(err)
-});
-}
-	     
-
-	
 
     	if (message.content.toLowerCase().startsWith(prefix + 'say')) {
 	message.delete()
