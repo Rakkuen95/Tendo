@@ -13,12 +13,6 @@ client.on('ready', () => {
 	client.channels.cache.get('821287593643212832').send('Comeback!')
 });
 
-client.on('guildMemberAdd', member => {
-  	const channel = member.guild.channels.cache.find(ch => ch.name === '👏┇welcome');
-  	if (!channel) return;
-	channel.send(`Chào mừng ${member} đến với Lux HQ!`);
-});
-
 client.on("message", message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const args = message.content.slice(prefix.length).split(/ +/);
@@ -29,8 +23,14 @@ client.on("message", message => {
 	message.channel.send(message.content.replace(prefix + 'say', ''));
     	}
 
-
-
+    	if (message.content.toLowerCase().startsWith(prefix + 'tell')) {
+	message.delete()
+	const text = message.content.replace(prefix + 'tell', '')
+	const embed = new MessageEmbed()
+	.setColor('#000000')
+	.setDescription(text)
+	message.channel.send(embed);
+    	}
 
 	if (command === 'ping') {
 	message.delete({ timeout: 1000 })
@@ -166,18 +166,6 @@ client.on("message", message => {
 		}
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
 	if (command === 'exam') {
 	const exampleEmbed = new MessageEmbed()
 	.setColor('#0099ff')
@@ -198,13 +186,6 @@ client.on("message", message => {
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
 	message.channel.send(exampleEmbed);
 	}
-
-	if (command === 'claim') {
-	message.channel.send(`**${message.author.username}** xin hãy chờ 3 phút !`)
-	message.delete({ timeout: 180000 })
-	message.channel.send((`**${message.author}** có thể Claim bây giờ !`))
-	}
-
 
 });
 client.login(process.env.BOT_TOKEN);
