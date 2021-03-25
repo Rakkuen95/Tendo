@@ -27,7 +27,7 @@ client.on("message", message => {
 	message.delete()
 	const text = message.content.replace(prefix + 'add', '')
 	const embed = new MessageEmbed()
-	.setColor('#0dff00')
+	.setColor('#7aff8d')
 	.setDescription(text)
 	message.channel.send(embed);
     	}
