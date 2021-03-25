@@ -4,18 +4,18 @@ const config = require("./config.json");
 const prefix = ".";
 
 client.on("message", (message) => {
-const args = message.content.slice(config.prefix).trim().split(/ +/g);
-const command = args.shift().toLowerCase();
-
-  if (!message.content.startsWith(prefix) || message.author.bot) return;
-
-  if (command === "hi") {
-    message.channel.send("hello!");
-  }
-
-  if (command === "asl") {
-  let [age, sex, location] = args;
-  message.reply(`Hello ${message.author.username}, I see you're a ${age} year old ${sex} from ${location}. Wanna date?`);
+  if (message.author.bot) return;
+  // This is where we'll put our code.
+  if (message.content.indexOf(config.prefix) !== 0) return;
+ 
+  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+ 
+  if(command === 'ping') {
+    message.channel.send('Pong!');
+  } else
+  if (command === 'blah') {
+    message.channel.send('Meh.');
   }
 
 });
