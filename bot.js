@@ -28,7 +28,7 @@ client.on("message", message => {
 	const text = message.content.replace(prefix + 'add', '')
 	const embed = new MessageEmbed()
 	.setColor('#7aff8d')
-	.setDescription(text)
+	.setDescription(':yen: '+text)
 	message.channel.send(embed);
     	}
 
@@ -37,7 +37,7 @@ client.on("message", message => {
 	const text = message.content.replace(prefix + 'use', '')
 	const embed = new MessageEmbed()
 	.setColor('#ff6666')
-	.setDescription(text)
+	.setDescription(':yen: '+text)
 	message.channel.send(embed);
     	}
 
