@@ -180,13 +180,10 @@ client.on("message", message => {
 	.setColor('#0099ff')
 	.setTitle('Some title')
 	.setURL('https://discord.js.org/')
-	.setAuthor('Discord Profile',message.guild.iconURL(),message.guild.iconURL())
 	.setDescription('Some description here')
-	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
+	.setThumbnail(message.guild.iconURL())
 	.addField('Discord Name',message.guild.name, true)
 	.addField('Total Members',message.guild.memberCount, true)
-	.addField('Date Created',message.guild.createdAt, true)
-	.addField('Region Created',message.guild.region, true)
 	.setTimestamp()
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
 	message.channel.send(exampleEmbed);
