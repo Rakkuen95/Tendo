@@ -180,17 +180,13 @@ client.on("message", message => {
 	.setColor('#0099ff')
 	.setTitle('Some title')
 	.setURL('https://discord.js.org/')
-	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
+	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png',message.guild.iconURL())
 	.setDescription('Some description here')
 	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
-	.addFields(
-		{ name: 'abc', value: 'Some value here' },
-		{ name: '\u200B', value: '\u200B' },
-		{ name: 'def', value: 'Some value here', inline: true },
-		{ name: 'ghl', value: 'Some value here', inline: true },
-	)
-	.addField('mnk', 'Some value here', true)
-	.setImage('https://i.imgur.com/wSTFkRM.png')
+	.addField('Discord Name',message.guild.name, true)
+	.addField('Total Members',message.guild.memberCount, true)
+	.addField('Date Created',message.guild.createdAt, true)
+	.addField('Region Created',message.guild.region, true)
 	.setTimestamp()
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
 	message.channel.send(exampleEmbed);
