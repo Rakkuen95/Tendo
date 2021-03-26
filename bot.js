@@ -23,15 +23,9 @@ client.on("message", message => {
 	if(command === "delete"){
 	const amount = args[0];
   	message.delete();
-	message.channel.bulkDelete(amount).then(() => {
-  	message.channel.send(`Đã xóa ${amount} tin nhắn gần nhất.`)
-	});
+	message.channel.bulkDelete(amount)
+	.then(() => {message.channel.send(`Đã xóa ${amount} tin nhắn gần nhất.`)});
 	}
-
-	if (command === "cd") {
-	message.delete()
-  	const tag = args[0];
-  	const time = args[1];
 
 	if(command === "say"){
   	let text = args.join(" ");
