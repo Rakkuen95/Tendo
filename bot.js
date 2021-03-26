@@ -20,11 +20,6 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-	if (command === 'claim') {
-	message.channel.send('Mlem')
-	.then((message)=> {setTimeout(function(){message.edit('Ahoo');}, 2000)});
-	}
-
 	if(command === "delete"){
 	const amount = args[0];
   	message.delete();
@@ -37,6 +32,17 @@ client.on("message", message => {
   	message.delete();
   	message.channel.send(text);
 	}
+
+	if (command === "profile") {
+	message.delete()
+	const embed = new MessageEmbed()
+	.setTitle('Profile')
+	.setColor('RANDOM')
+	.addField('Total Points', '000', true)
+	.addField('Used Points', '000', true)
+	.addField('Left Points', '000', true)
+	message.channel.send(embed);
+    	}
 
 	if (command === "add") {
 	message.delete()
@@ -213,19 +219,6 @@ const embed = new MessageEmbed()
 
 message.channel.send(embed);
 	}
-///
-	if (command === 'profile lux') {
-	message.delete()
-	const embed = new MessageEmbed()
-	.setColor('RANDOM')
-	.setTitle('Lux Profile')
-	.addFields(
-		{ name: 'Tổng điểm', value: '0', inline: true },
-		{ name: 'Sử dụng', value: '0', inline: true },
-		{ name: 'Còn lại', value: '0', inline: true },)
-	.setTimestamp()
-	.setFooter('Event PRO', 'https://i0.wp.com/storage.qoo-app.com/game/2678/uifPmepYijxCZFao0quEDYvCLoVOms2F.png');
-	message.channel.send(embed);
-	}
+
 });
 client.login(process.env.BOT_TOKEN);
