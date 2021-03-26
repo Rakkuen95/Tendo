@@ -26,7 +26,7 @@ client.on("message", message => {
 	.then((message)=> {setTimeout(function(){message.edit('2 Mins Left !');}, 60*1000)})
 	.then((message)=> {setTimeout(function(){message.edit('1 Mins Left !');}, 60*1000)})
 	.then((message)=> {setTimeout(function(){message.edit('30 Secs Left !');}, 30*1000)})
-	.then((message)=> {setTimeout(function(){message.edit.reply('You can claim now !');}, 30*1000)});
+	.then((message)=> {setTimeout(function(){message.edit.reply('You can claim now !');}, 30*1000)})
 	}
 
 	if(command === "delete"){
