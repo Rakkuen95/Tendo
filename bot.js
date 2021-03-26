@@ -20,6 +20,15 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
+
+	if (command === 'claim') {
+	message.channel.send('3 Mins Left !')
+	.then((message)=> {setTimeout(function(){message.edit('2 Mins Left !');}, 60*1000)})
+	.then((message)=> {setTimeout(function(){message.edit('1 Mins Left !');}, 60*1000)})
+	.then((message)=> {setTimeout(function(){message.edit('30 Secs Left !');}, 30*1000)})
+	.then((message)=> {setTimeout(function(){message.edit.reply('You can claim now !');}, 30*1000)});
+	}
+
 	if(command === "delete"){
 	const amount = args[0];
   	message.delete();
@@ -27,6 +36,11 @@ client.on("message", message => {
   	message.channel.send(`Đã xóa ${amount} tin nhắn gần nhất.`)
 	});
 	}
+
+	if (command === "cd") {
+	message.delete()
+  	const tag = args[0];
+  	const time = args[1];
 
 	if(command === "say"){
   	let text = args.join(" ");
@@ -58,6 +72,7 @@ client.on("message", message => {
 	message.delete({ timeout: 1000 })
 	message.channel.send("pong");
 	}
+
 	if (command === 'avatar') {
 	const embed = new MessageEmbed()
 	.setColor('#000000')
