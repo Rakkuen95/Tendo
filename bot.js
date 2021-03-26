@@ -40,9 +40,9 @@ client.on("message", message => {
 	const embed = new MessageEmbed()
 	.setDescription('Lux Profile')
 	.setColor('RANDOM')
-	.addField('Total Points', ':yen:`000`', true)
-	.addField('Used Points', ':yen:`000`', true)
-	.addField('Left Points', ':yen:`000`', true)
+	.addField('Total', ':yen: ` 999 `', true)
+	.addField('Used', ':yen: ` 999 `', true)
+	.addField('Left', ':yen: ` 999 `', true)
 	message.channel.send(embed);
 		}
     	}
