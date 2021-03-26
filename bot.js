@@ -5,7 +5,7 @@ const config = require("./config.json");
 const prefix = "^";
 const fs = require("fs");
 
-const activities_list = ["Lux","Idoly Pride","les plumes","TrySail"]; 
+const activities_list = ["Lux","Tomozaki","Beta","Dustarr"]; 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`)
 	setInterval(() => {
