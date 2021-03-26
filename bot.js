@@ -215,7 +215,7 @@ const embed = new MessageEmbed()
 
 message.channel.send(exampleEmbed);
 	}
-
+///
 	if (command === 'profile lux') {
 	message.delete()
 	const embed = new MessageEmbed()
