@@ -20,7 +20,7 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-
+//
 	if (command === 'claim') {
 	message.channel.send('3 Mins Left !')
 	.then((message)=> {setTimeout(function(){message.edit('2 Mins Left !');}, 60*1000)})
