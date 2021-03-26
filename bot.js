@@ -227,5 +227,7 @@ message.channel.send(exampleEmbed);
 		{ name: 'Còn lại', value: '0', inline: true },)
 	.setTimestamp()
 	.setFooter('Event PRO', 'https://i0.wp.com/storage.qoo-app.com/game/2678/uifPmepYijxCZFao0quEDYvCLoVOms2F.png');
+	message.channel.send(exampleEmbed);
+	}
 });
 client.login(process.env.BOT_TOKEN);
