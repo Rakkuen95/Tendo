@@ -196,19 +196,36 @@ client.on("message", message => {
 	}
 
 	if (command === 'exam') {
-	const exampleEmbed = new MessageEmbed()
+const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
 	.setURL('https://discord.js.org/')
+	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
 	.setDescription('Some description here')
-	.setThumbnail(message.guild.iconURL())
-	.addField('Discord Name',message.guild.name, true)
-	.addField('Total Members',message.guild.memberCount, true)
+	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
+	.addFields(
+		{ name: 'Regular field title', value: 'Some value here' },
+		{ name: '\u200B', value: '\u200B' },
+		{ name: 'Inline field title', value: 'Some value here', inline: true },
+		{ name: 'Inline field title', value: 'Some value here', inline: true },)
+	.addField('Inline field title', 'Some value here', true)
+	.setImage('https://i.imgur.com/wSTFkRM.png')
 	.setTimestamp()
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
-	message.channel.send(exampleEmbed);
+
+message.channel.send(exampleEmbed);
 	}
 
-
+	if (command === 'profile lux') {
+	message.delete()
+	const embed = new MessageEmbed()
+	.setColor('RANDOM')
+	.setTitle('Lux Profile')
+	.addFields(
+		{ name: 'Tổng điểm', value: '0', inline: true },
+		{ name: 'Sử dụng', value: '0', inline: true },
+		{ name: 'Còn lại', value: '0', inline: true },)
+	.setTimestamp()
+	.setFooter('Event PRO', 'https://i0.wp.com/storage.qoo-app.com/game/2678/uifPmepYijxCZFao0quEDYvCLoVOms2F.png');
 });
 client.login(process.env.BOT_TOKEN);
