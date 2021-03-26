@@ -24,7 +24,8 @@ client.on("message", message => {
 	const amount = args[0];
   	message.delete();
 	message.channel.bulkDelete(amount).then(() => {
-  	message.channel.send(`Đã xóa ${amount} tin nhắn gần nhất.`).then(msg => msg.delete(3000));
+  	message.channel.send(`Đã xóa ${amount} tin nhắn gần nhất.`)
+  	message.delete(3000);
 	});
 	}
 
