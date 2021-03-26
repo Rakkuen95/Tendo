@@ -20,6 +20,14 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
+	if(command === "delete"){
+	const amount = args[0];
+  	message.delete();
+	message.channel.bulkDelete(amount).then(() => {
+  	message.channel.send(`Đã xóa ${amount} tin nhắn gần nhất.`).then(msg => msg.delete(3000));
+	});
+	}
+
 	if(command === "say"){
   	let text = args.join(" ");
   	message.delete();
