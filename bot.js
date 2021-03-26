@@ -22,9 +22,7 @@ client.on("message", message => {
 
 	if (command === 'claim') {
 	message.channel.send('Mlem')
-	.then((message)=> {
-	setTimeout(function(){message.edit('Ahihi');}, 2000)
-	setTimeout(function(){message.edit('Ahoo');}, 2000)});
+	.then((message)=> {setTimeout(function(){message.edit('Ahoo');}, 2000)});
 	}
 
 	if(command === "delete"){
@@ -213,7 +211,7 @@ const embed = new MessageEmbed()
 	.setTimestamp()
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
 
-message.channel.send(exampleEmbed);
+message.channel.send(embed);
 	}
 ///
 	if (command === 'profile lux') {
@@ -227,7 +225,7 @@ message.channel.send(exampleEmbed);
 		{ name: 'Còn lại', value: '0', inline: true },)
 	.setTimestamp()
 	.setFooter('Event PRO', 'https://i0.wp.com/storage.qoo-app.com/game/2678/uifPmepYijxCZFao0quEDYvCLoVOms2F.png');
-	message.channel.send(exampleEmbed);
+	message.channel.send(embed);
 	}
 });
 client.login(process.env.BOT_TOKEN);
