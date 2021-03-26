@@ -35,12 +35,14 @@ client.on("message", message => {
 
 	if (command === "profile") {
 	message.delete()
+  	const name = args[0];
+		if(args[0] === "lux")
 	const embed = new MessageEmbed()
-	.setTitle('Profile')
+	.setDescription('Lux Profile')
 	.setColor('RANDOM')
-	.addField('Total Points', '000', true)
-	.addField('Used Points', '000', true)
-	.addField('Left Points', '000', true)
+	.addField('Total Points', ':yen:`000`', true)
+	.addField('Used Points', ':yen:`000`', true)
+	.addField('Left Points', ':yen:`000`', true)
 	message.channel.send(embed);
     	}
 
