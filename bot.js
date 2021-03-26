@@ -22,7 +22,8 @@ client.on("message", message => {
 
 	if (command === 'claim') {
 	message.channel.send('Mlem')
-	.then((message)=> {setTimeout(function(){message.edit('Ahihi');}, 2000)});
+	.then((message)=> {setTimeout(function(){message.edit('Ahihi');}, 2000)})
+	.then((message)=> {setTimeout(function(){message.edit('Ahoo');}, 2000)});
 	}
 
 	if(command === "delete"){
