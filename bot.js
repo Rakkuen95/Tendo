@@ -36,7 +36,7 @@ client.on("message", message => {
 	if (command === "profile") {
 	message.delete()
   	const name = args[0];
-		if(args[0] === "lux")
+		if(args[0] === "lux"){
 	const embed = new MessageEmbed()
 	.setDescription('Lux Profile')
 	.setColor('RANDOM')
@@ -44,6 +44,7 @@ client.on("message", message => {
 	.addField('Used Points', ':yen:`000`', true)
 	.addField('Left Points', ':yen:`000`', true)
 	message.channel.send(embed);
+		}
     	}
 
 	if (command === "add") {
