@@ -44,11 +44,6 @@ client.on("message", message => {
 	.addField('Total', ':coin:**`999`**', true)
 	.addField('Total', ':coin:**`999`**', true)
 	.addField('Total', ':coin:**`999`**', true)
-	.addField('Total', ':coin:**`999`**', true)
-	.addField('Total', ':coin:**`999`**', true)
-	.addField('Total', ':coin:**`999`**', true)
-	.addField('Total', ':coin:**`999`**', true)
-	.addField('Total', ':coin:**`999`**', true)
 	.setTimestamp()
 	.setFooter('Pokemon Revolution Online', 'https://i.imgur.com/MoZ31TM.png');
 	message.channel.send(embed);
