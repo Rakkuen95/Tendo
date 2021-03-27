@@ -38,8 +38,16 @@ client.on("message", message => {
   	const name = args[0];
 		if(args[0] === "lux"){
 	const embed = new MessageEmbed()
-	.setDescription('Lux Profile')
 	.setColor('#c2c2c2')
+	.setTitle('Lux Profile')
+	.setURL('google.vn')
+	.addField('Total', ':coin:**`999`**', true)
+	.addField('Total', ':coin:**`999`**', true)
+	.addField('Total', ':coin:**`999`**', true)
+	.addField('Total', ':coin:**`999`**', true)
+	.addField('Total', ':coin:**`999`**', true)
+	.addField('Total', ':coin:**`999`**', true)
+	.addField('Total', ':coin:**`999`**', true)
 	.addField('Total', ':coin:**`999`**', true)
 	.setTimestamp()
 	.setFooter('Pokemon Revolution Online', 'https://i.imgur.com/MoZ31TM.png');
