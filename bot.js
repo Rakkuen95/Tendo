@@ -39,10 +39,10 @@ client.on("message", message => {
 		if(args[0] === "lux"){
 	const embed = new MessageEmbed()
 	.setDescription('Lux Profile')
-	.setColor('RANDOM')
-	.addField('Total', ':yen: **`999`**', true)
-	.addField('Used', ':yen: **`999`**', true)
-	.addField('Left', ':yen: **`999`**', true)
+	.setColor('#c2c2c2')
+	.addField('Total', ':coin:**`999`**', true)
+	.setTimestamp()
+	.setFooter('Pokemon Revolution Online', 'https://i.imgur.com/MoZ31TM.png');
 	message.channel.send(embed);
 		}
     	}
