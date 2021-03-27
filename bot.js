@@ -40,9 +40,9 @@ client.on("message", message => {
 	const embed = new MessageEmbed()
 	.setDescription('Lux Profile')
 	.setColor('RANDOM')
-	.addField('Total', ':yen: ` 999 `', true)
-	.addField('Used', ':yen: ` 999 `', true)
-	.addField('Left', ':yen: ` 999 `', true)
+	.addField('Total', ':yen: **`999`**', true)
+	.addField('Used', ':yen: **`999`**', true)
+	.addField('Left', ':yen: **`999`**', true)
 	message.channel.send(embed);
 		}
     	}
