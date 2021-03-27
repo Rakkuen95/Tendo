@@ -41,7 +41,6 @@ client.on("message", message => {
 	.setColor('#c2c2c2')
 	.setTitle('Lux Profile')
 	.setURL('https://www.google.com.vn/')
-	.setImage('https://i.imgur.com/6sIxF5J.png')
 	.addField('Total', ':coin:**`999`**', true)
 	.addField('Total', ':coin:**`999`**', true)
 	.addField('Total', ':coin:**`999`**', true)
