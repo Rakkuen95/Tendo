@@ -40,7 +40,7 @@ client.on("message", message => {
 	const embed = new MessageEmbed()
 	.setColor('#c2c2c2')
 	.setTitle('Lux Profile')
-	.setURL('google.vn')
+	.setURL('https://www.google.com.vn/')
 	.addField('Total', ':coin:**`999`**', true)
 	.addField('Total', ':coin:**`999`**', true)
 	.addField('Total', ':coin:**`999`**', true)
