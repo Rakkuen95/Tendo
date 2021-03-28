@@ -1,5 +1,4 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
-
 const client = new Client();
 const config = require("./config.json");
 const prefix = "^";
@@ -31,6 +30,13 @@ client.on("message", message => {
   	let text = args.join(" ");
   	message.delete();
   	message.channel.send(text);
+	}
+
+	if (command === "react") {
+	message.react('🇦')
+	.then(() => message.react('🇧'))
+	.then(() => message.react('🇨'))
+	.catch(error => {});
 	}
 
 	if (command === "profile") {
