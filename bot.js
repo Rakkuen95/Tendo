@@ -22,7 +22,9 @@ client.on("message", message => {
 	const command = args.shift().toLowerCase();
 
 	if (command === 'quest1') {
+	const data = require('./data.json');
 	const embed = new MessageEmbed()
+
 	.setColor('RANDOM')
 	.setTitle(quest1)
 	.setURL('https://google.vn/')
