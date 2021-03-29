@@ -1,8 +1,10 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
+
 const client = new Client();
-const config = require("./config.json");
+const config = require('./config.json');
 const prefix = "^";
 const fs = require("fs");
+const data = require('./data.json');
 
 const activities_list = ["Lux","Tomozaki","Beta","Kude","Festiaaa"]; 
 client.on('ready', () => {
@@ -22,13 +24,13 @@ client.on("message", message => {
 	if (command === 'quest1') {
 	const embed = new MessageEmbed()
 	.setColor('RANDOM')
-	.setTitle('Quest 1 : New Adventure')
+	.setTitle(quest1)
 	.setURL('https://google.vn/')
-	.setDescription('Một sự khởi đầu mới của bạn . Liệu bạn đã sẵn sàng để hoàn thành thử thách ?')
+	.setDescription(desc1)
 	.setThumbnail('https://yuzu-emu.org/images/game/boxart/pokemon-lets-go-pikachu.png')
-	.addField(':third_place: Easy Mode', '||Squirtle 1x31||',true)
-	.addField(':second_place: Medium Mode', '||Charmander 1x31||',true)
-	.addField(':first_place: Hard Mode', '||Bulbasaur 1x31||',true)
+	.addField(':third_place: Easy Mode', '||' + easy1 + '||',true)
+	.addField(':second_place: Medium Mode', '||' + medium1 + '||',true)
+	.addField(':first_place: Hard Mode', '||' + hard1 + '||',true)
 	message.channel.send(embed);
 	}
 
