@@ -19,6 +19,19 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
+	if (command === 'quest1') {
+	const embed = new MessageEmbed()
+	.setColor('#0099ff')
+	.setTitle('Quest 1')
+	.setURL('https://google.vn/')
+	.setDescription('Một sự khởi đầu mới')
+	.setThumbnail('https://yuzu-emu.org/images/game/boxart/pokemon-lets-go-pikachu.png')
+	.addField('Easy Mode', '||Squirtle 1x31||')
+	.addField('Medium Mode', '||Charmander 1x31||')
+	.addField('Hard Mode', '||Bulbasaur 1x31||')
+	message.channel.send(embed);
+	}
+
 	if(command === "delete"){
 	const amount = args[0];
   	message.delete();
@@ -210,7 +223,7 @@ client.on("message", message => {
 	}
 
 	if (command === 'exam') {
-const embed = new MessageEmbed()
+	const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
 	.setURL('https://discord.js.org/')
@@ -226,8 +239,7 @@ const embed = new MessageEmbed()
 	.setImage('https://i.imgur.com/wSTFkRM.png')
 	.setTimestamp()
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
-
-message.channel.send(embed);
+	message.channel.send(embed);
 	}
 
 });
