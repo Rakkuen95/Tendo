@@ -1,10 +1,7 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
-
 const client = new Client();
-const config = require('./config.json');
 const prefix = "^";
 const fs = require("fs");
-const data = require('./data.json');
 
 const activities_list = ["Lux","Tomozaki","Beta","Kude","Festiaaa"]; 
 client.on('ready', () => {
@@ -20,21 +17,6 @@ client.on("message", message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
-
-	if (command === 'quest1') {
-	const data = require('./data.json');
-	const embed = new MessageEmbed()
-
-	.setColor('RANDOM')
-	.setTitle(quest1)
-	.setURL('https://google.vn/')
-	.setDescription(desc1)
-	.setThumbnail('https://yuzu-emu.org/images/game/boxart/pokemon-lets-go-pikachu.png')
-	.addField(':third_place: Easy Mode', '||' + easy1 + '||',true)
-	.addField(':second_place: Medium Mode', '||' + medium1 + '||',true)
-	.addField(':first_place: Hard Mode', '||' + hard1 + '||',true)
-	message.channel.send(embed);
-	}
 
 	if(command === "delete"){
 	const amount = args[0];
