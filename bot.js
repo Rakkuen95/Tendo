@@ -19,16 +19,16 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-	if (command === 'quest1') {
+	if (command === 'quest 1') {
 	const embed = new MessageEmbed()
-	.setColor('#0099ff')
-	.setTitle('Quest 1')
+	.setColor('RANDOM')
+	.setTitle('Quest 1 : New Adventure')
 	.setURL('https://google.vn/')
-	.setDescription('Một sự khởi đầu mới')
+	.setDescription('Một sự khởi đầu mới của bạn . Liệu bạn đã sẵn sàng để hoàn thành thử thách ?')
 	.setThumbnail('https://yuzu-emu.org/images/game/boxart/pokemon-lets-go-pikachu.png')
-	.addField('Easy Mode', '||Squirtle 1x31||')
-	.addField('Medium Mode', '||Charmander 1x31||')
-	.addField('Hard Mode', '||Bulbasaur 1x31||')
+	.addField(':third_place: Easy Mode', '||Squirtle 1x31||',true)
+	.addField(':second_place: Medium Mode', '||Charmander 1x31||',true)
+	.addField(':first_place: Hard Mode', '||Bulbasaur 1x31||',true)
 	message.channel.send(embed);
 	}
 
