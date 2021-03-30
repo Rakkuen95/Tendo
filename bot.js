@@ -2,6 +2,8 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix = "^";
 const data = require('./data.json');
+const quiz = require('./quiz.json');
+const item = quiz[Math.floor(Math.random() * quiz.length)];
 
 const activities_list = ["Lux","Tomozaki","Beta","Kude","Festiaaa"]; 
 client.on('ready', () => {
@@ -17,6 +19,16 @@ client.on("message", message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
+
+message.channel.send(item.question).then(() => {
+	message.channel.awaitMessages(filter, { max: 1, time: 30000, errors: ['time'] })
+		.then(collected => {
+		message.channel.send(`${collected.first().author} got the correct answer!`);
+		})
+		.catch(collected => {message.channel.send('Looks like nobody got the answer this time.');
+		});
+});
+
 
 	if (command === 'quest1') {
 	const embed = new MessageEmbed()
