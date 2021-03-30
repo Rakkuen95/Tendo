@@ -19,7 +19,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-	if (!message.author.bot) return;
+
   if (message.content.includes('LOST').bot) {
     message.channel.send(`<@&826451810280538123>`); 
   }
