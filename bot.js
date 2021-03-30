@@ -22,7 +22,7 @@ client.on("message", message => {
 
 	if (command === 'quiz') {
 	message.channel.send(item.question).then(() => {
-	message.channel.awaitMessages(filter, { max: 1, time: 30000, errors: ['time'] })
+	message.channel.awaitMessages(filter, { max: 1, time: 30000, errors: [5000] })
 		.then(collected => {
 		message.channel.send(`${collected.first().author} got the correct answer!`);
 		})
