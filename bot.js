@@ -19,8 +19,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-  if (message.content === 'hi') {
-    message.channel.send('hello');
+  if (message.content === 'deptrai') {
+    message.channel.send(`<@&826451810280538123>`); 
   }
 });
 
