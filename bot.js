@@ -4,6 +4,9 @@ const prefix = "^";
 const data = require('./data.json');
 const quiz = require('./quiz.json');
 const item = quiz[Math.floor(Math.random() * quiz.length)];
+const filter = response => {
+	return item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
+};
 
 const activities_list = ["Lux","Tomozaki","Beta","Kude","Festiaaa"]; 
 client.on('ready', () => {
