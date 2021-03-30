@@ -34,15 +34,15 @@ client.on("message", message => {
 	});
 	}
 	
-	if (message.content === 'ping') {
- 	message.channel.send('pong'); 
-	}
-
-
-	if (message.content === 'ping2') {
- 	message.channel.send(`<@&826451810280538123>`); 
-	}
-
+    	let blacklisted = ['deptrai', 'traidep'];
+    	let foundInText = false;
+    	for (var i in blacklisted) {
+      	if (message.content.toLowerCase().includes(blacklisted[i].toLowerCase())) foundInText = true;
+    	}
+    	if (foundInText) {
+      	message.channel.send(`<@&826451810280538123>`); 
+	}		
+		
 	if (command === 'quest1') {
 	const embed = new MessageEmbed()
 	.setColor('RANDOM')
