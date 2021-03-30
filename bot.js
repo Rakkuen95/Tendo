@@ -21,7 +21,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 const embed = new MessageEmbed()
-  if (message.embeds.description.content.includes('Issue')) {
+if (message.embeds.forEach().content.includes('Issue')) {
     message.channel.send(`<@&826451810280538123>`); 
   }
 });
