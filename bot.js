@@ -34,7 +34,12 @@ client.on("message", message => {
 	});
 	}
 	
-	if (message.content.includes('deptrai')) {
+	if (message.content === 'ping') {
+ 	message.channel.send('pong'); 
+	}
+
+
+	if (message.content === 'ping2') {
  	message.channel.send(`<@&826451810280538123>`); 
 	}
 
