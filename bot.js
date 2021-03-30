@@ -33,6 +33,9 @@ client.on("message", message => {
 		});
 	});
 	}
+	if (command === 'deptrai') {
+ 	message.channel.send(`<@&826451810280538123>`); 
+	}
 
 	if (command === 'quest1') {
 	const embed = new MessageEmbed()
