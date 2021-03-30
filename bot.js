@@ -19,7 +19,7 @@ client.on("message", message => {
 	const command = args.shift().toLowerCase();
 
 	if(command === "aaa"){
-	message.channel.send(aaa);
+	message.channel.send(item.aaa);
     	}
 
 	if(command === "delete"){
