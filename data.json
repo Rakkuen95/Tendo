@@ -1,5 +1,7 @@
 {
-  "aaa": "111",
-  "bbb": "222",
-  "ccc": "333"
+  "quest1": "Quest 1 : New Adventure",
+  "desc1": "Một sự khởi đầu mới của bạn . Liệu bạn đã sẵn sàng để hoàn thành thử thách ?",
+  "easy1": "Squirtle 1x31",
+  "medium1": "Charmander 1x31",
+  "hard1": "Bulbasaur 1x31"
 }
