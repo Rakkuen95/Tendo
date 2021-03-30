@@ -19,13 +19,6 @@ client.on('ready', () => {
 	client.channels.cache.get('821287593643212832').send('Comeback!')
 });
 
-client.on('message', message => {
-const embed = new MessageEmbed()
-if (message.embeds.forEach().content.includes('Issue')) {
-    message.channel.send(`<@&826451810280538123>`); 
-  }
-});
-
 client.on("message", message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const args = message.content.slice(prefix.length).split(/ +/);
@@ -42,15 +35,6 @@ client.on("message", message => {
 	});
 	}
 	
-    	let blacklisted = ['deptrai', 'traidep'];
-    	let foundInText = false;
-    	for (var i in blacklisted) {
-      	if (message.content.toLowerCase().includes(blacklisted[i].toLowerCase())) foundInText = true;
-    	}
-    	if (foundInText) {
-      	message.channel.send(`<@&826451810280538123>`); 
-	}		
-		
 	if (command === 'quest1') {
 	const embed = new MessageEmbed()
 	.setColor('RANDOM')
