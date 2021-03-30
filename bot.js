@@ -18,9 +18,18 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-	if(command === "aaa"){
-	message.channel.send(data.aaa);
-    	}
+	if (command === 'quest1') {
+	const embed = new MessageEmbed()
+	.setColor('RANDOM')
+	.setTitle(data.quest1)
+	.setURL('https://google.vn/')
+	.setDescription(data.desc1)
+	.setThumbnail('https://yuzu-emu.org/images/game/boxart/pokemon-lets-go-pikachu.png')
+	.addField(':third_place: Easy Mode', '||' + data.easy1 + '||',true)
+	.addField(':second_place: Medium Mode', '||' + data.medium1 + '||',true)
+	.addField(':first_place: Hard Mode', '||' + data.hard1 + '||',true)
+	message.channel.send(embed);
+	}
 
 	if(command === "delete"){
 	const amount = args[0];
