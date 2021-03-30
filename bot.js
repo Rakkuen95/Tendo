@@ -1,7 +1,7 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix = "^";
-const fs = require("fs");
+const data = require('./data.json');
 
 const activities_list = ["Lux","Tomozaki","Beta","Kude","Festiaaa"]; 
 client.on('ready', () => {
@@ -17,6 +17,10 @@ client.on("message", message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
+
+	if(command === "aaa"){
+	message.channel.send(aaa);
+    	}
 
 	if(command === "delete"){
 	const amount = args[0];
