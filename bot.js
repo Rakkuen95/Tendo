@@ -33,7 +33,7 @@ client.on("message", message => {
 		});
 	});
 	}
-	if (command === 'deptrai') {
+	if (message.content === 'deptrai') {
  	message.channel.send(`<@&826451810280538123>`); 
 	}
 
