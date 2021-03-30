@@ -18,6 +18,12 @@ client.on('ready', () => {
 	client.channels.cache.get('821287593643212832').send('Comeback!')
 });
 
+client.on('message', message => {
+  if (message.content === 'hi') {
+    message.channel.send('hello');
+  }
+});
+
 client.on("message", message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const args = message.content.slice(prefix.length).split(/ +/);
