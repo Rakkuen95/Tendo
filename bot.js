@@ -19,7 +19,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-  if (message.author.bot === 'To claim, use:') {
+  if (message.content.includes('To claim, use:').author.bot) {
     message.channel.send(`<@&826451810280538123>`); 
   }
 });
