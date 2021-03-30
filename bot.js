@@ -1,6 +1,7 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix = "^";
+
 const data = require('./data.json');
 const quiz = require('./quiz.json');
 const item = quiz[Math.floor(Math.random() * quiz.length)];
@@ -19,8 +20,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-
-  if (message.content.includes('casting')) {
+const embed = new MessageEmbed()
+  if (embed.content.includes('Issue')) {
     message.channel.send(`<@&826451810280538123>`); 
   }
 });
