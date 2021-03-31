@@ -26,7 +26,7 @@ client.on("message", message => {
 
 	if (command === 'emoji') {
   	message.channel.send('<:Cheems:825562969550356481>');
-
+	}
 	if (command === 'quiz') {
 	message.channel.send(item.question).then(() => {
 	message.channel.awaitMessages(filter, { max: 1, time: 30000, errors: ['time'] })
