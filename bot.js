@@ -69,6 +69,7 @@ client.on("message", message => {
   	message.delete();
 	const embed = new MessageEmbed()
 	.setDescription(text)
+	.setColor('RANDOM')
   	message.channel.send(embed);
 	}
 
