@@ -25,7 +25,7 @@ client.on("message", message => {
 	const command = args.shift().toLowerCase();
 
 	if (command === 'emoji') {
-  	message.channel.send(<:Cheems:825562969550356481>);
+  	message.channel.send('<:Cheems:825562969550356481>');
 
 	if (command === 'quiz') {
 	message.channel.send(item.question).then(() => {
