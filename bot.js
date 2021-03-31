@@ -64,6 +64,14 @@ client.on("message", message => {
   	message.channel.send(text);
 	}
 
+	if(command === "tell"){
+  	let text = args.join(" ");
+  	message.delete();
+	const embed = new MessageEmbed()
+	.setDescription(text)
+  	message.channel.send(embed);
+	}
+
 	if (command === "react") {
 	message.react('🇦')
 	.then(() => message.react('🇧'))
