@@ -87,14 +87,14 @@ client.on("message", message => {
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
 	.setTitle('Event Fire Man')
-	.setDescription('Đây là bảng dữ liệu về thông tin người chơi\nĐể nộp Charmander hoặc đổi Reward vui lòng liên hệ Lux')
+	.setDescription('Đây là bảng dữ liệu về thông tin người chơi\nĐể nộp Charmander hoặc đổi Reward vui lòng liên hệ Lux\n- - - - - - - - - - - - - - - - - - - - - - - -')
 	.addField(':unicorn: NAME', data.name1, true)
 	.addField(':crown: RANK', data.rank1, true)
 	.addField(':fire: CHARMANDER', data.charmander1, true)
 	.addField(':coin: TOTAL', data.total1, true)
 	.addField(':coin: USE', data.use1, true)
 	.addField(':coin: COIN', data.coin1, true)
-	.addField('.','[Bạn có thể sử dụng Coin để đổi Reward tại đây](https://tinyurl.com/5anzuzed)')
+	.addField('- - - - - - - - - - - - - - - - - - - - - - - -','[Bạn có thể sử dụng Coin để đổi Reward tại đây](https://tinyurl.com/5anzuzed)')
 	.setImage('https://i.imgur.com/3qwcPco.png')
 	.setFooter(data.history1);
 	message.channel.send(embed);
