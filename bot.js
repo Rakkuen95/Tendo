@@ -88,7 +88,11 @@ client.on("message", message => {
 	.setColor('#fcfcfc')
 	.addField('Name', 'Festiaaa', true)
 	.addField('Rank', 'S+', true)
-	.addField('Coins', '282', true)
+	.addField('Charmander', '0', true)
+	.addField('Total', '282', true)
+	.addField('Bought', '199', true)
+	.addField('Coins', '83', true)
+	.setImage('https://i.imgur.com/3qwcPco.png')
 	.setFooter('History : S Charizard Mount (100) , S Whiscash Mount (99) .');
 	message.channel.send(embed);
 		}
