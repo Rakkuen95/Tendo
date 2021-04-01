@@ -83,16 +83,16 @@ client.on("message", message => {
 	if (command === "profile") {
   	const name = args[0];
 		if(args[0] === "festiaaa"){
+	message.channel.send('> **Event Lux #4 : Shining Beam**');
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
-	.setTitle('Fire Challenge')
 	.setDescription(data.help + data.space)
-	.addField(':unicorn: NAME', data.name1, true)
-	.addField(':crown: RANK', data.rank1, true)
-	.addField(':fire: CHARMANDER', data.shinx1, true)
-	.addField(':coin: TOTAL', data.total1, true)
-	.addField(':coin: USE', data.use1, true)
-	.addField(':coin: COIN', data.coin1, true)
+	.addField('👊 NAME', data.name1, true)
+	.addField('🏆 RANK', data.rank1, true)
+	.addField('⚡️ SHINX', data.shinx1, true)
+	.addField('🍬 TOTAL', data.total1, true)
+	.addField('🍬 USE', data.use1, true)
+	.addField('🍬 CANDY', data.coin1, true)
 	.addField(data.space,data.link)
 	.setImage(data.bg1)
 	.setFooter(data.history1);
