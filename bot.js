@@ -1,6 +1,6 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
-const prefix = "^";
+const prefix = "#";
 
 const data = require('./data.json');
 const quiz = require('./quiz.json');
@@ -40,11 +40,12 @@ client.on("message", message => {
 	
 	if (command === 'q1e') {
 	const embed = new MessageEmbed()
-	.setColor('#ffffff')
-	.setTitle('Quest 1 : Bắt đầu')
-	.setURL('https://google.vn/')
+	.setColor('#fcfcfc')
+	.setTitle('QUEST 1 : START')
 	.setImage('https://i.imgur.com/YxF0QQj.png')
-	.setDescription('**Chế độ Easy** : Charmander có 1 dòng 31 IVs')
+	.addField('Easy Mode', 'Charmander 1x31', true)
+	.addField('Medium Mode', 'Charmander 2x31', true)
+	.addField('Hard Mode', 'Charmander 3x31', true)	
 	.addField('Đã hoàn thành', 'Lux', true)
 	.addField('Mở khóa', 'Quest 2', true)
 	message.channel.send(embed);
@@ -82,14 +83,13 @@ client.on("message", message => {
 	if (command === "profile") {
 	message.delete()
   	const name = args[0];
-		if(args[0] === "lux"){
+		if(args[0] === "festiaaa"){
 	const embed = new MessageEmbed()
-	.setColor('#c2c2c2')
-	.setTitle('Lux Profile')
-	.setURL('https://www.google.com.vn/')
-	.addField('Total', ':coin:**`999`**', true)
-	.addField('Total', ':coin:**`999`**', true)
-	.addField('Total', ':coin:**`999`**', true)
+	.setColor('#fcfcfc')
+	.addField('Name', 'Festiaaa', true)
+	.addField('Rank', 'S+', true)
+	.addField('Coins', '282', true)
+	.setFooter('History : S Charizard Mount (100) , S Whiscash Mount (99) .');
 	message.channel.send(embed);
 		}
     	}
