@@ -81,12 +81,11 @@ client.on("message", message => {
 	}
 
 	if (command === "profile") {
-	message.delete()
   	const name = args[0];
 		if(args[0] === "festiaaa"){
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
-	.setTitle('Event Fire Force')
+	.setTitle('Fire Challenge')
 	.setDescription(data.help + data.space)
 	.addField(':unicorn: NAME', data.name1, true)
 	.addField(':crown: RANK', data.rank1, true)
@@ -95,7 +94,7 @@ client.on("message", message => {
 	.addField(':coin: USE', data.use1, true)
 	.addField(':coin: COIN', data.coin1, true)
 	.addField(data.space,data.link)
-	.setImage('https://i.imgur.com/qRZNrOO.png')
+	.setImage(data.bg1)
 	.setFooter(data.history1);
 	message.channel.send(embed);
 		}
