@@ -86,9 +86,10 @@ client.on("message", message => {
 		if(args[0] === "festiaaa"){
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
-	.addField('Name', data.name1, true)
-	.addField('Rank', data.rank1, true)
-	.addField('Charmander', data.charmander1, true)
+	.setDescription('Đây là bảng dữ liệu về thông tin người chơi\nĐể nộp Charmander hoặc đổi Reward vui lòng liên hệ Lux\nCảm ơn các bạn đã tham gia')
+	.addField(':unicorn: Name', data.name1, true)
+	.addField(':trophy: Rank', data.rank1, true)
+	.addField(':fire: Charmander', data.charmander1, true)
 	.addField('Total', data.total1, true)
 	.addField('Used', data.use1, true)
 	.addField('Coin', data.coin1, true)
