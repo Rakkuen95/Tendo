@@ -89,7 +89,7 @@ client.on("message", message => {
 	.setDescription(data.help + data.space)
 	.addField(':unicorn: NAME', data.name1, true)
 	.addField(':crown: RANK', data.rank1, true)
-	.addField(':fire: CHARMANDER', data.charmander1, true)
+	.addField(':fire: CHARMANDER', data.shinx1, true)
 	.addField(':coin: TOTAL', data.total1, true)
 	.addField(':coin: USE', data.use1, true)
 	.addField(':coin: COIN', data.coin1, true)
