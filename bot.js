@@ -94,7 +94,7 @@ client.on("message", message => {
 	.addField('🍬 USE', data.use1, true)
 	.addField('🍬 CANDY', data.coin1, true)
 	.addField(data.space,data.link)
-	.setImage(data.bg1)
+	.setImage(data.bg)
 	.setFooter(data.history1);
 	message.channel.send(embed);
 		}
