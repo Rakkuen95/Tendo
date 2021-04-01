@@ -94,6 +94,7 @@ client.on("message", message => {
 	.addField(':coin: TOTAL', data.total1, true)
 	.addField(':coin: USE', data.use1, true)
 	.addField(':coin: COIN', data.coin1, true)
+	.addField('.','[Bạn có thể sử dụng Coin để đổi Reward tại đây](https://tinyurl.com/5anzuzed)')
 	.setImage('https://i.imgur.com/3qwcPco.png')
 	.setFooter(data.history1);
 	message.channel.send(embed);
