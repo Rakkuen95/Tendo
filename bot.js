@@ -38,16 +38,13 @@ client.on("message", message => {
 	});
 	}
 	
-	if (command === 'quest1') {
+	if (command === 'q1e') {
 	const embed = new MessageEmbed()
-	.setColor('RANDOM')
+	.setColor('#ffffff')
 	.setTitle(data.quest1)
 	.setURL('https://google.vn/')
-	.setDescription(data.desc1)
-	.setThumbnail('https://yuzu-emu.org/images/game/boxart/pokemon-lets-go-pikachu.png')
-	.addField(':third_place: Easy Mode', '||' + data.easy1 + '||',true)
-	.addField(':second_place: Medium Mode', '||' + data.medium1 + '||',true)
-	.addField(':first_place: Hard Mode', '||' + data.hard1 + '||',true)
+	.setImage('https://i.imgur.com/YxF0QQj.png')
+	.addField('Easy Mode', data.easy1)
 	message.channel.send(embed);
 	}
 
