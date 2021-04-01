@@ -86,14 +86,14 @@ client.on("message", message => {
 		if(args[0] === "festiaaa"){
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
-	.addField('Name', 'Festiaaa', true)
-	.addField('Rank', 'S+', true)
-	.addField('Charmander', '0', true)
-	.addField('Total', '282', true)
-	.addField('Bought', '199', true)
-	.addField('Coins', '83', true)
+	.addField('Name', data.name1, true)
+	.addField('Rank', data.rank1, true)
+	.addField('Charmander', data.charmander1, true)
+	.addField('Total', data.total1, true)
+	.addField('Used', data.use1, true)
+	.addField('Coin', data.coin1, true)
 	.setImage('https://i.imgur.com/3qwcPco.png')
-	.setFooter('History : S Charizard Mount (100) , S Whiscash Mount (99) .');
+	.setFooter(data.history1);
 	message.channel.send(embed);
 		}
     	}
