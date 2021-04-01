@@ -41,10 +41,12 @@ client.on("message", message => {
 	if (command === 'q1e') {
 	const embed = new MessageEmbed()
 	.setColor('#ffffff')
-	.setTitle(data.quest1)
+	.setTitle('Quest 1 : Bắt đầu')
 	.setURL('https://google.vn/')
 	.setImage('https://i.imgur.com/YxF0QQj.png')
-	.addField('Easy Mode', data.easy1)
+	.setDescription('**Chế độ Easy** : Charmander có 1 dòng 31 IVs')
+	.addField('Đã hoàn thành', 'Lux', true)
+	.addField('Mở khóa', 'Quest 2', true)
 	message.channel.send(embed);
 	}
 
