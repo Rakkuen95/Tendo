@@ -95,7 +95,7 @@ client.on("message", message => {
 	.addField(':coin: USE', data.use1, true)
 	.addField(':coin: COIN', data.coin1, true)
 	.addField(data.space,data.link)
-	.setImage('https://i.imgur.com/3qwcPco.png')
+	.setImage('https://i.imgur.com/qRZNrOO.png')
 	.setFooter(data.history1);
 	message.channel.send(embed);
 		}
