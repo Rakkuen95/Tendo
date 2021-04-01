@@ -86,13 +86,14 @@ client.on("message", message => {
 		if(args[0] === "festiaaa"){
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
-	.setDescription('Đây là bảng dữ liệu về thông tin người chơi\nĐể nộp Charmander hoặc đổi Reward vui lòng liên hệ Lux\nCảm ơn các bạn đã tham gia')
-	.addField(':unicorn: Name', data.name1, true)
-	.addField(':trophy: Rank', data.rank1, true)
-	.addField(':fire: Charmander', data.charmander1, true)
-	.addField('Total', data.total1, true)
-	.addField('Used', data.use1, true)
-	.addField('Coin', data.coin1, true)
+	.setTitle('Event Fire Man')
+	.setDescription('Đây là bảng dữ liệu về thông tin người chơi\nĐể nộp Charmander hoặc đổi Reward vui lòng liên hệ Lux')
+	.addField(':unicorn: NAME', data.name1, true)
+	.addField(':crown: RANK', data.rank1, true)
+	.addField(':fire: CHARMANDER', data.charmander1, true)
+	.addField(':coin: TOTAL', data.total1, true)
+	.addField(':coin: USE', data.use1, true)
+	.addField(':coin: COIN', data.coin1, true)
 	.setImage('https://i.imgur.com/3qwcPco.png')
 	.setFooter(data.history1);
 	message.channel.send(embed);
