@@ -1,6 +1,6 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
-const prefix = "#";
+const prefix = "+";
 
 const data = require('./data.json');
 const quiz = require('./quiz.json');
