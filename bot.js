@@ -27,6 +27,10 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
+	if (command === "ping") {
+	message.channel.send('Gruu');
+	}
+	
 	if (command === "profile") {
   	const name = args[0];
 		if(args[0] === "festiaaa"){
