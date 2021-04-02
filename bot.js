@@ -9,7 +9,7 @@ const filter = response => {
 	return item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
 };
 
-const activities_list = ["Lux","Tomozaki","Beta","Kude","Festiaaa"]; 
+const activities_list = ["+help"]; 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`)
 	setInterval(() => {
