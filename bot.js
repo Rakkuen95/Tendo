@@ -34,7 +34,7 @@ client.on("message", message => {
 	if (command === "profile") {
   	const name = args[0];
 		if(args[0] === "festiaaa"){
-	message.channel.send('> **Event Lux #4 : Shining Beam**');
+	message.channel.send('> **:milky_way: | Event Re:Sparkle**');
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
 	.setDescription(data.help + data.space)
