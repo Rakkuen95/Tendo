@@ -16,7 +16,10 @@ client.on('ready', () => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
         client.user.setActivity(activities_list[index]);
 	}, 10000);
-	client.channels.cache.get('821287593643212832').send('Comeback!')
+	const embed = new MessageEmbed()
+	.setColor('#81ff73')
+	.setDescription(':white_check_mark: Mình đã quay trở lại rồi đây!')
+	client.channels.cache.get('827615692685049916').send(embed)
 });
 
 client.on("message", message => {
