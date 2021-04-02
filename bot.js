@@ -34,16 +34,16 @@ client.on("message", message => {
 	if (command === "profile") {
   	const name = args[0];
 		if(args[0] === "festiaaa"){
-	message.channel.send('> **:milky_way: | Event Re:Sparkle**');
+	message.channel.send('> ✦ Event Re:Sparkle**');
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name1, true)
 	.addField('🧠 LEVEL', data.rank1, true)
 	.addField('⚡️ SHINX', data.shinx1, true)
-	.addField('🍬 TOTAL', data.total1, true)
-	.addField('🍬 CONSUME', data.use1, true)
-	.addField('🍬 HAVE', data.coin1, true)
+	.addField('🔋 TOTAL', data.total1, true)
+	.addField('🔋 CONSUME', data.use1, true)
+	.addField('🔋 HAVE', data.coin1, true)
 	.addField(data.space,data.link)
 	.setImage(data.bg)
 	.setFooter(data.history1);
