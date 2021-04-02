@@ -16,7 +16,7 @@ client.on('ready', () => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
         client.user.setActivity(activities_list[index]);
 	}, 10000);
-	client.users.cache.get('696175356109127692').send('Comeback!');
+	client.channels.cache.get('821287593643212832').send('Comeback!')
 });
 
 client.on("message", message => {
