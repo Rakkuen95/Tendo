@@ -16,9 +16,9 @@ client.on('ready', () => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
         client.user.setActivity(activities_list[index]);
 	}, 10000);
-	client.users.get("696175356109127692").send("Comeback!");
+	client.cache.users.get('696175356109127692').send('Comeback!');
 });
-//
+
 client.on("message", message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const args = message.content.slice(prefix.length).split(/ +/);
