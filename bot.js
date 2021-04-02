@@ -18,7 +18,7 @@ client.on('ready', () => {
 	}, 10000);
 	const embed = new MessageEmbed()
 	.setColor('#81ff73')
-	.setDescription('<:OtachanOmoshiroi:825562968967479306> **`ちょっとまってください!`**')
+	.setDescription('<:OtachanOmoshiroi:825562968967479306> **`|  ちょっとまってください  !`**')
 	client.channels.cache.get('827615692685049916').send(embed)
 });
 
