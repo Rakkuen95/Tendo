@@ -50,7 +50,7 @@ client.on("message", message => {
         var timeoutDelay = 10000;
         if(usersInTimeout.some(user => user.userID == message.author.id)){
           var userInTimeout = usersInTimeout.find(user => user.userID == message.author.id);
-          var remainingTime = millisec(timeoutDelay - (new Date().getTime() - userInTimeout.timeoutStart)).format('hh:mm:ss');
+          var remainingTime = timeoutDelay - (new Date().getTime() - userInTimeout.timeoutStart).format('hh:mm:ss');
           return message.reply(`Time left to use the command: **${remainingTime}**`);
         }
         message.channel.send('pong');
