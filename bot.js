@@ -53,7 +53,7 @@ client.on("message", message => {
 if(cooldowns[message.author.id]){
 if(cooldowns[message.author.id] > Date.now()) delete cooldowns[message.author.id];
 message.channel.send("ping");
-else if(cooldowns[message.author.id] <= Date.now()) {
+} else if (cooldowns[message.author.id] <= Date.now()) {
 message.channel.send("user still has " + Math.round((cooldowns[message.author.id] - Date.now)/minute) + " minutes left");
 }
 }
