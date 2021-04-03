@@ -1,7 +1,10 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix = "+";
-const usersInTimeout = [];
+var cooldowns = {}
+var minute = 60000;
+var hour = minute * 24;
+cooldowns[message.author.id] = Date.now() + hour * 24;
 const data = require('./data.json');
 const quiz = require('./quiz.json');
 const item = quiz[Math.floor(Math.random() * quiz.length)];
@@ -46,19 +49,13 @@ client.on("message", message => {
 	message.channel.send(embed);
 		}
     	}
-	if (command === "ping") {
-        var timeoutDelay = 10000;
-        if(usersInTimeout.some(user => user.userID == message.author.id)){
-          var userInTimeout = usersInTimeout.find(user => user.userID == message.author.id);
-          var remainingTime = timeoutDelay - (new Date().getTime() - userInTimeout.timeoutStart).format('hh:mm:ss');
-          return message.reply(`Time left to use the command: **${remainingTime}**`);
-        }
-        message.channel.send('pong');
-        usersInTimeout.push({userID: message.author.id, timeoutStart: new Date().getTime()});//add the user to timeout
-        setTimeout(() => {//add a timer to remove him from the timeout
-          usersInTimeout.splice(usersInTimeout.indexOf(message.author.id), 1);
-        }, timeoutDelay);
-    }
+	if (command === "test") {
+if(cooldowns[message.author.id]){
+if(cooldowns[message.author.id] > Date.now()) delete cooldowns[message.author.id];
+message.channel.send("ping");
+else message.channel.send("user still has " + Math.round((cooldowns[message.author.id] - Date.now)/minute) + " minutes left");
+	}
+}
 
 });
 client.login(process.env.BOT_TOKEN);
