@@ -48,7 +48,7 @@ client.on("message", message => {
     	}
 
     if (talkedRecently.has(message.author.id)) {
-            message.channel.send("Wait 1 minute before getting typing this again. - " + msg.author);
+            message.channel.send("Wait 1 minute before getting typing this again. - " + message.author);
     } else (command === "ping") {
 	message.channel.send('Gruu');
 	}
