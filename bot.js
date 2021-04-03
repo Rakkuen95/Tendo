@@ -1,7 +1,7 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix = "+";
-
+const talkedRecently = new Set();
 const data = require('./data.json');
 const quiz = require('./quiz.json');
 const item = quiz[Math.floor(Math.random() * quiz.length)];
@@ -27,10 +27,6 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-	if (command === "ping") {
-	message.channel.send('Gruu');
-	}
-	
 	if (command === "profile") {
   	const name = args[0];
 		if(args[0] === "festiaaa"){
@@ -50,6 +46,17 @@ client.on("message", message => {
 	message.channel.send(embed);
 		}
     	}
+
+    if (talkedRecently.has(message.author.id)) {
+            message.channel.send("Wait 1 minute before getting typing this again. - " + msg.author);
+    } else {(command === "ping") {
+	message.channel.send('Gruu');
+	}
+        talkedRecently.add(message.author.id);
+        setTimeout(() => {
+          talkedRecently.delete(message.author.id);
+        }, 60000);
+    }
 
 });
 client.login(process.env.BOT_TOKEN);
