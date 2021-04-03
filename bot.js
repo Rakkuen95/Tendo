@@ -55,5 +55,9 @@ client.on("message", message => {
 	message.channel.send('Gruu');
     }
 
+if (command === "date") {
+message.channel.send(Date.now());
+    }
+
 });
 client.login(process.env.BOT_TOKEN);
