@@ -1,8 +1,7 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix = "+";
-const talkedRecently = new Set();
-const cooldowns = 10000;
+const usersInTimeout = [];
 const data = require('./data.json');
 const quiz = require('./quiz.json');
 const item = quiz[Math.floor(Math.random() * quiz.length)];
@@ -47,17 +46,18 @@ client.on("message", message => {
 	message.channel.send(embed);
 		}
     	}
-
-    if (talkedRecently.has(message.author.id)) {
-            message.channel.send("Wait "+ Math.round(cooldowns - Date.now) +" second before getting typing this again. - " + message.author);
-    } else if (command === "ping") {
-        talkedRecently.add(message.author.id);
-        setTimeout(() => {talkedRecently.delete(message.author.id);}, cooldowns);
-	message.channel.send('Gruu');
-    }
-
-if (command === "date") {
-message.channel.send(Date.now());
+	if (command === "ping") {
+        var timeoutDelay = 10000;
+        if(usersInTimeout.some(user => user.userID == message.author.id)){
+          var userInTimeout = usersInTimeout.find(user => user.userID == message.author.id);
+          var remainingTime = millisec(timeoutDelay - (new Date().getTime() - userInTimeout.timeoutStart)).format('hh:mm:ss');
+          return message.reply(`Time left to use the command: **${remainingTime}**`);
+        }
+        message.channel.send('pong);
+        usersInTimeout.push({userID: message.author.id, timeoutStart: new Date().getTime()});//add the user to timeout
+        setTimeout(() => {//add a timer to remove him from the timeout
+          usersInTimeout.splice(usersInTimeout.indexOf(message.author.id), 1);
+        }, timeoutDelay);
     }
 
 });
