@@ -2,7 +2,7 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix = "+";
 const talkedRecently = new Set();
-const cooldowns = 5000;
+const cooldowns = 10000;
 const data = require('./data.json');
 const quiz = require('./quiz.json');
 const item = quiz[Math.floor(Math.random() * quiz.length)];
@@ -49,7 +49,7 @@ client.on("message", message => {
     	}
 
     if (talkedRecently.has(message.author.id)) {
-            message.channel.send("Wait "+ Math.round(cooldowns[message.author.id] - Date.now) +" second before getting typing this again. - " + message.author);
+            message.channel.send("Wait "+ Math.round(cooldowns - Date.now) +" second before getting typing this again. - " + message.author);
     } else if (command === "ping") {
         talkedRecently.add(message.author.id);
         setTimeout(() => {talkedRecently.delete(message.author.id);}, cooldowns);
