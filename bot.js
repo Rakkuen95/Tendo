@@ -53,7 +53,7 @@ client.on("message", message => {
           var remainingTime = millisec(timeoutDelay - (new Date().getTime() - userInTimeout.timeoutStart)).format('hh:mm:ss');
           return message.reply(`Time left to use the command: **${remainingTime}**`);
         }
-        message.channel.send('pong);
+        message.channel.send('pong');
         usersInTimeout.push({userID: message.author.id, timeoutStart: new Date().getTime()});//add the user to timeout
         setTimeout(() => {//add a timer to remove him from the timeout
           usersInTimeout.splice(usersInTimeout.indexOf(message.author.id), 1);
