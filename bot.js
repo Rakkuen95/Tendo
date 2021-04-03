@@ -8,7 +8,7 @@ const item = quiz[Math.floor(Math.random() * quiz.length)];
 const filter = response => {
 	return item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
 };
-
+//
 const activities_list = ['+help','+ping']; 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`)
