@@ -49,7 +49,7 @@ client.on("message", message => {
     	}
 
     if (talkedRecently.has(message.author.id)) {
-            message.channel.send("Wait "+ Math.round((cooldowns[message.author.id] - Date.now) +" second before getting typing this again. - " + message.author);
+            message.channel.send("Wait "+ Math.round(cooldowns[message.author.id] - Date.now) +" second before getting typing this again. - " + message.author);
     } else if (command === "ping") {
         talkedRecently.add(message.author.id);
         setTimeout(() => {talkedRecently.delete(message.author.id);}, cooldowns);
