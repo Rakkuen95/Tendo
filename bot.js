@@ -1,7 +1,7 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix = "+";
-const timestamps = new Discord.Collection<string, number>();
+const timestamps = new Discord.Collection();
 const data = require('./data.json');
 const quiz = require('./quiz.json');
 const item = quiz[Math.floor(Math.random() * quiz.length)];
