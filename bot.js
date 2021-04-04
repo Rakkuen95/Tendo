@@ -27,6 +27,27 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
+
+	if (command === "list") {
+	message.channel.send('1/4');
+	message.react('◀️').then(() => message.react('▶️'));
+	const filter = (reaction, user) => {
+	return ['◀️', '▶️'].includes(reaction.emoji.name) && user.id === message.author.id;
+	};
+	message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
+	.then(collected => {
+		const reaction = collected.first();
+		if (reaction.emoji.name === '◀️') {
+			message.edit('2/4');
+		} else {
+			message.reply('4/4');
+		}
+	})
+	}
+
+
+
+
 	if (command === "profile") {
   	const name = args[0];
 		if(args[0].toLowerCase() === "lux"){
