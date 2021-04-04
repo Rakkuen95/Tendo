@@ -45,7 +45,7 @@ client.on("message", message => {
 	.setFooter(data.history1);
 	message.channel.send(embed);
 	} 
-		if(args[0].toLowerCase() === "haidudeptrai"){
+		else if(args[0].toLowerCase() === "haidudeptrai"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -61,7 +61,7 @@ client.on("message", message => {
 	.setFooter(data.history2);
 	message.channel.send(embed);
 	} 
-		if(args[0].toLowerCase() === "sabito12"){
+		else if(args[0].toLowerCase() === "sabito12"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -77,7 +77,7 @@ client.on("message", message => {
 	.setFooter(data.history3);
 	message.channel.send(embed);
 	} 
-		if(args[0].toLowerCase() === "phucs"){
+		else if(args[0].toLowerCase() === "phucs"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -93,7 +93,7 @@ client.on("message", message => {
 	.setFooter(data.history4);
 	message.channel.send(embed);
 	} 
-		if(args[0].toLowerCase() === "shuto1"){
+		else if(args[0].toLowerCase() === "shuto1"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -109,7 +109,7 @@ client.on("message", message => {
 	.setFooter(data.history5);
 	message.channel.send(embed);
 	} 
-		if(args[0].toLowerCase() === "sstupidname"){
+		else if(args[0].toLowerCase() === "sstupidname"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -125,7 +125,7 @@ client.on("message", message => {
 	.setFooter(data.history6);
 	message.channel.send(embed);
 	} 
-		if(args[0].toLowerCase() === "callmegrayz"){
+		else if(args[0].toLowerCase() === "callmegrayz"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -141,7 +141,7 @@ client.on("message", message => {
 	.setFooter(data.history7);
 	message.channel.send(embed);
 	} 
-		if(args[0].toLowerCase() === "gosoranui"){
+		else if(args[0].toLowerCase() === "gosoranui"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -157,7 +157,7 @@ client.on("message", message => {
 	.setFooter(data.history8);
 	message.channel.send(embed);
 	} 
-		if(args[0].toLowerCase() === "thaoubi"){
+		else if(args[0].toLowerCase() === "thaoubi"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -173,7 +173,7 @@ client.on("message", message => {
 	.setFooter(data.history9);
 	message.channel.send(embed);
 	} 
-		else if (!args[0].toLowerCase()) {
+		else if {
 	message.channel.send(data.unc);
 	}}
 
