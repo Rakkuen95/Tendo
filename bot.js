@@ -2,9 +2,9 @@ const { Client, MessageAttachment, MessageEmbed ,Collection } = require('discord
 const client = new Client();
 const prefix = "+";
 
-var minute = 60000;
-var hour = minute * 24;
-var cooldowns = Date.now() + hour * 24;
+const minute = 60000;
+const hour = minute * 24;
+const cooldowns = Date.now() + hour * 24;
 
 const data = require('./data.json');
 const quiz = require('./quiz.json');
@@ -50,9 +50,8 @@ client.on("message", message => {
 	message.channel.send(embed);
 		}
     	}
-
-if(cooldowns[message.author.id]){
 	if (command === "hello") {
+	if(cooldowns[message.author.id]){
 		if(cooldowns[message.author.id] > Date.now()) delete cooldowns[message.author.id];
 		message.channel.send('hhi');
 	} else { 
