@@ -1,4 +1,4 @@
-const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
+const { Client, MessageAttachment, MessageEmbed ,Collection } = require('discord.js');
 const client = new Client();
 const prefix = "+";
 const timestamps = new Discord.Collection();
