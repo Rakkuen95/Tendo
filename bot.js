@@ -41,7 +41,7 @@ client.on("message", message => {
 	.addField('🔋 CONSUME', data.use0, true)
 	.addField('🔋 HAVE', data.coin0, true)
 	.addField(data.space,data.link)
-	.setImage(data.bg)
+	.setImage(data.bg1)
 	.setFooter(data.history0);
 	message.channel.send(embed);
 	} 
