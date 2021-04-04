@@ -1,7 +1,6 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix = "+";
-const talkedRecently = new Set();
 const data = require('./data.json');
 const quiz = require('./quiz.json');
 const item = quiz[Math.floor(Math.random() * quiz.length)];
@@ -46,6 +45,23 @@ client.on("message", message => {
 	message.channel.send(embed);
 		}
     	}
+
+	if (command === "hello") {
+    	const now = Date.now();
+    	const cooldownAmount = 5 * 1000;
+	const timestamps = new Discord.Collection();
+        const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
+	const timeLeft = (expirationTime - now) / 1000;
+   	if (timestamps.has(message.author.id)) {
+        	if (now < expirationTime) {
+            	return message.reply(`You have to wait ${timeLeft.toFixed(1)} seconds to use this command again!`)
+        	}
+    	}
+		else if {
+		return message.reply('Hi')
+    timestamps.set(message.author.id, now);
+    setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
+}
 
 });
 client.login(process.env.BOT_TOKEN);
