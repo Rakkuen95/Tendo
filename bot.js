@@ -57,11 +57,12 @@ client.on("message", message => {
             	return message.reply(`You have to wait ${timeLeft.toFixed(1)} seconds to use this command again!`)
         	}
     	}
-		else if {
+		else {
 		return message.reply('Hi')
     timestamps.set(message.author.id, now);
     setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 }
+	}
 
 });
 client.login(process.env.BOT_TOKEN);
