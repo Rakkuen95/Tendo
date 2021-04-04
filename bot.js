@@ -31,7 +31,7 @@ client.on("message", message => {
 let pages = ["Page one", "Page two", "Page three", "Page four"];
 let page = 1;
 	if (command === "embed") {
-    const embed = new Discord.MessageEmbed()
+    const embed = new MessageEmbed()
         .setColor(0xffffff) //sets color here
         .setFooter(`Page ${page} of ${pages.length}`)
         .setDescription(pages[page - 1])
