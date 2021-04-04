@@ -1,11 +1,40 @@
 {
-  "unc" : "💀 | Bạn đã chưa tạo tài khoản\n*Nộp bất kỳ Shinx để tạo tài khoản*",
-  "title": "> ✦ Event **Re:Sparkle**",
-  "bg": "https://i.imgur.com/yPwTQkO.png",
-  "space": "✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦",
-  "help": "**Thông tin dữ liệu sự kiện của người chơi Festiaaa**\n*Để nộp Shinx liên hệ `Lux` tại In-Game hoặc `Lux#0446`*\n",
-  "link": "[Xem danh sách Reward tại đây.](https://tinyurl.com/5anzuzed)",
-  "name1": "` Festiaaa `","level1": "` C `","shinx1": "` 0 `",
-  "total1": "` 282 `","use1": "` -199 `","coin1": "` 83 `",
-  "history1": "History : S Charizard Mount (100) , S Whiscash Mount (99)"
+  {
+    "unc" : "💀 | Bạn đã chưa tạo tài khoản\n*Nộp bất kỳ Shinx để tạo tài khoản*",
+    "title": "> ✦ Event **Re:Sparkle**",
+    "bg": "https://i.imgur.com/yPwTQkO.png",
+    "space": "✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦",
+    "help": "**Thông tin dữ liệu sự kiện của người chơi Festiaaa**\n*Để nộp Shinx liên hệ `Lux` tại In-Game hoặc `Lux#0446`*\n",
+    "link": "[Xem danh sách Reward tại đây.](https://tinyurl.com/5anzuzed)"
+  }
+  {
+    "name1": "` Festiaaa `",    "level1": "` 1 `",      "shinx1": "` 0 `",
+    "total1": "` 282 `",        "use1": "` -199 `",     "coin1": "` 83 `",
+    "history1": "History : S Charizard Mount (100) , S Whiscash Mount (99)"
+  }
+  {
+    "name2": "` Haidudeptrai `",    "level2": "` 1 `",      "shinx2": "` 0 `",
+    "total2": "` 800 `",        "use2": "` -798 `",     "coin2": "` 2 `",
+    "history2": "History : Shiny Wobbuffet (699) , Crawdaunt (99) ."
+  }
+  {
+    "name3": "` Sabito12 `",    "level3": "` 1 `",      "shinx3": "` 0 `",
+    "total3": "` xxx `",        "use3": "` -xxx `",     "coin3": "` xxx `",
+    "history3": "History : xxx"
+  }
+  {
+    "name4": "` Phucs `",    "level4": "` 1 `",      "shinx4": "` 0 `",
+    "total4": "` xxx `",        "use4": "` -xxx `",     "coin4": "` xxx `",
+    "history4": "History : xxx"
+  }
+  {
+    "name5": "` xxx `",    "level5": "` 1 `",      "shinx5": "` 0 `",
+    "total5": "` xxx `",        "use5": "` -xxx `",     "coin5": "` xxx `",
+    "history5": "History : xxx"
+  }
+  {
+    "name6": "` xxx `",    "level6": "` 1 `",      "shinx6": "` 0 `",
+    "total6": "` xxx `",        "use6": "` -xxx `",     "coin6": "` xxx `",
+    "history6": "History : xxx"
+  }
 }
