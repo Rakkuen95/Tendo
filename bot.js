@@ -44,7 +44,25 @@ client.on("message", message => {
 	.setImage(data.bg)
 	.setFooter(data.history1);
 	message.channel.send(embed);
-	} else {
+	} 
+		if(args[0].toLowerCase() === "haidudeptrai"){
+	message.channel.send(data.title);
+	const embed = new MessageEmbed()
+	.setColor('#fcfcfc')
+	.setDescription(data.help + data.space)
+	.addField('💀 NAME', data.name2, true)
+	.addField('🧠 LEVEL', data.level2, true)
+	.addField('⚡️ SHINX', data.shinx2, true)
+	.addField('🔋 TOTAL', data.total2, true)
+	.addField('🔋 CONSUME', data.use2, true)
+	.addField('🔋 HAVE', data.coin2, true)
+	.addField(data.space,data.link)
+	.setImage(data.bg)
+	.setFooter(data.history2);
+	message.channel.send(embed);
+	} 
+		
+		else {
 	message.channel.send(data.unc);
 	}}
 
