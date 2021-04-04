@@ -30,7 +30,7 @@ client.on("message", message => {
 	if (command === "profile") {
   	const name = args[0];
 		if(args[0].toLowerCase() === "festiaaa"){
-	message.channel.send('> **✦ Event Re:Sparkle**');
+	message.channel.send(title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
 	.setDescription(data.help + data.space)
@@ -44,10 +44,9 @@ client.on("message", message => {
 	.setImage(data.bg)
 	.setFooter(data.history1);
 	message.channel.send(embed);
-		} else {
-	message.channel.send('Bạn chưa tạo tài khoản');
-		}
-    	}
+	} else {
+	message.channel.send('Bạn đã chưa tạo tài khoản\nVui lòng liên hệ Lux để nộp lần đầu để có tài khoản');
+	}}
 
 });
 client.login(process.env.BOT_TOKEN);
