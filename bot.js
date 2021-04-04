@@ -398,7 +398,7 @@ client.on("message", message => {
 	.setFooter(data.history23);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "hoangluvbt"){
+		else if(args[0].toLowerCase() === "hoangluvbt"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -414,7 +414,7 @@ client.on("message", message => {
 	.setFooter(data.history24);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "sakubahp97"){
+		else if(args[0].toLowerCase() === "sakubahp97"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -430,7 +430,7 @@ client.on("message", message => {
 	.setFooter(data.history25);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "kaitopvn"){
+		else if(args[0].toLowerCase() === "kaitopvn"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -446,7 +446,7 @@ client.on("message", message => {
 	.setFooter(data.history26);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "mil"){
+		else if(args[0].toLowerCase() === "mil"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -462,7 +462,7 @@ client.on("message", message => {
 	.setFooter(data.history27);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "yue"){
+		else if(args[0].toLowerCase() === "yue"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -478,7 +478,7 @@ client.on("message", message => {
 	.setFooter(data.history28);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "ho4chanh"){
+		else if(args[0].toLowerCase() === "ho4chanh"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
