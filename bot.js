@@ -35,7 +35,7 @@ client.on("message", message => {
 	.setColor('#fcfcfc')
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name1, true)
-	.addField('🧠 LEVEL', data.rank1, true)
+	.addField('🧠 LEVEL', data.level1, true)
 	.addField('⚡️ SHINX', data.shinx1, true)
 	.addField('🔋 TOTAL', data.total1, true)
 	.addField('🔋 CONSUME', data.use1, true)
