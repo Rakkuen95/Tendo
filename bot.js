@@ -237,7 +237,7 @@ client.on("message", message => {
 	.setFooter(data.history13);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "glxdylan"){
+		else if(args[0].toLowerCase() === "glxdylan"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -253,7 +253,7 @@ client.on("message", message => {
 	.setFooter(data.history14);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "conngoantrogioi"){
+		else if(args[0].toLowerCase() === "conngoantrogioi"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -269,7 +269,7 @@ client.on("message", message => {
 	.setFooter(data.history15);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "boombing3"){
+		else if(args[0].toLowerCase() === "boombing3"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -285,7 +285,7 @@ client.on("message", message => {
 	.setFooter(data.history16);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "trantoan62"){
+		else if(args[0].toLowerCase() === "trantoan62"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -301,7 +301,7 @@ client.on("message", message => {
 	.setFooter(data.history17);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "loc018"){
+		else if(args[0].toLowerCase() === "loc018"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -317,7 +317,7 @@ client.on("message", message => {
 	.setFooter(data.history18);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "magichunterx1"){
+		else if(args[0].toLowerCase() === "magichunterx1"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -559,7 +559,7 @@ client.on("message", message => {
 	.setFooter(data.history33);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "ecsecs"){
+		else if(args[0].toLowerCase() === "ecsecs"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -575,7 +575,7 @@ client.on("message", message => {
 	.setFooter(data.history34);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "mcwick"){
+		else if(args[0].toLowerCase() === "mcwick"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -591,7 +591,7 @@ client.on("message", message => {
 	.setFooter(data.history35);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "ewi"){
+		else if(args[0].toLowerCase() === "ewi"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -607,7 +607,7 @@ client.on("message", message => {
 	.setFooter(data.history36);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "farmervio"){
+		else if(args[0].toLowerCase() === "farmervio"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -623,7 +623,7 @@ client.on("message", message => {
 	.setFooter(data.history37);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "akanaisuki"){
+		else if(args[0].toLowerCase() === "akanaisuki"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -639,7 +639,7 @@ client.on("message", message => {
 	.setFooter(data.history38);
 	message.channel.send(embed);
 	} 
-		if else(args[0].toLowerCase() === "meocoquai"){
+		else if(args[0].toLowerCase() === "meocoquai"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
