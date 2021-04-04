@@ -27,25 +27,43 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
+//pages is very flexible, as long as you change the array at the top you're set
+let pages = ["Page one", "Page two", "Page three", "Page four"];
+let page = 1;
+	if (command === "embed") {
+    const embed = new Discord.MessageEmbed()
+        .setColor(0xffffff) //sets color here
+        .setFooter(`Page ${page} of ${pages.length}`)
+        .setDescription(pages[page - 1])
 
-	if (command === "list") {
-	message.channel.send('1/4');
-	message.react('◀️').then(() => message.react('▶️'));
-	const filter = (reaction, user) => {
-	return ['◀️', '▶️'].includes(reaction.emoji.name) && user.id === message.author.id;
-	};
-	message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
-	.then(collected => {
-		const reaction = collected.first();
-		if (reaction.emoji.name === '◀️') {
-			message.edit('2/4');
-		} else {
-			message.reply('4/4');
-		}
-	})
-	}
+    message.channel.send(embed).then(msg => {
+        msg.react('⏪').then(r => {
+            msg.react('⏩');
+            //filters
+            const isBackwards = (reaction, user) => reaction.emoji.name === '⏪' && user.id === message.author.id;
+            const isForwards = (reaction, user) => reaction.emoji.name === '⏩' && user.id === message.author.id;
 
+            const backwards = msg.createReactionCollector(isBackwards);
+            const forwards = msg.createReactionCollector(isForwards);
 
+            backwards.on("collect", r => {
+                if (page === 1) return;
+                page--;
+                embed.setDescription(pages[page - 1]);
+                embed.setFooter(`Page ${page} of ${pages.length}`);
+                msg.edit(embed)
+            });
+
+            forwards.on("collect", r => {
+                if (page === pages.length) return;
+                page++;
+                embed.setDescription(pages[page - 1]);
+                embed.setFooter(`Page ${page} of ${pages.length}`);
+                msg.edit(embed)
+            });
+        });
+    });
+}
 
 
 	if (command === "profile") {
