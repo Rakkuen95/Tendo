@@ -2,10 +2,15 @@
     "color" : "#fcfcfc",
     "unc" : "💀 | Bạn đã chưa tạo tài khoản\nLiên hệ `Lux` (PRO) hoặc `Lux#0446` (Discord)\n*Nộp bất kỳ Shinx để tạo tài khoản*",
     "title": "> :crown: Event **Re:Sparkle**",
-    "bg": "https://i.imgur.com/jrxtVev.png",
+    "bg": "https://i.imgur.com/h3LZKTE.png",
+    "bg1": "https://i.imgur.com/OdhCHYY.png",
     "space": "✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦",
     "help": "Bạn đang xem thông tin Profile của bạn\nĐể nộp Shinx liên hệ `Lux` tại In-Game hoặc `Lux#0446`\n",
     "link": "[Xem danh sách Reward tại đây.](https://tinyurl.com/5anzuzed)",
+
+    "name0": "` Lux `",        "level0": "` 99 `",        "shinx0": "` 999 `",
+    "total0": "` 9999 `",            "use0": "` -9999 `",       "coin0": "` 0 `",
+    "history0": "Administrator (9999) .",
 
     "name1": "` Festiaaa `",        "level1": "` 1 `",        "shinx1": "` 0 `",
     "total1": "` 282 `",            "use1": "` -199 `",       "coin1": "` 83 `",
