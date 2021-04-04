@@ -1,7 +1,12 @@
 const { Client, MessageAttachment, MessageEmbed ,Collection } = require('discord.js');
 const client = new Client();
 const prefix = "+";
-const timestamps = new Discord.Collection();
+
+var cooldowns = {}
+cooldowns[message.author.id] = Date.now() + hour * 24;
+var minute = 60000;
+var hour = minute * 24;
+
 const data = require('./data.json');
 const quiz = require('./quiz.json');
 const item = quiz[Math.floor(Math.random() * quiz.length)];
@@ -47,23 +52,14 @@ client.on("message", message => {
 		}
     	}
 
+if(cooldowns[message.author.id]){
 	if (command === "hello") {
-    	const now = Date.now();
-    	const cooldownAmount = 5 * 1000;
-	
-        const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
-	const timeLeft = (expirationTime - now) / 1000;
-   	if (timestamps.has(message.author.id)) {
-        	if (now < expirationTime) {
-            	return message.reply(`You have to wait ${timeLeft.toFixed(1)} seconds to use this command again!`)
-        	}
-    	}
-		else {
-		return message.reply('Hi')
-    timestamps.set(message.author.id, now);
-    setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
+		if(cooldowns[message.author.id] > Date.now()) delete cooldowns[message.author.id];
+		message.channel.send('hhi');
+	} else { 
+		message.channel.send("user still has " + Math.round((cooldowns[message.author.id] - Date.now)/minute) + " minutes left")
 }
-	}
+}
 
 });
 client.login(process.env.BOT_TOKEN);
