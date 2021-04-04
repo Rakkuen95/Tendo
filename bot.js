@@ -2,7 +2,6 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix = "+";
 const talkedRecently = new Set();
-const cooldowns[message.author.id] = Date.now() + hour * 24;
 const data = require('./data.json');
 const quiz = require('./quiz.json');
 const item = quiz[Math.floor(Math.random() * quiz.length)];
