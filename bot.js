@@ -44,6 +44,8 @@ client.on("message", message => {
 	.setImage(data.bg)
 	.setFooter(data.history1);
 	message.channel.send(embed);
+		} else {
+	message.channel.send('Bạn chưa tạo tài khoản');
 		}
     	}
 
