@@ -157,7 +157,7 @@ client.on("message", message => {
 	.setFooter(data.history8);
 	message.channel.send(embed);
 	} 
-		if(args[0].toLowerCase() === "callmegrayz"){
+		if(args[0].toLowerCase() === "thaoubi"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
@@ -173,7 +173,6 @@ client.on("message", message => {
 	.setFooter(data.history9);
 	message.channel.send(embed);
 	} 
-
 		else {
 	message.channel.send(data.unc);
 	}}
