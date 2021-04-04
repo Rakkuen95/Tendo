@@ -29,7 +29,7 @@ client.on("message", message => {
 
 	if (command === "profile") {
   	const name = args[0];
-		if(args[0] === "festiaaa"){
+		if(args[0].toLowerCase() === "festiaaa"){
 	message.channel.send('> **✦ Event Re:Sparkle**');
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
