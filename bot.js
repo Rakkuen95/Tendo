@@ -45,7 +45,7 @@ client.on("message", message => {
 	.setFooter(data.history1);
 	message.channel.send(embed);
 	} else {
-	message.channel.send('Bạn đã chưa tạo tài khoản\nVui lòng liên hệ Lux để nộp lần đầu để có tài khoản');
+	message.channel.send(data.unc);
 	}}
 
 });
