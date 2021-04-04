@@ -32,7 +32,7 @@ client.on("message", message => {
 		if(args[0].toLowerCase() === "festiaaa"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name1, true)
 	.addField('🧠 LEVEL', data.level1, true)
@@ -48,7 +48,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "haidudeptrai"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name2, true)
 	.addField('🧠 LEVEL', data.level2, true)
@@ -64,7 +64,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "sabito12"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name3, true)
 	.addField('🧠 LEVEL', data.level3, true)
@@ -80,7 +80,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "phucs"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name4, true)
 	.addField('🧠 LEVEL', data.level4, true)
@@ -96,7 +96,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "shuto1"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name5, true)
 	.addField('🧠 LEVEL', data.level5, true)
@@ -112,7 +112,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "sstupidname"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name6, true)
 	.addField('🧠 LEVEL', data.level6, true)
@@ -128,7 +128,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "callmegrayz"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name7, true)
 	.addField('🧠 LEVEL', data.level7, true)
@@ -144,7 +144,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "gosoranui"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name8, true)
 	.addField('🧠 LEVEL', data.level8, true)
@@ -160,7 +160,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "thaoubi"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name9, true)
 	.addField('🧠 LEVEL', data.level9, true)
@@ -176,7 +176,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "sonnnnnnnnn"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name10, true)
 	.addField('🧠 LEVEL', data.level10, true)
@@ -192,7 +192,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "kaorikousei"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name11, true)
 	.addField('🧠 LEVEL', data.level11, true)
@@ -208,7 +208,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "manhhung2001"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name12, true)
 	.addField('🧠 LEVEL', data.level12, true)
@@ -224,7 +224,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "tyaa"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name13, true)
 	.addField('🧠 LEVEL', data.level13, true)
@@ -240,7 +240,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "glxdylan"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name14, true)
 	.addField('🧠 LEVEL', data.level14, true)
@@ -256,7 +256,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "conngoantrogioi"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name15, true)
 	.addField('🧠 LEVEL', data.level15, true)
@@ -272,7 +272,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "boombing3"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name16, true)
 	.addField('🧠 LEVEL', data.level16, true)
@@ -288,7 +288,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "trantoan62"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name17, true)
 	.addField('🧠 LEVEL', data.level17, true)
@@ -304,7 +304,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "loc018"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name18, true)
 	.addField('🧠 LEVEL', data.level18, true)
@@ -320,7 +320,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "magichunterx1"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name19, true)
 	.addField('🧠 LEVEL', data.level19, true)
@@ -337,7 +337,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "readbeasts"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name20, true)
 	.addField('🧠 LEVEL', data.level20, true)
@@ -353,7 +353,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "musasi"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name21, true)
 	.addField('🧠 LEVEL', data.level21, true)
@@ -369,7 +369,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "dream123456"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name22, true)
 	.addField('🧠 LEVEL', data.level22, true)
@@ -385,7 +385,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "mzdmeliodas"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name23, true)
 	.addField('🧠 LEVEL', data.level23, true)
@@ -401,7 +401,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "hoangluvbt"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name24, true)
 	.addField('🧠 LEVEL', data.level24, true)
@@ -417,7 +417,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "sakubahp97"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name25, true)
 	.addField('🧠 LEVEL', data.level25, true)
@@ -433,7 +433,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "kaitopvn"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name26, true)
 	.addField('🧠 LEVEL', data.level26, true)
@@ -449,7 +449,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "mil"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name27, true)
 	.addField('🧠 LEVEL', data.level27, true)
@@ -465,7 +465,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "yue"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name28, true)
 	.addField('🧠 LEVEL', data.level28, true)
@@ -481,7 +481,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "ho4chanh"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name29, true)
 	.addField('🧠 LEVEL', data.level29, true)
@@ -498,7 +498,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "katcmt4"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name30, true)
 	.addField('🧠 LEVEL', data.level30, true)
@@ -514,7 +514,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "sasuke90"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name31, true)
 	.addField('🧠 LEVEL', data.level31, true)
@@ -530,7 +530,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "misakiyoshikuni"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name32, true)
 	.addField('🧠 LEVEL', data.level32, true)
@@ -546,7 +546,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "kayle2018"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name33, true)
 	.addField('🧠 LEVEL', data.level33, true)
@@ -562,7 +562,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "ecsecs"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name34, true)
 	.addField('🧠 LEVEL', data.level34, true)
@@ -578,7 +578,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "mcwick"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name35, true)
 	.addField('🧠 LEVEL', data.level35, true)
@@ -594,7 +594,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "ewi"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name36, true)
 	.addField('🧠 LEVEL', data.level36, true)
@@ -610,7 +610,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "farmervio"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name37, true)
 	.addField('🧠 LEVEL', data.level37, true)
@@ -626,7 +626,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "akanaisuki"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name38, true)
 	.addField('🧠 LEVEL', data.level38, true)
@@ -642,7 +642,7 @@ client.on("message", message => {
 		else if(args[0].toLowerCase() === "meocoquai"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor('#fcfcfc')
+	.setColor(data.color)
 	.setDescription(data.help + data.space)
 	.addField('💀 NAME', data.name39, true)
 	.addField('🧠 LEVEL', data.level39, true)
