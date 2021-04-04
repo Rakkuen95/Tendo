@@ -1,9 +1,7 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix = "+";
-var cooldowns = {}
-var minute = 60000;
-var hour = minute * 24;
+const talkedRecently = new Set();
 const cooldowns[message.author.id] = Date.now() + hour * 24;
 const data = require('./data.json');
 const quiz = require('./quiz.json');
@@ -49,14 +47,18 @@ client.on("message", message => {
 	message.channel.send(embed);
 		}
     	}
-	if (command === "test") {
-if(cooldowns[message.author.id]){
-if(cooldowns[message.author.id] > Date.now()) delete cooldowns[message.author.id];
-message.channel.send("ping");
-} else if (cooldowns[message.author.id] <= Date.now()) {
-message.channel.send("user still has " + Math.round((cooldowns[message.author.id] - Date.now)/minute) + " minutes left");
-}
-}
+
+    if (talkedRecently.has(message.author.id)) {
+            message.channel.send("Wait 1 minute before getting typing this again. - " + message.author);
+    } else (command === "ping") {
+	message.channel.send('Gruu');
+	}
+        talkedRecently.add(message.author.id);
+        setTimeout(() => {
+          talkedRecently.delete(message.author.id);
+        }, 60000);
+    }
+
 
 });
 client.login(process.env.BOT_TOKEN);
