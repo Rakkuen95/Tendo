@@ -29,7 +29,23 @@ client.on("message", message => {
 
 	if (command === "profile") {
   	const name = args[0];
-		if(args[0].toLowerCase() === "festiaaa"){
+		if(args[0].toLowerCase() === "lux"){
+	message.channel.send(data.title);
+	const embed = new MessageEmbed()
+	.setColor(data.color)
+	.setDescription(data.help + data.space)
+	.addField('💀 NAME', data.name0, true)
+	.addField('🧠 LEVEL', data.level0, true)
+	.addField('⚡️ SHINX', data.shinx0, true)
+	.addField('🔋 TOTAL', data.total0, true)
+	.addField('🔋 CONSUME', data.use0, true)
+	.addField('🔋 HAVE', data.coin0, true)
+	.addField(data.space,data.link)
+	.setImage(data.bg)
+	.setFooter(data.history0);
+	message.channel.send(embed);
+	} 
+		else if(args[0].toLowerCase() === "festiaaa"){
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor(data.color)
