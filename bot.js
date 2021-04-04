@@ -1,6 +1,7 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix = "+";
+const timestamps = new Discord.Collection<string, number>();
 const data = require('./data.json');
 const quiz = require('./quiz.json');
 const item = quiz[Math.floor(Math.random() * quiz.length)];
@@ -49,7 +50,7 @@ client.on("message", message => {
 	if (command === "hello") {
     	const now = Date.now();
     	const cooldownAmount = 5 * 1000;
-	const timestamps = new Discord.Collection();
+	
         const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
 	const timeLeft = (expirationTime - now) / 1000;
    	if (timestamps.has(message.author.id)) {
