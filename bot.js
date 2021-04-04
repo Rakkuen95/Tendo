@@ -61,7 +61,119 @@ client.on("message", message => {
 	.setFooter(data.history2);
 	message.channel.send(embed);
 	} 
-		
+		if(args[0].toLowerCase() === "sabito12"){
+	message.channel.send(data.title);
+	const embed = new MessageEmbed()
+	.setColor('#fcfcfc')
+	.setDescription(data.help + data.space)
+	.addField('💀 NAME', data.name3, true)
+	.addField('🧠 LEVEL', data.level3, true)
+	.addField('⚡️ SHINX', data.shinx3, true)
+	.addField('🔋 TOTAL', data.total3, true)
+	.addField('🔋 CONSUME', data.use3, true)
+	.addField('🔋 HAVE', data.coin3, true)
+	.addField(data.space,data.link)
+	.setImage(data.bg)
+	.setFooter(data.history3);
+	message.channel.send(embed);
+	} 
+		if(args[0].toLowerCase() === "phucs"){
+	message.channel.send(data.title);
+	const embed = new MessageEmbed()
+	.setColor('#fcfcfc')
+	.setDescription(data.help + data.space)
+	.addField('💀 NAME', data.name4, true)
+	.addField('🧠 LEVEL', data.level4, true)
+	.addField('⚡️ SHINX', data.shinx4, true)
+	.addField('🔋 TOTAL', data.total4, true)
+	.addField('🔋 CONSUME', data.use4, true)
+	.addField('🔋 HAVE', data.coin4, true)
+	.addField(data.space,data.link)
+	.setImage(data.bg)
+	.setFooter(data.history4);
+	message.channel.send(embed);
+	} 
+		if(args[0].toLowerCase() === "shuto1"){
+	message.channel.send(data.title);
+	const embed = new MessageEmbed()
+	.setColor('#fcfcfc')
+	.setDescription(data.help + data.space)
+	.addField('💀 NAME', data.name5, true)
+	.addField('🧠 LEVEL', data.level5, true)
+	.addField('⚡️ SHINX', data.shinx5, true)
+	.addField('🔋 TOTAL', data.total5, true)
+	.addField('🔋 CONSUME', data.use5, true)
+	.addField('🔋 HAVE', data.coin5, true)
+	.addField(data.space,data.link)
+	.setImage(data.bg)
+	.setFooter(data.history5);
+	message.channel.send(embed);
+	} 
+		if(args[0].toLowerCase() === "sstupidname"){
+	message.channel.send(data.title);
+	const embed = new MessageEmbed()
+	.setColor('#fcfcfc')
+	.setDescription(data.help + data.space)
+	.addField('💀 NAME', data.name6, true)
+	.addField('🧠 LEVEL', data.level6, true)
+	.addField('⚡️ SHINX', data.shinx6, true)
+	.addField('🔋 TOTAL', data.total6, true)
+	.addField('🔋 CONSUME', data.use6, true)
+	.addField('🔋 HAVE', data.coin6, true)
+	.addField(data.space,data.link)
+	.setImage(data.bg)
+	.setFooter(data.history6);
+	message.channel.send(embed);
+	} 
+		if(args[0].toLowerCase() === "callmegrayz"){
+	message.channel.send(data.title);
+	const embed = new MessageEmbed()
+	.setColor('#fcfcfc')
+	.setDescription(data.help + data.space)
+	.addField('💀 NAME', data.name7, true)
+	.addField('🧠 LEVEL', data.level7, true)
+	.addField('⚡️ SHINX', data.shinx7, true)
+	.addField('🔋 TOTAL', data.total7, true)
+	.addField('🔋 CONSUME', data.use7, true)
+	.addField('🔋 HAVE', data.coin7, true)
+	.addField(data.space,data.link)
+	.setImage(data.bg)
+	.setFooter(data.history7);
+	message.channel.send(embed);
+	} 
+		if(args[0].toLowerCase() === "gosoranui"){
+	message.channel.send(data.title);
+	const embed = new MessageEmbed()
+	.setColor('#fcfcfc')
+	.setDescription(data.help + data.space)
+	.addField('💀 NAME', data.name8, true)
+	.addField('🧠 LEVEL', data.level8, true)
+	.addField('⚡️ SHINX', data.shinx8, true)
+	.addField('🔋 TOTAL', data.total8, true)
+	.addField('🔋 CONSUME', data.use8, true)
+	.addField('🔋 HAVE', data.coin8, true)
+	.addField(data.space,data.link)
+	.setImage(data.bg)
+	.setFooter(data.history8);
+	message.channel.send(embed);
+	} 
+		if(args[0].toLowerCase() === "callmegrayz"){
+	message.channel.send(data.title);
+	const embed = new MessageEmbed()
+	.setColor('#fcfcfc')
+	.setDescription(data.help + data.space)
+	.addField('💀 NAME', data.name9, true)
+	.addField('🧠 LEVEL', data.level9, true)
+	.addField('⚡️ SHINX', data.shinx9, true)
+	.addField('🔋 TOTAL', data.total9, true)
+	.addField('🔋 CONSUME', data.use9, true)
+	.addField('🔋 HAVE', data.coin9, true)
+	.addField(data.space,data.link)
+	.setImage(data.bg)
+	.setFooter(data.history9);
+	message.channel.send(embed);
+	} 
+
 		else {
 	message.channel.send(data.unc);
 	}}
