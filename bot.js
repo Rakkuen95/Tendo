@@ -173,7 +173,7 @@ client.on("message", message => {
 	.setFooter(data.history9);
 	message.channel.send(embed);
 	} 
-		else {
+		else if (!args[0].toLowerCase()) {
 	message.channel.send(data.unc);
 	}}
 
