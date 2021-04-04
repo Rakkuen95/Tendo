@@ -30,7 +30,7 @@ client.on("message", message => {
 	if (command === "profile") {
   	const name = args[0];
 		if(args[0].toLowerCase() === "festiaaa"){
-	message.channel.send(title);
+	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor('#fcfcfc')
 	.setDescription(data.help + data.space)
