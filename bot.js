@@ -1,10 +1,6 @@
-const { Client, MessageAttachment, MessageEmbed ,Collection } = require('discord.js');
+const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix = "+";
-
-const minute = 60000;
-const hour = minute * 24;
-const cooldowns = Date.now() + hour * 24;
 
 const data = require('./data.json');
 const quiz = require('./quiz.json');
@@ -50,14 +46,6 @@ client.on("message", message => {
 	message.channel.send(embed);
 		}
     	}
-	if (command === "hello") {
-	if(cooldowns[message.author.id]){
-		if(cooldowns[message.author.id] > Date.now()) delete cooldowns[message.author.id];
-		message.channel.send('hhi');
-	} else { 
-		message.channel.send("user still has " + Math.round((cooldowns[message.author.id] - Date.now)/minute) + " minutes left")
-}
-}
 
 });
 client.login(process.env.BOT_TOKEN);
