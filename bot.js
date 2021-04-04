@@ -52,7 +52,6 @@ client.on("message", message => {
             message.channel.send("Wait 1 minute before getting typing this again. - " + message.author);
     } else (command === "ping") {
 	message.channel.send('Gruu');
-	}
         talkedRecently.add(message.author.id);
         setTimeout(() => {
           talkedRecently.delete(message.author.id);
