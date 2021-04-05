@@ -2,7 +2,7 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix = "+";
 
-var pages = ["Page 1", "Page 2\nChán quá", "Page 3\nVui quá", "Page 4", "Page 5", "Page 6", "Page 7", "Page 8", "Page 9"];
+var pages = ["Page 1", "Page 2", "Page 3", "Page 4", "Page 5", "Page 6", "Page 7", "Page 8", "Page 9"];
 var page = 1;
 
 const data = require('./data.json');
@@ -30,7 +30,16 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-
+	if (command === 'quiz') {
+	message.channel.send(item.question).then(() => {
+	message.channel.awaitMessages(filter, { max: 1, time: 30000, errors: ['time'] })
+		.then(collected => {
+		message.channel.send(`${collected.first().author} got the correct answer!`);
+		})
+		.catch(collected => {message.channel.send('Looks like nobody got the answer this time.');
+		});
+	});
+	}
 
 	if (command === "embed") {
     	const embed = new MessageEmbed()
