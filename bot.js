@@ -2,8 +2,8 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix = "+";
 
-let pages = ["Page one", "Page two", "Page three", "Page four"];
-let page = 1;
+const pages = ["Page 1", "Page 2", "Page 3", "Page 4", "Page 5", "Page 6", "Page 7", "Page 8", "Page 9"];
+const page = 1;
 
 const data = require('./data.json');
 const quiz = require('./quiz.json');
