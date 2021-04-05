@@ -34,7 +34,7 @@ client.on("message", message => {
 
 	if (command === "embed") {
     	const embed = new MessageEmbed()
-        .setColor(fcfcfc)
+        .setColor(#fcfcfc)
         .setFooter(`Page ${page} of ${pages.length}`)
         .setDescription(pages[page - 1])
     	message.channel.send(embed).then(msg => {
