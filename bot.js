@@ -37,6 +37,7 @@ client.on("message", message => {
         .setColor('#fcfcfc')
         .setFooter(`Page ${page} of ${pages.length}`)
         .setDescription(pages[page - 1])
+	.setImage(data.bg)
     	message.channel.send(embed).then(msg => {
         msg.react('⏪').then(r => {
             msg.react('⏩');
@@ -50,6 +51,7 @@ client.on("message", message => {
                 page--;
                 embed.setDescription(pages[page - 1]);
                 embed.setFooter(`Page ${page} of ${pages.length}`);
+		embed.setImage(data.bg);
                 msg.edit(embed)
             });
             forwards.on("collect", r => {
@@ -57,6 +59,7 @@ client.on("message", message => {
                 page++;
                 embed.setDescription(pages[page - 1]);
                 embed.setFooter(`Page ${page} of ${pages.length}`);
+		embed.setImage(data.bg);
                 msg.edit(embed)
             });
         });
