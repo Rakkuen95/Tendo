@@ -2,7 +2,7 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix = "+";
 
-var pages = ["Page 1", "Page 2", "Page 3", "Page 4", "Page 5", "Page 6", "Page 7", "Page 8", "Page 9"];
+var pages = ["Page 1", "Page 2\nChán quá", "Page 3\nVui quá", "Page 4", "Page 5", "Page 6", "Page 7", "Page 8", "Page 9"];
 var page = 1;
 
 const data = require('./data.json');
@@ -34,7 +34,7 @@ client.on("message", message => {
 
 	if (command === "embed") {
     	const embed = new MessageEmbed()
-        .setColor(0xffffff) //sets color here
+        .setColor(fcfcfc)
         .setFooter(`Page ${page} of ${pages.length}`)
         .setDescription(pages[page - 1])
     	message.channel.send(embed).then(msg => {
@@ -43,10 +43,8 @@ client.on("message", message => {
             //filters
             const isBackwards = (reaction, user) => reaction.emoji.name === '⏪' && user.id === message.author.id;
             const isForwards = (reaction, user) => reaction.emoji.name === '⏩' && user.id === message.author.id;
-
             const backwards = msg.createReactionCollector(isBackwards);
             const forwards = msg.createReactionCollector(isForwards);
-
             backwards.on("collect", r => {
                 if (page === 1) return;
                 page--;
@@ -54,7 +52,6 @@ client.on("message", message => {
                 embed.setFooter(`Page ${page} of ${pages.length}`);
                 msg.edit(embed)
             });
-
             forwards.on("collect", r => {
                 if (page === pages.length) return;
                 page++;
