@@ -2,6 +2,9 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const prefix = "+";
 
+let pages = ["Page one", "Page two", "Page three", "Page four"];
+let page = 1;
+
 const data = require('./data.json');
 const quiz = require('./quiz.json');
 const item = quiz[Math.floor(Math.random() * quiz.length)];
@@ -27,16 +30,14 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-//pages is very flexible, as long as you change the array at the top you're set
-let pages = ["Page one", "Page two", "Page three", "Page four"];
-let page = 1;
+
+
 	if (command === "embed") {
-    const embed = new MessageEmbed()
+    	const embed = new MessageEmbed()
         .setColor(0xffffff) //sets color here
         .setFooter(`Page ${page} of ${pages.length}`)
         .setDescription(pages[page - 1])
-
-    message.channel.send(embed).then(msg => {
+    	message.channel.send(embed).then(msg => {
         msg.react('⏪').then(r => {
             msg.react('⏩');
             //filters
