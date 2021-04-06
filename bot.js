@@ -35,7 +35,7 @@ client.on("message", async message => {
 	.addField('🔋 CONSUME', data.use0, true)
 	.addField('🔋 HAVE', data.coin0, true)
 	.addField('=======================================','Link')
-	.setImage('https://i.imgur.com/TkaLDku.png)
+	.setImage('https://i.imgur.com/TkaLDku.png')
 	await message.channel.send(embed);
 	await message.channel.send(data.history0);
 	} 
