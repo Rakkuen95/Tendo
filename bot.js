@@ -27,10 +27,7 @@ client.on("message", message => {
 	message.channel.send("> Profile của Lux");
 	const attachment = new MessageAttachment('https://i.imgur.com/HUXwKnH.png');
 	message.channel.send(attachment);
-	const embed = new MessageEmbed()
-        .setColor('#fcfcfc')
-        .setDescription('Tổng Cộng : ` 99 ` Kẹo\nSử Dụng : ` 99 ` Kẹo\nCòn Lại : ` 0 ` Kẹo')
-	message.channel.send(embed);
+	message.channel.send('ABC');
 		}
 	}
 	
