@@ -27,12 +27,12 @@ client.on("message", message => {
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor(data.color)
-	.addField('💀 NAME', data.name0, true)
-	.addField('🧠 LEVEL', data.level0, true)
-	.addField('⚡️ SHINX', data.shinx0, true)
-	.addField('🔋 TOTAL', data.total0, true)
-	.addField('🔋 CONSUME', data.use0, true)
-	.addField('🔋 HAVE', data.coin0, true)
+	.addField('Name', data.name0, true)
+	.addField('Level', data.level0, true)
+	.addField('Shinx', data.shinx0, true)
+	.addField('Total', data.total0, true)
+	.addField('Consume', data.use0, true)
+	.addField('Have', data.coin0, true)
 	message.channel.send(embed);
 	} 
 	}
