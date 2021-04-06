@@ -28,10 +28,10 @@ client.on("message", message => {
 	const embed = new MessageEmbed()
 	.setImage('https://media.discordapp.net/attachments/807223949720682516/828820046037123102/expeditionBanner.gif')
 	message.channel.send(embed);
-	const embed = new MessageEmbed()
+	const embed2 = new MessageEmbed()
         .setColor('#fcfcfc')
         .setDescription('Tổng Cộng : ` 99 ` Kẹo\nSử Dụng : ` 99 ` Kẹo\nCòn Lại : ` 0 ` Kẹo')
-	message.channel.send(embed);
+	message.channel.send(embed2);
 		}
 	}
 	
