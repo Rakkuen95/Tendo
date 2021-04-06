@@ -44,6 +44,21 @@ client.on("message", async message => {
 	if (command === "roll") {
 	const rating = Math.floor(Math.random() * 1000) + 1;
 	message.channel.send(rating);
+		if ((rating > 0) && (rating <= 500)){
+			message.channel.send('Tier 1');
+		}
+		if ((rating > 500) && (rating <= 800)){
+			message.channel.send('Tier 2');
+		}
+		if ((rating > 800) && (rating <= 900)){
+			message.channel.send('Tier 3');
+		}
+		if ((rating > 900) && (rating <= 990)){
+			message.channel.send('Tier 4');
+		}
+		if ((rating > 990) && (rating <= 1000)){
+			message.channel.send('Tier 5');
+		}
 	}
 
 });
