@@ -23,14 +23,16 @@ client.on("message", message => {
 
 	if (command === "profile") {
   	const name = args[0];
+		if(args[0].toLowerCase() === "lux"){
 	const embed = new MessageEmbed()
         .setColor('#fcfcfc')
         .setDescription('Tổng Cộng : ` 99 ` Kẹo\nSử Dụng : ` 99 ` Kẹo\nCòn Lại : ` 0 ` Kẹo')
 	const attachment = new MessageAttachment('https://i.imgur.com/HUXwKnH.png');
-		if(args[0].toLowerCase() === "lux"){
 	message.channel.send("> Profile của Lux");
 	message.channel.send(attachment);
 	message.channel.send(embed);
+		}
+	}
 	
 	
 
