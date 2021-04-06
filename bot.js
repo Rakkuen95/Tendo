@@ -31,7 +31,7 @@ client.on("message", message => {
 	const command = args.shift().toLowerCase();
 
 	if (command === 'choose') {
-	message.channel.send("Choose 1 , 2 or 3");
+	message.channel.send("Choose 1 , 2 or 3").then(() => {
 	message.channel.awaitMessages("1", { max: 1, time: 30000, errors: ['time'] })
 		.then(collected => {
 		message.channel.send(`${collected.first().author} got the correct answer!`);
