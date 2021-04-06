@@ -24,10 +24,10 @@ client.on("message", message => {
 	if (command === "profile") {
   	const name = args[0];
 		if(args[0].toLowerCase() === "lux"){
-	message.channel.send("> Profile của Lux");
+	await message.channel.send("> Profile của Lux");
 	const attachment = new MessageAttachment('https://media.discordapp.net/attachments/807223949720682516/828820046037123102/expeditionBanner.gif');
-	message.channel.send(attachment)
-	.then(message.channel.send("1 2 3"))
+	await message.channel.send(attachment);
+	await message.channel.send("1 2 3");
 		};
 	}
 	
