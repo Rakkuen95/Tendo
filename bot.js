@@ -25,13 +25,12 @@ client.on("message", message => {
   	const name = args[0];
 		if(args[0].toLowerCase() === "lux"){
 	message.channel.send("> Profile của Lux");
+	const attachment = new MessageAttachment('https://media.discordapp.net/attachments/807223949720682516/828820046037123102/expeditionBanner.gif');
+	message.channel.send(attachment);
 	const embed = new MessageEmbed()
-	.setImage('https://media.discordapp.net/attachments/807223949720682516/828820046037123102/expeditionBanner.gif')
-	message.channel.send(embed);
-	const embed2 = new MessageEmbed()
         .setColor('#fcfcfc')
         .setDescription('Tổng Cộng : ` 99 ` Kẹo\nSử Dụng : ` 99 ` Kẹo\nCòn Lại : ` 0 ` Kẹo')
-	message.channel.send(embed2);
+	message.channel.send(embed);
 		}
 	}
 	
