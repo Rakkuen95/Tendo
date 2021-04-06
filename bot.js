@@ -21,11 +21,20 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-	if(command === "pf"){
+	if (command === "profile") {
   	const name = args[0];
 		if(args[0].toLowerCase() === "lux"){
-			message.channel.send("Name : ` Lux ` | Level : ` 99 ` | Shinx : ` 999 `\nTotal : ` 9999 ` | Consume : ` -9999 ` | Have : ` 0 `");
-		}
+	message.channel.send(data.title);
+	const embed = new MessageEmbed()
+	.setColor(data.color)
+	.addField('💀 NAME', data.name0, true)
+	.addField('🧠 LEVEL', data.level0, true)
+	.addField('⚡️ SHINX', data.shinx0, true)
+	.addField('🔋 TOTAL', data.total0, true)
+	.addField('🔋 CONSUME', data.use0, true)
+	.addField('🔋 HAVE', data.coin0, true)
+	message.channel.send(embed);
+	} 
 	}
 
 });
