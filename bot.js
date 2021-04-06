@@ -40,7 +40,11 @@ client.on("message", async message => {
 	await message.channel.send('> ||History : Nope .||');
 	} 
 	}
-	
+
+	if (command === "roll") {
+	const rating = Math.floor(Math.random() * 1000) + 1;
+	message.channel.send(rating);
+	}
 
 });
 client.login(process.env.BOT_TOKEN);
