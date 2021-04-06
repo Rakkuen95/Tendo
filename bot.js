@@ -25,8 +25,9 @@ client.on("message", message => {
   	const name = args[0];
 		if(args[0].toLowerCase() === "lux"){
 	message.channel.send("> Profile của Lux");
-	const attachment = new MessageAttachment('https://i.imgur.com/HUXwKnH.png');
-	message.channel.send(attachment);
+	const embed = new MessageEmbed()
+	.setImage('https://i.imgur.com/HUXwKnH.png')
+	message.channel.send(embed);
 	message.channel.send('ABC');
 		}
 	}
