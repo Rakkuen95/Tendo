@@ -27,6 +27,7 @@ client.on("message", async message => {
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor(data.color)
+	.addField('=====================================')
 	.addField('💀 NAME', data.name0, true)
 	.addField('🧠 LEVEL', data.level0, true)
 	.addField('⚡️ SHINX', data.shinx0, true)
@@ -35,10 +36,7 @@ client.on("message", async message => {
 	.addField('🔋 HAVE', data.coin0, true)
 	.setImage('https://i.imgur.com/hluesnR.png')
 	await message.channel.send(embed);
-	const embed2 = new MessageEmbed()
-	.setColor(data.color)
-	.setDescription(data.history0)
-	await message.channel.send(embed2);
+	await message.channel.send(data.history0);
 	} 
 	}
 	
