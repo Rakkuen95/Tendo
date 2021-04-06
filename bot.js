@@ -30,6 +30,18 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
+	if (command === 'choose') {
+	message.channel.send("Choose 1 , 2 or 3");
+	message.channel.awaitMessages("1", { max: 1, time: 30000, errors: ['time'] })
+		.then(collected => {
+		message.channel.send(`${collected.first().author} got the correct answer!`);
+		})
+		.catch(collected => {message.channel.send('Looks like nobody got the answer this time.');
+		});
+	});
+	}
+	
+
 	if (command === 'quiz') {
 	message.channel.send(item.question).then(() => {
 	message.channel.awaitMessages(filter, { max: 1, time: 30000, errors: ['time'] })
