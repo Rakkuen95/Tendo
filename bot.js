@@ -33,9 +33,12 @@ client.on("message", async message => {
 	.addField('🔋 TOTAL', data.total0, true)
 	.addField('🔋 CONSUME', data.use0, true)
 	.addField('🔋 HAVE', data.coin0, true)
-	.setImage('https://imgur.com/hluesnR')
+	.setImage('https://i.imgur.com/hluesnR.png')
 	await message.channel.send(embed);
-	await message.channel.send(data.history0);
+	const embed2 = new MessageEmbed()
+	.setColor(data.color)
+	.setDescription(data.history0)
+	await message.channel.send(embed2);
 	} 
 	}
 	
