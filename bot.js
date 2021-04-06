@@ -3,6 +3,7 @@ const client = new Client();
 const data = require('./data.json');
 const prefix = "+";
 
+
 const activities_list = ['+help','+ping']; 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`)
@@ -59,6 +60,12 @@ client.on("message", async message => {
 		if ((rating > 990) && (rating <= 1000)){
 			message.channel.send('Tier 5');
 		}
+	}
+
+	if (command === "reward") {
+const reward = ['A','B','C'];
+const random = Math.floor(Math.random() * (reward.length - 1) + 1);
+message.channel.send(reward[random]);
 	}
 
 });
