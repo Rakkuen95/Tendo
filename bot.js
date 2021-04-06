@@ -63,8 +63,8 @@ client.on("message", async message => {
 	}
 
 	if (command === "reward") {
-const reward = ['A','B','C'];
-const random = Math.floor(Math.random() * (reward.length - 1) + 1);
+const reward = ['0','A','B','C','D','E','F','G'];
+const random = Math.floor(Math.random() * reward.length);
 message.channel.send(reward[random]);
 	}
 
