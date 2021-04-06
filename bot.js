@@ -21,10 +21,12 @@ client.on("message", message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-	if(command === "pf")
+	if(command === "pf"){
   	const name = args[0];
 		if(args[0].toLowerCase() === "lux"){
 			message.channel.send("Name : ` Lux ` | Level : ` 99 ` | Shinx : ` 999 `\nTotal : ` 9999 ` | Consume : ` -9999 ` | Have : ` 0 `");
+		}
+	}
 
 });
 client.login(process.env.BOT_TOKEN);
