@@ -35,7 +35,7 @@ client.on("message", async message => {
 	.addField('🔋 CONSUME', data.use0, true)
 	.addField('🔋 HAVE', data.coin0, true)
 	.addField('━━━━━━━━━━━━━━━━━━━━━━━━━━━━','[Bạn có thể xem danh sách các Rewards tại đây.](https://tinyurl.com/5anzuzed)')
-	.addFields('aaaaaaaaaaaaaaaaaaaaaa')
+	.normalizeField('aaaaaaa','bbbbbbb')
 	.setImage('https://i.imgur.com/TkaLDku.png')
 	await message.channel.send(embed);
 	await message.channel.send('> ||History : Nope .||');
