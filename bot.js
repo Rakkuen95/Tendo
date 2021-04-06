@@ -26,11 +26,8 @@ client.on("message", message => {
 		if(args[0].toLowerCase() === "lux"){
 	message.channel.send("> Profile của Lux");
 	const attachment = new MessageAttachment('https://media.discordapp.net/attachments/807223949720682516/828820046037123102/expeditionBanner.gif');
-	message.channel.send(attachment);
-	const embed = new MessageEmbed()
-        .setColor('#fcfcfc')
-        .setDescription('Tổng Cộng : ` 99 ` Kẹo\nSử Dụng : ` 99 ` Kẹo\nCòn Lại : ` 0 ` Kẹo')
-	message.channel.send(embed);
+	message.channel.send(attachment)
+	.then(message.channel.send("1 2 3");)
 		}
 	}
 	
