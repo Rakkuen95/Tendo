@@ -23,19 +23,16 @@ client.on("message", message => {
 
 	if (command === "profile") {
   	const name = args[0];
-		if(args[0].toLowerCase() === "lux"){
-	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.setColor(data.color)
-	.addField('Name', data.name0, true)
-	.addField('Level', data.level0, true)
-	.addField('Shinx', data.shinx0, true)
-	.addField('Total', data.total0, true)
-	.addField('Consume', data.use0, true)
-	.addField('Have', data.coin0, true)
+        .setColor('#fcfcfc')
+        .setDescription('Tổng Cộng : ` 99 ` Kẹo\nSử Dụng : ` 99 ` Kẹo\nCòn Lại : ` 0 ` Kẹo')
+	const attachment = new MessageAttachment('https://i.imgur.com/HUXwKnH.png');
+		if(args[0].toLowerCase() === "lux"){
+	message.channel.send("> Profile của Lux");
+	message.channel.send(attachment);
 	message.channel.send(embed);
-	} 
-	}
+	
+	
 
 });
 client.login(process.env.BOT_TOKEN);
