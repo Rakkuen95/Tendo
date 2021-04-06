@@ -24,17 +24,20 @@ client.on("message", async message => {
 	if (command === "profile") {
   	const name = args[0];
 		if(args[0].toLowerCase() === "lux"){
-	await message.channel.send("> Profile của Lux");
-	const attachment = new MessageAttachment('https://media.discordapp.net/attachments/807223949720682516/828820046037123102/expeditionBanner.gif');
-	await message.channel.send(attachment);
+	message.channel.send(data.title);
 	const embed = new MessageEmbed()
-	.addField('Total', '999', true)
-	.addField('Use', '999', true)
-	.addField('Have', '0', true)
-	await message.channel.send(embed);
-		};
+	.setColor(data.color)
+	.addField('💀 NAME', data.name0, true)
+	.addField('🧠 LEVEL', data.level0, true)
+	.addField('⚡️ SHINX', data.shinx0, true)
+	.addField('🔋 TOTAL', data.total0, true)
+	.addField('🔋 CONSUME', data.use0, true)
+	.addField('🔋 HAVE', data.coin0, true)
+	.setImage(data.bg1)
+	.setFooter(data.history0);
+	message.channel.send(embed);
+	} 
 	}
-	
 	
 
 });
