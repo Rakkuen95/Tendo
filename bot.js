@@ -27,14 +27,14 @@ client.on("message", async message => {
 	message.channel.send(data.title);
 	const embed = new MessageEmbed()
 	.setColor(data.color)
-	.setDescription('Chào mừng bạn đến với Event Re:Sparkle\n**━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━┓**')
+	.setDescription('Chào mừng bạn đến với Event Re:Sparkle\n**━━━━━━━━━━━━━━━━━━━━━━━━━━━━**')
 	.addField('💀 NAME', data.name0, true)
 	.addField('🧠 LEVEL', data.level0, true)
 	.addField('⚡️ SHINX', data.shinx0, true)
 	.addField('🔋 TOTAL', data.total0, true)
 	.addField('🔋 CONSUME', data.use0, true)
 	.addField('🔋 HAVE', data.coin0, true)
-	.addField('━━━━━━━━━┻━━━━━━━━━┻━━━━━━━━━┛','[Bạn có thể xem danh sách các Rewards tại đây.](https://tinyurl.com/5anzuzed)')
+	.addField('━━━━━━━━━━━━━━━━━━━━━━━━━━━━','[Bạn có thể xem danh sách các Rewards tại đây.](https://tinyurl.com/5anzuzed)')
 	.setImage('https://i.imgur.com/TkaLDku.png')
 	await message.channel.send(embed);
 	await message.channel.send('> ||History : Nope .||');
