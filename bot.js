@@ -27,7 +27,11 @@ client.on("message", async message => {
 	await message.channel.send("> Profile của Lux");
 	const attachment = new MessageAttachment('https://media.discordapp.net/attachments/807223949720682516/828820046037123102/expeditionBanner.gif');
 	await message.channel.send(attachment);
-	await message.channel.send("1 2 3");
+	const embed = new MessageEmbed()
+	.addField('Total', '999', true)
+	.addField('Use', '999', true)
+	.addField('Have', '0', true)
+	await message.channel.send(embed);
 		};
 	}
 	
