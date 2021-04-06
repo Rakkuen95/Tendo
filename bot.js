@@ -1,17 +1,8 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
+const data = require('./data.json');
 const prefix = "+";
 
-var pages = ["Page 1", "Page 2", "Page 3", "Page 4", "Page 5", "Page 6", "Page 7", "Page 8", "Page 9"];
-var page = 1;
-
-const data = require('./data.json');
-const quiz = require('./quiz.json');
-const item = quiz[Math.floor(Math.random() * quiz.length)];
-const filter = response => {
-	return item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
-};
-//
 const activities_list = ['+help','+ping']; 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`)
@@ -29,65 +20,6 @@ client.on("message", message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
-
-	if (command === 'choose') {
-	const abc = m => m.content.toLowerCase() === '2';
-	message.channel.send("Choose 1 , 2 or 3").then(() => {
-	message.channel.awaitMessages(abc, { max: 1, time: 30000, errors: ['time'] })
-		.then(collected => {
-		message.channel.send(`${collected.first().author} got the correct answer!`);
-		})
-		.catch(collected => {message.channel.send('Looks like nobody got the answer this time.');
-		});
-	});
-	}
-	
-
-	if (command === 'quiz') {
-	message.channel.send(item.question).then(() => {
-	message.channel.awaitMessages(filter, { max: 1, time: 30000, errors: ['time'] })
-		.then(collected => {
-		message.channel.send(`${collected.first().author} got the correct answer!`);
-		})
-		.catch(collected => {message.channel.send('Looks like nobody got the answer this time.');
-		});
-	});
-	}
-
-	if (command === "embed") {
-    	const embed = new MessageEmbed()
-        .setColor('#fcfcfc')
-        .setFooter(`Page ${page} of ${pages.length}`)
-        .setDescription(pages[page - 1])
-	.setImage(data.bg)
-    	message.channel.send(embed).then(msg => {
-        msg.react('⏪').then(r => {
-            msg.react('⏩');
-            //filters
-            const isBackwards = (reaction, user) => reaction.emoji.name === '⏪' && user.id === message.author.id;
-            const isForwards = (reaction, user) => reaction.emoji.name === '⏩' && user.id === message.author.id;
-            const backwards = msg.createReactionCollector(isBackwards);
-            const forwards = msg.createReactionCollector(isForwards);
-            backwards.on("collect", r => {
-                if (page === 1) return;
-                page--;
-                embed.setDescription(pages[page - 1]);
-                embed.setFooter(`Page ${page} of ${pages.length}`);
-		embed.setImage(data.bg);
-                msg.edit(embed)
-            });
-            forwards.on("collect", r => {
-                if (page === pages.length) return;
-                page++;
-                embed.setDescription(pages[page - 1]);
-                embed.setFooter(`Page ${page} of ${pages.length}`);
-		embed.setImage(data.bg);
-                msg.edit(embed)
-            });
-        });
-    });
-}
-
 
 	if (command === "profile") {
   	const name = args[0];
