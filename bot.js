@@ -33,9 +33,9 @@ client.on("message", async message => {
 	.addField('🔋 TOTAL', data.total0, true)
 	.addField('🔋 CONSUME', data.use0, true)
 	.addField('🔋 HAVE', data.coin0, true)
-	.setImage(data.bg1)
-	.setFooter(data.history0);
-	message.channel.send(embed);
+	.setImage('https://imgur.com/hluesnR')
+	await message.channel.send(embed);
+	await message.channel.send(data.history0);
 	} 
 	}
 	
