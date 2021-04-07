@@ -43,22 +43,22 @@ client.on("message", async message => {
 	}
 
 	if (command === "roll") {
-	const rating = Math.floor(Math.random() * 1000) + 1;
+	const rating = Math.floor(Math.random() * 100) + 1;
 	message.channel.send(rating);
-		if ((rating > 0) && (rating <= 500)){
-			message.channel.send('Tier 1');
+		if ((rating > 0) && (rating <= 70)){
+			message.channel.send('Common');
 		}
-		if ((rating > 500) && (rating <= 800)){
-			message.channel.send('Tier 2');
+		if ((rating > 70) && (rating <= 90)){
+			message.channel.send('Uncommon');
 		}
-		if ((rating > 800) && (rating <= 900)){
-			message.channel.send('Tier 3');
+		if ((rating > 90) && (rating <= 96)){
+			message.channel.send('Rare');
 		}
-		if ((rating > 900) && (rating <= 990)){
-			message.channel.send('Tier 4');
+		if ((rating > 96) && (rating <= 99)){
+			message.channel.send('Very Rare');
 		}
-		if ((rating > 990) && (rating <= 1000)){
-			message.channel.send('Tier 5');
+		if ((rating > 99) && (rating <= 100)){
+			message.channel.send('Epic');
 		}
 	}
 
