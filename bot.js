@@ -27,14 +27,7 @@ client.on("message", async message => {
 		if(args[0].toLowerCase() === "lux"){
 		const attachment = new MessageAttachment('https://media.discordapp.net/attachments/807223949720682516/829178333300260924/Vk77q8c.png');
 			await message.channel.send(attachment);
-			await message.channel.send('> **Lux Profile • [ 696175356109127692 ]**\n----------------------------------------------------');
-			const embed = new MessageEmbed()
-			.setColor('#fcfcfc')
-			.setDescription('>> Points <<')
-			.addField('Total','` 999 `',true)
-			.addField('Used','` 999 `',true)
-			.addField('Have','` 999 `',true)
-			await message.channel.send(embed);
+			await message.channel.send('> **Lux Profile • [ 696175356109127692 ]**\n----------------------------------------------------\n> Tổng Điểm : 100 [ ||1000 - 900|| ]');
 		}
 	}
 	
