@@ -25,48 +25,18 @@ client.on("message", async message => {
 	if (command === "profile") {
   	const name = args[0];
 		if(args[0].toLowerCase() === "lux"){
-	message.channel.send(data.title);
-	const embed = new MessageEmbed()
-	.setColor(data.color)
-	.setDescription('**━━━━━━━━━━━━━━━━━━━━━━━━━━━━**')
-	.addField('💀 NAME', data.name0, true)
-	.addField('🧠 LEVEL', data.level0, true)
-	.addField('⚡️ SHINX', data.shinx0, true)
-	.addField('🔋 TOTAL', data.total0, true)
-	.addField('🔋 CONSUME', data.use0, true)
-	.addField('🔋 HAVE', data.coin0, true)
-	.addField('━━━━━━━━━━━━━━━━━━━━━━━━━━━━','[Bạn có thể xem danh sách các Rewards tại đây.](https://tinyurl.com/5anzuzed)')
-	.setImage('https://i.imgur.com/TkaLDku.png')
-	await message.channel.send(embed);
-	await message.channel.send('> ||History : Nope .||');
-	} 
-	}
-
-	if (command === "roll") {
-	const rating = Math.floor(Math.random() * 100) + 1;
-	message.channel.send(rating);
-		if ((rating > 0) && (rating <= 70)){
-			message.channel.send('Common');
-		}
-		if ((rating > 70) && (rating <= 90)){
-			message.channel.send('Uncommon');
-		}
-		if ((rating > 90) && (rating <= 96)){
-			message.channel.send('Rare');
-		}
-		if ((rating > 96) && (rating <= 99)){
-			message.channel.send('Very Rare');
-		}
-		if ((rating > 99) && (rating <= 100)){
-			message.channel.send('Epic');
+		const attachment = new MessageAttachment('https://media.discordapp.net/attachments/807223949720682516/829178333300260924/Vk77q8c.png');
+			await message.channel.send(attachment);
+			await message.channel.send('> **Lux Profile • [ 696175356109127692 ]**\n----------------------------------------------------');
+			const embed = new MessageEmbed()
+			.setColor('WHITE')
+			.addField('Inline field title','Some value here')
+			.addField('Inline field title','Some value here')
+			.addField('Inline field title','Some value here')
+			await message.channel.send(embed);
 		}
 	}
-
-	if (command === "reward") {
-const reward = ['0','A','B','C','D','E','F','G'];
-const random = Math.floor(Math.random() * reward.length);
-message.channel.send(reward[random]);
-	}
+	
 
 });
 client.login(process.env.BOT_TOKEN);
