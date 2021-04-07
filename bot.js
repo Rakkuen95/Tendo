@@ -29,10 +29,11 @@ client.on("message", async message => {
 			await message.channel.send(attachment);
 			await message.channel.send('> **Lux Profile • [ 696175356109127692 ]**\n----------------------------------------------------');
 			const embed = new MessageEmbed()
-			.setColor('WHITE')
-			.addField('Inline field title','Some value here')
-			.addField('Inline field title','Some value here')
-			.addField('Inline field title','Some value here')
+			.setColor('#fcfcfc')
+			.addField('Name','` Lux `')
+			.addField('Total Points','` 999 `')
+			.addField('Used Points','` 999 `')
+			.addField('Have Points','` 999 `')
 			await message.channel.send(embed);
 		}
 	}
