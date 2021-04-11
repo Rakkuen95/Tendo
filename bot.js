@@ -18,7 +18,7 @@ client.on('ready', () => {
 });
 
 client.on('guildMemberAdd', (guildMember) => {
-   guildMember.addRole(guildMember.guild.roles.find(role => role.name === "💀 Member"));
+   guildMember.roles.add(guildMember.guild.roles.find(role => role.name === "💀 Member"));
 });
 
 client.on("message", async message => {
