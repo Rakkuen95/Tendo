@@ -17,9 +17,10 @@ client.on('ready', () => {
 	client.channels.cache.get('827615692685049916').send(embed)
 });
 
-client.on('GuildMemberAdd', member => {
-    console.log('User: ' + member.user.username + ' has joined the server!');
-    member.roles.add("824323401988308992");
+client.on('guildMemberAdd', member => {
+  console.log('User ' + member.user.username + ' has joined the server!')
+  var role = member.guild.roles.cache.find(role => role.name === '💀 Member');
+  member.roles.add(role)
 });
 
 client.on("message", async message => {
