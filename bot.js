@@ -16,7 +16,7 @@ client.on('ready', () => {
 	.setDescription('<:OtachanOmoshiroi:825562968967479306> **`|  ちょっとまってください  !`**')
 	client.channels.cache.get('827615692685049916').send(embed)
 });
-
+//////
 client.on("message", async message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const args = message.content.slice(prefix.length).split(/ +/);
