@@ -17,6 +17,10 @@ client.on('ready', () => {
 	client.channels.cache.get('827615692685049916').send(embed)
 });
 
+client.on('guildMemberAdd', (guildMember) => {
+   guildMember.addRole(guildMember.guild.roles.find(role => role.name === "💀 Member"));
+});
+
 client.on("message", async message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const args = message.content.slice(prefix.length).split(/ +/);
