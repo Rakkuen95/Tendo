@@ -1,7 +1,7 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const data = require('./data.json');
-const prefix = "+";
+const prefix = "^";
 
 
 const activities_list = ['+help','+ping']; 
@@ -15,12 +15,6 @@ client.on('ready', () => {
 	.setColor('#81ff73')
 	.setDescription('<:OtachanOmoshiroi:825562968967479306> **`|  ちょっとまってください  !`**')
 	client.channels.cache.get('827615692685049916').send(embed)
-});
-
-client.on('guildMemberAdd', member => {
-  console.log('User ' + member.user.username + ' has joined the server!')
-  var role = member.guild.roles.cache.find(role => role.name === '💀 Member');
-  member.roles.add(role)
 });
 
 client.on("message", async message => {
