@@ -33,8 +33,7 @@ client.on("message", async message => {
 
     	if (message.content.toLowerCase().startsWith(prefix + 'box')) {
 	const target = message.content.replace(prefix + 'box','');
-	const prize = Math.floor(Math.random() * (data.reward.length - 1) + 1);
-	message.delete({ timeout: 1000 })
+	const prize = Math.floor(Math.random() * data.reward);
 		message.channel.send('**'+target+'**' + ` đã nhận được ${prize}`);
 	}
 
