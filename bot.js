@@ -30,11 +30,13 @@ client.on("message", async message => {
 			await message.channel.send('> **Lux Profile • [ 696175356109127692 ]**\n----------------------------------------------------\n> Tổng Điểm : 100 [ ||1000 - 900|| ]');
 		}
 	}
+
     	if (message.content.toLowerCase().startsWith(prefix + 'box')) {
 	const target = message.content.replace(prefix + 'box','');
-	const rating = Math.floor(Math.random() * 100) + 1;
+	const prize = Math.floor(Math.random() * (data.reward.length - 1) + 1);
 	message.delete({ timeout: 1000 })
-		message.channel.send('**'+target+'**' + ` đã nhận được Coins`);
+		message.channel.send('**'+target+'**' + ` đã nhận được ${prize}`);
+	}
 
 });
 client.login(process.env.BOT_TOKEN);
