@@ -25,7 +25,7 @@ client.on("message", async message => {
 	if (command === "profile") {
   	const name = args[0];
 		if(args[0].toLowerCase() === "lux"){
-		const attachment = new MessageAttachment('https://i.imgur.com/oYcVOzD.png');
+		const attachment = new MessageAttachment('https://i.imgur.com/he9WLN4.png');
 			await message.channel.send(attachment);
 			await message.channel.send('> **Lux Profile • [ 696175356109127692 ]**\n----------------------------------------------------\n> Tổng Điểm : 100 [ ||1000 - 900|| ]');
 		}
