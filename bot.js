@@ -22,19 +22,8 @@ client.on("message", async message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-	if (command === "profile") {
-  	const name = args[0];
-		if(args[0].toLowerCase() === "lux"){
-		const attachment = new MessageAttachment('https://i.imgur.com/he9WLN4.png');
-			await message.channel.send(attachment);
-			await message.channel.send('> **Lux Profile • [ 696175356109127692 ]**\n----------------------------------------------------\n> Tổng Điểm : 100 [ ||1000 - 900|| ]');
-		}
-	}
-
-    	if (message.content.toLowerCase().startsWith(prefix + 'box')) {
-	const target = message.content.replace(prefix + 'box','');
-	const prize = data.reward[Math.floor(Math.random() * data.reward.length)];
-		message.channel.send(prize);
+	if (command === "ping") {
+	message.reply('pong');
 	}
 
 });
