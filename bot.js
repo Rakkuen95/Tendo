@@ -21,6 +21,8 @@ client.on("message", async message => {
 	if (command === "ping") {
 	message.reply('pong');
 	}
-
+	if (command === "abc") {
+	setTimeout(message.reply("bcd"), 3*1000);
+	}
 });
 client.login(process.env.BOT_TOKEN);
