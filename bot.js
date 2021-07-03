@@ -21,12 +21,6 @@ client.on("message", async message => {
 	if (command === "ping") {
 	message.reply('pong');
 	}
-	
-	if (command === "+") {
-	var interval = setInterval (function () {
-		message.channel.send("123")
-	}, 1 * 1000); 
-	}
 
 });
 client.login(process.env.BOT_TOKEN);
