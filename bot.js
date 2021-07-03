@@ -22,8 +22,19 @@ client.on("message", async message => {
 	message.reply('pong');
 	}
 	
- 	if (command === "abcd") {
-   	setTimeout(message.channel.send("test"), 5*1000);
+ 	if (command === "claim") {
+	const usere = message.mentions.users.first();
+	        if (usere) {
+            message.channel.send(`Loading.`)
+                .then(msg => {
+                    setTimeout(function() {
+                        msg.edit(`Loading..`)
+                    }, 10000);
+                    setTimeout(function() {
+                        msg.edit(`Loading...`)
+                    }, 12000)
+                })
+        }
 	}
 	
 });
