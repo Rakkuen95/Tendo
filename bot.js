@@ -1,20 +1,16 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const data = require('./data.json');
-const prefix = "^";
+const prefix = "+";
 
 
-const activities_list = ['+help','+ping']; 
+const activities_list = ['Lux','Beta','Kude','Duc','+']; 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`)
 	setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
         client.user.setActivity(activities_list[index]);
 	}, 10000);
-	const embed = new MessageEmbed()
-	.setColor('#81ff73')
-	.setDescription('<:OtachanOmoshiroi:825562968967479306> **`|  ちょっとまってください  !`**')
-	client.channels.cache.get('827615692685049916').send(embed)
 });
 
 client.on("message", async message => {
