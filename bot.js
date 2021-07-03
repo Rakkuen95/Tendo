@@ -19,11 +19,11 @@ client.on("message", async message => {
 	const command = args.shift().toLowerCase();
 
 	if (command === "ping") {
-	message.reply('pong');
+	message.channel.send('pong');
 	}
 	
 	if (command === "help") {
-	message.reply('Please, Lux-sama is coding my kimochi!');
+	message.channel.send('Please, Lux-sama is coding my kimochi!');
 	}
 
 });
