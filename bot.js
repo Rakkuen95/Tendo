@@ -22,20 +22,9 @@ client.on("message", async message => {
 	message.reply('pong');
 	}
 	
- 	if (command === "claim") {
-	const usere = message.mentions.users.first();
-	        if (usere) {
-            message.channel.send(`Loading.`)
-                .then(msg => {
-                    setTimeout(function() {
-                        msg.edit(`Loading..`)
-                    }, 10000);
-                    setTimeout(function() {
-                        msg.edit(`Loading...`)
-                    }, 12000)
-                })
-        }
+	if (command === "help") {
+	message.reply('Please, Lux-sama is coding my kimochi!');
 	}
-	
+
 });
 client.login(process.env.BOT_TOKEN);
