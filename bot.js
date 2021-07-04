@@ -44,5 +44,20 @@ client.on("message", async message => {
 	}
 	}
 
+	if (command === "eris") {
+	try {
+            message.channel.send(`Loading.`)
+                .then(msg => {
+                    setTimeout(function() {
+                        msg.edit(`Loading..`)
+                    }, 5000);
+                    setTimeout(function() {
+                        msg.edit(`Loading...`)
+                    }, 5000)
+                })
+		} catch (error) {
+	}
+	}
+
 });
 client.login(process.env.BOT_TOKEN);
