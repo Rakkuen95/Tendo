@@ -26,8 +26,10 @@ client.on("message", async message => {
 	message.channel.send('Please, Lux-sama is coding my kimochi!');
 	}
 
-	if (command === "hello") {
-	setTimeout(function(){message.channel.send('hi')}, 5000);
+	if (command === "+") {
+	message.channel.send('Vợ sẽ gọi chồng trong 2 phút nữa nha!');
+	message.delete(5000)
+	setTimeout(function(){message.reply('Tới giờ claim rồi đó chồng ơi!')}, 120*1000);
 	}
 
 });
