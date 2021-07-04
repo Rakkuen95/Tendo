@@ -48,12 +48,12 @@ client.on("message", async message => {
 	try {
             message.channel.send(`Loading.`)
                 .then(msg => {
-                    await setTimeout(function() {
+                    setTimeout(function() {
                         msg.edit(`Loading..`)
                     }, 2000);
-                    await setTimeout(function() {
+                    setTimeout(function() {
                         msg.edit(`Loading...`)
-                    }, 2000)
+                    }, 4000)
                 })
 		} catch (error) {
 	}
