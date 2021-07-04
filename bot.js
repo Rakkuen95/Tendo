@@ -27,12 +27,21 @@ client.on("message", async message => {
 	}
 
 	if (command === "+") {
-		try {
-			const sentMessage = await message.channel.send('Vợ sẽ gọi chồng trong 2 phút nữa nha!');
-			await sentMessage.delete({ timeout: 5000 });
-			await setTimeout(function(){message.reply('Tới giờ claim rồi đó chồng ơi!')}, 120*1000);
+	try {
+		const sentMessage = await message.channel.send('Vợ sẽ gọi chồng trong 2 phút nữa nha!');
+		await sentMessage.delete({ timeout: 5000 });
+		await setTimeout(function(){message.reply('Tới giờ claim rồi đó chồng ơi!')}, 120*1000);
 		} catch (error) {
-		}
+	}
+	}
+
+	if (command === "++") {
+	try {
+		const sentMessage = await message.channel.send('Vợ sẽ gọi chồng trong 3 phút nữa nha!');
+		await sentMessage.delete({ timeout: 5000 });
+		await setTimeout(function(){message.reply('Tới giờ claim rồi đó chồng ơi!')}, 180*1000);
+		} catch (error) {
+	}
 	}
 
 });
