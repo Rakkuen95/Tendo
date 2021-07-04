@@ -26,9 +26,9 @@ client.on("message", async message => {
 	message.channel.send('Please, Lux-sama is coding my kimochi!');
 	}
 
-    if (message.mentions.has(client.user.id)) {
-        message.channel.send("Hello there!");
-	    	}
+	if (command === "hello") {
+	setTimeout(function(){message.channel.send('hi')}, 5000);
+	}
 
-});
+}
 client.login(process.env.BOT_TOKEN);
