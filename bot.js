@@ -60,7 +60,7 @@ client.on("message", async message => {
 	}
 	if (command === "vote") {
 	message.channel.send('vote');
-message.react('👍').then(() => message.react('👎'));
+	await message.react('👍').then(() => message.react('👎'));
 
 const filter = (reaction, user) => {
 	return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
