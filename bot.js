@@ -1,7 +1,7 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const data = require('./data.json');
-const prefix = "+";
+const prefix = "-";
 
 
 const activities_list = ['Lux','Beta','Kude','Duc','+']; 
@@ -26,7 +26,7 @@ client.on("message", async message => {
 	message.channel.send('Please, Lux-sama is coding my kimochi!');
 	}
 
-	if (command === "+") {
+	if (command === "-") {
 	try {
 		const sentMessage = await message.channel.send('Vợ sẽ gọi chồng trong 2 phút nữa nha!');
 		await sentMessage.delete({ timeout: 5000 });
@@ -35,7 +35,7 @@ client.on("message", async message => {
 	}
 	}
 
-	if (command === "++") {
+	if (command === "--") {
 	try {
 		const sentMessage = await message.channel.send('Vợ sẽ gọi chồng trong 3 phút nữa nha!');
 		await sentMessage.delete({ timeout: 5000 });
