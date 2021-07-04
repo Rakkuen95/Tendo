@@ -30,5 +30,5 @@ client.on("message", async message => {
 	setTimeout(function(){message.channel.send('hi')}, 5000);
 	}
 
-})
+});
 client.login(process.env.BOT_TOKEN);
