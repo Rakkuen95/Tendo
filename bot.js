@@ -58,6 +58,27 @@ client.on("message", async message => {
 		} catch (error) {
 	}
 	}
+	if (command === "vote") {
+message.react('👍').then(() => message.react('👎'));
+
+const filter = (reaction, user) => {
+	return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
+};
+
+message.awaitReactions(filter, { max: 1, time: 15000, errors: ['time'] })
+	.then(collected => {
+		const reaction = collected.first();
+
+		if (reaction.emoji.name === '👍') {
+			message.reply('you reacted with a thumbs up.');
+		} else {
+			message.reply('you reacted with a thumbs down.');
+		}
+	})
+	.catch(collected => {
+		message.reply('you reacted with neither a thumbs up, nor a thumbs down.');
+	});
+	}
 
 });
 client.login(process.env.BOT_TOKEN);
