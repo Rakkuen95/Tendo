@@ -2,7 +2,8 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const data = require('./data.json');
 const prefix = "-";
-
+const fs = require("fs");
+let db = JSON.parse(fs.readFileSync("./database.json", "utf8"));
 
 const activities_list = ['Lux','Beta','Kude','Duc','+']; 
 client.on('ready', () => {
@@ -13,73 +14,41 @@ client.on('ready', () => {
 	}, 10000);
 });
 
-client.on("message", async message => {
-	if (!message.content.startsWith(prefix) || message.author.bot) return;
-	const args = message.content.slice(prefix.length).split(/ +/);
-	const command = args.shift().toLowerCase();
+client.on("message", message => {
+    if (message.author.bot) return; // ignore bots
 
-	if (command === "ping") {
-	message.channel.send('pong');
-	}
-	
-	if (command === "help") {
-	message.channel.send('Please, Lux-sama is coding my kimochi!');
-	}
+    // if the user is not on db add the user and change his values to 0
+    if (!db[message.author.id]) db[message.author.id] = {
+        xp: 0,
+        level: 0
+      };
+    db[message.author.id].xp++;
+    let userInfo = db[message.author.id];
+    if(userInfo.xp > 100) {
+        userInfo.level++
+        userInfo.xp = 0
+        message.reply("Congratulations, you level up")
+    }
+    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    const cmd = args.shift().toLowerCase();
+    if(cmd === "info") {
+        let userInfo = db[message.author.id];
+        let member = message.mentions.members.first();
+        let embed = new Discord.RichEmbed()
+        .setColor(0x4286f4)
+        .addField("Level", userInfo.level)
+        .addField("XP", userInfo.xp+"/100");
+        if(!member) return message.channel.sendEmbed(embed)
+        let memberInfo = db[member.id]
+        let embed2 = new Discord.RichEmbed()
+        .setColor(0x4286f4)
+        .addField("Level", memberInfo.level)
+        .addField("XP", memberInfo.xp+"/100")
+        message.channel.sendEmbed(embed2)
+    }
+    fs.writeFile("./database.json", JSON.stringify(db), (x) => {
+        if (x) console.error(x)
+      });
+})
 
-	if (command === "-") {
-	try {
-		const sentMessage = await message.channel.send('Vợ sẽ gọi chồng trong 2 phút nữa nha!');
-		await sentMessage.delete({ timeout: 5000 });
-		await setTimeout(function(){message.reply('Tới giờ claim rồi đó chồng ơi!')}, 120*1000);
-		} catch (error) {
-	}
-	}
-
-	if (command === "--") {
-	try {
-		const sentMessage = await message.channel.send('Vợ sẽ gọi chồng trong 3 phút nữa nha!');
-		await sentMessage.delete({ timeout: 5000 });
-		await setTimeout(function(){message.reply('Tới giờ claim rồi đó chồng ơi!')}, 180*1000);
-		} catch (error) {
-	}
-	}
-
-	if (command === "eris") {
-	try {
-            message.channel.send(`Loading.`)
-                .then(msg => {
-                    setTimeout(function() {
-                        msg.edit(`Loading..`)
-                    }, 2000);
-                    setTimeout(function() {
-                        msg.edit(`Loading...`)
-                    }, 4000)
-                })
-		} catch (error) {
-	}
-	}
-	if (command === "vote") {
-	message.channel.send('vote');
-	await message.react('👍').then(() => message.react('👎'));
-
-const filter = (reaction, user) => {
-	return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
-};
-
-message.awaitReactions(filter, { max: 1, time: 15000, errors: ['time'] })
-	.then(collected => {
-		const reaction = collected.first();
-
-		if (reaction.emoji.name === '👍') {
-			message.reply('you reacted with a thumbs up.');
-		} else {
-			message.reply('you reacted with a thumbs down.');
-		}
-	})
-	.catch(collected => {
-		message.reply('you reacted with neither a thumbs up, nor a thumbs down.');
-	});
-	}
-
-});
 client.login(process.env.BOT_TOKEN);
