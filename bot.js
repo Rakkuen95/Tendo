@@ -13,7 +13,7 @@ client.on('ready', () => {
         client.user.setActivity(activities_list[index]);
 	}, 10000);
 });
-
+//
 client.on("message", message => {
     if (message.author.bot) return; // ignore bots
 
