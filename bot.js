@@ -17,7 +17,6 @@ client.on('ready', () => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
         client.user.setActivity(activities_list[index]);
 	}, 10000);
-	client.users.cache.get('703960869071093840').send('<message>');
 
 });
 
@@ -26,17 +25,15 @@ client.on("message", async message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-	if (command === "hello") {
-        // Send a message if the user is not in the cooldown set
-        if (!cooldown.has(message.author.id)) {
-       	addToCooldown(message.author.id);
-	message.channel.send('hello');
-	} else {
-	const sentMessage = await message.channel.send('Từ từ thôi chồng!');
-	await sentMessage.delete({ timeout: 2000 });
-        }
-    }
+	if (command === "ping") {
+	const user = message.mentions.users.first();
+	message.channel.send(`Hi, ${user}.`);
+	}
 
+	if (command === "ping2") {
+	const user = message.mentions.users.first();
+	message.channel.send('Hi, <@user id>.');
+	}
 	
 	if (command === "ping") {
 	message.channel.send('pong');
