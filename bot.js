@@ -2,10 +2,13 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const data = require('./data.json');
 const prefix = "-";
-var cooldowns = {}
-var minute = 60000;
-var hour = minute * 24;
-cooldowns[message.author.id] = Date.now() + hour * 24;
+const cooldown = new Set();
+function addToCooldown(ID) {
+    cooldown.add(ID);
+    setTimeout(() => {
+        cooldown.delete(ID);
+    }, 5000 /* 5 seconds */);
+}
 
 const activities_list = ['Lux','Beta','Kude','Duc','UwU']; 
 client.on('ready', () => {
@@ -21,10 +24,13 @@ client.on("message", async message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-if(cooldowns[message.author.id]){
-if(cooldowns[message.author.id] > Date.now()) delete cooldowns[message.author.id];
-else console.log("user still has " + Math.round((cooldowns[message.author.id] - Date.now)/minute) + " minutes left")
-}
+	if (command === "h") {
+        // Send a message if the user is not in the cooldown set
+        if (!cooldown.has(message.author.id)) {
+            addToCooldown(message.author.id);
+            message.channel.send('h');
+        }
+    }
 
 	if (command === "ping") {
 	message.channel.send('pong');
