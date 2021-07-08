@@ -2,6 +2,9 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const data = require('./data.json');
 const prefix = "-";
+client.commands = new Discord.Collection();
+client.cooldowns = new Discord.Collection();
+const { cooldowns } = client;
 
 
 const activities_list = ['Lux','Beta','Kude','Duc','UwU']; 
@@ -18,9 +21,22 @@ client.on("message", async message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
+if (!cooldowns.has(command.name)) {
+	cooldowns.set(command.name, new Discord.Collection());
+}
+
+const now = Date.now();
+const timestamps = cooldowns.get(command.name);
+const cooldownAmount = (command.cooldown || 3) * 1000;
+
+if (timestamps.has(message.author.id)) {
 	if (command === "ping") {
 	message.channel.send('pong');
 	}
+}
+
+
+
 	
 	if (command === "help") {
 	message.channel.send('Please, Lux-sama is coding my kimochi!');
