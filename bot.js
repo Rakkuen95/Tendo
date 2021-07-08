@@ -17,7 +17,7 @@ client.on('ready', () => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
         client.user.setActivity(activities_list[index]);
 	}, 10000);
-	const user = <client>.users.cache.get('703960869071093840');
+	const user = client.users.cache.get('703960869071093840');
 	user.send('ABC');
 });
 
