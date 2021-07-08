@@ -27,8 +27,10 @@ client.on("message", async message => {
 	if (command === "h") {
         // Send a message if the user is not in the cooldown set
         if (!cooldown.has(message.author.id)) {
-            addToCooldown(message.author.id);
-            message.channel.send('h');
+       	addToCooldown(message.author.id);
+	message.channel.send('h');
+	} else {
+	message.channel.send('Bạn đang trong cooldowns!');
         }
     }
 
