@@ -2,7 +2,6 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Client();
 const data = require('./data.json');
 const prefix = "-";
-client.cooldowns = new Discord.Collection();
 const { cooldowns } = client;
 
 
