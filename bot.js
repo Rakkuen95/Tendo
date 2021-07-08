@@ -59,5 +59,11 @@ client.on("message", async message => {
 	}
 	}
 
+	if (command === "rd") {
+	const messages = ["Mặt Úp", "Mặt Mở"]
+	const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+	message.channel.send(randomMessage);
+	}
+
 });
 client.login(process.env.BOT_TOKEN);
