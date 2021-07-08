@@ -17,7 +17,8 @@ client.on('ready', () => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
         client.user.setActivity(activities_list[index]);
 	}, 10000);
-	client.users.get("703960869071093840").send("someMessage");
+	client.users.cache.get('703960869071093840').send('<message>');
+
 });
 
 client.on("message", async message => {
