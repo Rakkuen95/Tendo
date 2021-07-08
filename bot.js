@@ -24,24 +24,22 @@ client.on("message", async message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-	if (command === "h") {
+	if (command === "hello") {
         // Send a message if the user is not in the cooldown set
         if (!cooldown.has(message.author.id)) {
        	addToCooldown(message.author.id);
-	message.channel.send('h');
+	message.channel.send('hello');
 	} else {
-	message.channel.send('Bạn đang trong cooldowns!');
+	const sentMessage = await message.channel.send('Từ từ thôi chồng!');
+	await sentMessage.delete({ timeout: 2000 });
         }
     }
 
+	
 	if (command === "ping") {
 	message.channel.send('pong');
 	}
 
-
-
-
-	
 	if (command === "help") {
 	message.channel.send('Please, Lux-sama is coding my kimochi!');
 	}
