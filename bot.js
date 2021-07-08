@@ -29,7 +29,7 @@ client.on("message", async message => {
 
 	
 	if (command === "ping") {
-	message.channel.send(`🏓Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
+	message.channel.send(`🏓Latency là ${Date.now() - message.createdTimestamp}ms.\nAPI Latency là ${Math.round(client.ws.ping)}ms`);
 	}
 
 	if (command === "help") {
