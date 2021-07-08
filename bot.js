@@ -25,18 +25,11 @@ client.on("message", async message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-	if (command === "ping") {
-	const user = message.mentions.users.first();
-	message.channel.send(`Hi, ${user}.`);
-	}
 
-	if (command === "ping2") {
-	const user = message.mentions.users.first();
-	message.channel.send('Hi, <@user id>.');
-	}
+
 	
 	if (command === "ping") {
-	message.channel.send('pong');
+	message.channel.send('Ping của Eris hiện tại là ${client.ws.ping}ms!');
 	}
 
 	if (command === "help") {
