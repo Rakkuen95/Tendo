@@ -17,6 +17,8 @@ client.on('ready', () => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
         client.user.setActivity(activities_list[index]);
 	}, 10000);
+	const user = <client>.users.cache.get('703960869071093840');
+	user.send('ABC');
 });
 
 client.on("message", async message => {
@@ -44,17 +46,12 @@ client.on("message", async message => {
 	message.channel.send('Please, Lux-sama is coding my kimochi!');
 	}
 
-	if (command === "-") {
-        if (!cooldown.has(message.author.id)) {
-       	addToCooldown(message.author.id);	
+	if (command === "-") {	
 	try {
 		const sentMessage = await message.channel.send('Vợ sẽ gọi chồng trong 2 phút nữa nha!');
 		await sentMessage.delete({ timeout: 5000 });
 		await setTimeout(function(){message.reply('Tới giờ claim rồi đó chồng ơi!')}, 120*1000);
 		} catch (error) {
-	} else {
-	const sentMessage = await message.channel.send('Từ từ thôi chồng!');
-	await sentMessage.delete({ timeout: 2000 });
 	}
 	}
 
