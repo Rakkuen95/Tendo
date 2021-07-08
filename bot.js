@@ -45,11 +45,16 @@ client.on("message", async message => {
 	}
 
 	if (command === "-") {
+        if (!cooldown.has(message.author.id)) {
+       	addToCooldown(message.author.id);	
 	try {
 		const sentMessage = await message.channel.send('Vợ sẽ gọi chồng trong 2 phút nữa nha!');
 		await sentMessage.delete({ timeout: 5000 });
 		await setTimeout(function(){message.reply('Tới giờ claim rồi đó chồng ơi!')}, 120*1000);
 		} catch (error) {
+	} else {
+	const sentMessage = await message.channel.send('Từ từ thôi chồng!');
+	await sentMessage.delete({ timeout: 2000 });
 	}
 	}
 
