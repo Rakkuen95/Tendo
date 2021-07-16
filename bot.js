@@ -21,7 +21,7 @@ client.on("message", async message => {
 
 	if (command === "server") {
     	const Embed = new Discord.MessageEmbed()
-                .setColor('#36393F')
+		.setColor('#36393F')
                 .setTitle("Thông Tin Máy Chủ")
 		.setThumbnail(message.guild.iconURL())
                 .setDescription(`→ **${message.guild}**`)
@@ -31,9 +31,8 @@ client.on("message", async message => {
                 .addField("**Số Lượng Biểu Cảm**", message.guild.emojis.cache.size +` Biểu Cảm`)
                 .addField("**Số Lượng Cấp Bậc**", message.guild.roles.cache.size +` Cấp Bậc`)
                 .addField("**Số Lượng Mục Kênh**", message.guild.channels.cache.size +` Mục Kênh`)
-            message.channel.send(Embed)
+	message.channel.send(Embed)
 	}
-
 
 	if (command === "hi") {
 	message.channel.send(`Chào `+message.author.username+`-sama`);
@@ -65,7 +64,9 @@ client.on("message", async message => {
 	}
 	}
 
-	if (command === "eris") {
+	if (command === "dice") {
+	const numbers = ["1","2","3","4","5","6"]
+	const dice = numbers[Math.floor(Math.random() * numbers.length)];
 	try {
             message.channel.send(`Loading.`)
                 .then(msg => {
@@ -75,6 +76,9 @@ client.on("message", async message => {
                     setTimeout(function() {
                         msg.edit(`Loading...`)
                     }, 4000)
+                    setTimeout(function() {
+                        msg.edit(dice)
+                    }, 6000)
                 })
 		} catch (error) {
 	}
