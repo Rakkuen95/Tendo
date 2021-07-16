@@ -77,7 +77,7 @@ client.on("message", async message => {
                         msg.edit(`Loading...`)
                     }, 4000)
                     setTimeout(function() {
-                        msg.edit(dice)
+                        msg.edit("Xúc xắc tung mặt **` "+dice+" `**")
                     }, 6000)
                 })
 		} catch (error) {
