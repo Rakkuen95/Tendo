@@ -68,26 +68,20 @@ client.on("message", async message => {
 	const numbers = ["1","2","3","4","5","6"]
 	const dice = numbers[Math.floor(Math.random() * numbers.length)];
 	try {
-            message.channel.send(`Loading.`)
+            message.channel.send(`🎲 | Đang lắc xúc xắc.`)
                 .then(msg => {
                     setTimeout(function() {
-                        msg.edit(`Đang lắc..`)
+                        msg.edit(`🎲 | Đang lắc xúc xắc..`)
                     }, 1500);
                     setTimeout(function() {
-                        msg.edit(`Đang lắc...`)
+                        msg.edit(`🎲 | Đang lắc xúc xắc...`)
                     }, 3000)
                     setTimeout(function() {
-                        msg.edit("🎲 Viên xúc xắc tung mặt **` "+dice+" `**")
+                        msg.edit("🎲 | Viên xúc xắc tung mặt **` "+dice+" `**")
                     }, 5000)
                 })
 		} catch (error) {
 	}
-	}
-
-	if (command === "rd") {
-	const messages = ["Mặt Úp", "Mặt Mở"]
-	const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-	message.channel.send(randomMessage);
 	}
 
 });
