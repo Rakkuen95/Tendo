@@ -34,18 +34,12 @@ client.on("message", async message => {
 	message.channel.send(Embed)
 	}
 
-	if (command === "del") {
-        if (message.member.hasPermission("DELETE")) {
-            message.channel.fetchMessages()
-               .then(function(list){
-                    message.channel.bulkDelete(list);
-                }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")})                        
+	if (command === "hi") {
+	if (message.member.hasPermission("DELETE")) {
+	message.channel.send(`Chào `+message.author.username+`-sama`)
+		.then(function(err){message.channel.send("ERROR")})
         }
     }
-
-	if (command === "hi") {
-	message.channel.send(`Chào `+message.author.username+`-sama`);
-	}
 
 	if (command === "avatar") {
 	await message.channel.send(`Avatar của `+message.author.username+` nè :`);
