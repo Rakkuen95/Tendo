@@ -22,7 +22,7 @@ client.on("message", async message => {
 	const command = args.shift().toLowerCase();
 
 	if (command === "hi") {
-        if (message.member.roles.has(message.guild.roles.find("name", "deptrai"))) {
+        if (message.member.roles.find(r => r.name === "deptrai")) {
 	message.channel.send('hello');
 	} else {
 	message.channel.send('no thank');
