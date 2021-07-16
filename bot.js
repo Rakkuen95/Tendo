@@ -25,6 +25,7 @@ client.on("message", async message => {
                 .setColor('#b700ff')
                 .setTitle("Server Info")
                 .setImage(ServerLogo)
+		.setThumbnail('https://i.imgur.com/wSTFkRM.png')
                 .setDescription(`About **${message.guild}**`)
                 .addField("**Date Created**", `Server Created on **${message.guild.createdAt.toLocaleString()}**`)
                 .addField("**Owner**", `The Owner of This Server is ${message.guild.owner}`)
