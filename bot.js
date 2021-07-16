@@ -34,6 +34,15 @@ client.on("message", async message => {
 	message.channel.send(Embed)
 	}
 
+	if (command === "del") {
+        async function clear() {
+            msg.delete();
+            const fetched = await msg.channel.fetchMessages({limit: 99});
+            msg.channel.bulkDelete(fetched);
+        }
+        clear();
+	}
+
 	if (command === "hi") {
 	message.channel.send(`Chào `+message.author.username+`-sama`);
 	}
