@@ -19,13 +19,13 @@ client.on("message", async message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-	if (command === "avatar") {	
+	if (command === "avatar") {
+	await message.channel.send'Ảnh Avatar của chồng nè :');
     	const Embed = new Discord.MessageEmbed()
         .setColor('#36393F')
         .setImage(message.author.displayAvatarURL());
-    	message.channel.send(Embed);
+    	await message.channel.send(Embed);
 	}
-	
 	
 	if (command === "-") {	
 	try {
