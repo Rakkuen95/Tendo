@@ -71,14 +71,14 @@ client.on("message", async message => {
             message.channel.send(`Loading.`)
                 .then(msg => {
                     setTimeout(function() {
-                        msg.edit(`Loading..`)
-                    }, 2000);
+                        msg.edit(`Đang lắc..`)
+                    }, 1500);
                     setTimeout(function() {
-                        msg.edit(`Loading...`)
-                    }, 4000)
+                        msg.edit(`Đang lắc...`)
+                    }, 3000)
                     setTimeout(function() {
-                        msg.edit("Xúc xắc tung mặt **` "+dice+" `**")
-                    }, 6000)
+                        msg.edit("🎲 Viên xúc xắc tung mặt **` "+dice+" `**")
+                    }, 5000)
                 })
 		} catch (error) {
 	}
