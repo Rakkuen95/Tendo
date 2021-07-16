@@ -14,10 +14,19 @@ client.on('ready', () => {
 
 });
 
+
+
 client.on("message", async message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
+
+	if (command === "hi") {
+        if (message.member.hasPermission("DELETE")) {
+	message.channel.send('hello');
+	} else {
+	message.channel.send('no thank');
+	}}
 
 	if (command === "server") {
     	const Embed = new Discord.MessageEmbed()
@@ -31,15 +40,8 @@ client.on("message", async message => {
                 .addField("**Số Lượng Biểu Cảm**", message.guild.emojis.cache.size +` Biểu Cảm`)
                 .addField("**Số Lượng Cấp Bậc**", message.guild.roles.cache.size +` Cấp Bậc`)
                 .addField("**Số Lượng Mục Kênh**", message.guild.channels.cache.size +` Mục Kênh`)
-	message.channel.send(Embed)
+	message.channel.send(Embed);
 	}
-
-	if (command === "hi") {
-	if (message.member.hasPermission("DELETE")) {
-	message.channel.send(`Chào `+message.author.username+`-sama`)
-		.then(function(err){message.channel.send("ERROR")})
-        }
-    }
 
 	if (command === "avatar") {
 	await message.channel.send(`Avatar của `+message.author.username+` nè :`);
@@ -88,4 +90,5 @@ client.on("message", async message => {
 	}
 
 });
+
 client.login(process.env.BOT_TOKEN);
