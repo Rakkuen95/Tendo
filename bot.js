@@ -3,7 +3,6 @@ const Discord = require('discord.js');
 const client = new Client();
 const data = require('./data.json');
 const prefix = "-";
-const staff = member.roles.cache.some(role => role.name === 'deptrai');
 
 const activities_list = ['Lux','Beta','Kude','Duc','UwU']; 
 client.on('ready', () => {
@@ -23,7 +22,8 @@ client.on("message", async message => {
 	const command = args.shift().toLowerCase();
 
 	if (command === "hi") {
-        if (message[staff]) {
+	const staff = message.member.roles.cache.some(role => role.name === 'deptrai');
+        if (staff) {
 	message.channel.send('hello');
 	} else {
 	message.channel.send('no thank');
