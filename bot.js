@@ -24,7 +24,7 @@ client.on("message", async message => {
 	}
 
 	if (command === "avatar") {
-	await message.channel.send('Ảnh Avatar của chồng nè :');
+	await message.channel.send(`Avatar của `+message.author.username+` nè :`);
     	const Embed = new Discord.MessageEmbed()
         .setColor('#36393F')
         .setImage(message.author.displayAvatarURL());
@@ -33,9 +33,9 @@ client.on("message", async message => {
 	
 	if (command === "-") {	
 	try {
-		const sentMessage = await message.channel.send('Vợ sẽ gọi chồng trong 2 phút nữa nha!');
+		const sentMessage = await message.channel.send(`Eris sẽ gọi `+message.author.username+` trong **2 phút** nữa nha!`);
 		await sentMessage.delete({ timeout: 5000 });
-		await setTimeout(function(){message.reply('Tới giờ claim rồi đó chồng ơi!')}, 120*1000);
+		await setTimeout(function(){message.reply(`Tới giờ claim rồi đó `+message.author.username+` ơi!`)}, 120*1000);
 		} catch (error) {
 	}
 	}
