@@ -20,12 +20,10 @@ client.on("message", async message => {
 	const command = args.shift().toLowerCase();
 
 	if (command === "server") {
-	const ServerLogo = message.guild.iconURL();
     	const Embed = new Discord.MessageEmbed()
-                .setColor('#b700ff')
+                .setColor('#36393F')
                 .setTitle("Server Info")
-                .setImage(ServerLogo)
-		.setThumbnail('https://i.imgur.com/wSTFkRM.png')
+		.setThumbnail(message.guild.iconURL())
                 .setDescription(`About **${message.guild}**`)
                 .addField("**Date Created**", `Server Created on **${message.guild.createdAt.toLocaleString()}**`)
                 .addField("**Owner**", `The Owner of This Server is ${message.guild.owner}`)
@@ -33,8 +31,6 @@ client.on("message", async message => {
                 .addField("**Emoji Count**", "This Server Has ` " + `${message.guild.emojis.cache.size}` + " ` **Emojis**")
                 .addField("**Roles Count**", "This Server Has ` " + `${message.guild.roles.cache.size}` + " ` **Roles**")
                 .addField("**Channels Count**", "This Server Has ` " + `${message.guild.channels.cache.size}` + " ` **Channels**")
-                .addField("**Server Logo**", "**Downlaod Server Logo**")
-                .setURL(ServerLogo)
             message.channel.send(Embed)
 	}
 
