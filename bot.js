@@ -22,15 +22,15 @@ client.on("message", async message => {
 	if (command === "server") {
     	const Embed = new Discord.MessageEmbed()
                 .setColor('#36393F')
-                .setTitle("Server Info")
+                .setTitle("Thông Tin Máy Chủ")
 		.setThumbnail(message.guild.iconURL())
-                .setDescription(`About **${message.guild}**`)
-                .addField("**Date Created**", `Server Created on **${message.guild.createdAt.toLocaleString()}**`)
-                .addField("**Owner**", `The Owner of This Server is ${message.guild.owner}`)
-                .addField("**Member Count**", "This Server Has ` " + `${message.guild.memberCount}` + " ` **Members**")
-                .addField("**Emoji Count**", "This Server Has ` " + `${message.guild.emojis.cache.size}` + " ` **Emojis**")
-                .addField("**Roles Count**", "This Server Has ` " + `${message.guild.roles.cache.size}` + " ` **Roles**")
-                .addField("**Channels Count**", "This Server Has ` " + `${message.guild.channels.cache.size}` + " ` **Channels**")
+                .setDescription(`→ **${message.guild}**`)
+                .addField("**Thời Gian Khởi Tạo**", message.guild.createdAt.toLocaleString())
+                .addField("**Chủ Nhân Sở Hữu**", message.guild.owner)
+                .addField("**Số Lượng Thành Viên**", message.guild.memberCount +` Thành Viên`)
+                .addField("**Số Lượng Biểu Cảm**", message.guild.emojis.cache.size +` Biểu Cảm`)
+                .addField("**Số Lượng Cấp Bậc**", message.guild.roles.cache.size +` Cấp Bậc`)
+                .addField("**Số Lượng Mục Kênh**", message.guild.channels.cache.size +` Mục Kênh`)
             message.channel.send(Embed)
 	}
 
