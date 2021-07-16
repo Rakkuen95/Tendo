@@ -20,7 +20,7 @@ client.on("message", async message => {
 	const command = args.shift().toLowerCase();
 
 	if (command === "avatar") {
-	await message.channel.send'Ảnh Avatar của chồng nè :');
+	await message.channel.send('Ảnh Avatar của chồng nè :');
     	const Embed = new Discord.MessageEmbed()
         .setColor('#36393F')
         .setImage(message.author.displayAvatarURL());
