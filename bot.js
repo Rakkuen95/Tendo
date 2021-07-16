@@ -42,9 +42,9 @@ client.on("message", async message => {
 
 	if (command === "--") {
 	try {
-		const sentMessage = await message.channel.send('Vợ sẽ gọi chồng trong 3 phút nữa nha!');
+		const sentMessage = await message.channel.send(`Eris sẽ gọi `+message.author.username+` trong **3 phút** nữa nha!`);
 		await sentMessage.delete({ timeout: 5000 });
-		await setTimeout(function(){message.reply('Tới giờ claim rồi đó chồng ơi!')}, 180*1000);
+		await setTimeout(function(){message.reply(`Tới giờ claim rồi đó `+message.author.username+` ơi!`)}, 180*1000);
 		} catch (error) {
 	}
 	}
