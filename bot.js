@@ -20,7 +20,7 @@ client.on("message", async message => {
 	const command = args.shift().toLowerCase();
 
 	if (command === "hi") {
-	message.channel.send(message.author.username);
+	message.channel.send(`Chào `+message.author.username+`-sama`);
 	}
 
 	if (command === "avatar") {
