@@ -35,13 +35,13 @@ client.on("message", async message => {
 	}
 
 	if (command === "del") {
-        async function clear() {
-            message.delete();
-            const fetched = await message.channel.fetchMessages({limit: 99});
-            message.channel.bulkDelete(fetched);
+        if (message.member.hasPermission("DELETE")) {
+            message.channel.fetchMessages()
+               .then(function(list){
+                    message.channel.bulkDelete(list);
+                }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")})                        
         }
-        clear();
-	}
+    }
 
 	if (command === "hi") {
 	message.channel.send(`Chào `+message.author.username+`-sama`);
