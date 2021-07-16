@@ -19,36 +19,23 @@ client.on("message", async message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-    if (command === 'rps') {
-        const acceptedReplies = ['rock', 'paper', 'scissors'];
-        const random = Math.floor((Math.random() * acceptedReplies.length));
-        const result = acceptedReplies[random];
+	if (command === "server") {
+    	const Embed = new Discord.MessageEmbed()
+  .setAuthor(message.guild.name, message.guild.iconURL)
+  .setColor(3447003)
+  .setDescription(`Owner: ${message.guild.owner.user.tag} (${message.guild.owner.id})`)
+  .addField('Member Count', `${message.guild.memberCount - message.guild.members.filter(m=>m.user.bot).size} (${message.guild.members.filter(m=>m.user.bot).size} bots)`, true)
+  .addField('AFK Timeout', `${message.guild.afkTimeout / 60} minutes`, true)
+  .addField('AFK Channel', `${message.guild.afkChannelID === null ? 'No AFK Channel' : client.channels.get(message.guild.afkChannelID).name} (${message.guild.afkChannelID === null ? '' : message.guild.afkChannelID})`, true)
+  .addField('Location', message.guild.region, true)
+  .addField('Created', message.guild.createdAt.toLocaleString(), true)
+  .addBlankField(true)
+  .setTimestamp()
+  .setFooter(client.user.username, client.user.avatarURL);
 
-        const choice = args[0];
-        if (!choice) return message.channel.send(`How to play: \`${prefix}rps <rock|paper|scissors>\``);
-        if (!acceptedReplies.includes(choice)) return message.channel.send(`Only these responses are accepted: \`${acceptedReplies.join(', ')}\``);
-        
-        console.log('Bot Result:', result);
-        if (result === choice) return message.reply("It's a tie! We had the same choice.");
-        
-        switch (choice) {
-            case 'rock': {
-                if (result === 'paper') return message.reply('I won!');
-                else return message.reply('You won!');
-            }
-            case 'paper': {
-                if (result === 'scissors') return message.reply('I won!');
-                else return message.reply('You won!');        
-            }
-            case 'scissors': {
-                if (result === 'rock') return message.reply('I won!');
-                else return message.reply('You won!');
-            }
-            default: {
-                return message.channel.send(`Only these responses are accepted: \`${acceptedReplies.join(', ')}\``);
-            }
-        }
-    }
+  message.channel.send(Embed);
+	}
+
 
 	if (command === "hi") {
 	message.channel.send(`Chào `+message.author.username+`-sama`);
