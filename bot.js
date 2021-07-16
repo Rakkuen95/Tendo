@@ -21,7 +21,7 @@ client.on("message", async message => {
 
 	if (command === "avatar") {	
     	const user = message.mentions.users.first() || message.author;
-    	const avatarEmbed = new Discord.MessageEmbed()
+    	const avatarEmbed = new Discord.RichEmbed()
         .setColor('0x333333')
         .setAuthor(user.username)
         .setImage(user.avatarURL);
