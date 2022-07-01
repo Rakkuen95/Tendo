@@ -13,8 +13,7 @@ client.on('ready', () => {
 	}, 10000);
 
 });
-
-
+//
 
 client.on("message", async message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
