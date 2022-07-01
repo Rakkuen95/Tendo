@@ -4,7 +4,7 @@ const client = new Client();
 const data = require('./data.json');
 const prefix = "-";
 
-const activities_list = ['Lux','Beta','Kude','Duc','UwU']; 
+const activities_list = ['Pokemon Revolution Online','Vulcan Event']; 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`)
 	setInterval(() => {
