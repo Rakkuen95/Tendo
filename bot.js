@@ -24,9 +24,9 @@ client.on("message", async message => {
 	if (command === "hi") {
 	const staff = message.member.roles.cache.some(role => role.name === 'deptrai');
         if (staff) {
-	message.channel.send('hello');
+	message.channel.send('ello');
 	} else {
-	message.channel.send('no thank');
+	message.channel.send('sugoi');
 	}}
 
 	if (command === "server") {
