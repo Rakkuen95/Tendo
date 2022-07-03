@@ -2,7 +2,7 @@ const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const Discord = require('discord.js');
 const client = new Client();
 const data = require('./data.json');
-const prefix = "-";
+const prefix = "=";
 
 const activities_list = ['Pokemon Revolution Online','Vulcan Event']; 
 client.on('ready', () => {
@@ -11,37 +11,13 @@ client.on('ready', () => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
         client.user.setActivity(activities_list[index]);
 	}, 10000);
-
 });
-//
+
 
 client.on("message", async message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
-
-	if (command === "hi") {
-	const staff = message.member.roles.cache.some(role => role.name === 'deptrai');
-        if (staff) {
-	message.channel.send('ello');
-	} else {
-	message.channel.send('sugoi');
-	}}
-
-	if (command === "server") {
-    	const Embed = new Discord.MessageEmbed()
-		.setColor('#36393F')
-                .setTitle("Thông Tin Máy Chủ")
-		.setThumbnail(message.guild.iconURL())
-                .setDescription(`→ **${message.guild}**`)
-                .addField("**Thời Gian Khởi Tạo**", message.guild.createdAt.toLocaleString())
-                .addField("**Chủ Nhân Sở Hữu**", message.guild.owner)
-                .addField("**Số Lượng Thành Viên**", message.guild.memberCount +` Thành Viên`)
-                .addField("**Số Lượng Biểu Cảm**", message.guild.emojis.cache.size +` Biểu Cảm`)
-                .addField("**Số Lượng Cấp Bậc**", message.guild.roles.cache.size +` Cấp Bậc`)
-                .addField("**Số Lượng Mục Kênh**", message.guild.channels.cache.size +` Mục Kênh`)
-	message.channel.send(Embed);
-	}
 
 	if (command === "avatar") {
 	await message.channel.send(`Avatar của `+message.author.username+` nè :`);
