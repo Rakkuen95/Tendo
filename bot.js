@@ -19,6 +19,10 @@ client.on("message", async message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
+	if (command === "help") {
+	await message.channel.send("Bot nhà làm không có help.");
+	}
+
 	if (command === "avatar") {
 	await message.channel.send(`Avatar của `+message.author.username+` nè :`);
     	const Embed = new Discord.MessageEmbed()
@@ -27,7 +31,7 @@ client.on("message", async message => {
     	await message.channel.send(Embed);
 	}
 	
-	if (command === "-") {	
+	if (command === "=") {	
 	try {
 		const sentMessage = await message.channel.send(`Rikka sẽ gọi `+message.author.username+` trong **2 phút** nữa nha!`);
 		await sentMessage.delete({ timeout: 5000 });
@@ -36,7 +40,7 @@ client.on("message", async message => {
 	}
 	}
 
-	if (command === "--") {
+	if (command === "==") {
 	try {
 		const sentMessage = await message.channel.send(`Rikka sẽ gọi `+message.author.username+` trong **3 phút** nữa nha!`);
 		await sentMessage.delete({ timeout: 5000 });
