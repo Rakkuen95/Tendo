@@ -1,7 +1,7 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const Discord = require('discord.js');
 const client = new Client();
-const prefix = "c";
+const prefix = "=";
 
 const activities_list = ['Cheems Online','Shoob Online']; 
 client.on('ready', () => {
@@ -36,7 +36,7 @@ client.on("message", async message => {
     	await message.channel.send(Embed);
 	}
 	
-	if (command === "c") {	
+	if (command === "=") {	
 	try {
 		const sentMessage = await message.channel.send(`Cheems sẽ cắn `+message.author.username+` trong **2 phút** tiếp theo!`);
 		await sentMessage.delete({ timeout: 5000 });
@@ -46,7 +46,7 @@ client.on("message", async message => {
 	}
 	}
 
-	if (command === "cc") {
+	if (command === "==") {
 	try {
 		const sentMessage = await message.channel.send(`Cheems sẽ cắn `+message.author.username+` trong **3 phút** tiếp theo!`);
 		await sentMessage.delete({ timeout: 5000 });
