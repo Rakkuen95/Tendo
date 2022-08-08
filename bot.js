@@ -1,8 +1,7 @@
 const { Client, MessageAttachment, MessageEmbed } = require('discord.js');
 const Discord = require('discord.js');
 const client = new Client();
-const data = require('./data.json');
-const prefix = "=";
+const prefix = "c";
 
 const activities_list = ['Cheems Online','Shoob Online']; 
 client.on('ready', () => {
@@ -24,6 +23,7 @@ client.on("message", async message => {
 	}
 
 	if (command === "cheems") {
+	const cheems = ["69","96"]
 	const randomcheems = cheems[Math.floor(Math.random() * cheems.length)];
 	await message.channel.send(randomcheems);
 	}
@@ -36,7 +36,7 @@ client.on("message", async message => {
     	await message.channel.send(Embed);
 	}
 	
-	if (command === "=") {	
+	if (command === "c") {	
 	try {
 		const sentMessage = await message.channel.send(`Cheems sẽ cắn `+message.author.username+` trong **2 phút** tiếp theo!`);
 		await sentMessage.delete({ timeout: 5000 });
@@ -46,7 +46,7 @@ client.on("message", async message => {
 	}
 	}
 
-	if (command === "==") {
+	if (command === "cc") {
 	try {
 		const sentMessage = await message.channel.send(`Cheems sẽ cắn `+message.author.username+` trong **3 phút** tiếp theo!`);
 		await sentMessage.delete({ timeout: 5000 });
