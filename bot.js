@@ -4,7 +4,7 @@ const client = new Client();
 const data = require('./data.json');
 const prefix = "=";
 
-const activities_list = ['Pokemon Revolution Online','Vulcan Event']; 
+const activities_list = ['Cheems Online','Shoob Online']; 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`)
 	setInterval(() => {
@@ -33,18 +33,18 @@ client.on("message", async message => {
 	
 	if (command === "=") {	
 	try {
-		const sentMessage = await message.channel.send(`Rikka sẽ gọi `+message.author.username+` trong **2 phút** nữa nha!`);
+		const sentMessage = await message.channel.send(`Cheems sẽ sủa `+message.author.username+` trong **2 phút** tiếp theo!`);
 		await sentMessage.delete({ timeout: 5000 });
-		await setTimeout(function(){message.reply(`Tới giờ claim rồi đó `+message.author.username+` ơi!`)}, 120*1000);
+		await setTimeout(function(){message.reply(`Grr Grr `+message.author.username+` !!!`)}, 120*1000);
 		} catch (error) {
 	}
 	}
 
 	if (command === "==") {
 	try {
-		const sentMessage = await message.channel.send(`Rikka sẽ gọi `+message.author.username+` trong **3 phút** nữa nha!`);
+		const sentMessage = await message.channel.send(`Cheems sẽ sủa `+message.author.username+` trong **3 phút** tiếp theo!`);
 		await sentMessage.delete({ timeout: 5000 });
-		await setTimeout(function(){message.reply(`Tới giờ claim rồi đó `+message.author.username+` ơi!`)}, 180*1000);
+		await setTimeout(function(){message.reply(`Grr Grr `+message.author.username+` !!!`)}, 180*1000);
 		} catch (error) {
 	}
 	}
