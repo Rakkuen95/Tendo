@@ -33,18 +33,18 @@ client.on("message", async message => {
 	
 	if (command === "=") {	
 	try {
-		const sentMessage = await message.channel.send(`Cheems sẽ sủa `+message.author.username+` trong **2 phút** tiếp theo!`);
+		const sentMessage = await message.channel.send(`Cheems sẽ cắn `+message.author.username+` trong **2 phút** tiếp theo!`);
 		await sentMessage.delete({ timeout: 5000 });
-		await setTimeout(function(){message.reply(`Grr Grr `+message.author.username+` !!!`)}, 120*1000);
+		await setTimeout(function(){message.reply(`Đau không con đỏ chí ???`)}, 120*1000);
 		} catch (error) {
 	}
 	}
 
 	if (command === "==") {
 	try {
-		const sentMessage = await message.channel.send(`Cheems sẽ sủa `+message.author.username+` trong **3 phút** tiếp theo!`);
+		const sentMessage = await message.channel.send(`Cheems sẽ cắn `+message.author.username+` trong **3 phút** tiếp theo!`);
 		await sentMessage.delete({ timeout: 5000 });
-		await setTimeout(function(){message.reply(`Grr Grr `+message.author.username+` !!!`)}, 180*1000);
+		await setTimeout(function(){message.reply(`Đau không con đỏ chí ???`)}, 180*1000);
 		} catch (error) {
 	}
 	}
