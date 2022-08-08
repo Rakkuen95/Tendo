@@ -23,6 +23,11 @@ client.on("message", async message => {
 	await message.channel.send("Bot nhà làm không có help.");
 	}
 
+	if (command === "cheems") {
+	const randomcheems = cheems[Math.floor(Math.random() * cheems.length)];
+	await message.channel.send(randomcheems);
+	}
+
 	if (command === "avatar") {
 	await message.channel.send(`Avatar của `+message.author.username+` nè :`);
     	const Embed = new Discord.MessageEmbed()
