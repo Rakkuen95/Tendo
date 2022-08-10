@@ -15,8 +15,28 @@ client.on('ready', () => {
 
 client.on("message", async message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
-	const args = message.content.slice(prefix.length).split(/ +/);
+	const args = message.content.split(' ').slice(1);
 	const command = args.shift().toLowerCase();
+
+	if (command === "rroles") {
+	const role = message.mentions.roles.first();
+	if (!role)
+	return message
+	.reply('You need mention a role')
+	.then((m) => m.delete({ timeout: 1_000 }));
+	const emoji = args[1];
+	if (!emoji)
+	return message
+	.reply('You need use a valid emoji.')
+	.then((m) => m.delete({ timeout: 1_000 }));
+	const msg = await message.channel.messages.fetch(args[2] || message.id);
+	if (!role)
+	return message
+	.reply('Message not found!')
+	.then((m) => m.delete({ timeout: 1_000 }));
+	reactionRoleManager.addRole({message: msg,role,emoji,});
+	message.reply('Done').then((m) => m.delete({ timeout: 500 }));
+	}
 
 	if (command === "help") {
 	await message.channel.send("Bot nhà làm không có help.");
