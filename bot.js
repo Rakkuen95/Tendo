@@ -17,12 +17,16 @@ client.on("message", async message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
-	const rep = ["A","B","C","D"]
+	const rep = [
+		"Grr Grr",
+		"Gâu Gâu",
+		"Hú Hú",
+		"Ẳng Ẳng"]
 	const cheems = rep[Math.floor(Math.random() * rep.length)];
 	
 	if (command === "=") {	
 	try {
-		const sentMessage = await message.channel.send(`Cheems sẽ cắn `+message.author.username+` trong **2 phút** tiếp theo!`);
+		const sentMessage = await message.channel.send(`Cheems sẽ táp `+message.author.username+` trong **2 phút** nữa!`);
 		await sentMessage.delete({ timeout: 5000 });
 		await setTimeout(function(){message.reply(cheems)}, 120*1000);
 		} catch (error) {
@@ -31,7 +35,7 @@ client.on("message", async message => {
 
 	if (command === "==") {
 	try {
-		const sentMessage = await message.channel.send(`Cheems sẽ cắn `+message.author.username+` trong **3 phút** tiếp theo!`);
+		const sentMessage = await message.channel.send(`Cheems sẽ táp `+message.author.username+` trong **3 phút** nữa!`);
 		await sentMessage.delete({ timeout: 5000 });
 		await setTimeout(function(){message.reply(cheems)}, 180*1000);
 		} catch (error) {
