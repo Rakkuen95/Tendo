@@ -62,7 +62,7 @@ client.on("message", async message => {
 	}
 	}
 
-@// POKEMMO DEX NATIONAL 
+// POKEMMO DEX NATIONAL 
 
 // GEN-1
 
